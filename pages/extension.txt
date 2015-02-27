@@ -1,0 +1,40 @@
+.. title: Actividades de extensión
+.. slug: extension
+.. date: 24/05/14 13:48:55 UTC-03:00
+.. tags: 
+.. link: 
+.. description: 
+.. type: text
+
+
+Webinario 3: Posicionamiento GNSS en tiempo real y PPP [#]_
+-----------------------------------------------------------
+
+.. [#] Posicionamiento Puntual Preciso
+
+Serie de seminarios web realizados por la FADA_ con el apoyo del `Instituto Lincoln de Políticas de Suelo <lincoln_>`_
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+:Fecha: 27/03/2012
+:Hora: 20:00hs
+:Disertante: Agrim. Gustavo Noguera (GGSR)
+:Temario: Fundamentos del posicionamiento satelital en tiempo real, diferentes modalidades. Descripción del protocolo NTRIP y del estándar RTCM. Transmisión de datos GPS y correcciones por Internet. Aplicaciones, precisiones alcanzables, limitantes. Fundamentos del posicionamiento puntual preciso usando código y fase. Efemérides precisas y correcciones a los relojes de los satélites. Compatibilidad de resultados con marco de referencia POSGAR. Aplicaciones, precisiones alcanzables, limitantes.
+:Difusión: `Webinario3.pdf </extension/Webinario3.pdf>`_
+
+.. _FADA: http://www.agrimensores.org.ar/
+.. _lincoln: http://www.lincolninst.edu/aboutlincoln/america-latina-y-el-caribe/
+
+Charla: GPS en Tiempo Real utilizando Internet
+----------------------------------------------
+
+:Fecha: Miércoles 15/06/2011
+:Hora: 18:00hs
+:Lugar: Aula 23 - Av. Pellegrini 250, FCEIyA, UNR - Rosario
+:Disertante:
+  | Agrim. Gustavo Noguera
+  | Grupo de Geodesia Satelital Rosario
+  | Departamento de Geotopocartografía
+  | Escuela de Agrimensura
+:Resumen:
+  Existen diversas metodologías de medición que permiten obtener coordenadas en un sistema global utilizando GPS. Muchas aplicaciones requieren determinar las coordenadas en forma instantánea y con mejores precisiones que las que puede otorgar un receptor del tipo de los llamados navegadores. Esta modalidad es conocida como "tiempo real" (RT), y en este caso es necesario transmitir correcciones y observaciones desde una estación base al receptor que opera el usuario. En la actualidad esta transmisión puede realizarse utilizando Internet mediante el protocolo denominado NTRIP (Networked Transport of RTCM via Internet Protocol). De esta manera el usuario de GPS, tanto para el caso de navegadores como para receptores de mejor precisión, obtiene las correcciones generadas en Estaciones Permanentes GPS, como la que funciona en la Facultad de Ciencias Exactas, Ingeniería y Agrimensura de la UNR. Estas correcciones mejoran sustancialmente la precisión en las coordenadas obtenidas, permitiendo aplicaciones de diversos tipos: agrimensura, sistemas de información geográfica, obras de ingeniería, agricultura de precisión, transporte, etc., garantizando la georreferenciación de los resultados obtenidos. En la charla se describen los fundamentos de esta metodología y la forma en que se puede acceder a las correcciones.
+:Descarga: Descargue la `presentación en formato PDF </extension/GPSenTiempoReal.pdf>`_.

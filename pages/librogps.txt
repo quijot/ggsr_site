@@ -1,0 +1,27 @@
+.. title: Libro: GPS, posicionamiento satelital
+.. slug: librogps
+.. date: 24/05/14 13:48:55 UTC-03:00
+.. tags: 
+.. link: 
+.. description: 
+.. type: text
+
+.. image:: images/librogps.jpg
+   :alt: Libro GPS
+   :align: right
+   :target: images/librogps.jpg
+
+
+Esta es la versión digital del Libro **GPS Posicionamiento Satelital**, que fue publicado en julio de 2005 por la `Editorial de la UNR <http://www.unreditora.unr.edu.ar/>`_.
+
+El libro que presentamos tiene tres características fundamentales:
+
+- Es de contenido teórico; está dirigido a difundir los fundamentos del posicionamiento satelital en general y de GPS en particular.
+- Es adecuado al nivel de estudiante o graduado universitario en general, dado que no requiere previa especialización y evitamos recurrir a un tratamiento matemático complejo. Sus destinatarios son principalmente profesionales y estudiantes de la ingeniería de diversas ramas, aunque por la importancia y vastedad del tema se torna útil para un amplio campo del conocimiento.
+- Es de carácter didáctico, es decir está orientado a facilitar el aprendizaje. 
+
+.. admonition:: Para descargar el libro para su uso personal, haga click aquí_.
+
+   Prohibida su reproducción comercial.
+
+.. _aquí: /publicaciones/libro_gps.pdf

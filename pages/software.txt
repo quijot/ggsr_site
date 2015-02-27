@@ -1,0 +1,56 @@
+.. title: Software recomendado
+.. slug: software
+.. date: 24/05/14 13:54:23 UTC-03:00
+.. tags: 
+.. link: 
+.. description: 
+.. type: text
+
+Software producido por el GGSR
+------------------------------
+
+.. class:: col-lg-4 pull-right
+
+.. admonition:: `Descargar Geocoo </software/geocoo.zip>`_
+  
+  | Este programa es compatible con Windows XP Home, Windows XP Professional y con Windows Vista.
+  | ¡Advertencia! Si su sistema operativo es Windows 98 no instale esta versión.
+  | Una vez descargado el archivo, deberá descomprimirlo y ejecutar el setup, para instalar el programa.
+
+:Geocoo 1.0.1:
+  
+  Es un programa que ayuda a resolver problemas de cálculo que en la actualidad son habitualmente requeridos por diversas aplicaciones propias de la topografía y la geodesia.
+  
+  Está diseñado para que su uso sea muy sencillo permitiendo generar salidas que a su vez puedan ser leídas por otros programas.
+  
+  El programa básicamente realiza **conversiones entre distintos tipos de coordenadas** de uso habitual y **transformaciones entre distintos marcos de referencia**.
+  
+  Una característica destacable es que el programa tiene un alto grado de parametrización lo que permite que el usuario pueda adaptar los cálculos a las características del problema a resolver.
+
+
+Recomendado por el GGSR
+-----------------------
+
+Software y documentación que el GGSR utiliza y/o recomienda.
+
+:`teqc <teqc_>`_:
+  Una simple pero poderosa utilidad para resolver problemas de pre-procesamiento con GPS, GLONASS, Galileo y SBAS.
+  `The Toolkit for GPS/GLONASS/Galileo/SBAS Data <http://facility.unavco.org/software/teqc/teqc.html>`_
+
+:`RNXCMP <RNXCMP_>`_:
+  Yuki Hatanaka creó estos programas que permiten (des)comprimir un archivo de observaciones RINEX en otro más pequeño en formato ASCII.
+  
+  `Data - Hatanaka Format Information <http://facility.unavco.org/data/hatanaka.html>`_
+  
+  `Formato RINEX en Wikipedia.org <http://es.wikipedia.org/wiki/Rinex>`_
+
+:`GNSS Format Descriptions <gFD_>`_:
+  Explicación de los formatos estándar. Por ejemplo: `Observation RINEX 2.11 Format <http://www.gage.es/sites/default/files/gLAB/HTML/Observation_Rinex_v2.11.html>`_.
+
+:`GPS Web Calendar <gpscal_>`_:
+  Fechas específicas para la comunidad GPS.
+
+.. _teqc: http://facility.unavco.org/software/teqc/teqc.html#executables
+.. _RNXCMP: http://terras.gsi.go.jp/ja/crx2rnx.html
+.. _gFD: http://www.gage.es/gFD
+.. _gpscal: http://adn.agi.com/GNSSWeb/

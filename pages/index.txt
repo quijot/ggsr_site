@@ -1,0 +1,45 @@
+.. title: GRUPO DE GEODESIA SATELITAL ROSARIO
+.. slug: index
+.. date: 24/05/14 13:17:51 UTC-03:00
+.. tags: 
+.. link: 
+.. description: 
+.. type: text
+.. template: notitle.tmpl
+
+.. class:: col-md-5
+
+Grupo de Geodesia Satelital Rosario
+-----------------------------------
+
+| Universidad Nacional de Rosario
+| Facultad de Ciencias Exactas, Ingeniería y Agrimensura
+| Escuela de Agrimensura
+| Departamento de Geotopocartografía
+
+.. |arroba| image:: /images/120px-At_sign.svg.png
+            :height: 15px
+            :alt: arroba
+            :align: middle
+
+.. admonition:: `Caster SIRGAS </caster/>`_
+  
+  Ingrese a los Formularios de Registro al Caster SIRGAS Experimental
+
+.. class:: jumbotron col-md-5
+
+Estaciones Permanentes
+----------------------
+
+**RAMSAC**
+
+* `UNRO - Rosario </ep/home.php?EP=UNRO>`_
+* `EPSF - Santa Fe (desde 22/02/12) </ep/home.php?EP=EPSF>`_
+* `PRNA - Paraná (desde 30/06/11) </ep/home.php?EP=PRNA>`_
+* `RUFI - Rufino (desde 28/09/12) </ep/home.php?EP=RUFI>`_
+
+**Experimentales**
+
+* `UNR2 - Rosario ONLINE desde 23/06/12 </ep/home.php?EP=UNR2>`_
+* `EPGZ - Gálvez OFFLINE </ep/home.php?EP=EPGZ>`_
+* `EPVT - Venado Tuerto OFFLINE </ep/home.php?EP=EPVT>`_

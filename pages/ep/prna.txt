@@ -1,0 +1,26 @@
+PRNA
+====
+
+Características PRNA
+--------------------
+
+:Receptor:
+:Modelo:
+:Firmware:
+:Cantidad de canales:
+:Observables:
+:Intervalo de registro:
+:Antena:
+
+Coordenadas
+-----------
+
+Marco de Referencia Oficial POSGAR 07
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Geodésicas
+""""""""""
+
+:Latitud: 31º 46' 53.16917" S
+:Longitud: 60º 28' 09.98144" W
+:Altura: 92.397 m

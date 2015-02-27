@@ -1,0 +1,14 @@
+*.py[co]
+__pycache__
+
+# nikola
+cache
+output
+.doit*
+
+# vim
+*~
+
+# draft
+draft
+_revisar

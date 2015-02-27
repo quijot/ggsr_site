@@ -1,0 +1,33 @@
+.. title: Publicaciones de interés
+.. slug: publicaciones
+.. date: 24/05/14 13:48:55 UTC-03:00
+.. tags: 
+.. link: 
+.. description: 
+.. type: text
+
+
+Algunas publicaciones del GGSR
+------------------------------
+
+:`GPS Posicionamiento Satelital <librogps_>`_:
+  Versión digital del libro, que fue publicado en julio de 2005 por la Editorial de la UNR.
+:`Informe final del Proyecto de la red geodésica provincial <informe-final_>`_:
+  Infraestructura de estaciones terrestres para la georreferenciación en la provincia de Santa Fe mediante posicionamiento satelital. Informe técnico final del Proyecto FFIR/21-105, Resolución Nº 030/09. Secretaría de Estado de ciencia, tecnología e innovación. Gobierno de la provincia de Santa Fe.
+:`Artículo EP UNRO <artEPUNRO_>`_:
+  Artículo publicado por el GGSR.
+:`Mensura y georreferenciación <myg_>`_:
+  Artículo elaborado por el GGSR para el XI Congreso Nacional y VIII Latinoamericano de Agrimensura, abril de 2012.
+
+.. _librogps: /librogps
+.. _artEPUNRO: /publicaciones/EP_UNRO.pdf
+.. _informe-final: /publicaciones/informe-final.pdf
+.. _myg: /publicaciones/ponencia_MyG.pdf
+
+Algunas publicaciones junto a otros autores
+-------------------------------------------
+
+:`El GPS y la teoría de la relatividad <GPSyREL_>`_:
+  Artículo publicado en Topografía y cartografía, Revista del Ilustre Colegio Oficial de Ingenieros Técnicos en Topografía de España, año 2007, Vol. 24, Nº 140 y en Revista de enseñanza de la física, año 2008, Vol. 21, Nº. 1.
+
+.. _GPSyREL: /publicaciones/GPSyREL240407.pdf

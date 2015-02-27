@@ -1,0 +1,10 @@
+EPSF
+====
+
+Está disponible el Instructivo para descarga de archivos de observaciones en formato RINEX.
+
+Se encuentra en funcionamiento la Estación Permanente GPS EPSF, instalada en el edificio de la Facultad de Ingeniería y Ciencias Hídricas de la Universidad Nacional del Litoral, en la Ciudad de Santa Fe.
+
+Invitamos a hacer uso de la estación y agradeceremos a quien pueda usarla y experimentar con sus datos, nos comente sus resultados, observaciones, etc.
+
+Desde ya muchas gracias.
