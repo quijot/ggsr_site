@@ -1,14 +1,7 @@
 *.py[co]
-__pycache__
+*.db
+cache/
+_otros/
+output/
+__pycache__/
 
-# nikola
-cache
-output
-.doit*
-
-# vim
-*~
-
-# draft
-draft
-_revisar
