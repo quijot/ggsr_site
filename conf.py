@@ -106,7 +106,8 @@ NAVIGATION_LINKS = {
 }
 
 # Name of the theme to use.
-THEME = "bootstrap3"
+#THEME = "bootstrap3"
+THEME = "cosmo"
 
 # Below this point, everything is optional
 
@@ -282,8 +283,14 @@ INDEX_PATH = "blog"
 # If you don't need any of these, just set to []
 REDIRECTIONS = [
 	# compatible con la publicacion "librito celeste"
-	("epsf", "ep/home.php?EP=EPSF"),
-	("epvt", "ep/home.php?EP=EPVT"),
+	#("epsf", "ep/home.php?EP=EPSF"),
+	#("epvt", "ep/home.php?EP=EPVT"),
+	("epsf/index.html", "../ep/epsf"),
+	("epvt/index.html", "../ep/epvt"),
+	# compatible con la publicacion "PPP y su aplicación en Agrimensura"
+	("pppcalc.html", "pppcalc/"),
+	# ggsr -> gps
+	("ggsr/index.html", "/"),
 ]
 
 # Commands to execute to deploy. Can be anything, for example,
@@ -730,7 +737,7 @@ UNSLUGIFY_TITLES = True
 # }
 
 # If webassets is installed, bundle JS and CSS to make site loading faster
-# USE_BUNDLES = True
+#USE_BUNDLES = False
 
 # Plugins you don't want to use. Be careful :-)
 # DISABLED_PLUGINS = ["render_galleries"]
