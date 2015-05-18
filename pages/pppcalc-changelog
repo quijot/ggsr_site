@@ -1,0 +1,19 @@
+
+.. raw:: html
+
+  <hr>
+
+Cambios en versiones
+====================
+
+`versión 0.2 <../pppcalc>`_
+---------------------------
+- Se agregó un campo *ID sitio* para asignar un identificador al punto cuyas coordenadas se corrigen. (Sólo para agregar en el informe. No afecta corrección.)
+- Se agregó un campo *Sesión (hs)* para asignar su duración en horas y minutos. (Sólo para agregar en el informe. No afecta corrección.)
+- Se agregó un botón *Restablecer* para limpiar todos los campos de la calculadora.
+- En *Para qué sirve* y *Correcciones* se afinó la terminología.
+- En *Zona de validez* se corrigió provincia de Santa Fe, que es abarcada por completo y se detallaron los paralelos y meridianos límites.
+
+`versión 0.1 <../pppcalc-v0.1>`_
+--------------------------------
+

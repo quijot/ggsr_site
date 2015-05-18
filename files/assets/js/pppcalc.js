@@ -113,3 +113,6 @@ function pppcalc() {
   document.getElementById('latsc').value = lats;
 };
 
+function generarInforme() {
+  alert("Esta función se encuentra en desarrollo.");
+};

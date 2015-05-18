@@ -27,6 +27,11 @@ Software producido por el GGSR
   
   Una característica destacable es que el programa tiene un alto grado de parametrización lo que permite que el usuario pueda adaptar los cálculos a las características del problema a resolver.
 
+:`PPPCalc`_:
+
+  La finalidad de la *calculadora PPP* es "corregir" las coordenadas obtenidas luego del procesamiento PPP. Por corregir se debe entender *referirlas al marco POSGAR 2007 (época 2006.6)*.
+
+.. _PPPCalc: ../pppcalc
 
 Recomendado por el GGSR
 -----------------------

@@ -3,151 +3,171 @@
 .. date: 24/05/14 13:17:51 UTC-03:00
 .. tags: 
 .. link: 
-.. description: 
+.. description: Calculadora PPP
 .. type: text
 
 .. raw:: html
 
   <div class="row"></div>
 
-  <div class="col-lg-4 pull-right">
-    <div class="panel panel-info">
-      <div class="panel-heading">
-        <h3 id="mapa">Seleccione una FAJA</h3>
-        <p>Límites:</p>
-        <div id="latT" align="center">-28º 00'</div>
-        <div><span id="lonL">-63º 30'</span><span id="lonR" class="pull-right">-56º 40'</span></div>
-        <div id="latB" align="center">-41º 00'</div>
-      </div>
-      <div class="panel-body" id="basicMap" style="height:400px">
+  <div class="row"><!-- Calculadora + Mapa -->
+    <div class="col-lg-4 pull-right">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 id="mapa">Seleccione una FAJA</h3>
+          <p>Límites:</p>
+          <div id="latT" align="center">-28º 00'</div>
+          <div><span id="lonL">-63º 30'</span><span id="lonR" class="pull-right">-56º 40'</span></div>
+          <div id="latB" align="center">-41º 00'</div>
+        </div>
+        <div class="panel-body" id="basicMap" style="height:400px">
+        </div>
       </div>
     </div>
-  </div>
 
-  <script src="http://openlayers.org/api/OpenLayers.js"></script>
-  <script type="text/javascript">
-    var fromProjection = new OpenLayers.Projection("EPSG:4326"); // transform from WGS 1984
-    var toProjection = new OpenLayers.Projection("EPSG:900913"); // to Spherical Mercator Projection
-    var extent = new OpenLayers.Bounds(-63.50, -41.00, -56.67, -28.00).transform(fromProjection,toProjection);
-    var options = {
-      restrictedExtent : extent,
-      //controls: []
-    };
-    map = new OpenLayers.Map("basicMap", options);
-    var osm     = new OpenLayers.Layer.OSM();
-    var markers = new OpenLayers.Layer.Markers( "Markers" );
-    var boxes   = new OpenLayers.Layer.Boxes( "Boxes" );
-    map.addLayer(osm);
-    map.addLayer(markers);
-    map.addLayer(boxes);
-    // UNRO marker
-    var unro = new OpenLayers.LonLat(-60.62842520833333, -32.95935293055556).transform(fromProjection, toProjection);
-    markers.addMarker(new OpenLayers.Marker(unro));
-    // Zona completa
-    boxes.addMarker(new OpenLayers.Marker.Box(extent, "black", 2));
-    // Fajas
-    var f1bounds = new OpenLayers.Bounds(-59.25, -41.00, -56.67, -28.00).transform(fromProjection,toProjection);
-    var f2bounds = new OpenLayers.Bounds(-61.50, -41.00, -59.25, -28.00).transform(fromProjection,toProjection);
-    var f3bounds = new OpenLayers.Bounds(-63.50, -41.00, -61.50, -28.00).transform(fromProjection,toProjection);
-    var f1box = new OpenLayers.Marker.Box(f1bounds, "black", 1);
-    var f2box = new OpenLayers.Marker.Box(f2bounds, "black", 1);
-    var f3box = new OpenLayers.Marker.Box(f3bounds, "black", 1);
-    f1box.events.register("click", f1box, function (e) {
+    <script src="http://openlayers.org/api/OpenLayers.js"></script>
+    <script type="text/javascript">
+      var fromProjection = new OpenLayers.Projection("EPSG:4326"); // transform from WGS 1984
+      var toProjection = new OpenLayers.Projection("EPSG:900913"); // to Spherical Mercator Projection
+      var extent = new OpenLayers.Bounds(-63.50, -41.00, -56.67, -28.00).transform(fromProjection,toProjection);
+      var options = {
+        restrictedExtent : extent,
+        //controls: []
+      };
+      map = new OpenLayers.Map("basicMap", options);
+      var osm     = new OpenLayers.Layer.OSM();
+      var markers = new OpenLayers.Layer.Markers( "Markers" );
+      var boxes   = new OpenLayers.Layer.Boxes( "Boxes" );
+      map.addLayer(osm);
+      map.addLayer(markers);
+      map.addLayer(boxes);
+      // UNRO marker
+      var unro = new OpenLayers.LonLat(-60.62842520833333, -32.95935293055556).transform(fromProjection, toProjection);
+      markers.addMarker(new OpenLayers.Marker(unro));
+      // Zona completa
+      boxes.addMarker(new OpenLayers.Marker.Box(extent, "black", 2));
+      // Fajas
+      var f1bounds = new OpenLayers.Bounds(-59.25, -41.00, -56.67, -28.00).transform(fromProjection,toProjection);
+      var f2bounds = new OpenLayers.Bounds(-61.50, -41.00, -59.25, -28.00).transform(fromProjection,toProjection);
+      var f3bounds = new OpenLayers.Bounds(-63.50, -41.00, -61.50, -28.00).transform(fromProjection,toProjection);
+      var f1box = new OpenLayers.Marker.Box(f1bounds, "black", 1);
+      var f2box = new OpenLayers.Marker.Box(f2bounds, "black", 1);
+      var f3box = new OpenLayers.Marker.Box(f3bounds, "black", 1);
+      f1box.events.register("click", f1box, function (e) {
         this.setBorder("red", 2);
         f2box.setBorder("black", 1);
         f3box.setBorder("black", 1);
         document.getElementById("mapa").innerHTML = "FAJA 1";
         document.getElementById("lonL").innerHTML = "-59º 15'";
         document.getElementById("lonR").innerHTML = "-56º 40'";
-    });
-    f2box.events.register("click", f2box, function (e) {
+      });
+      f2box.events.register("click", f2box, function (e) {
         this.setBorder("red", 2);
         f1box.setBorder("black", 1);
         f3box.setBorder("black", 1);
         document.getElementById("mapa").innerHTML = "FAJA 2";
         document.getElementById("lonL").innerHTML = "-61º 30'";
         document.getElementById("lonR").innerHTML = "-59º 15'";
-    });
-    f3box.events.register("click", f3box, function (e) {
+      });
+      f3box.events.register("click", f3box, function (e) {
         this.setBorder("red", 2);
         f1box.setBorder("black", 1);
         f2box.setBorder("black", 1);
         document.getElementById("mapa").innerHTML = "FAJA 3";
         document.getElementById("lonL").innerHTML = "-63º 30'";
         document.getElementById("lonR").innerHTML = "-61º 30'";
-    });
-    boxes.addMarker(f1box);
-    boxes.addMarker(f2box);
-    boxes.addMarker(f3box);
-    // Show Extents
-    map.zoomToMaxExtent();
-  </script>
-    
-  <!-- CALCULADORA -->
-  <script src="/assets/js/pppcalc.js"></script>
+      });
+      boxes.addMarker(f1box);
+      boxes.addMarker(f2box);
+      boxes.addMarker(f3box);
+      // Show Extents
+      map.zoomToMaxExtent();
+    </script>
+      
+    <!-- CALCULADORA -->
+    <script src="/assets/js/pppcalc.js"></script>
 
-  <div class="col-lg-8">
-    <div class="panel panel-primary">
-      <div class="panel-heading">
-        <h4 class="panel-title">Calculadora PPP</h4>
-      </div>
-      <div class="panel-body form-horizontal">
-        <fieldset>
-          <legend>Ingrese las coordenadas procesadas con PPP</legend>
-          <div class="form-group">
-            <label for="lond" class="col-lg-2 control-label">Longitud</label>
-            <div class="col-lg-10">
-              <span class="col-lg-3"><input type="number" class="form-control" id="lond" placeholder="-60" min="-63" max="-56"></span>
-              <span class="col-lg-3"><input type="number" class="form-control" id="lonm" placeholder="00" min="00" max="59"></span>
-              <span class="col-lg-6"><input type="number" class="form-control" id="lons" placeholder="00.000000" min="00" max="59.999999" step="0.000001"></span>
-            </div>
+    <div class="col-lg-8">
+      <form id="pppcalc-form">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h4 class="panel-title">Calculadora PPP -- versión 0.2</h4>
           </div>
-          <div class="form-group">
-            <label for="latd" class="col-lg-2 control-label">Latitud</label>
-            <div class="col-lg-10">
-              <span class="col-lg-3"><input type="number" class="form-control" id="latd" placeholder="-35" min="-41" max="-28"></span>
-              <span class="col-lg-3"><input type="number" class="form-control" id="latm" placeholder="00" min="00" max="59"></span>
-              <span class="col-lg-6"><input type="number" class="form-control" id="lats" placeholder="00.000000" min="00" max="59.999999" step="0.000001"></span>
-            </div>
+          <div class="panel-body form-horizontal">
+            <fieldset>
+              <legend>Ingrese las coordenadas procesadas con PPP</legend>
+              <div class="form-group">
+                <label for="lond" class="col-lg-2 control-label">Longitud</label>
+                <div class="col-lg-10">
+                  <span class="col-lg-3"><input type="number" class="form-control" id="lond" placeholder="-60" min="-63" max="-56"></span>
+                  <span class="col-lg-3"><input type="number" class="form-control" id="lonm" placeholder="00" min="00" max="59"></span>
+                  <span class="col-lg-6"><input type="number" class="form-control" id="lons" placeholder="00.000000" min="00" max="59.999999" step="0.000001"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="latd" class="col-lg-2 control-label">Latitud</label>
+                <div class="col-lg-10">
+                  <span class="col-lg-3"><input type="number" class="form-control" id="latd" placeholder="-35" min="-41" max="-28"></span>
+                  <span class="col-lg-3"><input type="number" class="form-control" id="latm" placeholder="00" min="00" max="59"></span>
+                  <span class="col-lg-6"><input type="number" class="form-control" id="lats" placeholder="00.000000" min="00" max="59.999999" step="0.000001"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="ano" class="col-lg-2 control-label">Año</label>
+                <div class="col-lg-10">
+                  <span class="col-lg-12"><input type="number" class="form-control" id="ano" placeholder="año de medición, por ejemplo: 2013" min="2012" max="2015"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="lond" class="col-lg-2 control-label">ID sitio / Sesión (hs)</label>
+                <div class="col-lg-10">
+                  <span class="col-lg-3"><input type="text" class="form-control" id="site" placeholder="BASE"></span>
+                  <span class="col-lg-3"><input type="text" class="form-control" id="duration" placeholder="1:00"></span>
+                  <div class="btn-group pull-right">
+                    <button class="btn btn-default" type="reset">Restablecer</button>
+                    <button class="btn btn-primary" type="button" onclick="pppcalc();">Corregir</button>
+                  </div>
+                </div>
+              </div>
+              <legend>Coordenadas en POSGAR 2007 (época 2006.6)</legend>
+              <div class="form-group">
+                <label for="londc" class="col-lg-2 control-label">Longitud</label>
+                <div class="col-lg-10">
+                  <span class="col-lg-3"><input type="text" readonly="true" class="form-control" id="londc"></span>
+                  <span class="col-lg-3"><input type="text" readonly="true" class="form-control" id="lonmc"></span>
+                  <span class="col-lg-6"><input type="text" readonly="true" class="form-control" id="lonsc"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="latdc" class="col-lg-2 control-label">Latitud</label>
+                <div class="col-lg-10">
+                  <span class="col-lg-3"><input type="text" readonly="true" class="form-control" id="latdc"></span>
+                  <span class="col-lg-3"><input type="text" readonly="true" class="form-control" id="latmc"></span>
+                  <span class="col-lg-6"><input type="text" readonly="true" class="form-control" id="latsc"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-lg-12">
+                  <button class="btn btn-primary pull-right disabled" type="button" onclick="generarInforme();">Generar informe</button>
+                </div>
+              </div>
+            </fieldset>
           </div>
-          <div class="form-group">
-            <label for="ano" class="col-lg-2 control-label">Año</label>
-            <div class="col-lg-10">
-              <input type="number" class="form-control" id="ano" placeholder="año de medición, por ejemplo: 2013" min="2012" max="2015">
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-lg-2 col-lg-offset-10">
-              <button class="btn btn-primary" onclick="pppcalc();">Corregir</button>
-            </div>
-          </div>
-          <legend>Coordenadas en POSGAR 2007 (época 2006.6)</legend>
-          <div class="form-group">
-            <label for="londc" class="col-lg-2 control-label">Longitud</label>
-            <div class="col-lg-10">
-              <span class="col-lg-3"><input type="text" readonly="true" class="form-control" id="londc"></span>
-              <span class="col-lg-3"><input type="text" readonly="true" class="form-control" id="lonmc"></span>
-              <span class="col-lg-6"><input type="text" readonly="true" class="form-control" id="lonsc"></span>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="latdc" class="col-lg-2 control-label">Latitud</label>
-            <div class="col-lg-10">
-              <span class="col-lg-3"><input type="text" readonly="true" class="form-control" id="latdc"></span>
-              <span class="col-lg-3"><input type="text" readonly="true" class="form-control" id="latmc"></span>
-              <span class="col-lg-6"><input type="text" readonly="true" class="form-control" id="latsc"></span>
-            </div>
-          </div>
-        </fieldset>
-      </div>
+        </div>
+      </form>
     </div>
-  </div>
+  </div><!-- FIN Calculadora + Mapa -->
 
 
 Para qué sirve
 ==============
 
-La finalidad de la *calculadora PPP* es "corregir" las coordenadas obtenidas luego del procesamiento PPP. Por corregir se debe entender *llevarlas* a POSGAR 2007 (época 2006.6).
+La finalidad de la *calculadora PPP* es "corregir" las coordenadas obtenidas luego del procesamiento PPP. Por corregir se debe entender *referirlas al marco POSGAR 2007 (época 2006.6)*.
+
+.. admonition:: Marco de referencia de las coordenadas
+
+  Luego del procesamiento PPP, las coordenadas vienen expresadas en general en ITRF, aunque según el servicio PPP aplicado, pueden estar referidas al marco oficial del país que proporciona el mismo.
+  Por ejemplo, el servicio `CSRS PPP <http://webapp.geod.nrcan.gc.ca/geod/tools-outils/ppp.php>`_, ofrece el marco norteamericano NAD83 o el internacional ITRF.
 
 Cómo se usa
 ===========
@@ -157,11 +177,20 @@ El usuario ingresa las coordenadas obtenidas en el procesamiento PPP (vienen exp
 Zona de validez
 ---------------
 
-La corrección es aplicable en una zona que abarca:
+La corrección es aplicable en la zona abarcada por:
 
-- provincia de Bs. As. completa
-- provincia de Entre Ríos completa
-- Centro-Sur de provincia de Santa Fe
+- Latitudes entre 28º S y 41º S
+- Longitudes entre
+
+  - FAJA 1: 59º 15' O y 56º 40' O
+  - FAJA 2: 61º 30' O y 59º 15' O
+  - FAJA 3: 63º 30' O y 61º 30' O
+
+Es decir, los territorios de:
+
+- provincia de Buenos Aires
+- provincia de Entre Ríos
+- provincia de Santa Fe
 - Este de provincia de Córdoba
 
 Para mayor detalle, navegue el `mapa <#mapa>`_.
@@ -174,10 +203,12 @@ Las correcciones que se deben aplicar a las coordenadas ingresadas **dependen de
 :Longitud:
 
   | Se corrige en función de su ubicación.
-  | Para ello se divide la zona en fajas. La corrección a aplicar variará según en cuál de ellas *caiga* la coordenada.
+  | Para ello se divide la zona en fajas. La corrección a aplicar variará según en cuál de ellas se ubique la coordenada.
 
 :Latitud:
 
   | Se corrige en función de la fecha de medición.
   | Para ello se solicita el año de la medición.
+
+.. include:: pages/pppcalc-changelog
 
