@@ -1,4 +1,4 @@
-.. title: Publicaciones de interés
+.. title: Publicaciones del GGSR
 .. slug: publicaciones
 .. date: 24/05/14 13:48:55 UTC-03:00
 .. tags: 
@@ -6,28 +6,92 @@
 .. description: 
 .. type: text
 
+A continuación se listan publicaciones del Grupo, algunas de autoría exclusiva, otras de participación compartida junto a otros grupos o investigadores.
 
-Algunas publicaciones del GGSR
-------------------------------
+.. contents:: Publicaciones
+
+Institucionales
+---------------
+
+:`Artículo EP UNRO <artEPUNRO_>`_:
+  Artículo publicado en el sitio del GGSR.
+
+:`Infraestructura de estaciones terrestres para la georreferenciación en la provincia de Santa Fe mediante posicionamiento satelital <infraestructura_>`_:
+  | `Informe técnico final del Proyecto FFIR/21-105 <informe-final_>`_, Resolución Nº 030/09.
+  | Secretaría de Estado de Ciencia, Tecnología e Innovación.
+  | Gobierno de la provincia de Santa Fe.
+
+.. _artEPUNRO: /publicaciones/EP_UNRO.pdf
+.. _infraestructura: /publicaciones/infraestructura.pdf
+.. _informe-final: /publicaciones/informe-final.pdf
+
+
+Reuniones / Simposios / Congresos
+---------------------------------
+
+:`Posicionamiento puntual preciso y su aplicación en Agrimensura <ppp_>`_:
+  | Actas XXVII Reunión Científica de la Asociación Argentina de Geofísicos y Geodestas.
+  | 10-14 Noviembre 2014 – San Juan, Argentina.
+
+:`Height Reference for Parcels and Land Objects for the 3D Cadastres Structuring <hr_paper_>`_:
+  | [`Presentación <hr_pres_>`_] `4th International FIG 3D Cadastre Workshop <hr_>`_.
+  | 9-11 November 2014 - Dubai, United Arab Emirates.
+
+:Mejoras en el posicionamiento en tiempo real, aplicaciones del Caster SIRGAS Experimental en la región central de Argentina:
+  | Reunión SIRGAS 2013. Instituto Geográfico Nacional Tommy Guardia.
+  | 24-26 Octubre 2013. Ciudad de Panamá, Panamá.
+  | Disponible en:  http://www.sirgas.org/
+
+:PPP‐RTK Una alternativa de Posicionamiento Preciso en Tiempo Real en regiones de Estaciones Permanentes poco densas:
+  | Reunión SIRGAS 2012. Instituto Geográfico Nacional Tommy Guardia.
+  | 29-31 Octubre 2012. Universidad de Concepción, Concepción, Chile.
+  | Disponible en:  http://www.sirgas.org/
+
+:Estaciones Permanentes, Posicionamiento en Tiempo Real y PPP:
+  | XI Congreso Nacional y VIII Latinoamericano de Agrimensura.
+  | Villa Carlos Paz, Córdoba, Argentina. 2-5 Mayo 2012
+
+:`Mensura y georreferenciación <myg_>`_:
+  | XI Congreso Nacional y VIII Latinoamericano de Agrimensura.
+  | Villa Carlos Paz, Córdoba, Argentina. 2-5 Mayo 2012
+
+.. _ppp: /publicaciones/PPP_Agrim_AAGG2014.pdf
+.. _hr:       http://www.gdmc.nl/3DCadastres/workshop2014/programme/
+.. _hr_paper: http://www.gdmc.nl/3DCadastres/workshop2014/programme/Workshop2014_12.pdf
+.. _hr_pres:  http://www.gdmc.nl/3DCadastres/workshop2014/programme/Pres2014_p12.pdf
+.. _mejoras: /publicaciones/35e_Noguera_Mangiaterra_2013_Mejoras_tiempo_real_caster_SIRGAS_experimental.pdf
+.. _ppprtk:  /publicaciones/Noguera_Mangiaterra_PPP-RTK.pdf
+.. _myg: /publicaciones/ponencia_MyG.pdf
+
+Libros y Revistas
+-----------------
+
+:`El GPS y la teoría de la relatividad <GPSyREL_>`_:
+
+  -  `Topografía y cartografía <Revista_>`_, Revista del Ilustre Colegio Oficial de Ingenieros Técnicos en Topografía de España, año 2007, Vol. XXIV, Nº 140 Mayo-Junio 2007: 22-31.
+
+  -  *Revista de enseñanza de la física*, año 2008, Vol. 21, Nº. 1.
 
 :`GPS Posicionamiento Satelital <librogps_>`_:
   Versión digital del libro, que fue publicado en julio de 2005 por la Editorial de la UNR.
-:`Informe final del Proyecto de la red geodésica provincial <informe-final_>`_:
-  Infraestructura de estaciones terrestres para la georreferenciación en la provincia de Santa Fe mediante posicionamiento satelital. Informe técnico final del Proyecto FFIR/21-105, Resolución Nº 030/09. Secretaría de Estado de ciencia, tecnología e innovación. Gobierno de la provincia de Santa Fe.
-:`Artículo EP UNRO <artEPUNRO_>`_:
-  Artículo publicado por el GGSR.
-:`Mensura y georreferenciación <myg_>`_:
-  Artículo elaborado por el GGSR para el XI Congreso Nacional y VIII Latinoamericano de Agrimensura, abril de 2012.
 
-.. _librogps: /librogps
-.. _artEPUNRO: /publicaciones/EP_UNRO.pdf
-.. _informe-final: /publicaciones/informe-final.pdf
-.. _myg: /publicaciones/ponencia_MyG.pdf
+:Criterios para la Georreferenciación en la Provincia de Santa Fe:
+  | En 'Temas de Geociencia 7. Georreferenciación'.
+  | UNR Editora ISSN Nº 1514-4149 Junio 2001 pp: 28-31
 
-Algunas publicaciones junto a otros autores
--------------------------------------------
+:Sistemas de alturas:
+  | En 'Temas de Geociencia 7. Georreferenciación'. 
+  | UNR Editora ISSN Nº 1514-4149 Junio 2001 pp: 51-65
 
-:`El GPS y la teoría de la relatividad <GPSyREL_>`_:
-  Artículo publicado en Topografía y cartografía, Revista del Ilustre Colegio Oficial de Ingenieros Técnicos en Topografía de España, año 2007, Vol. 24, Nº 140 y en Revista de enseñanza de la física, año 2008, Vol. 21, Nº. 1.
+:Evaluación de las precisiones en el Posicionamiento GPS:
+  | En 'Temas de Geociencia 7. Georreferenciación'. 
+  | UNR Editora ISSN Nº 1514-4149 Junio 2001 pp: 66-78
 
+:Nivelación por doble alineación:
+  | En 'Contribuciones a la Geodesia en la Argentina de fines del Siglo XX. Homenaje a Oscar Parachú'. 
+  | UNR Editora ISBN Nº 950-673-201-9 Noviembre 1999 pp: 287-293
+
+.. _Indice: /publicaciones/TyC_indice.pdf
+.. _Revista: http://www.coit-topografia.es/uploads/RevistaTOPCART/140%20-%20Vol.%20XXIV%20-%20May-Jun%202007.pdf
 .. _GPSyREL: /publicaciones/GPSyREL240407.pdf
+.. _librogps: /librogps
