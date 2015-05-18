@@ -1,0 +1,3644 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "25MA",
+        "identifier": "25 de Mayo, La Pampa",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-37.77, -67.7",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-67.7, -37.77]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "3ARO",
+        "identifier": "Tres Arroyos, Buenos Aires",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-38.37, -60.27",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-60.27, -38.37]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ABMF0",
+        "identifier": "Les-Abymes",
+        "data_format": "RTCM 3.1",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10),1019,1020,1033(10),1230(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "IGS",
+        "country": "GLP",
+        "coordinates": "16.27, -61.52",
+        "solution": "single base",
+        "misc": "rgp-ip.ign.fr:2101/ABMF1(1)",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-61.52, 16.27]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ABRA",
+        "identifier": "Abra Pampa, Jujuy",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-22.72, -65.68",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-65.68, -22.72]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AGCA0",
+        "identifier": "Aguachica",
+        "data_format": "RTCM 2.3",
+        "format_details": "1(1),3(60),18(1),19(1),22(60)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "Misc",
+        "country": "COL",
+        "coordinates": "8.32, -73.6",
+        "solution": "single base",
+        "misc": "MagnaEco IGAC",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.6, 8.32]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AMTE0",
+        "identifier": "Tefe",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-3.35, -64.71",
+        "solution": "single base",
+        "misc": "RBMC-AMTE",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-64.71, -3.35]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "APSA0",
+        "identifier": "Santana",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-0.06, -51.17",
+        "solution": "single base",
+        "misc": "RBMC-APSA",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-51.17, -0.06]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AUTF",
+        "identifier": "Ushuaia, Tierra del Fuego",
+        "data_format": "RTCM 2.3",
+        "format_details": "1(1),3(10),18(1),19(1),22(10),23(10),24(10)",
+        "carrier": "No info",
+        "nav_system": "GPS",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-54.83, -68.3",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-68.3, -54.83]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AZUL",
+        "identifier": "Azul, Buenos Aires",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-36.77, -59.87",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-59.87, -36.77]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BAIL0",
+        "identifier": "Ilheus",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-14.8, -39.17",
+        "solution": "single base",
+        "misc": "RBMC-BAIL",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-39.17, -14.8]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BAIR0",
+        "identifier": "Irece",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-11.31, -41.86",
+        "solution": "single base",
+        "misc": "RBMC-BAIR",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-41.86, -11.31]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BATF0",
+        "identifier": "Teixeira de Freitas",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-17.55, -39.74",
+        "solution": "single base",
+        "misc": "RBMC-BATF",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-39.74, -17.55]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BAVC0",
+        "identifier": "Vitoria da Conquista",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-14.89, -40.8",
+        "solution": "single base",
+        "misc": "RBMC-BAVC",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-40.8, -14.89]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BCAR",
+        "identifier": "Balcarce, Buenos Aires",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-37.76, -58.3",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-58.3, -37.76]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BCHE",
+        "identifier": "Bariloche, Rio Negro ",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-41.13, -71.28",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.28, -41.13]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BELE0",
+        "identifier": "Belem",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10)",
+        "carrier": "No info",
+        "nav_system": "GPS",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-1.41, -48.46",
+        "solution": "single base",
+        "misc": "RBMC-BELE",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-48.46, -1.41]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BEPA0",
+        "identifier": "Belem - INPE",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-1.46, -48.44",
+        "solution": "single base",
+        "misc": "RBMC-BEPA",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-48.44, -1.46]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BOAV0",
+        "identifier": "Boa Vista",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "2.85, -60.7",
+        "solution": "single base",
+        "misc": "RBMC-BOAV",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-60.7, 2.85]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BOGA0",
+        "identifier": "Bogota",
+        "data_format": "RTCM 2.3",
+        "format_details": "1(1),3(60),18(1),19(1),22(60)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "Misc",
+        "country": "COL",
+        "coordinates": "4.64, -74.08",
+        "solution": "single base",
+        "misc": "MagnaEco IGAC",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.08, 4.64]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BOMJ0",
+        "identifier": "Bom Jesus da Lapa",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-13.26, -43.42",
+        "solution": "single base",
+        "misc": "RBMC-BOMJ",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-43.42, -13.26]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BRAZ0",
+        "identifier": "Brasilia",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-15.95, -47.88",
+        "solution": "single base",
+        "misc": "RBMC-BRAZ",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-47.88, -15.95]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CART0",
+        "identifier": "Cartagena",
+        "data_format": "RTCM 2.3",
+        "format_details": "1(1),3(60),18(1),19(1),22(60)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "Misc",
+        "country": "COL",
+        "coordinates": "10.39, -75.53",
+        "solution": "single base",
+        "misc": "MagnaEco IGAC",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.53, 10.39]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CATA",
+        "identifier": "Catamarca, Catamarca ",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-28.47, -65.77",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-65.77, -28.47]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CEEU0",
+        "identifier": "Eusebio",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-3.88, -38.43",
+        "solution": "single base",
+        "misc": "RBMC-CEEU",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-38.43, -3.88]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CEFE0",
+        "identifier": "VitoriaCEFET",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-20.31, -40.32",
+        "solution": "single base",
+        "misc": "RBMC-CEFE",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-40.32, -20.31]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CESB0",
+        "identifier": "Sobral",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-3.68, -40.34",
+        "solution": "single base",
+        "misc": "RBMC-CESB",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-40.34, -3.68]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CHAC",
+        "identifier": "Resistencia, Chaco ",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-27.42, -58.95",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-58.95, -27.42]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CLK10",
+        "identifier": "BRDC_APC_ITRF",
+        "data_format": "RTCM 3.0",
+        "format_details": "1057(60),1059(5),1060(5)",
+        "carrier": "No info",
+        "nav_system": "GPS",
+        "network": "Misc",
+        "country": "DEU",
+        "coordinates": "50.09, 8.66",
+        "solution": "single base",
+        "misc": "BKG",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.66, 50.09]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CLK9B",
+        "identifier": "BRDC_APC_ITRF",
+        "data_format": "RTCM 3.0",
+        "format_details": "1059(5),1060(5),1065(5),1066(5)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "Misc",
+        "country": "FRA",
+        "coordinates": "43.56, 1.48",
+        "solution": "single base",
+        "misc": "CNES",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1.48, 43.56]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CRAT0",
+        "identifier": "Crato",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-7.24, -39.42",
+        "solution": "single base",
+        "misc": "RBMC-CRAT",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-39.42, -7.24]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CSJ1",
+        "identifier": "Sarmiento, San Juan",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-31.97, -68.42",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-68.42, -31.97]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CSLO",
+        "identifier": "El Leoncito, San Juan",
+        "data_format": "RTCM 2.3",
+        "format_details": "1(5),3(10),18(1),19(1),20(1),21(1)",
+        "carrier": "No info",
+        "nav_system": "GPS",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-31.78, -69.3",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-69.3, -31.78]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CUCU0",
+        "identifier": "Cucuta",
+        "data_format": "RTCM 2.3",
+        "format_details": "1(1),3(60),18(1),19(1),22(60)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "Misc",
+        "country": "COL",
+        "coordinates": "7.9, -72.49",
+        "solution": "single base",
+        "misc": "MagnaEco IGAC",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-72.49, 7.9]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CUIB0",
+        "identifier": "Cuiaba",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-15.56, -56.07",
+        "solution": "single base",
+        "misc": "RBMC-CUIB",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-56.07, -15.56]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DORE",
+        "identifier": "Dolores, Buenos Aires",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-36.3, -57.67",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-57.67, -36.3]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "EESC0",
+        "identifier": "Sao Carlos",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-22.0, -47.9",
+        "solution": "single base",
+        "misc": "RBMC-EESC",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-47.9, -22.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ESQU",
+        "identifier": "Esquel, Chubut",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-42.92, -71.32",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.32, -42.92]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "FEDE",
+        "identifier": "Federal, Entre Rios",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(5),3(10),18(1),19(1),20(1),21(1)",
+        "carrier": "No info",
+        "nav_system": "GPS",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-30.95, -59.02",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-59.02, -30.95]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "GOJA0",
+        "identifier": "Jatai",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-17.88, -51.73",
+        "solution": "single base",
+        "misc": "RBMC-GOJA",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-51.73, -17.88]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "GVA10",
+        "identifier": "Gov Valadares - Rede CEMIG",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-18.86, -41.96",
+        "solution": "single base",
+        "misc": "RBMC-GVA1",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-41.96, -18.86]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "IBAG0",
+        "identifier": "Ibague",
+        "data_format": "RTCM 2.3",
+        "format_details": "1(1),3(60),18(1),19(1),22(60)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "Misc",
+        "country": "COL",
+        "coordinates": "4.43, -75.21",
+        "solution": "single base",
+        "misc": "MagnaEco IGAC",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.21, 4.43]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "IGM1",
+        "identifier": "CABA IGN",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(5),3(10),18(1),19(1),20(1),21(1)",
+        "carrier": "No info",
+        "nav_system": "GPS",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-34.57, -58.44",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-58.44, -34.57]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "IGS03",
+        "identifier": "BRDC_APC_ITRF",
+        "data_format": "RTCM 3.0",
+        "format_details": "1057(60),1058(5),1059(5),1063(60),1064(5),1065(5)",
+        "carrier": "L0",
+        "nav_system": "GPS+GLO",
+        "network": "Misc",
+        "country": "DEU",
+        "coordinates": "50.08967, 8.66458",
+        "solution": "network",
+        "misc": "IGS Combination",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.66458, 50.08967]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ILHA0",
+        "identifier": "Ilha Solteira",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-20.43, -51.34",
+        "solution": "single base",
+        "misc": "RBMC-ILHA",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-51.34, -20.43]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "IMBT0",
+        "identifier": "Imbituba",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-28.23, -48.66",
+        "solution": "single base",
+        "misc": "RBMC-IMBT",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-48.66, -28.23]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "JAMG0",
+        "identifier": "Jaiba",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-15.36, -43.77",
+        "solution": "single base",
+        "misc": "RBMC-JAMG",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-43.77, -15.36]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "JVGO",
+        "identifier": "Joaquin V Gonzalez, Salta",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-25.12, -64.12",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-64.12, -25.12]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "KOUG1",
+        "identifier": "Kourou",
+        "data_format": "RTCM 3.1",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10),1019,1020,1033(10),1230(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "IGS",
+        "country": "FRA",
+        "coordinates": "5.08, -52.63",
+        "solution": "network",
+        "misc": "rgp-ip.ign.fr:2101/KOUG1(1)",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.63, 5.08]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "LHCL",
+        "identifier": "Lihue Calel, La Pampa",
+        "data_format": "RTCM 2.3",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-38.0, -65.6",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-65.6, -38.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "LMMF0",
+        "identifier": "Le-Lamentin",
+        "data_format": "RTCM 3.1",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10),1019(30),1020(30),1033(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "IGS",
+        "country": "MTQ",
+        "coordinates": "14.58, -61.0",
+        "solution": "single base",
+        "misc": "rgp-ip.ign.fr:2101/LMMF1(1)",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-61.0, 14.58]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "LPGS0",
+        "identifier": "La_Plata",
+        "data_format": "RTCM 3.0",
+        "format_details": "1006(10),1007(10),1077(1),1087(1),1097(1)",
+        "carrier": "L0",
+        "nav_system": "GPS+GLO+GAL",
+        "network": "IGS",
+        "country": "ARG",
+        "coordinates": "-34.73, -57.93",
+        "solution": "single base",
+        "misc": "GFZ",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-57.93, -34.73]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MA02",
+        "identifier": "CABA Mertind",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-34.61, -58.37",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-58.37, -34.61]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MABA0",
+        "identifier": "Maraba",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-5.36, -49.12",
+        "solution": "single base",
+        "misc": "RBMC-MABA",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-49.12, -5.36]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MABS0",
+        "identifier": "Balsas",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-7.53, -46.04",
+        "solution": "single base",
+        "misc": "RBMC-MABS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-46.04, -7.53]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MAPA0",
+        "identifier": "Macapa",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10)",
+        "carrier": "No info",
+        "nav_system": "GPS",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "0.05, -51.1",
+        "solution": "single base",
+        "misc": "RBMC-MAPA",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-51.1, 0.05]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MARA0",
+        "identifier": "Maracaibo",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10)",
+        "carrier": "No info",
+        "nav_system": "GPS",
+        "network": "MISC",
+        "country": "VEN",
+        "coordinates": "10.67, -71.62",
+        "solution": "single base",
+        "misc": "Universidad del Zulia Maracaibo",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.62, 10.67]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MCL10",
+        "identifier": "Montes Claros - Rede CEMIG",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-16.72, -43.88",
+        "solution": "single base",
+        "misc": "RBMC-MCL1",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-43.88, -16.72]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MEDE0",
+        "identifier": "Medellin",
+        "data_format": "RTCM 2.3",
+        "format_details": "1(1),3(60),18(1),19(1),22(60)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "Misc",
+        "country": "COL",
+        "coordinates": "6.2, -75.58",
+        "solution": "single base",
+        "misc": "MagnaEco IGAC",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.58, 6.2]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MGBH0",
+        "identifier": "Belo Horizonte",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-19.94, -43.92",
+        "solution": "single base",
+        "misc": "RBMC-MGBH",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-43.92, -19.94]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MGIN0",
+        "identifier": "Inconfidentes",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-22.32, -46.33",
+        "solution": "single base",
+        "misc": "RBMC-MGIN",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-46.33, -22.32]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MGMC0",
+        "identifier": "Montes Claros",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-16.72, -43.86",
+        "solution": "single base",
+        "misc": "RBMC-MGMC",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-43.86, -16.72]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MGRP0",
+        "identifier": "Rio Paranaiba",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-19.21, -46.13",
+        "solution": "single base",
+        "misc": "RBMC-MGRP",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-46.13, -19.21]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MGV10",
+        "identifier": "Varginha - Rede CEMIG",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-21.54, -45.43",
+        "solution": "single base",
+        "misc": "RBMC-MGV1",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-45.43, -21.54]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MPL2",
+        "identifier": "Mar del Plata, Buenos Aires ",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-38.0, -57.57",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-57.57, -38.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MSCG0",
+        "identifier": "Campo Grande",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-20.44, -54.54",
+        "solution": "single base",
+        "misc": "RBMC-MSCG",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-54.54, -20.44]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MSCO0",
+        "identifier": "Corumba",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-19.0, -57.64",
+        "solution": "single base",
+        "misc": "RBMC-MSCO",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-57.64, -19.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MSDR0",
+        "identifier": "Dourados",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-22.19, -54.93",
+        "solution": "single base",
+        "misc": "RBMC-MSDR",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-54.93, -22.19]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MTCN0",
+        "identifier": "Canarana",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-13.56, -52.27",
+        "solution": "single base",
+        "misc": "RBMC-MTCN",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.27, -13.56]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MTCO0",
+        "identifier": "Colider",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-10.8, -55.46",
+        "solution": "single base",
+        "misc": "RBMC-MTCO",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-55.46, -10.8]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MTSR0",
+        "identifier": "Sorriso",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-12.55, -55.73",
+        "solution": "single base",
+        "misc": "RBMC-MTSR",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-55.73, -12.55]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MZAC",
+        "identifier": "Mendoza, Mendoza",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-32.9, -68.88",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-68.88, -32.9]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MZAE",
+        "identifier": "Santa Rosa, Mendoza",
+        "data_format": "RTCM 2.3",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-33.25, -68.15",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-68.15, -33.25]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MZAU",
+        "identifier": "La Consulta, Mendoza",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-33.74, -69.12",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-69.12, -33.74]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MZGA",
+        "identifier": "General Alvear, Mendoza",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-34.97, -67.68",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-67.68, -34.97]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MZSR",
+        "identifier": "San Rafael, Mendoza",
+        "data_format": "RTCM 2.3",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-34.62, -68.33",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-68.33, -34.62]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "NAUS0",
+        "identifier": "Manaus",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-3.02, -60.06",
+        "solution": "single base",
+        "misc": "RBMC-NAUS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-60.06, -3.02]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "NEIA0",
+        "identifier": "Cananeia",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-25.02, -47.92",
+        "solution": "single base",
+        "misc": "RBMC-NEIA",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-47.92, -25.02]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "NKLG0",
+        "identifier": "Libreville",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10),1019(30),1020(30),1033(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "IGS",
+        "country": "GAB",
+        "coordinates": "0.35, 9.67",
+        "solution": "single base",
+        "misc": "CNES",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.67, 0.35]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "OHI30",
+        "identifier": "O-Higgins",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(15),1008(15),1012(1),1013(60),1019(60),1020(60),1033(15),1230(15)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "IGS",
+        "country": "ATA",
+        "coordinates": "-63.32, 302.1",
+        "solution": "single base",
+        "misc": "BKG",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [302.1, -63.32]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ONRJ0",
+        "identifier": "Rio de Janeiro",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-22.9, -43.22",
+        "solution": "single base",
+        "misc": "RBMC-ONRJ",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-43.22, -22.9]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "OURI0",
+        "identifier": "Ourinhos",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-22.95, -49.9",
+        "solution": "single base",
+        "misc": "RBMC-OURI",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-49.9, -22.95]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PAAT0",
+        "identifier": "Altamira",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-3.2, -52.18",
+        "solution": "single base",
+        "misc": "RBMC-PAAT",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.18, -3.2]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PAIT0",
+        "identifier": "Itaituba",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-4.29, -56.04",
+        "solution": "single base",
+        "misc": "RBMC-PAIT",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-56.04, -4.29]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PATA",
+        "identifier": "Carmen de Patagones, Buenos Aires",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-40.78, -62.98",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-62.98, -40.78]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PBCG0",
+        "identifier": "Campina Grande",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-7.2, -35.9",
+        "solution": "single base",
+        "misc": "RBMC-PBCG",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-35.9, -7.2]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PEJO",
+        "identifier": "Pehuajo, Buenos Aires",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-35.81, -61.89",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-61.89, -35.81]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PEPE0",
+        "identifier": "Petrolina",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-9.38, -40.51",
+        "solution": "single base",
+        "misc": "RBMC-PEPE",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-40.51, -9.38]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIFL0",
+        "identifier": "Floriano",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-6.79, -43.04",
+        "solution": "single base",
+        "misc": "RBMC-PIFL",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-43.04, -6.79]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PISR0",
+        "identifier": "Sao Raimundo Nonato",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-9.03, -42.7",
+        "solution": "single base",
+        "misc": "RBMC-PISR",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-42.7, -9.03]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PITN0",
+        "identifier": "Teresina",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-5.1, -42.79",
+        "solution": "single base",
+        "misc": "RBMC-PITN",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-42.79, -5.1]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "POAL0",
+        "identifier": "Porto Alegre",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-30.07, -51.12",
+        "solution": "single base",
+        "misc": "RBMC-POAL",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-51.12, -30.07]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "POLI0",
+        "identifier": "Sao Paulo",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-23.56, -46.73",
+        "solution": "single base",
+        "misc": "RBMC-POLI",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-46.73, -23.56]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "POVE0",
+        "identifier": "Porto Velho",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-8.71, -63.9",
+        "solution": "single base",
+        "misc": "RBMC-POVE",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-63.9, -8.71]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PPTE0",
+        "identifier": "Presidente Prudente",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-22.12, -51.41",
+        "solution": "single base",
+        "misc": "RBMC-PPTE",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-51.41, -22.12]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PRCV0",
+        "identifier": "Cascavel",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-24.96, -53.47",
+        "solution": "single base",
+        "misc": "RBMC-PRCV",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-53.47, -24.96]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PRGU0",
+        "identifier": "Guarapuava",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-25.38, -51.49",
+        "solution": "single base",
+        "misc": "RBMC-PRGU",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-51.49, -25.38]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PRMA0",
+        "identifier": "Maringa",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-23.41, -51.94",
+        "solution": "single base",
+        "misc": "RBMC-PRMA",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-51.94, -23.41]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PUNT",
+        "identifier": "Puntarenas",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(60),18(1),19(1),22(60)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "Misc",
+        "country": "C_R",
+        "coordinates": "9.97, -84.83",
+        "solution": "single base",
+        "misc": "Instituto Geografico Nacional Costa Rica",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-84.83, 9.97]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RECF0",
+        "identifier": "Recife",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-8.05, -34.95",
+        "solution": "single base",
+        "misc": "RBMC-RECF",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-34.95, -8.05]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RECF0",
+        "identifier": "Recife",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10),1033(10),4087(1)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "IGS",
+        "country": "BRA",
+        "coordinates": "-8.05, -34.95",
+        "solution": "single base",
+        "misc": "gps-ntrip.ibge.gov.br:2101/RECF0(1)",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-34.95, -8.05]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RECO",
+        "identifier": "Reconquista, Santa Fe",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-29.13, -59.65",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-59.65, -29.13]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RIDC",
+        "identifier": "Curridabat",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(60),18(1),19(1),22(60)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "Misc",
+        "country": "C_R",
+        "coordinates": "9.92, -84.03",
+        "solution": "single base",
+        "misc": "Instituto Geografico Nacional Costa Rica",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-84.03, 9.92]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RIO20",
+        "identifier": "RioGrande",
+        "data_format": "RTCM 3.0",
+        "format_details": "1006(15),1007(15),1077(1),1087(1),1097(1)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO+GAL",
+        "network": "IGS",
+        "country": "ARG",
+        "coordinates": "-53.79, 292.25",
+        "solution": "single base",
+        "misc": "GFZ",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [292.25, -53.79]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RIO4",
+        "identifier": "Rio Cuarto, Cordoba",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-33.12, -64.33",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-64.33, -33.12]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RIOB0",
+        "identifier": "Rio Branco",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-9.97, -67.8",
+        "solution": "single base",
+        "misc": "RBMC-RIOB",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-67.8, -9.97]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RIOD0",
+        "identifier": "Rio de Janeiro",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-22.82, -43.31",
+        "solution": "single base",
+        "misc": "RBMC-RIOD",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-43.31, -22.82]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RJCG0",
+        "identifier": "Campos dos Goytacazes",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-21.76, -41.33",
+        "solution": "single base",
+        "misc": "RBMC-RJCG",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-41.33, -21.76]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RNMO0",
+        "identifier": "Mossoro",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10)",
+        "carrier": "No info",
+        "nav_system": "GPS",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-5.2, -37.33",
+        "solution": "single base",
+        "misc": "RBMC-RNMO",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-37.33, -5.2]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RNNA0",
+        "identifier": "Natal",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-5.84, -35.21",
+        "solution": "single base",
+        "misc": "RBMC-RNNA",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-35.21, -5.84]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ROCD0",
+        "identifier": "Colorado D'Oeste",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-13.12, -60.54",
+        "solution": "single base",
+        "misc": "RBMC-ROCD",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-60.54, -13.12]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ROGM0",
+        "identifier": "Guajara-Mirim",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-10.78, -65.33",
+        "solution": "single base",
+        "misc": "RBMC-ROGM",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-65.33, -10.78]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ROJI0",
+        "identifier": "Ji-Parana",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-10.86, -61.96",
+        "solution": "single base",
+        "misc": "RBMC-ROJI",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-61.96, -10.86]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RSAL0",
+        "identifier": "Alegrete",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-29.79, -55.77",
+        "solution": "single base",
+        "misc": "RBMC-RSAL",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-55.77, -29.79]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RSCL0",
+        "identifier": "Cerro Largo",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-28.14, -54.75",
+        "solution": "single base",
+        "misc": "RBMC-RSCL",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-54.75, -28.14]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RTCM3EPH",
+        "identifier": "Assisted-GNSS",
+        "data_format": "RTCM 3.0",
+        "format_details": "1019(5),1020(5)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "Misc",
+        "country": "DEU",
+        "coordinates": "50.09, 8.66",
+        "solution": "single base",
+        "misc": "BKG",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.66, 50.09]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RUFI",
+        "identifier": "Rufino, Santa Fe",
+        "data_format": "RTCM 2.3",
+        "format_details": "1(1),3(60),18(1),19(1),22(60)",
+        "carrier": "No info",
+        "nav_system": "GPS",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-34.25, -62.7",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-62.7, -34.25]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RWSN",
+        "identifier": "Rawson, Chubut",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-43.28, -65.1",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-65.1, -43.28]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SALU0",
+        "identifier": "Sao Luiz",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-2.59, -44.21",
+        "solution": "single base",
+        "misc": "RBMC-SALU",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-44.21, -2.59]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SALU0",
+        "identifier": "Sao_Luiz",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10),1019(10),1020(10),1033(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "IGS",
+        "country": "BRA",
+        "coordinates": "-2.58, -44.2",
+        "solution": "single base",
+        "misc": "gps-ntrip.ibge.gov.br:2101/SALU0(1)",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-44.2, -2.58]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SAVO0",
+        "identifier": "SalvadorINCRA",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-12.94, -38.43",
+        "solution": "single base",
+        "misc": "RBMC-SAVO",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-38.43, -12.94]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SBAL",
+        "identifier": "San Cristobal, Santa Fe",
+        "data_format": "RTCM 2.3",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-30.3, -61.22",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-61.22, -30.3]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SCAQ0",
+        "identifier": "Araquari",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-26.39, -48.74",
+        "solution": "single base",
+        "misc": "RBMC-SCAQ",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-48.74, -26.39]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SCCH0",
+        "identifier": "Chapeco",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-27.14, -52.6",
+        "solution": "single base",
+        "misc": "RBMC-SCCH",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.6, -27.14]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SCFL0",
+        "identifier": "Florianopolis",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-27.6, -48.52",
+        "solution": "single base",
+        "misc": "RBMC-SCFL",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-48.52, -27.6]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SCLA0",
+        "identifier": "Lages",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-27.79, -50.3",
+        "solution": "single base",
+        "misc": "RBMC-SCLA",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-50.3, -27.79]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SEAJ0",
+        "identifier": "Aracaju",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-10.93, -37.1",
+        "solution": "single base",
+        "misc": "RBMC-SEAJ",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-37.1, -10.93]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SIRGAS2000",
+        "identifier": "BRDC_APC_SIRGAS2000",
+        "data_format": "RTCM 3.0",
+        "format_details": "1057(60),1058(10),1059(10),1063(60),1064(10),1065(10)",
+        "carrier": "L0",
+        "nav_system": "GPS+GLO",
+        "network": "Misc",
+        "country": "DEU",
+        "coordinates": "50.0, 10.0",
+        "solution": "network",
+        "misc": "BKG",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [10.0, 50.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SIRGAS95",
+        "identifier": "BRDC_APC_SIRGAS95",
+        "data_format": "RTCM 3.0",
+        "format_details": "1057(60),1058(10),1059(10),1063(60),1064(10),1065(10)",
+        "carrier": "L0",
+        "nav_system": "GPS+GLO",
+        "network": "Misc",
+        "country": "DEU",
+        "coordinates": "50.0, 10.0",
+        "solution": "network",
+        "misc": "BKG",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [10.0, 50.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SJSP0",
+        "identifier": "Sao Jose dos Campos",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-23.21, -45.86",
+        "solution": "single base",
+        "misc": "RBMC-SJSP",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-45.86, -23.21]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SL01",
+        "identifier": "San Luis, San Luis",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-30.15, -66.3",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-66.3, -30.15]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SMAR0",
+        "identifier": "Santa Maria",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-29.72, -53.72",
+        "solution": "single base",
+        "misc": "RBMC-SMAR",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-53.72, -29.72]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SPPI0",
+        "identifier": "Piracicaba",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-22.7, -47.62",
+        "solution": "single base",
+        "misc": "RBMC-SPPI",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-47.62, -22.7]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SPSO0",
+        "identifier": "Sorocaba",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-23.48, -47.42",
+        "solution": "single base",
+        "misc": "RBMC-SPSO",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-47.42, -23.48]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SRLP",
+        "identifier": "Santa Rosa, La Pampa ",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-36.62, -64.27",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-64.27, -36.62]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SSA10",
+        "identifier": "SalvadorMaregrafo",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-12.98, -38.52",
+        "solution": "single base",
+        "misc": "RBMC-SSA1",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-38.52, -12.98]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SUAR",
+        "identifier": "Coronel Suarez, Buenos Aires",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-37.45, -61.92",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-61.92, -37.45]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TAVA",
+        "identifier": "Tafi del Valle, Tucuman ",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-26.85, -65.7",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-65.7, -26.85]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TILC",
+        "identifier": "Tilcara, Jujuy",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-23.58, -65.39",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-65.39, -23.58]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TOGU0",
+        "identifier": "Gurupi",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-11.75, -49.05",
+        "solution": "single base",
+        "misc": "RBMC-TOGU",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-49.05, -11.75]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TOPL0",
+        "identifier": "Palmas",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-10.17, -48.33",
+        "solution": "single base",
+        "misc": "RBMC-TOPL",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-48.33, -10.17]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TRNC",
+        "identifier": "Trancas, Tucuman",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-26.23, -65.28",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-65.28, -26.23]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TUC1",
+        "identifier": "Tucuman, Tucuman",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-26.81, -65.18",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-65.18, -26.81]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UBA10",
+        "identifier": "UbatubaMaregrafo",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-23.5, -45.12",
+        "solution": "single base",
+        "misc": "RBMC-UBA1",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-45.12, -23.5]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UBE10",
+        "identifier": "Uberlandia - Rede CEMIG",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-18.89, -48.32",
+        "solution": "single base",
+        "misc": "RBMC-UBE1",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-48.32, -18.89]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UCOR",
+        "identifier": "Cordoba",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1033(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "MISC",
+        "country": "ARG",
+        "coordinates": "-31.43, -64.19",
+        "solution": "single base",
+        "misc": "Universidad Nacional de Cordoba",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-64.19, -31.43]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UD01",
+        "identifier": "Bogota",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(60),18(1),19(1),22(60)",
+        "carrier": "No info",
+        "nav_system": "GPS",
+        "network": "Misc",
+        "country": "COL",
+        "coordinates": "4.597, -74.064",
+        "solution": "single base",
+        "misc": "Universidad Distrital Francisco Jose de Caldas",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.064, 4.597]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UFPR0",
+        "identifier": "Curitiba",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-25.45, -49.23",
+        "solution": "single base",
+        "misc": "RBMC-UFPR",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-49.23, -25.45]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UNRO",
+        "identifier": "Rosario",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(60),18(1),19(1),22(60)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "Misc",
+        "country": "ARG",
+        "coordinates": "-32.96, -60.63",
+        "solution": "single base",
+        "misc": "Universidad Nacional de Rosario",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-60.63, -32.96]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UNSA0",
+        "identifier": "SaltaUnsa",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(15),1007(15)",
+        "carrier": "No info",
+        "nav_system": "GPS",
+        "network": "IGS",
+        "country": "ARG",
+        "coordinates": "-24.72, -65.4",
+        "solution": "single base",
+        "misc": "GFZ",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-65.4, -24.72]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UYAR",
+        "identifier": "UYAR",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "",
+        "carrier": "No info",
+        "nav_system": "GPS & GLONASS",
+        "network": "",
+        "country": "",
+        "coordinates": "-30.41, -56.49",
+        "solution": "single base",
+        "misc": "SGM - ROU",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-56.49, -30.41]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UYBA",
+        "identifier": "UYBA",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "",
+        "carrier": "No info",
+        "nav_system": "GPS",
+        "network": "REGNA-ROU",
+        "country": "",
+        "coordinates": "-62.18, -58.9",
+        "solution": "single base",
+        "misc": "SGM - ROU",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-58.9, -62.18]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UYCL",
+        "identifier": "UYCL",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "",
+        "carrier": "No info",
+        "nav_system": "GPS & GLONASS",
+        "network": "",
+        "country": "",
+        "coordinates": "-32.37, -54.21",
+        "solution": "single base",
+        "misc": "SGM - ROU",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-54.21, -32.37]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UYCO",
+        "identifier": "UYCO",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "",
+        "carrier": "No info",
+        "nav_system": "GPS & GLONASS",
+        "network": "",
+        "country": "",
+        "coordinates": "-34.46, -57.84",
+        "solution": "single base",
+        "misc": "SGM - ROU",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-57.84, -34.46]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UYDU",
+        "identifier": "UYDU",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "",
+        "carrier": "No info",
+        "nav_system": "GPS & GLONASS",
+        "network": "",
+        "country": "",
+        "coordinates": "-33.32, -55.6",
+        "solution": "single base",
+        "misc": "SGM - ROU",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-55.6, -33.32]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UYFD",
+        "identifier": "UYFD",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "",
+        "carrier": "No info",
+        "nav_system": "GPS & GLONASS",
+        "network": "",
+        "country": "",
+        "coordinates": "-34.1, -56.19",
+        "solution": "single base",
+        "misc": "SGM - ROU",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-56.19, -34.1]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UYFS",
+        "identifier": "UYFS",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "",
+        "carrier": "No info",
+        "nav_system": "GPS & GLONASS",
+        "network": "",
+        "country": "",
+        "coordinates": "-33.52, -56.89",
+        "solution": "single base",
+        "misc": "SGM - ROU",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-56.89, -33.52]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UYLA",
+        "identifier": "UYLA",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "",
+        "carrier": "No info",
+        "nav_system": "GPS & GLONASS",
+        "network": "",
+        "country": "",
+        "coordinates": "-34.36, -55.25",
+        "solution": "single base",
+        "misc": "SGM - ROU",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-55.25, -34.36]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UYLP",
+        "identifier": "UYLP",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "",
+        "carrier": "No info",
+        "nav_system": "GPS & GLONASS",
+        "network": "",
+        "country": "",
+        "coordinates": "-34.66, -54.14",
+        "solution": "single base",
+        "misc": "SGM - ROU",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-54.14, -34.66]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UYMO",
+        "identifier": "UYMO",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "",
+        "carrier": "No info",
+        "nav_system": "GPS & GLONASS",
+        "network": "",
+        "country": "",
+        "coordinates": "-34.89, -56.26",
+        "solution": "single base",
+        "misc": "SGM - ROU",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-56.26, -34.89]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UYPA",
+        "identifier": "UYPA",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "",
+        "carrier": "No info",
+        "nav_system": "GPS",
+        "network": "",
+        "country": "",
+        "coordinates": "-32.29, -58.07",
+        "solution": "single base",
+        "misc": "SGM - ROU",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-58.07, -32.29]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UYPT",
+        "identifier": "UYPT",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "",
+        "carrier": "No info",
+        "nav_system": "GPS & GLONASS",
+        "network": "",
+        "country": "",
+        "coordinates": "-32.8, -56.51",
+        "solution": "single base",
+        "misc": "SGM - ROU",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-56.51, -32.8]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UYRI",
+        "identifier": "UYRI",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "",
+        "carrier": "No info",
+        "nav_system": "GPS & GLONASS",
+        "network": "",
+        "country": "",
+        "coordinates": "-30.9, -55.56",
+        "solution": "single base",
+        "misc": "SGM - ROU",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-55.56, -30.9]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UYRO",
+        "identifier": "UYRO",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "",
+        "carrier": "No info",
+        "nav_system": "GPS",
+        "network": "",
+        "country": "",
+        "coordinates": "-34.0, -53.55",
+        "solution": "single base",
+        "misc": "SGM - ROU",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-53.55, -34.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UYRV",
+        "identifier": "UYRV",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "",
+        "carrier": "No info",
+        "nav_system": "GPS & GLONASS",
+        "network": "",
+        "country": "",
+        "coordinates": "-31.77, -54.69",
+        "solution": "single base",
+        "misc": "SGM - ROU",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-54.69, -31.77]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UYSA",
+        "identifier": "UYSA",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "",
+        "carrier": "No info",
+        "nav_system": "GPS & GLONASS",
+        "network": "",
+        "country": "",
+        "coordinates": "-31.38, -57.96",
+        "solution": "single base",
+        "misc": "SGM - ROU",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-57.96, -31.38]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UYSG",
+        "identifier": "UYSG",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "",
+        "carrier": "No info",
+        "nav_system": "GPS & GLONASS",
+        "network": "",
+        "country": "",
+        "coordinates": "-32.62, -55.84",
+        "solution": "single base",
+        "misc": "SGM - ROU",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-55.84, -32.62]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UYSJ",
+        "identifier": "UYSJ",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "",
+        "carrier": "No info",
+        "nav_system": "GPS & GLONASS",
+        "network": "",
+        "country": "",
+        "coordinates": "-34.32, -56.71",
+        "solution": "single base",
+        "misc": "SGM - ROU",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-56.71, -34.32]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UYSO",
+        "identifier": "UYSO",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "",
+        "carrier": "No info",
+        "nav_system": "GPS",
+        "network": "",
+        "country": "",
+        "coordinates": "-33.26, -58.01",
+        "solution": "single base",
+        "misc": "SGM - ROU",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-58.01, -33.26]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UYTA",
+        "identifier": "UYTA",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "",
+        "carrier": "No info",
+        "nav_system": "GPS",
+        "network": "",
+        "country": "",
+        "coordinates": "-31.68, -55.94",
+        "solution": "single base",
+        "misc": "SGM - ROU",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-55.94, -31.68]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UYTD",
+        "identifier": "UYTD",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "",
+        "carrier": "No info",
+        "nav_system": "GPS",
+        "network": "",
+        "country": "",
+        "coordinates": "-30.95, -57.52",
+        "solution": "single base",
+        "misc": "SGM - ROU",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-57.52, -30.95]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UYTT",
+        "identifier": "UYTT",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "",
+        "carrier": "No info",
+        "nav_system": "GPS & GLONASS",
+        "network": "",
+        "country": "",
+        "coordinates": "-33.24, -54.38",
+        "solution": "single base",
+        "misc": "SGM - ROU",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-54.38, -33.24]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "VBCA",
+        "identifier": "Bahia Blanca, Buenos Aires",
+        "data_format": "RTCM 2.3 y 3.0",
+        "format_details": "1(1),3(10),18(1),19(1),22(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RAMSAC",
+        "country": "ARG",
+        "coordinates": "-38.7, -62.27",
+        "solution": "single base",
+        "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-62.27, -38.7]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "VICO0",
+        "identifier": "Vicosa",
+        "data_format": "RTCM 3.0",
+        "format_details": "1004(1),1006(10),1008(10),1012(1),1013(10)",
+        "carrier": "No info",
+        "nav_system": "GPS+GLO",
+        "network": "RBMC-IP",
+        "country": "BRA",
+        "coordinates": "-20.76, -42.87",
+        "solution": "single base",
+        "misc": "RBMC-VICO",
+        "color": "grey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-42.87, -20.76]
+      }
+    }
+  ]
+}

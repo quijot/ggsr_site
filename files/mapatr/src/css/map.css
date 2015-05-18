@@ -1,0 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+html,body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Oswald';
+}
+.map {
+  width: 100%;
+  height: 100%;
+}

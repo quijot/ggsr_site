@@ -1,4 +1,4 @@
-.. title: GRUPO DE GEODESIA SATELITAL ROSARIO
+.. title: GRUPO DE GEODESIA SATELITAL DE ROSARIO
 .. slug: index
 .. date: 24/05/14 13:17:51 UTC-03:00
 .. tags: 
@@ -7,10 +7,10 @@
 .. type: text
 .. template: notitle.tmpl
 
-.. class:: col-md-5
+.. class:: col-md-6
 
-Grupo de Geodesia Satelital Rosario
------------------------------------
+Grupo de Geodesia Satelital de Rosario
+--------------------------------------
 
 | Universidad Nacional de Rosario
 | Facultad de Ciencias Exactas, Ingeniería y Agrimensura
@@ -22,24 +22,51 @@ Grupo de Geodesia Satelital Rosario
             :alt: arroba
             :align: middle
 
-.. admonition:: `Caster SIRGAS </caster/>`_
+.. admonition:: Caster SIRGAS y Mapa de Estaciones TR
   
-  Ingrese a los Formularios de Registro al Caster SIRGAS Experimental
+  - `Formularios de Registro </caster/>`_ al Caster SIRGAS Experimental.
+  - `Mapa de Estaciones Tiempo Real </mapatr/>`_ de sudamérica.
 
 .. class:: jumbotron col-md-5
 
-Estaciones Permanentes
-----------------------
+`Estaciones Permanentes <ep_>`_
+-------------------------------
 
-**RAMSAC**
+.. _ep: ep
 
-* `UNRO - Rosario </ep/home.php?EP=UNRO>`_
-* `EPSF - Santa Fe (desde 22/02/12) </ep/home.php?EP=EPSF>`_
-* `PRNA - Paraná (desde 30/06/11) </ep/home.php?EP=PRNA>`_
-* `RUFI - Rufino (desde 28/09/12) </ep/home.php?EP=RUFI>`_
 
-**Experimentales**
+RAMSAC
+^^^^^^
 
-* `UNR2 - Rosario ONLINE desde 23/06/12 </ep/home.php?EP=UNR2>`_
-* `EPGZ - Gálvez OFFLINE </ep/home.php?EP=EPGZ>`_
-* `EPVT - Venado Tuerto OFFLINE </ep/home.php?EP=EPVT>`_
+.. raw:: html
+
+  <div class="btn-group" id="ep-picker">
+    <a href="ep/unro" class="btn btn-primary">UNRO</a>
+    <a href="ep/epsf" class="btn btn-primary">EPSF</a>
+    <a href="ep/prna" class="btn btn-primary">PRNA</a>
+    <a href="ep/rufi" class="btn btn-primary">RUFI</a>
+  </div>
+
+Experimentales
+^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <div class="btn-group" id="ep-picker">
+    <a href="ep/unr2" class="btn btn-primary">UNR2</a>
+    <a href="ep/epgz" class="btn btn-primary">EPGZ</a>
+    <a href="ep/epvt" class="btn btn-primary">EPVT</a>
+  </div>
+
+.. **RAMSAC**
+
+  * `UNRO - Rosario </ep/home.php?EP=UNRO>`_
+  * `EPSF - Santa Fe (desde 22/02/12) </ep/home.php?EP=EPSF>`_
+  * `PRNA - Paraná (desde 30/06/11) </ep/home.php?EP=PRNA>`_
+  * `RUFI - Rufino (desde 28/09/12) </ep/home.php?EP=RUFI>`_
+
+  **Experimentales**
+
+  * `UNR2 - Rosario ONLINE desde 23/06/12 </ep/home.php?EP=UNR2>`_
+  * `EPGZ - Gálvez OFFLINE </ep/home.php?EP=EPGZ>`_
+  * `EPVT - Venado Tuerto OFFLINE </ep/home.php?EP=EPVT>`_

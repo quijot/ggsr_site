@@ -1,0 +1,44 @@
+.. title: Mapa de Estaciones Tiempo Real
+.. slug: mapatr
+.. date: 15/05/15 20:55:40 UTC-03:00
+.. tags: 
+.. link: 
+.. description: Mapa de Estaciones con servicio de Tiempo Real en Tiempo Real
+.. type: text
+
+.. raw:: html
+
+  <div class="col-lg-8">
+    <iframe name="mapa-tr" src="tr.php" width="100%" height="600px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+  </div>
+
+
+Este mapa informa el estado de los casters y estaciones que tienen posibilidad de transmitir datos en tiempo real en la región.
+
+Sobre la capa base se representan en color las estaciones que están transmitiendo efectivamente en tiempo real al momento de la consulta y su clasificación en capas según el caster en que están presentes.
+
+La consulta para este mapa se hace sobre la página de acceso libre de cada caster indicado en la tabla; para obtener los streams de datos tiempo real de alguna estación por favor ponerse en contacto con la dirección indicada.
+
+
+.. list-table:: Tabla de Casters consultados
+   :header-rows: 1
+
+   * - Caster
+     - IP:Puerto
+     - Contacto
+   * - SIRGAS Experimental
+     - http://200.3.123.65:2101
+     - http://www.fceia.unr.edu.ar/gps/
+   * - REGNA-SGM (Uy)
+     - http://201.217.132.178:2101
+     - http://www.sgm.gub.uy/
+   * - RAMSAC-NTRIP (Ar)
+     - http://ntrip.ign.gob.ar:2101
+     - http://www.ign.gob.ar/NuestrasActividades/Geodesia/RamsacNtrip/
+   * - IBGE - IP (Br)
+     - http://gps-ntrip.ibge.gov.br:2101
+     - http://www.ibge.gov.br/home/geociencias/geodesia/rbmc/ntrip/
+   * - IGS-RT
+     - http://www.igs-ip.net:2101
+     - http://register.rtcm-ntrip.org/cgi-bin/registration.cgi
+
