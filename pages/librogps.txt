@@ -6,10 +6,10 @@
 .. description: 
 .. type: text
 
-.. image:: images/librogps.jpg
+.. image:: ../images/librogps.jpg
    :alt: Libro GPS
    :align: right
-   :target: images/librogps.jpg
+   :target: ../images/librogps.jpg
 
 
 Esta es la versión digital del Libro **GPS Posicionamiento Satelital**, que fue publicado en julio de 2005 por la `Editorial de la UNR <http://www.unreditora.unr.edu.ar/>`_.
