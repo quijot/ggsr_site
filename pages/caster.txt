@@ -1,0 +1,15 @@
+.. title: Proyecto SIRGAS Tiempo Real 
+.. slug: caster
+.. date: 24/05/14 13:54:23 UTC-03:00
+.. tags: 
+.. link: 
+.. description: 
+.. type: text
+
+Formularios de Registro al Caster SIRGAS Experimental
+-----------------------------------------------------
+
+- `Registro como Usuario <caster-user>`_ para acceso a los datos GNSS en tiempo real
+
+- `Registro como Proveedor <caster-prov>`_ para obtener un ID como proveedor de datos
+
