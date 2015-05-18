@@ -1,64 +1,75 @@
 UNRO
 ====
 
-Cambio de receptor de la estación UNRO
---------------------------------------
+La Estación Permanente **UNRO** se encuentra en funcionamiento, instalada en el edificio de la Facultad de Ciencias Exactas, Ingeniería y Agrimensura de la Universidad Nacional de Rosario, en la Ciudad de Rosario, Santa Fe, Argentina. Es mantenida por el GGSR.
 
-El 19 de abril de 2013 (día 109) cambió el receptor de UNRO. Ése mismo día hasta las 11:00hs UTC (8:00hs Hora Local) funcionó el receptor antiguo Ashtech y desde las 12:00hs UTC (9:00hs Hora Local), ya estuvo en funcionamiento el nuevo receptor Trimble NetR9.
+Todos los datos de la Estación Permanente, coordenadas, caracterísicas del receptor y la antena y su estado se pueden consultar en el sitio del IGN. Allí además podrá descargar los archivos de observaciones.
 
-Las características del nuevo receptor están publicadas en la sección `características UNRO`_. Para mayor información sobre el receptor, por favor, consulte la `Hoja de Datos <http://trl.trimble.com/docushare/dsweb/Get/Document-578299/022506-128B-E_NetR9_DS_4pnl_0611_lr_SEC.pdf>`_ del mismo.
+* `Descargar archivos de observacines RINEX <http://ign.gob.ar/NuestrasActividades/Geodesia/Ramsac/DescargaRinex>`_
+* `Ficha de UNRO <http://ign.gob.ar/archivos/ramsac/estacion2.php?estacion=UNRO>`_
+* `Mapa de la red <http://ign.gob.ar/NuestrasActividades/Geodesia/Ramsac/Mapa>`_
 
-Características UNRO
---------------------
 
-:Receptor: Trimble (antes del 19/04/2013 a las 11hs UTC: ASHTECH)
-:Modelo: NetR9 (antes: Z-Surveyor)
-:Firmware: (antes: CGRS-CD00)
-:Cantidad de canales: 440 (antes: 12)
-:Observables: GPS/GLONASS/Galileo C1-L1-S1-P1-C2-L2-S2-P2 (antes: GPS L1-L2-C1-P1-P2-D1-D2)
-:Intervalo de registro: 5 segundos [#]_
-:Antena: Zephyr Geodetic 2 RoHS w/TZGD Dome (antes: Trimble Zephyr Geodetic with Ground Plane)
+.. comentarios
 
-.. [#] En `ign.gob.ar <http://ign.gob.ar>`_ hay disponibles archivos de observaciones con mayor variedad de intervalos.
+    Cambio de receptor de la estación UNRO
+    --------------------------------------
 
-Coordenadas
------------
+    El 19 de abril de 2013 (día 109) cambió el receptor de UNRO. Ése mismo día hasta las 11:00hs UTC (8:00hs Hora Local) funcionó el receptor antiguo Ashtech y desde las 12:00hs UTC (9:00hs Hora Local), ya estuvo en funcionamiento el nuevo receptor Trimble NetR9.
 
-Marco de Referencia Oficial POSGAR 07 (época 2006.632, ITRF2005)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    Las características del nuevo receptor están publicadas en la sección `características UNRO`_. Para mayor información sobre el receptor, por favor, consulte la `Hoja de Datos <http://trl.trimble.com/docushare/dsweb/Get/Document-578299/022506-128B-E_NetR9_DS_4pnl_0611_lr_SEC.pdf>`_ del mismo.
 
-Geodésicas
-""""""""""
+    Características UNRO
+    --------------------
 
-:Latitud: 32º 57' 33.67055" S
-:Longitud: 60º 37' 42.33075" W
-:Altura: 66.872 m
+    :Receptor: Trimble (antes del 19/04/2013 a las 11hs UTC: ASHTECH)
+    :Modelo: NetR9 (antes: Z-Surveyor)
+    :Firmware: (antes: CGRS-CD00)
+    :Cantidad de canales: 440 (antes: 12)
+    :Observables: GPS/GLONASS/Galileo C1-L1-S1-P1-C2-L2-S2-P2 (antes: GPS L1-L2-C1-P1-P2-D1-D2)
+    :Intervalo de registro: 5 segundos [#]_
+    :Antena: Zephyr Geodetic 2 RoHS w/TZGD Dome (antes: Trimble Zephyr Geodetic with Ground Plane)
 
-Marco de Referencia POSGAR 98 (época 1995.4, ITRF1994)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    .. [#] En `ign.gob.ar <http://ign.gob.ar>`_ hay disponibles archivos de observaciones con mayor variedad de intervalos.
 
-Geodésicas
-""""""""""
+    Coordenadas
+    -----------
 
-:Latitud: 32º 57' 33.6759" S
-:Longitud: 60º 37' 42.3306" W
-:Altura: 66.92 m
+    Marco de Referencia Oficial POSGAR 07 (época 2006.632, ITRF2005)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Marco de Referencia POSGAR 94
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    Geodésicas
+    """"""""""
 
-Geodésicas
-""""""""""
+    :Latitud: 32º 57' 33.67055" S
+    :Longitud: 60º 37' 42.33075" W
+    :Altura: 66.872 m
 
-:Latitud: 32º 57' 33.6918" S
-:Longitud: 60º 37' 42.3335" W
-:Altura: 66.32 m
+    Marco de Referencia POSGAR 98 (época 1995.4, ITRF1994)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Altura sobre el nivel del mar (Altura ortométrica)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    Geodésicas
+    """"""""""
 
-Como dato complementario se informa la Altura Sobre el Nivel del Mar: 49.61 m (Referida al 0 del IGM)
+    :Latitud: 32º 57' 33.6759" S
+    :Longitud: 60º 37' 42.3306" W
+    :Altura: 66.92 m
 
-.. admonition:: Nota
+    Marco de Referencia POSGAR 94
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    Estas coordenadas corresponden al ARP (Antenna Reference Point), en el caso de que el software que Ud. utiliza no corrija automáticamente la altura al centro de fase, deberá usar el valor de altura de antena (vertical): 0.053m (`ver croquis antena </ep/img/trm4124900.jpg>`_).
+    Geodésicas
+    """"""""""
+
+    :Latitud: 32º 57' 33.6918" S
+    :Longitud: 60º 37' 42.3335" W
+    :Altura: 66.32 m
+
+    Altura sobre el nivel del mar (Altura ortométrica)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    Como dato complementario se informa la Altura Sobre el Nivel del Mar: 49.61 m (Referida al 0 del IGM)
+
+    .. admonition:: Nota
+
+        Estas coordenadas corresponden al ARP (Antenna Reference Point), en el caso de que el software que Ud. utiliza no corrija automáticamente la altura al centro de fase, deberá usar el valor de altura de antena (vertical): 0.053m (`ver croquis antena </ep/img/trm4124900.jpg>`_).

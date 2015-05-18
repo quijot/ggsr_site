@@ -1,0 +1,43 @@
+EPVT
+====
+
+**SE ENCUENTRA FUERA DE FUNCIONAMIENTO.**
+
+**Funcionó desde el 14/11/2009 hasta el 06/01/2010.**
+
+Desde el sábado 14 de noviembre de 2009 se encuentra funcionando la Estación Permanente GPS EPVT, situada en la Facultad Regional Venado Tuerto de la Universidad Tecnológica Nacional. 
+
+La instalación es experimental y permanecerá por un lapso de unos 30-40 días. Se hace como parte del proyecto "Infraestructura de estaciones terrestres para la georreferenciación en la Provincia de Santa Fe mediante posicionamiento satelital", aprobado por la Secretaría de Ciencia, Tecnología e Innovación de la provincia de Santa Fe y a cargo del Grupo de Geodesia Satelital Rosario (GGSR).
+
+Almacena archivos para posproceso, los que se publican actualizados a cada hora y transmite en tiempo real utilizando el protocolo NTRIP.
+
+Para descargar un archivo para posproceso, ir a la sección Armar archivo, seleccionar el día, horario inicial y final del archivo a descargar, presionar "Armar archivo" y tendrá disponible el archivo para descargar.
+También en la sección Archivos crudos está el listado, día por día, de todos los archivos horarios disponibles.
+
+El acceso al stream RTCM en tiempo real es a través del Caster UCOR (en el que aparece como EP02SAG).
+
+Invitamos a hacer uso de la estación y agradeceremos a quien pueda usarla y experimentar con sus datos, nos comente sus resultados, observaciones, etc.
+
+Coordenadas
+-----------
+
+Marco de Referencia Oficial POSGAR 07 (época 2006.632, ITRF2005)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Geodésicas
+""""""""""
+
+:Latitud: 33º 44' 29.3752" S
+:Longitud: 61º 56' 55.9826" W
+:Altura: 148.71 m
+
+Marco de Referencia POSGAR 94
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Geodésicas
+""""""""""
+
+:Latitud: 33º 44' 29.3967" S
+:Longitud: 61º 56' 55.9861" W
+:Altura: 148.18 m
+

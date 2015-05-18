@@ -6,14 +6,8 @@
 .. description: 
 .. type: text
 
-.. raw:: html
 
-    <div class="btn-group" id="ep-picker">
-        <button class="btn btn-info" onclick="showEP('unro');">UNRO</button>
-        <button class="btn btn-info" onclick="showEP('epsf');">EPSF</button>
-        <button class="btn btn-info" onclick="showEP('prna');">PRNA</button>
-        <button class="btn btn-info" onclick="showEP('rufi');">RUFI</button>
-    </div>
+.. raw:: html
 
     <script type="text/javascript">
         function hideAll() {
@@ -35,6 +29,24 @@
         }
     </script>
 
+    <div class="btn-group" id="ep-picker">
+        <button class="btn btn-primary" onclick="showEP('unro');">UNRO</button>
+        <button class="btn btn-primary" onclick="showEP('epsf');">EPSF</button>
+        <button class="btn btn-primary" onclick="showEP('prna');">PRNA</button>
+        <button class="btn btn-primary" onclick="showEP('rufi');">RUFI</button>
+        <div class="btn-group">
+          <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            Experimentales <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li onclick="showEP('unr2');"><a>UNR2</a></li>
+            <li onclick="showEP('epgz');"><a>EPGZ</a></li>
+            <li onclick="showEP('epvt');"><a>EPVT</a></li>
+           </ul>
+        </div>
+    </div>
+
+
 .. class:: note col-md-5 pull-right
 
 Instructivo para descargar archivos
@@ -48,6 +60,7 @@ Invitamos a hacer uso de la estación y agradeceremos a quien pueda usarla y exp
 
 Para mayor información sobre la manipulación de archivos RINEX: Preguntas Frecuentes en el sitio del IGN. 
 
+
 .. include:: pages/ep/unro.txt
 
 .. include:: pages/ep/epsf.txt
@@ -55,3 +68,9 @@ Para mayor información sobre la manipulación de archivos RINEX: Preguntas Frec
 .. include:: pages/ep/prna.txt
 
 .. include:: pages/ep/rufi.txt
+
+.. include:: pages/ep/unr2.txt
+
+.. include:: pages/ep/epgz.txt
+
+.. include:: pages/ep/epvt.txt

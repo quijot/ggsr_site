@@ -1,10 +1,11 @@
 EPSF
 ====
 
-Está disponible el Instructivo para descarga de archivos de observaciones en formato RINEX.
+La Estación Permanente **EPSF** se encuentra en funcionamiento, instalada en el edificio de la Facultad de Ingeniería y Ciencias Hídricas de la Universidad Nacional del Litoral, en la Ciudad de Santa Fe. Es mantenida por el GGSR conjuntamente con Horacio De Nardo, docente de dicha Facultad.
 
-Se encuentra en funcionamiento la Estación Permanente GPS EPSF, instalada en el edificio de la Facultad de Ingeniería y Ciencias Hídricas de la Universidad Nacional del Litoral, en la Ciudad de Santa Fe.
+Todos los datos de la Estación Permanente, coordenadas, caracterísicas del receptor y la antena y su estado se pueden consultar en el sitio del IGN. Allí además podrá descargar los archivos de observaciones.
 
-Invitamos a hacer uso de la estación y agradeceremos a quien pueda usarla y experimentar con sus datos, nos comente sus resultados, observaciones, etc.
+* `Descargar archivos de observacines RINEX <http://ign.gob.ar/NuestrasActividades/Geodesia/Ramsac/DescargaRinex>`_
+* `Ficha de EPSF <http://ign.gob.ar/archivos/ramsac/estacion2.php?estacion=EPSF>`_
+* `Mapa de la red <http://ign.gob.ar/NuestrasActividades/Geodesia/Ramsac/Mapa>`_
 
-Desde ya muchas gracias.

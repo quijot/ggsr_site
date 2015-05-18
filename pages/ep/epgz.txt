@@ -1,0 +1,22 @@
+EPGZ
+====
+
+**SE ENCUENTRA FUERA DE FUNCIONAMIENTO.**
+
+**Funcionó desde el 18/11/2011 hasta el 26/06/2012.**
+
+La Estación Permanente Gálvez funciona desde el viernes 18 de noviembre de 2011 y estará disponible durante aproximadamente 4 meses, de manera experimental.
+
+Coordenadas
+-----------
+
+Marco de Referencia Oficial POSGAR 07 (época 2006.632, ITRF2005)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Geodésicas
+""""""""""
+
+:Latitud: 32º 01' 46.14241" S
+:Longitud: 61º 13' 29.17011" W
+:Altura: 84.932 m
+

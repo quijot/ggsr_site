@@ -1,0 +1,24 @@
+UNR2
+====
+
+La estación UNR2 es una segunda estación permanente instalada en el edificio de la Facultad de Ciencias Exactas, Ingeniería y Agrimensura, muy cerca de la estación UNRO.
+
+Equipada con un receptor doble frecuencia geodésico, originalmente instalado para monitorear la ionosfera dentro del proyecto `lisn.igp.gob.pe <http://lisn.igp.gob.pe/index.php?option=com_content&view=article&sec=16&cat=46&id=1>`_.
+
+Este receptor además provee observaciones en formato RINEX con un intervalo de muestreo de 5 segundos.
+
+Al ser una estación independiente de UNRO deben usarse **sus propias coordenadas** y no confundir con las coordenadas de UNRO.
+
+Coordenadas
+-----------
+
+Marco de Referencia Oficial POSGAR 07 (época 2006.632, ITRF2005)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Geodésicas
+""""""""""
+
+:Latitud: 32º 57' 33.64302" S
+:Longitud: 60º 37' 42.33216" W
+:Altura: 66.532 m
+
