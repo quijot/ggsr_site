@@ -8,17 +8,17 @@
 
 .. class:: col-md-5
 
-| **Grupo de Geodesia Satelital Rosario**
+| **Grupo de Geodesia Satelital de Rosario**
 | Av. Pellegrini 250 (3º piso)
 | (S2000BTP) Rosario
 | Santa Fe, Argentina
 | Facultad de Ciencias Exactas, Ingeniería y Agrimensura
 | Universidad Nacional de Rosario
 
-.. class:: jumbotron col-md-3
+.. class:: jumbotron col-md-4
 
 | Escríbanos a
-| **ggsr** |arroba| **fceia.unr.edu.ar**
+| **noguera** |arroba| **fceia.unr.edu.ar**
 
 .. |arroba| image:: /images/120px-At_sign.svg.png
             :height: 15px
