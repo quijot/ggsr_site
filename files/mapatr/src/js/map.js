@@ -101,7 +101,7 @@ var map = new ol.Map({
       ]
     }),
     new ol.layer.Group({
-      title: 'Estaciones',
+      title: 'Casters',
       layers: [
         vectorPointsBASE,
         vectorPointsIGS,
