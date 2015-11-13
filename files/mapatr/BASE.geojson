@@ -21,7 +21,9 @@
         "coordinates": "-37.77, -67.7",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -42,7 +44,9 @@
         "coordinates": "-38.37, -60.27",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -63,7 +67,9 @@
         "coordinates": "16.27, -61.52",
         "solution": "single base",
         "misc": "rgp-ip.ign.fr:2101/ABMF1(1)",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -84,7 +90,9 @@
         "coordinates": "-22.72, -65.68",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -105,7 +113,9 @@
         "coordinates": "8.32, -73.6",
         "solution": "single base",
         "misc": "MagnaEco IGAC",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -126,7 +136,9 @@
         "coordinates": "-3.35, -64.71",
         "solution": "single base",
         "misc": "RBMC-AMTE",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -147,7 +159,9 @@
         "coordinates": "-0.06, -51.17",
         "solution": "single base",
         "misc": "RBMC-APSA",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -168,7 +182,9 @@
         "coordinates": "-54.83, -68.3",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -189,7 +205,9 @@
         "coordinates": "-36.77, -59.87",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -210,7 +228,9 @@
         "coordinates": "-14.8, -39.17",
         "solution": "single base",
         "misc": "RBMC-BAIL",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -231,7 +251,9 @@
         "coordinates": "-11.31, -41.86",
         "solution": "single base",
         "misc": "RBMC-BAIR",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -252,7 +274,9 @@
         "coordinates": "-17.55, -39.74",
         "solution": "single base",
         "misc": "RBMC-BATF",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -273,7 +297,9 @@
         "coordinates": "-14.89, -40.8",
         "solution": "single base",
         "misc": "RBMC-BAVC",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -294,7 +320,9 @@
         "coordinates": "-37.76, -58.3",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -315,7 +343,9 @@
         "coordinates": "-41.13, -71.28",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -336,7 +366,9 @@
         "coordinates": "-1.41, -48.46",
         "solution": "single base",
         "misc": "RBMC-BELE",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -357,7 +389,9 @@
         "coordinates": "-1.46, -48.44",
         "solution": "single base",
         "misc": "RBMC-BEPA",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -378,7 +412,9 @@
         "coordinates": "2.85, -60.7",
         "solution": "single base",
         "misc": "RBMC-BOAV",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -399,7 +435,9 @@
         "coordinates": "4.64, -74.08",
         "solution": "single base",
         "misc": "MagnaEco IGAC",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -420,7 +458,9 @@
         "coordinates": "-13.26, -43.42",
         "solution": "single base",
         "misc": "RBMC-BOMJ",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -441,7 +481,9 @@
         "coordinates": "-15.95, -47.88",
         "solution": "single base",
         "misc": "RBMC-BRAZ",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -462,7 +504,9 @@
         "coordinates": "10.39, -75.53",
         "solution": "single base",
         "misc": "MagnaEco IGAC",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -483,7 +527,9 @@
         "coordinates": "-28.47, -65.77",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -504,7 +550,9 @@
         "coordinates": "-3.88, -38.43",
         "solution": "single base",
         "misc": "RBMC-CEEU",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -525,7 +573,9 @@
         "coordinates": "-20.31, -40.32",
         "solution": "single base",
         "misc": "RBMC-CEFE",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -546,7 +596,9 @@
         "coordinates": "-3.68, -40.34",
         "solution": "single base",
         "misc": "RBMC-CESB",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -567,7 +619,9 @@
         "coordinates": "-27.42, -58.95",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -588,7 +642,9 @@
         "coordinates": "50.09, 8.66",
         "solution": "single base",
         "misc": "BKG",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -609,7 +665,9 @@
         "coordinates": "43.56, 1.48",
         "solution": "single base",
         "misc": "CNES",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -630,7 +688,9 @@
         "coordinates": "-7.24, -39.42",
         "solution": "single base",
         "misc": "RBMC-CRAT",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -651,7 +711,9 @@
         "coordinates": "-31.97, -68.42",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -672,7 +734,9 @@
         "coordinates": "-31.78, -69.3",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -693,7 +757,9 @@
         "coordinates": "7.9, -72.49",
         "solution": "single base",
         "misc": "MagnaEco IGAC",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -714,7 +780,9 @@
         "coordinates": "-15.56, -56.07",
         "solution": "single base",
         "misc": "RBMC-CUIB",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -735,7 +803,9 @@
         "coordinates": "-36.3, -57.67",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -756,7 +826,9 @@
         "coordinates": "-22.0, -47.9",
         "solution": "single base",
         "misc": "RBMC-EESC",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -777,7 +849,9 @@
         "coordinates": "-42.92, -71.32",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -798,7 +872,9 @@
         "coordinates": "-30.95, -59.02",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -819,7 +895,9 @@
         "coordinates": "-17.88, -51.73",
         "solution": "single base",
         "misc": "RBMC-GOJA",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -840,7 +918,9 @@
         "coordinates": "-18.86, -41.96",
         "solution": "single base",
         "misc": "RBMC-GVA1",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -861,7 +941,9 @@
         "coordinates": "4.43, -75.21",
         "solution": "single base",
         "misc": "MagnaEco IGAC",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -882,7 +964,9 @@
         "coordinates": "-34.57, -58.44",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -903,7 +987,9 @@
         "coordinates": "50.08967, 8.66458",
         "solution": "network",
         "misc": "IGS Combination",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -924,7 +1010,9 @@
         "coordinates": "-20.43, -51.34",
         "solution": "single base",
         "misc": "RBMC-ILHA",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -945,7 +1033,9 @@
         "coordinates": "-28.23, -48.66",
         "solution": "single base",
         "misc": "RBMC-IMBT",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -966,7 +1056,9 @@
         "coordinates": "-15.36, -43.77",
         "solution": "single base",
         "misc": "RBMC-JAMG",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -987,7 +1079,9 @@
         "coordinates": "-25.12, -64.12",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1008,7 +1102,9 @@
         "coordinates": "5.08, -52.63",
         "solution": "network",
         "misc": "rgp-ip.ign.fr:2101/KOUG1(1)",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1029,7 +1125,9 @@
         "coordinates": "-38.0, -65.6",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1050,7 +1148,9 @@
         "coordinates": "14.58, -61.0",
         "solution": "single base",
         "misc": "rgp-ip.ign.fr:2101/LMMF1(1)",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1071,7 +1171,9 @@
         "coordinates": "-34.73, -57.93",
         "solution": "single base",
         "misc": "GFZ",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1092,7 +1194,9 @@
         "coordinates": "-34.61, -58.37",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1113,7 +1217,9 @@
         "coordinates": "-5.36, -49.12",
         "solution": "single base",
         "misc": "RBMC-MABA",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1134,7 +1240,9 @@
         "coordinates": "-7.53, -46.04",
         "solution": "single base",
         "misc": "RBMC-MABS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1155,7 +1263,9 @@
         "coordinates": "0.05, -51.1",
         "solution": "single base",
         "misc": "RBMC-MAPA",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1176,7 +1286,9 @@
         "coordinates": "10.67, -71.62",
         "solution": "single base",
         "misc": "Universidad del Zulia Maracaibo",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1197,7 +1309,9 @@
         "coordinates": "-16.72, -43.88",
         "solution": "single base",
         "misc": "RBMC-MCL1",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1218,7 +1332,9 @@
         "coordinates": "6.2, -75.58",
         "solution": "single base",
         "misc": "MagnaEco IGAC",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1239,7 +1355,9 @@
         "coordinates": "-19.94, -43.92",
         "solution": "single base",
         "misc": "RBMC-MGBH",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1260,7 +1378,9 @@
         "coordinates": "-22.32, -46.33",
         "solution": "single base",
         "misc": "RBMC-MGIN",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1281,7 +1401,9 @@
         "coordinates": "-16.72, -43.86",
         "solution": "single base",
         "misc": "RBMC-MGMC",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1302,7 +1424,9 @@
         "coordinates": "-19.21, -46.13",
         "solution": "single base",
         "misc": "RBMC-MGRP",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1323,7 +1447,9 @@
         "coordinates": "-21.54, -45.43",
         "solution": "single base",
         "misc": "RBMC-MGV1",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1344,7 +1470,9 @@
         "coordinates": "-38.0, -57.57",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1365,7 +1493,9 @@
         "coordinates": "-20.44, -54.54",
         "solution": "single base",
         "misc": "RBMC-MSCG",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1386,7 +1516,9 @@
         "coordinates": "-19.0, -57.64",
         "solution": "single base",
         "misc": "RBMC-MSCO",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1407,7 +1539,9 @@
         "coordinates": "-22.19, -54.93",
         "solution": "single base",
         "misc": "RBMC-MSDR",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1428,7 +1562,9 @@
         "coordinates": "-13.56, -52.27",
         "solution": "single base",
         "misc": "RBMC-MTCN",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1449,7 +1585,9 @@
         "coordinates": "-10.8, -55.46",
         "solution": "single base",
         "misc": "RBMC-MTCO",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1470,7 +1608,9 @@
         "coordinates": "-12.55, -55.73",
         "solution": "single base",
         "misc": "RBMC-MTSR",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1491,7 +1631,9 @@
         "coordinates": "-32.9, -68.88",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1512,7 +1654,9 @@
         "coordinates": "-33.25, -68.15",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1533,7 +1677,9 @@
         "coordinates": "-33.74, -69.12",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1554,7 +1700,9 @@
         "coordinates": "-34.97, -67.68",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1575,7 +1723,9 @@
         "coordinates": "-34.62, -68.33",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1596,7 +1746,9 @@
         "coordinates": "-3.02, -60.06",
         "solution": "single base",
         "misc": "RBMC-NAUS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1617,7 +1769,9 @@
         "coordinates": "-25.02, -47.92",
         "solution": "single base",
         "misc": "RBMC-NEIA",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1638,7 +1792,9 @@
         "coordinates": "0.35, 9.67",
         "solution": "single base",
         "misc": "CNES",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1659,7 +1815,9 @@
         "coordinates": "-63.32, 302.1",
         "solution": "single base",
         "misc": "BKG",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1680,7 +1838,9 @@
         "coordinates": "-22.9, -43.22",
         "solution": "single base",
         "misc": "RBMC-ONRJ",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1701,7 +1861,9 @@
         "coordinates": "-22.95, -49.9",
         "solution": "single base",
         "misc": "RBMC-OURI",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1722,7 +1884,9 @@
         "coordinates": "-3.2, -52.18",
         "solution": "single base",
         "misc": "RBMC-PAAT",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1743,7 +1907,9 @@
         "coordinates": "-4.29, -56.04",
         "solution": "single base",
         "misc": "RBMC-PAIT",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1764,7 +1930,9 @@
         "coordinates": "-40.78, -62.98",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1785,7 +1953,9 @@
         "coordinates": "-7.2, -35.9",
         "solution": "single base",
         "misc": "RBMC-PBCG",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1806,7 +1976,9 @@
         "coordinates": "-35.81, -61.89",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1827,7 +1999,9 @@
         "coordinates": "-9.38, -40.51",
         "solution": "single base",
         "misc": "RBMC-PEPE",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1848,7 +2022,9 @@
         "coordinates": "-6.79, -43.04",
         "solution": "single base",
         "misc": "RBMC-PIFL",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1869,7 +2045,9 @@
         "coordinates": "-9.03, -42.7",
         "solution": "single base",
         "misc": "RBMC-PISR",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1890,7 +2068,9 @@
         "coordinates": "-5.1, -42.79",
         "solution": "single base",
         "misc": "RBMC-PITN",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1911,7 +2091,9 @@
         "coordinates": "-30.07, -51.12",
         "solution": "single base",
         "misc": "RBMC-POAL",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1932,7 +2114,9 @@
         "coordinates": "-23.56, -46.73",
         "solution": "single base",
         "misc": "RBMC-POLI",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1953,7 +2137,9 @@
         "coordinates": "-8.71, -63.9",
         "solution": "single base",
         "misc": "RBMC-POVE",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1974,7 +2160,9 @@
         "coordinates": "-22.12, -51.41",
         "solution": "single base",
         "misc": "RBMC-PPTE",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -1995,7 +2183,9 @@
         "coordinates": "-24.96, -53.47",
         "solution": "single base",
         "misc": "RBMC-PRCV",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2016,7 +2206,9 @@
         "coordinates": "-25.38, -51.49",
         "solution": "single base",
         "misc": "RBMC-PRGU",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2037,7 +2229,9 @@
         "coordinates": "-23.41, -51.94",
         "solution": "single base",
         "misc": "RBMC-PRMA",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2058,7 +2252,9 @@
         "coordinates": "9.97, -84.83",
         "solution": "single base",
         "misc": "Instituto Geografico Nacional Costa Rica",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2079,7 +2275,9 @@
         "coordinates": "-8.05, -34.95",
         "solution": "single base",
         "misc": "RBMC-RECF",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2100,7 +2298,9 @@
         "coordinates": "-8.05, -34.95",
         "solution": "single base",
         "misc": "gps-ntrip.ibge.gov.br:2101/RECF0(1)",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2121,7 +2321,9 @@
         "coordinates": "-29.13, -59.65",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2142,7 +2344,9 @@
         "coordinates": "9.92, -84.03",
         "solution": "single base",
         "misc": "Instituto Geografico Nacional Costa Rica",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2163,7 +2367,9 @@
         "coordinates": "-53.79, 292.25",
         "solution": "single base",
         "misc": "GFZ",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2184,7 +2390,9 @@
         "coordinates": "-33.12, -64.33",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2205,7 +2413,9 @@
         "coordinates": "-9.97, -67.8",
         "solution": "single base",
         "misc": "RBMC-RIOB",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2226,7 +2436,9 @@
         "coordinates": "-22.82, -43.31",
         "solution": "single base",
         "misc": "RBMC-RIOD",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2247,7 +2459,9 @@
         "coordinates": "-21.76, -41.33",
         "solution": "single base",
         "misc": "RBMC-RJCG",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2268,7 +2482,9 @@
         "coordinates": "-5.2, -37.33",
         "solution": "single base",
         "misc": "RBMC-RNMO",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2289,7 +2505,9 @@
         "coordinates": "-5.84, -35.21",
         "solution": "single base",
         "misc": "RBMC-RNNA",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2310,7 +2528,9 @@
         "coordinates": "-13.12, -60.54",
         "solution": "single base",
         "misc": "RBMC-ROCD",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2331,7 +2551,9 @@
         "coordinates": "-10.78, -65.33",
         "solution": "single base",
         "misc": "RBMC-ROGM",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2352,7 +2574,9 @@
         "coordinates": "-10.86, -61.96",
         "solution": "single base",
         "misc": "RBMC-ROJI",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2373,7 +2597,9 @@
         "coordinates": "-29.79, -55.77",
         "solution": "single base",
         "misc": "RBMC-RSAL",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2394,7 +2620,9 @@
         "coordinates": "-28.14, -54.75",
         "solution": "single base",
         "misc": "RBMC-RSCL",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2415,7 +2643,9 @@
         "coordinates": "50.09, 8.66",
         "solution": "single base",
         "misc": "BKG",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2436,7 +2666,9 @@
         "coordinates": "-34.25, -62.7",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2457,7 +2689,9 @@
         "coordinates": "-43.28, -65.1",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2478,7 +2712,9 @@
         "coordinates": "-2.59, -44.21",
         "solution": "single base",
         "misc": "RBMC-SALU",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2499,7 +2735,9 @@
         "coordinates": "-2.58, -44.2",
         "solution": "single base",
         "misc": "gps-ntrip.ibge.gov.br:2101/SALU0(1)",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2520,7 +2758,9 @@
         "coordinates": "-12.94, -38.43",
         "solution": "single base",
         "misc": "RBMC-SAVO",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2541,7 +2781,9 @@
         "coordinates": "-30.3, -61.22",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2562,7 +2804,9 @@
         "coordinates": "-26.39, -48.74",
         "solution": "single base",
         "misc": "RBMC-SCAQ",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2583,7 +2827,9 @@
         "coordinates": "-27.14, -52.6",
         "solution": "single base",
         "misc": "RBMC-SCCH",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2604,7 +2850,9 @@
         "coordinates": "-27.6, -48.52",
         "solution": "single base",
         "misc": "RBMC-SCFL",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2625,7 +2873,9 @@
         "coordinates": "-27.79, -50.3",
         "solution": "single base",
         "misc": "RBMC-SCLA",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2646,7 +2896,9 @@
         "coordinates": "-10.93, -37.1",
         "solution": "single base",
         "misc": "RBMC-SEAJ",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2667,7 +2919,9 @@
         "coordinates": "50.0, 10.0",
         "solution": "network",
         "misc": "BKG",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2688,7 +2942,9 @@
         "coordinates": "50.0, 10.0",
         "solution": "network",
         "misc": "BKG",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2709,7 +2965,9 @@
         "coordinates": "-23.21, -45.86",
         "solution": "single base",
         "misc": "RBMC-SJSP",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2730,7 +2988,9 @@
         "coordinates": "-30.15, -66.3",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2751,7 +3011,9 @@
         "coordinates": "-29.72, -53.72",
         "solution": "single base",
         "misc": "RBMC-SMAR",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2772,7 +3034,9 @@
         "coordinates": "-22.7, -47.62",
         "solution": "single base",
         "misc": "RBMC-SPPI",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2793,7 +3057,9 @@
         "coordinates": "-23.48, -47.42",
         "solution": "single base",
         "misc": "RBMC-SPSO",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2814,7 +3080,9 @@
         "coordinates": "-36.62, -64.27",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2835,7 +3103,9 @@
         "coordinates": "-12.98, -38.52",
         "solution": "single base",
         "misc": "RBMC-SSA1",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2856,7 +3126,9 @@
         "coordinates": "-37.45, -61.92",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2877,7 +3149,9 @@
         "coordinates": "-26.85, -65.7",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2898,7 +3172,9 @@
         "coordinates": "-23.58, -65.39",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2919,7 +3195,9 @@
         "coordinates": "-11.75, -49.05",
         "solution": "single base",
         "misc": "RBMC-TOGU",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2940,7 +3218,9 @@
         "coordinates": "-10.17, -48.33",
         "solution": "single base",
         "misc": "RBMC-TOPL",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2961,7 +3241,9 @@
         "coordinates": "-26.23, -65.28",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -2982,7 +3264,9 @@
         "coordinates": "-26.81, -65.18",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3003,7 +3287,9 @@
         "coordinates": "-23.5, -45.12",
         "solution": "single base",
         "misc": "RBMC-UBA1",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3024,7 +3310,9 @@
         "coordinates": "-18.89, -48.32",
         "solution": "single base",
         "misc": "RBMC-UBE1",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3045,7 +3333,9 @@
         "coordinates": "-31.43, -64.19",
         "solution": "single base",
         "misc": "Universidad Nacional de Cordoba",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3066,7 +3356,9 @@
         "coordinates": "4.597, -74.064",
         "solution": "single base",
         "misc": "Universidad Distrital Francisco Jose de Caldas",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3087,7 +3379,9 @@
         "coordinates": "-25.45, -49.23",
         "solution": "single base",
         "misc": "RBMC-UFPR",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3108,7 +3402,9 @@
         "coordinates": "-32.96, -60.63",
         "solution": "single base",
         "misc": "Universidad Nacional de Rosario",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3129,7 +3425,9 @@
         "coordinates": "-24.72, -65.4",
         "solution": "single base",
         "misc": "GFZ",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3150,7 +3448,9 @@
         "coordinates": "-30.41, -56.49",
         "solution": "single base",
         "misc": "SGM - ROU",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3171,7 +3471,9 @@
         "coordinates": "-62.18, -58.9",
         "solution": "single base",
         "misc": "SGM - ROU",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3192,7 +3494,9 @@
         "coordinates": "-32.37, -54.21",
         "solution": "single base",
         "misc": "SGM - ROU",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3213,7 +3517,9 @@
         "coordinates": "-34.46, -57.84",
         "solution": "single base",
         "misc": "SGM - ROU",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3234,7 +3540,9 @@
         "coordinates": "-33.32, -55.6",
         "solution": "single base",
         "misc": "SGM - ROU",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3255,7 +3563,9 @@
         "coordinates": "-34.1, -56.19",
         "solution": "single base",
         "misc": "SGM - ROU",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3276,7 +3586,9 @@
         "coordinates": "-33.52, -56.89",
         "solution": "single base",
         "misc": "SGM - ROU",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3297,7 +3609,9 @@
         "coordinates": "-34.36, -55.25",
         "solution": "single base",
         "misc": "SGM - ROU",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3318,7 +3632,9 @@
         "coordinates": "-34.66, -54.14",
         "solution": "single base",
         "misc": "SGM - ROU",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3339,7 +3655,9 @@
         "coordinates": "-34.89, -56.26",
         "solution": "single base",
         "misc": "SGM - ROU",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3360,7 +3678,9 @@
         "coordinates": "-32.29, -58.07",
         "solution": "single base",
         "misc": "SGM - ROU",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3381,7 +3701,9 @@
         "coordinates": "-32.8, -56.51",
         "solution": "single base",
         "misc": "SGM - ROU",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3402,7 +3724,9 @@
         "coordinates": "-30.9, -55.56",
         "solution": "single base",
         "misc": "SGM - ROU",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3423,7 +3747,9 @@
         "coordinates": "-34.0, -53.55",
         "solution": "single base",
         "misc": "SGM - ROU",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3444,7 +3770,9 @@
         "coordinates": "-31.77, -54.69",
         "solution": "single base",
         "misc": "SGM - ROU",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3465,7 +3793,9 @@
         "coordinates": "-31.38, -57.96",
         "solution": "single base",
         "misc": "SGM - ROU",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3486,7 +3816,9 @@
         "coordinates": "-32.62, -55.84",
         "solution": "single base",
         "misc": "SGM - ROU",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3507,7 +3839,9 @@
         "coordinates": "-34.32, -56.71",
         "solution": "single base",
         "misc": "SGM - ROU",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3528,7 +3862,9 @@
         "coordinates": "-33.26, -58.01",
         "solution": "single base",
         "misc": "SGM - ROU",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3549,7 +3885,9 @@
         "coordinates": "-31.68, -55.94",
         "solution": "single base",
         "misc": "SGM - ROU",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3570,7 +3908,9 @@
         "coordinates": "-30.95, -57.52",
         "solution": "single base",
         "misc": "SGM - ROU",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3591,7 +3931,9 @@
         "coordinates": "-33.24, -54.38",
         "solution": "single base",
         "misc": "SGM - ROU",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3612,7 +3954,9 @@
         "coordinates": "-38.7, -62.27",
         "solution": "single base",
         "misc": "Marco POSGAR07-ITRF2005(2006.632)-SIRGAS",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",
@@ -3633,7 +3977,9 @@
         "coordinates": "-20.76, -42.87",
         "solution": "single base",
         "misc": "RBMC-VICO",
-        "color": "grey"
+        "color": "grey",
+        "align": "left",
+        "bline": "baseline"
       },
       "geometry": {
         "type": "Point",

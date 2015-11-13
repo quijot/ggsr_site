@@ -10,6 +10,8 @@ from os import system, SEEK_END
 caster_name = argv[1]
 url = argv[2]
 color = argv[3] # layer color
+align = argv[4] # text align
+bline = argv[5] # text baseline
 geojson = '%s.geojson' % caster_name
 sourcetable = '%s.sourcetable' % caster_name
 system("wget -O %s %s" % (sourcetable, url))
@@ -63,7 +65,9 @@ for line in st:
         "coordinates": "%s, %s",
         "solution": "%s",
         "misc": "%s",
-        "color": "%s"
+        "color": "%s",
+        "align": "%s",
+        "bline": "%s"
       },
       "geometry": {
         "type": "Point",
@@ -79,9 +83,8 @@ for line in st:
       latitude, longitude,
       solution, 
       misc, 
-      color,
-      longitude, 
-      latitude))
+      color, align, bline,
+      longitude, latitude))
 st.close()
 
 f.close()

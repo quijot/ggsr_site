@@ -8,8 +8,8 @@ var createPointStyleFunction = function() {
         stroke: new ol.style.Stroke({color: 'rgba(0, 0, 0, 0.3)', width: 2})
       }),
       text: new ol.style.Text({
-        textAlign: 'left',
-        textBaseline: 'baseline',
+        textAlign: feature.get('align'),
+        textBaseline: feature.get('bline'),
         font: 'bold 12px Oswald',
         text: feature.get('name'),
         fill: new ol.style.Fill({color: feature.get('color')}),
