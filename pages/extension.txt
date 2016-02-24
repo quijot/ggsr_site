@@ -1,10 +1,11 @@
 .. title: Actividades de extensión
 .. slug: extension
-.. date: 24/05/14 13:48:55 UTC-03:00
 .. tags: 
 .. link: 
-.. description: 
+.. description: Actividades de extensión
 .. type: text
+.. date: 05/24/14 13:48:55 UTC-03:00
+.. template: updatable.tmpl
 
 
 Webinario 3: Posicionamiento GNSS en tiempo real y PPP [#]_

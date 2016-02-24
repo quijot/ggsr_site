@@ -1,5 +1,5 @@
 .. title: Calculadora PPP
-.. slug: pppcalc
+.. slug: pppcalc-v0.2
 .. tags: 
 .. link: 
 .. description: Calculadora PPP
@@ -86,7 +86,7 @@
     </script>
       
     <!-- CALCULADORA -->
-    <script src="/assets/js/pppcalc.js"></script>
+    <script src="/assets/js/pppcalc-v0.1.js"></script>
 
     <div class="col-lg-8">
       <form id="pppcalc-form">

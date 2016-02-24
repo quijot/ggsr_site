@@ -1,10 +1,11 @@
 .. title: Mapa de Estaciones Tiempo Real
 .. slug: mapatr
-.. date: 15/05/15 20:55:40 UTC-03:00
 .. tags: 
 .. link: 
 .. description: Mapa de Estaciones con servicio de Tiempo Real en Tiempo Real
 .. type: text
+.. date: 07/13/15 20:02:00 UTC-03:00
+.. template: updatable.tmpl
 
 .. raw:: html
 

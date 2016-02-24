@@ -25,7 +25,7 @@ Grupo de Geodesia Satelital de Rosario
 .. admonition:: Caster SIRGAS y Mapa de Estaciones TR
   
   - `Formularios de Registro </caster/>`_ al Caster SIRGAS Experimental.
-  - `Mapa de Estaciones Tiempo Real </mapatr/>`_ de sudamérica.
+  - `Mapa de Estaciones Tiempo Real </mapatr/>`_ de Sudamérica.
 
 .. class:: jumbotron col-md-5
 
