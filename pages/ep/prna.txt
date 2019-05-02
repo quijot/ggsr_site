@@ -3,7 +3,7 @@ PRNA
 
 La Estación Permanente **PRNA** está ubicada en la ciudad de Paraná, Entre Ríos, Argentina. Es mantenida por el GGSR.
 
-Todos los datos de la Estación Permanente, coordenadas, caracterísicas del receptor y la antena y su estado se pueden consultar en el sitio del IGN. Allí además podrá descargar los archivos de observaciones.
+Todos los datos de la Estación Permanente, coordenadas, características del receptor y la antena y su estado se pueden consultar en el sitio del IGN. Allí además podrá descargar los archivos de observaciones.
 
 * `Descargar archivos de observacines RINEX <http://ign.gob.ar/NuestrasActividades/Geodesia/Ramsac/DescargaRinex>`_
 * `Ficha de PRNA <http://ign.gob.ar/archivos/ramsac/estacion2.php?estacion=PRNA>`_

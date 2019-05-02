@@ -1,4 +1,4 @@
-.. title: Calculadora PPP
+.. title: Calculadora PPP v0.2
 .. slug: pppcalc-v0.2
 .. tags: 
 .. link: 

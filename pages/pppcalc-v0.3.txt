@@ -1,0 +1,156 @@
+.. title: Calculadora PPP v0.3
+.. slug: pppcalc-v0.3
+.. tags: 
+.. link: 
+.. description: Calculadora PPP
+.. type: text
+.. date: 05/13/16 23:00:00 UTC-03:00
+.. template: updatable.tmpl
+
+.. raw:: html
+
+  <div class="row"></div>
+
+  <div class="row"><!-- Calculadora + Mapa + Reporte -->
+    <!-- MAPA -->
+    <div class="col-lg-4 pull-right">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 id="mapa">Seleccione una FAJA</h3>
+          <p>Límites:</p>
+          <div id="latT" align="center">-28º 00'</div>
+          <div><span id="lonL">-63º 30'</span><span id="lonR" class="pull-right">-56º 40'</span></div>
+          <div id="latB" align="center">-41º 00'</div>
+        </div>
+        <div class="panel-body" id="basicMap" style="height:400px">
+        </div>
+      </div>
+    </div>
+    <!-- CALCULADORA -->
+    <div class="col-lg-8">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h4 class="panel-title">Calculadora PPP -- versión 0.3</h4>
+        </div>
+        <div class="panel-body">
+          <form id="pppcalc-form" class="form-horizontal">
+            <fieldset>
+              <legend>Ingrese las coordenadas procesadas con PPP</legend>
+              <div class="form-group"><!-- Latitud PPP -->
+                <label for="latd" class="col-lg-2 control-label">Latitud</label>
+                <div class="col-lg-10">
+                  <span class="col-lg-3"><input type="number" class="form-control" id="latd" placeholder="-35" min="-41" max="-28"></span>
+                  <span class="col-lg-3"><input type="number" class="form-control" id="latm" placeholder="00" min="00" max="59"></span>
+                  <span class="col-lg-6"><input type="text" class="form-control" id="lats" placeholder="00.000000"></span>
+                </div>
+              </div>
+              <div class="form-group"><!-- Longitud PPP -->
+                <label for="lond" class="col-lg-2 control-label">Longitud</label>
+                <div class="col-lg-10">
+                  <span class="col-lg-3"><input type="number" class="form-control" id="lond" placeholder="-60" min="-63" max="-56"></span>
+                  <span class="col-lg-3"><input type="number" class="form-control" id="lonm" placeholder="00" min="00" max="59"></span>
+                  <span class="col-lg-6"><input type="text" class="form-control" id="lons" placeholder="00.000000"></span>
+                  <span class="col-lg-12 help-block"><span class="pull-right">Utilice el punto como separador decimal.</span></span>
+                </div>
+              </div>
+              <div class="form-group"><!-- Año medición -->
+                <label for="ano" class="col-lg-2 control-label">Año</label>
+                <div class="col-lg-10">
+                  <span class="col-lg-12"><input type="number" class="form-control" id="ano" placeholder="año de medición, por ejemplo: 2013" min="2012" max="2015"></span>
+                </div>
+              </div>
+              <div class="form-group"><!-- Sitio / Sesión / Botones -->
+                <label for="site" class="col-lg-2 control-label">ID sitio / Sesión (hs)</label>
+                <div class="col-lg-10">
+                  <span class="col-lg-3"><input type="text" class="form-control" id="site" placeholder="BASE"></span>
+                  <span class="col-lg-3"><input type="text" class="form-control" id="duration" placeholder="1:00"></span>
+                  <div class="btn-group pull-right">
+                    <button class="btn btn-default" type="reset" onclick="cleanMap(); hideReport();">Restablecer</button>
+                    <button class="btn btn-primary" type="button" onclick="pppcalc(); mark();">Corregir</button>
+                  </div>
+                </div>
+              </div>
+              <legend>Coordenadas en POSGAR 2007 (época 2006.632)</legend>
+              <div class="form-group"><!-- Latitud POSGAR -->
+                <label for="latdc" class="col-lg-2 control-label">Latitud</label>
+                <div class="col-lg-10">
+                  <span class="col-lg-3"><input type="text" readonly="true" class="form-control" id="latdc"></span>
+                  <span class="col-lg-3"><input type="text" readonly="true" class="form-control" id="latmc"></span>
+                  <span class="col-lg-6"><input type="text" readonly="true" class="form-control" id="latsc"></span>
+                </div>
+              </div>
+              <div class="form-group"><!-- Longitud POSGAR -->
+                <label for="londc" class="col-lg-2 control-label">Longitud</label>
+                <div class="col-lg-10">
+                  <span class="col-lg-3"><input type="text" readonly="true" class="form-control" id="londc"></span>
+                  <span class="col-lg-3"><input type="text" readonly="true" class="form-control" id="lonmc"></span>
+                  <span class="col-lg-6"><input type="text" readonly="true" class="form-control" id="lonsc"></span>
+                </div>
+              </div>
+              <div class="form-group"><!-- Botones -->
+                <div class="col-lg-12">
+                  <button class="btn btn-primary pull-right" type="button" onclick="showReport();">Generar informe</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- REPORTE -->
+    <div id="informe" style="display:none" class="col-lg-12">
+      <pre id="informe-content">
+      </pre>
+    </div>
+  </div><!-- FIN Calculadora + Mapa + Reporte -->
+  <script src="http://openlayers.org/api/OpenLayers.js"></script>
+  <script src="/assets/js/pppcalc-v0.3.js"></script>
+  <script src="/assets/js/pppcalc.map.js"></script>
+  <script src="/assets/js/pppcalc.report.js"></script>
+
+
+Finalidad
+=========
+
+La finalidad de la *calculadora PPP* es "corregir" las coordenadas obtenidas luego del procesamiento PPP. Por "corregir" se debe entender *referirlas al marco POSGAR 2007 (época 2006.632)*.
+
+.. admonition:: Marco de referencia y época de las coordenadas
+
+  Luego del procesamiento PPP, las coordenadas vienen expresadas en general en ITRF y para la fecha de medición, aunque según el servicio PPP aplicado, pueden estar referidas al marco oficial del país que proporciona el mismo.
+
+  Por ejemplo, el servicio `CSRS PPP <http://webapp.geod.nrcan.gc.ca/geod/tools-outils/ppp.php>`_, ofrece el marco norteamericano NAD83 o el Internacional ITRF. En este caso, hay que tener el cuidado de seleccionar las coordenadas expresadas en el ITRF para la fecha de medición como coordenadas a ingresar en la calculadora.
+
+Funcionamiento
+==============
+
+El usuario sólo debe ingresar las coordenadas obtenidas en el procesamiento PPP y el año de medición, luego, presionando **Corregir**, obtendrá de la calculadora las coordenadas expresadas en el marco POSGAR 2007 (época 2006.632). De modo opcional, puede agregar la Identificación del punto relevado y el tiempo de la sesión de medición expresado en horas.
+
+Si el usuario desea verificar las coordenadas ingresadas como así también el resultado obtenido, puede generar un conciso Informe que saldrá publicado por pantalla. También, en el `mapa de Fajas <#mapa>`_, podrá visualizar el cursor gráfico que se localizará en el punto cuyas coordenadas fueron corregidas.
+
+Zona de validez
+---------------
+
+La corrección es aplicable en la zona comprendida por:
+
+- Latitudes entre 28º S y 41º S
+- Longitudes:
+
+  - Faja 1: 59º 15' O y 56º 40' O
+  - Faja 2: 61º 30' O y 59º 15' O
+  - Faja 3: 63º 30' O y 61º 30' O
+
+Es decir, abarca los territorios de:
+
+- Provincia de Buenos Aires
+- Provincia de Entre Ríos
+- Provincia de Santa Fe
+- Este de la Provincia de Córdoba
+
+Para mayor detalle, navegue el `mapa <#mapa>`_.
+
+Correcciones
+------------
+
+Las correcciones que se deben aplicar a las coordenadas ingresadas **dependen de la ubicación**, para la **longitud**, y por ello la zona de validez se divide en fajas, y de la **fecha de medición**, para la **latitud**, de acuerdo al año ingresado.
+
+.. include:: pages/pppcalc-changelog

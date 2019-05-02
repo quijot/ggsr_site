@@ -10,55 +10,40 @@
 .. raw:: html
 
     <script type="text/javascript">
-        function hideAll() {
-            var x = document.getElementsByClassName('section');
-            for (var i = 0; i < x.length; i++) {
-                x[i].style.display = 'none';
-            }
-            document.getElementById('instructivo-para-descargar-archivos').style.display = 'block';
-        }
-        window.onload = hideAll;
+      function hideAll() {
+        var x = document.getElementsByClassName('section');
+          for (var i = 0; i < x.length; i++) {
+            x[i].style.display = 'none';
+          }
+      }
+      window.onload = hideAll;
 
-        function showEP(ep) {
-            hideAll();
-            document.getElementById(ep).style.display = 'block';
-            x = document.getElementById(ep).getElementsByClassName('section')
-            for (var i = 0; i < x.length; i++) {
-                x[i].style.display = 'block';
-            }
+      function showEP(ep) {
+        hideAll();
+        document.getElementById(ep).style.display = 'block';
+        x = document.getElementById(ep).getElementsByClassName('section')
+        for (var i = 0; i < x.length; i++) {
+          x[i].style.display = 'block';
         }
+      }
     </script>
 
     <div class="btn-group" id="ep-picker">
-        <button class="btn btn-primary" onclick="showEP('unro');">UNRO</button>
-        <button class="btn btn-primary" onclick="showEP('epsf');">EPSF</button>
-        <button class="btn btn-primary" onclick="showEP('prna');">PRNA</button>
-        <button class="btn btn-primary" onclick="showEP('rufi');">RUFI</button>
-        <div class="btn-group">
-          <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-            Experimentales <span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu">
-            <li onclick="showEP('unr2');"><a>UNR2</a></li>
-            <li onclick="showEP('epgz');"><a>EPGZ</a></li>
-            <li onclick="showEP('epvt');"><a>EPVT</a></li>
-           </ul>
-        </div>
+      <button class="btn btn-primary" onclick="showEP('unro');">UNRO</button>
+      <button class="btn btn-primary" onclick="showEP('epgz');">EPGZ</button>
+      <button class="btn btn-primary" onclick="showEP('epsf');">EPSF</button>
+      <button class="btn btn-primary" onclick="showEP('prna');">PRNA</button>
+      <button class="btn btn-primary" onclick="showEP('rufi');">RUFI</button>
+      <div class="btn-group">
+        <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+          Experimentales <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li onclick="showEP('unr2');"><a>UNR2</a></li>
+          <li onclick="showEP('epvt');"><a>EPVT</a></li>
+         </ul>
+      </div>
     </div>
-
-
-.. class:: note col-md-5 pull-right
-
-Instructivo para descargar archivos
-===================================
-
-Está disponible el `Instructivo para descarga de archivos de observaciones <instr_>`_ en formato RINEX.
-
-.. _instr: /ep/instructivo.html
-
-Invitamos a hacer uso de la estación y agradeceremos a quien pueda usarla y experimentar con sus datos, nos comente sus resultados, observaciones, etc.
-
-Para mayor información sobre la manipulación de archivos RINEX: Preguntas Frecuentes en el sitio del IGN. 
 
 
 .. include:: pages/ep/unro.txt

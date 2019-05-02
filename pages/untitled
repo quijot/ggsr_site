@@ -1,0 +1,118 @@
+==== ====== ====== ====== ================= ========================= =======================
+EP   Exactitud media [cm] Precisión 3σ [cm]                      Gráficas
+---- -------------------- ----------------- -------------------------------------------------
+        e     n   Módulo      e      n
+==== ====== ====== ====== ================= ========================= =======================
+ABRA   0.4  -9.3    9.3      0.4    1.9     `evolución <ALUM-evol_>`_ `elipse <ALUM-ellip_>`_
+ALUM  -0.5   0.3    0.6      1.2    1.2     `evolución <AUTF-evol_>`_ `elipse <AUTF-ellip_>`_
+AUTF   1.0  -0.6    1.2      1.0    2.4     `evolución <AZUL-evol_>`_ `elipse <AZUL-ellip_>`_
+AZUL   0.6  -0.4    0.7      1.2    0.7     `evolución <BCAR-evol_>`_ `elipse <BCAR-ellip_>`_
+BCAR  -0.5  -0.4    0.6      0.9    1.0     `evolución <BCH1-evol_>`_ `elipse <BCH1-ellip_>`_
+BCH1   8.6  68.1   68.6      1.1    0.6     `evolución <CATA-evol_>`_ `elipse <CATA-ellip_>`_
+CATA  -0.9   0.4    1.0      1.3    1.6     `evolución <CHAC-evol_>`_ `elipse <CHAC-ellip_>`_
+CHAC   0.5  -0.9    1.0      0.9    0.9     `evolución <CORD-evol_>`_ `elipse <CORD-ellip_>`_
+CORD  -0.7  -0.4    0.8      0.7    2.4     `evolución <CSLO-evol_>`_ `elipse <CSLO-ellip_>`_
+CSLO   1.8  -0.6    1.9      3.4   16.3     `evolución <EBYP-evol_>`_ `elipse <EBYP-ellip_>`_
+EBYP  -0.4  -0.3    0.5      1.1    0.5     `evolución <ESQU-evol_>`_ `elipse <ESQU-ellip_>`_
+ESQU   0.3  -0.6    0.7      1.7    1.7     `evolución <GUAY-evol_>`_ `elipse <GUAY-ellip_>`_
+GUAY   0.3  -0.9    0.9      1.2    0.9     `evolución <IGM1-evol_>`_ `elipse <IGM1-ellip_>`_
+IGM1   0.2  -0.2    0.3      0.8    0.5     `evolución <JBAL-evol_>`_ `elipse <JBAL-ellip_>`_
+JBAL  -0.1   1.4    1.4      1.1    1.6     `evolución <LHCL-evol_>`_ `elipse <LHCL-ellip_>`_
+LHCL   0.3  -1.8    1.8      1.1    1.2     `evolución <LPGS-evol_>`_ `elipse <LPGS-ellip_>`_
+LPGS   0.6  -0.1    0.6      1.1    0.6     `evolución <MA01-evol_>`_ `elipse <MA01-ellip_>`_
+MA01   0.2  -1.3    1.3      1.0    1.5     `evolución <MECO-evol_>`_ `elipse <MECO-ellip_>`_
+MECO   0.1  -0.7    0.7      1.2    0.4     `evolución <MGUE-evol_>`_ `elipse <MGUE-ellip_>`_
+MGUE  17.2  -0.9   17.2      2.5    1.2     `evolución <MPL2-evol_>`_ `elipse <MPL2-ellip_>`_
+MPL2   0.3  -0.3    0.4      1.0    1.7     `evolución <MZAC-evol_>`_ `elipse <MZAC-ellip_>`_
+MZAC   1.0  -0.9    1.3      2.4    8.0     `evolución <MZAE-evol_>`_ `elipse <MZAE-ellip_>`_
+MZAE  -1.3  -5.9    6.0      1.4    6.3     `evolución <MZAL-evol_>`_ `elipse <MZAL-ellip_>`_
+MZAL   2.2  -3.5    4.1      1.8    5.9     `evolución <MZAU-evol_>`_ `elipse <MZAU-ellip_>`_
+MZAU  -2.5   6.1    6.6      1.7    2.6     `evolución <MZGA-evol_>`_ `elipse <MZGA-ellip_>`_
+MZGA  -5.9  13.8   15.0      2.6    1.8     `evolución <MZRF-evol_>`_ `elipse <MZRF-ellip_>`_
+MZRF  -7.6  -6.0    9.7      0.5    0.6     `evolución <NESA-evol_>`_ `elipse <NESA-ellip_>`_
+NESA  -0.4  -3.5    3.5      1.0    0.7     `evolución <PEJO-evol_>`_ `elipse <PEJO-ellip_>`_
+PEJO  -0.5   0.9    1.0      0.7    0.6     `evolución <PRCV-evol_>`_ `elipse <PRCV-ellip_>`_
+PRCV  -0.0   0.1    0.1      1.2    0.5     `evolución <PRNA-evol_>`_ `elipse <PRNA-ellip_>`_
+PRNA   1.7  -0.5    1.8      1.9    1.3     `evolución <RECO-evol_>`_ `elipse <RECO-ellip_>`_
+RECO   0.7  -1.0    1.2      0.5    0.8     `evolución <RIO2-evol_>`_ `elipse <RIO2-ellip_>`_
+RIO2   0.7  -1.1    1.3      1.1    0.5     `evolución <RSAL-evol_>`_ `elipse <RSAL-ellip_>`_
+RSAL   0.1  -0.2    0.2      0.7    0.9     `evolución <RSCL-evol_>`_ `elipse <RSCL-ellip_>`_
+RSCL  -0.7  -0.0    0.7      0.5    0.5     `evolución <RWSN-evol_>`_ `elipse <RWSN-ellip_>`_
+RWSN   0.5   3.8    3.8      2.9    8.8     `evolución <SANT-evol_>`_ `elipse <SANT-ellip_>`_
+SANT   2.0  12.5   12.7      2.1    3.3     `evolución <SL01-evol_>`_ `elipse <SL01-ellip_>`_
+SL01  -8.0  -4.1    9.0      1.0    2.9     `evolución <SRLP-evol_>`_ `elipse <SRLP-ellip_>`_
+SRLP   0.2  -1.9    1.9      1.3    1.4     `evolución <SVIC-evol_>`_ `elipse <SVIC-ellip_>`_
+SVIC  -0.9  -0.5    1.0      1.0    0.6     `evolución <TERO-evol_>`_ `elipse <TERO-ellip_>`_
+TERO   0.1  -0.2    0.2      1.2    1.8     `evolución <TUCU-evol_>`_ `elipse <TUCU-ellip_>`_
+TUCU  -0.5   0.6    0.8      0.9    1.2     `evolución <UCOR-evol_>`_ `elipse <UCOR-ellip_>`_
+UCOR  -0.1  -1.2    1.2      0.7    1.6     `evolución <UNPA-evol_>`_ `elipse <UNPA-ellip_>`_
+UNPA   4.4   2.6    5.1      1.2    1.0     `evolución <UNRO-evol_>`_ `elipse <UNRO-ellip_>`_
+UNRO  -0.3   0.1    0.3      0.7    0.7     `evolución <UNSA-evol_>`_ `elipse <UNSA-ellip_>`_
+UNSA   0.0  -1.8    1.8      0.9    1.3     `evolución <UNSJ-evol_>`_ `elipse <UNSJ-ellip_>`_
+UNSJ  -0.0  -2.2    2.2      0.9   12.4     `evolución <UYCO-evol_>`_ `elipse <UYCO-ellip_>`_
+UYCO   0.4  -0.8    0.9      0.5    0.4     `evolución <UYPA-evol_>`_ `elipse <UYPA-ellip_>`_
+UYPA   0.6  -0.6    0.8      1.0    0.8     `evolución <UYSA-evol_>`_ `elipse <UYSA-ellip_>`_
+UYSA   0.3  -1.5    1.5      0.5    0.4     `evolución <UYSO-evol_>`_ `elipse <UYSO-ellip_>`_
+UYSO   0.3   0.4    0.5      1.0    0.6     `evolución <UYTA-evol_>`_ `elipse <UYTA-ellip_>`_
+UYTD   0.5  -1.0    1.1      0.6    0.4     `evolución <UYTD-evol_>`_ `elipse <UYTD-ellip_>`_
+VBCA   0.8  -1.7    1.9      0.9    0.5     `evolución <VBCA-evol_>`_ `elipse <VBCA-ellip_>`_
+YCBA  -0.0  -4.1    4.1      1.2    1.3     `evolución <YCBA-evol_>`_ `elipse <YCBA-ellip_>`_
+YEMA   0.0  -3.2    3.2      0.6    1.2     `evolución <YEMA-evol_>`_ `elipse <YEMA-ellip_>`_
+===========================================
+
+- ABRA [`evolución <ABRA-evol_>`_] [`elipse <ABRA-ellip_>`_]_
+- ALUM [`evolución <ALUM-evol_>`_] [`elipse <ALUM-ellip_>`_]_
+- AUTF [`evolución <AUTF-evol_>`_] [`elipse <AUTF-ellip_>`_]_
+- AZUL [`evolución <AZUL-evol_>`_] [`elipse <AZUL-ellip_>`_]_
+- BCAR [`evolución <BCAR-evol_>`_] [`elipse <BCAR-ellip_>`_]_
+- BCH1 [`evolución <BCH1-evol_>`_] [`elipse <BCH1-ellip_>`_]_
+- CATA [`evolución <CATA-evol_>`_] [`elipse <CATA-ellip_>`_]_
+- CHAC [`evolución <CHAC-evol_>`_] [`elipse <CHAC-ellip_>`_]_
+- CORD [`evolución <CORD-evol_>`_] [`elipse <CORD-ellip_>`_]_
+- CSLO [`evolución <CSLO-evol_>`_] [`elipse <CSLO-ellip_>`_]_
+- EBYP [`evolución <EBYP-evol_>`_] [`elipse <EBYP-ellip_>`_]_
+- ESQU [`evolución <ESQU-evol_>`_] [`elipse <ESQU-ellip_>`_]_
+- GUAY [`evolución <GUAY-evol_>`_] [`elipse <GUAY-ellip_>`_]_
+- IGM1 [`evolución <IGM1-evol_>`_] [`elipse <IGM1-ellip_>`_]_
+- JBAL [`evolución <JBAL-evol_>`_] [`elipse <JBAL-ellip_>`_]_
+- LHCL [`evolución <LHCL-evol_>`_] [`elipse <LHCL-ellip_>`_]_
+- LPGS [`evolución <LPGS-evol_>`_] [`elipse <LPGS-ellip_>`_]_
+- MA01 [`evolución <MA01-evol_>`_] [`elipse <MA01-ellip_>`_]_
+- MECO [`evolución <MECO-evol_>`_] [`elipse <MECO-ellip_>`_]_
+- MGUE [`evolución <MGUE-evol_>`_] [`elipse <MGUE-ellip_>`_]_
+- MPL2 [`evolución <MPL2-evol_>`_] [`elipse <MPL2-ellip_>`_]_
+- MZAC [`evolución <MZAC-evol_>`_] [`elipse <MZAC-ellip_>`_]_
+- MZAE [`evolución <MZAE-evol_>`_] [`elipse <MZAE-ellip_>`_]_
+- MZAL [`evolución <MZAL-evol_>`_] [`elipse <MZAL-ellip_>`_]_
+- MZAU [`evolución <MZAU-evol_>`_] [`elipse <MZAU-ellip_>`_]_
+- MZGA [`evolución <MZGA-evol_>`_] [`elipse <MZGA-ellip_>`_]_
+- MZRF [`evolución <MZRF-evol_>`_] [`elipse <MZRF-ellip_>`_]_
+- NESA [`evolución <NESA-evol_>`_] [`elipse <NESA-ellip_>`_]_
+- PEJO [`evolución <PEJO-evol_>`_] [`elipse <PEJO-ellip_>`_]_
+- PRCV [`evolución <PRCV-evol_>`_] [`elipse <PRCV-ellip_>`_]_
+- PRNA [`evolución <PRNA-evol_>`_] [`elipse <PRNA-ellip_>`_]_
+- RECO [`evolución <RECO-evol_>`_] [`elipse <RECO-ellip_>`_]_
+- RIO2 [`evolución <RIO2-evol_>`_] [`elipse <RIO2-ellip_>`_]_
+- RSAL [`evolución <RSAL-evol_>`_] [`elipse <RSAL-ellip_>`_]_
+- RSCL [`evolución <RSCL-evol_>`_] [`elipse <RSCL-ellip_>`_]_
+- RWSN [`evolución <RWSN-evol_>`_] [`elipse <RWSN-ellip_>`_]_
+- SANT [`evolución <SANT-evol_>`_] [`elipse <SANT-ellip_>`_]_
+- SL01 [`evolución <SL01-evol_>`_] [`elipse <SL01-ellip_>`_]_
+- SRLP [`evolución <SRLP-evol_>`_] [`elipse <SRLP-ellip_>`_]_
+- SVIC [`evolución <SVIC-evol_>`_] [`elipse <SVIC-ellip_>`_]_
+- TERO [`evolución <TERO-evol_>`_] [`elipse <TERO-ellip_>`_]_
+- TUCU [`evolución <TUCU-evol_>`_] [`elipse <TUCU-ellip_>`_]_
+- UCOR [`evolución <UCOR-evol_>`_] [`elipse <UCOR-ellip_>`_]_
+- UNPA [`evolución <UNPA-evol_>`_] [`elipse <UNPA-ellip_>`_]_
+- UNRO [`evolución <UNRO-evol_>`_] [`elipse <UNRO-ellip_>`_]_
+- UNSA [`evolución <UNSA-evol_>`_] [`elipse <UNSA-ellip_>`_]_
+- UNSJ [`evolución <UNSJ-evol_>`_] [`elipse <UNSJ-ellip_>`_]_
+- UYCO [`evolución <UYCO-evol_>`_] [`elipse <UYCO-ellip_>`_]_
+- UYPA [`evolución <UYPA-evol_>`_] [`elipse <UYPA-ellip_>`_]_
+- UYSA [`evolución <UYSA-evol_>`_] [`elipse <UYSA-ellip_>`_]_
+- UYSO [`evolución <UYSO-evol_>`_] [`elipse <UYSO-ellip_>`_]_
+- UYTA [`evolución <UYTA-evol_>`_] [`elipse <UYTA-ellip_>`_]_
+- UYTD [`evolución <UYTD-evol_>`_] [`elipse <UYTD-ellip_>`_]_
+- VBCA [`evolución <VBCA-evol_>`_] [`elipse <VBCA-ellip_>`_]_
+- YCBA [`evolución <YCBA-evol_>`_] [`elipse <YCBA-ellip_>`_]_
+- YEMA [`evolución <YEMA-evol_>`_] [`elipse <YEMA-ellip_>`_]_

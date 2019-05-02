@@ -1,0 +1,58 @@
+.. title: GRUPO DE GEODESIA SATELITAL DE ROSARIO
+.. slug: index-old
+.. date: 24/05/14 13:17:51 UTC-03:00
+.. tags:
+.. link:
+.. description:
+.. type: text
+.. template: notitle.tmpl
+
+Grupo de Geodesia Satelital de Rosario
+--------------------------------------
+
+.. raw:: html
+
+  <div class="col-lg-7">
+
+.. admonition:: `Calculadora ITRF → POSGAR </calc/>`_
+
+  La *Calculadora* es una aplicación web para transformar coordenadas ITRF (de *cualquier* época) al Marco de Referencia oficial de nuestro país, POSGAR07 (época 2006.632). Está disponible en `este enlace </calc/>`_.
+
+.. admonition:: Caster SIRGAS y Mapa de Estaciones TR
+
+  - `Formularios de Registro </caster/>`_ al Caster SIRGAS Experimental.
+  - `Mapa de Estaciones Tiempo Real </mapatr/>`_ de Sudamérica.
+
+.. raw:: html
+
+    </div>
+
+.. class:: jumbotron col-lg-5
+
+`Estaciones Permanentes <ep_>`_
+-------------------------------
+
+.. _ep: ep
+
+RAMSAC
+^^^^^^
+
+.. raw:: html
+
+  <div class="btn-group">
+    <a href="ep/unro" class="btn btn-primary">UNRO</a>
+    <a href="ep/epsf" class="btn btn-primary">EPSF</a>
+    <a href="ep/prna" class="btn btn-primary">PRNA</a>
+    <a href="ep/rufi" class="btn btn-primary">RUFI</a>
+  </div>
+
+Experimentales
+^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <div class="btn-group">
+    <a href="ep/unr2" class="btn btn-primary">UNR2</a>
+    <a href="ep/epgz" class="btn btn-primary">EPGZ</a>
+    <a href="ep/epvt" class="btn btn-primary">EPVT</a>
+  </div>

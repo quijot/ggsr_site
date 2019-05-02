@@ -26,14 +26,22 @@ dir="rtl" \
 lang="${lang}">
     <head>
     <meta charset="utf-8">
+    % if use_base_tag:
     <base href="${abs_link(permalink)}">
+    % endif
     %if description:
-    <meta name="description" content="${description}">
+    <meta name="description" content="${description|h}">
     %endif
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>${title|striphtml} | ${blog_title|striphtml}</title>
+    %if title == blog_title:
+        <title>${blog_title|h}</title>
+    %else:
+        <title>${title|h} | ${blog_title|h}</title>
+    %endif
 
     ${html_stylesheets()}
+    <meta name="theme-color" content="${theme_color}">
+    <meta name="generator" content="Nikola (getnikola.com)">
     ${html_feedlinks()}
     <link rel="canonical" href="${abs_link(permalink)}">
 
@@ -56,9 +64,9 @@ lang="${lang}">
 
     ${mathjax_config}
     %if use_cdn:
-        <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <!--[if lt IE 9]><script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     %else:
-        <!--[if lt IE 9]><script src="${url_replacer(permalink, '/assets/js/html5.js', lang)}"></script><![endif]-->
+        <!--[if lt IE 9]><script src="${url_replacer(permalink, '/assets/js/html5.js', lang, url_type)}"></script><![endif]-->
     %endif
 
     ${extra_head_data}
@@ -67,16 +75,17 @@ lang="${lang}">
 <%def name="late_load_js()">
     %if use_bundles:
         %if use_cdn:
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-            <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
             <script src="/assets/js/all.js"></script>
         %else:
             <script src="/assets/js/all-nocdn.js"></script>
         %endif
     %else:
         %if use_cdn:
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-            <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         %else:
             <script src="/assets/js/jquery.min.js"></script>
             <script src="/assets/js/bootstrap.min.js"></script>
@@ -95,14 +104,14 @@ lang="${lang}">
 <%def name="html_stylesheets()">
     %if use_bundles:
         %if use_cdn:
-            <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
             <link href="/assets/css/all.css" rel="stylesheet" type="text/css">
         %else:
             <link href="/assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
         %endif
     %else:
         %if use_cdn:
-            <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         %else:
             <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         %endif

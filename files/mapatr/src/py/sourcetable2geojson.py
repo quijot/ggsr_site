@@ -36,14 +36,14 @@ for line in st:
     identifier  = array[2]
     data_format = array[3]
     format_det  = array[4]
-    carrier     = 'No info' if(int(array[5])) else 'L%s' % array[5]
+    carrier     = 'No info' if(array[5] != '0') else 'L%s' % array[5]
     nav_system  = array[6]
     network     = array[7]
     country     = array[8]
     latitude    = float(array[9])
     longitude   = float(array[10])
     nmea        = array[11]
-    solution    = 'network' if(int(array[12])) else 'single base'
+    solution    = 'network' if(array[12] != '0') else 'single base'
     generator   = array[13]
     compression = array[14]
     authenticat = array[15]

@@ -1,72 +1,87 @@
 .. title: GRUPO DE GEODESIA SATELITAL DE ROSARIO
 .. slug: index
-.. date: 24/05/14 13:17:51 UTC-03:00
-.. tags: 
-.. link: 
-.. description: 
+.. date: 11/08/17 13:17:51 UTC-03:00
+.. tags:
+.. link:
+.. description:
 .. type: text
 .. template: notitle.tmpl
 
-.. class:: col-md-6
 
-Grupo de Geodesia Satelital de Rosario
---------------------------------------
+.. raw:: html
 
-| Universidad Nacional de Rosario
-| Facultad de Ciencias Exactas, Ingeniería y Agrimensura
-| Escuela de Agrimensura
-| Departamento de Geotopocartografía
+  <div class="col-lg-12">
 
-.. |arroba| image:: /images/120px-At_sign.svg.png
-            :height: 15px
-            :alt: arroba
-            :align: middle
+    <div class="well">
+      <h1><strong>G</strong>rupo de <strong>G</strong>eodesia <strong>S</strong>atelital de <strong>R</strong>osario</h1>
+      <div class="line-block">
+        <div class="line">
+          <strong>F</strong>acultad de <strong>C</strong>iencias <strong>E</strong>xactas, <strong>I</strong>ngeniería y <strong>A</strong>grimensura
+        </div>
+        <div class="line">
+          <strong>U</strong>niversidad <strong>N</strong>acional de <strong>R</strong>osario
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-lg-12">
+
+
+.. admonition:: `Curso de postgrado Georreferenciación </cursos/#ano-2019-curso-de-postgrado-georreferenciacion>`_ (Mayo de 2019)
+
+  La georreferenciación se ha convertido en la base tecnológica de un cambio cultural.
+
+  El empleo de coordenadas, referidas a un único sistema mundial, permite identificar puntos del espacio, sean éstos aéreos, marítimos, fluviales, o terrestres, naturales o culturales, con los más diversos fines. `Seguir leyendo... </cursos/#ano-2019-curso-de-postgrado-georreferenciacion>`__
+
+.. admonition:: `Historia del GGSR </historia/>`_
+
+  En 1988 Oscar Parachú y Aldo Mangiaterra concurrieron al Seminario sobre GPS, organizado en la Facultad de Ciencias Astronómicas y Geofísicas de la Universidad Nacional de La Plata (UNLP). `Seguir leyendo... </historia/>`__
+
+.. raw:: html
+
+  </div><!-- end-col -->
+  <div class="col-lg-8">
+
+.. admonition:: `Calculadora ITRF → POSGAR </calc/>`_
+
+  La *Calculadora* es una aplicación web para transformar coordenadas ITRF (de *cualquier* época) al Marco de Referencia oficial de nuestro país, POSGAR07 (época 2006.632). Está disponible en `este enlace </calc/>`_.
 
 .. admonition:: Caster SIRGAS y Mapa de Estaciones TR
-  
+
   - `Formularios de Registro </caster/>`_ al Caster SIRGAS Experimental.
   - `Mapa de Estaciones Tiempo Real </mapatr/>`_ de Sudamérica.
 
-.. class:: jumbotron col-md-5
+.. raw:: html
 
-`Estaciones Permanentes <ep_>`_
--------------------------------
-
-.. _ep: ep
-
-
-RAMSAC
-^^^^^^
+  </div><!-- end-col -->
+  <div class="col-lg-4">
 
 .. raw:: html
 
-  <div class="btn-group" id="ep-picker">
-    <a href="ep/unro" class="btn btn-primary">UNRO</a>
-    <a href="ep/epsf" class="btn btn-primary">EPSF</a>
-    <a href="ep/prna" class="btn btn-primary">PRNA</a>
-    <a href="ep/rufi" class="btn btn-primary">RUFI</a>
-  </div>
+    <style>
+      .btn-default {
+        color: #333;
+        background-color: #F5F5F5;
+        border-color: #DDD;
+      }      
+    </style>
+    <div class="admonition admonition-estaciones-permanentes-ep">
+      <p class="first admonition-title"><a class="reference external" href="ep">Estaciones Permanentes</a></p>
+      <h3>RAMSAC</h3>
+      <div class="btn-group">
+        <a href="/ep/unro" class="btn btn-default btn-sm">UNRO</a>
+        <a href="/ep/epgz" class="btn btn-default btn-sm">EPGZ</a>
+        <a href="/ep/epsf" class="btn btn-default btn-sm">EPSF</a>
+        <a href="/ep/prna" class="btn btn-default btn-sm">PRNA</a>
+        <a href="/ep/rufi" class="btn btn-default btn-sm">RUFI</a>
+      </div>
+      <h3>Experimentales</h3>
+      <div class="btn-group">
+        <a href="/ep/unr2" class="btn btn-default btn-sm">UNR2</a>
+        <a href="/ep/epvt" class="btn btn-default btn-sm">EPVT</a>
+      </div>
+    </div>
 
-Experimentales
-^^^^^^^^^^^^^^
-
-.. raw:: html
-
-  <div class="btn-group" id="ep-picker">
-    <a href="ep/unr2" class="btn btn-primary">UNR2</a>
-    <a href="ep/epgz" class="btn btn-primary">EPGZ</a>
-    <a href="ep/epvt" class="btn btn-primary">EPVT</a>
-  </div>
-
-.. **RAMSAC**
-
-  * `UNRO - Rosario </ep/home.php?EP=UNRO>`_
-  * `EPSF - Santa Fe (desde 22/02/12) </ep/home.php?EP=EPSF>`_
-  * `PRNA - Paraná (desde 30/06/11) </ep/home.php?EP=PRNA>`_
-  * `RUFI - Rufino (desde 28/09/12) </ep/home.php?EP=RUFI>`_
-
-  **Experimentales**
-
-  * `UNR2 - Rosario ONLINE desde 23/06/12 </ep/home.php?EP=UNR2>`_
-  * `EPGZ - Gálvez OFFLINE </ep/home.php?EP=EPGZ>`_
-  * `EPVT - Venado Tuerto OFFLINE </ep/home.php?EP=EPVT>`_
+  </div><!-- end-col -->

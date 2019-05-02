@@ -1,22 +1,33 @@
 EPGZ
 ====
 
-**SE ENCUENTRA FUERA DE FUNCIONAMIENTO.**
+La Estación Permanente **EPGZ** [#]_ está ubicada en la ciudad de Gálvez, Santa Fe, Argentina.
 
-**Funcionó desde el 18/11/2011 hasta el 26/06/2012.**
+Los responsables del mantenimiento son: Claudio Guri (Municipalidad de Gálvez) - Santiago Pestarini
+(GGSR y CoPA Santa Fe Distrito Norte) - Cristian Frediani (Instituto Geográfico Nacional).
 
-La Estación Permanente Gálvez funciona desde el viernes 18 de noviembre de 2011 y estará disponible durante aproximadamente 4 meses, de manera experimental.
+Todos los datos de la Estación Permanente, coordenadas, características del receptor y la antena y su estado se pueden consultar en el sitio del IGN. Allí además podrá descargar los archivos de observaciones.
 
-Coordenadas
------------
+* `Descargar archivos de observacines RINEX <http://ign.gob.ar/NuestrasActividades/Geodesia/Ramsac/DescargaRinex>`_
+* `Ficha de EPGZ <http://ign.gob.ar/archivos/ramsac/estacion2.php?estacion=EPGZ>`_
+* `Mapa de la red <http://ign.gob.ar/NuestrasActividades/Geodesia/Ramsac/Mapa>`_
 
-Marco de Referencia Oficial POSGAR 07 (época 2006.632, ITRF2005)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. [#] EPGZ, actualmente perteneciente a la Red Argentina de Monitoreo Satelital Continuo –RAMSAC–, funcionó de manera experimental desde el viernes 18 de noviembre de 2011 hasta el 26 de junio de 2012. Esta fase experimental formó parte del Proyecto de Investigación del GGSR: "Del Sistema de Posicionamiento Global GPS al Sistema Global de Navegación Satelital GNSS. Investigación sobre su desarrollo y prospectiva", realizado entre los años 2010 y 2013, que establecía, entre sus objetivos, "continuar desarrollando conocimientos y experimentación para el funcionamiento de las Estaciones Permanentes GNSS y aportar a la densificación de las redes que las mismas integran", cumpliéndose a través de la instrucción y dirección para la instalación y puesta en marcha no sólo de la estación experimental de Gálvez, sino también de las Estaciones Permanentes GNSS de Paraná, Santa Fe y Rufino.
 
-Geodésicas
-""""""""""
 
-:Latitud: 32º 01' 46.14241" S
-:Longitud: 61º 13' 29.17011" W
-:Altura: 84.932 m
+.. comentarios
+
+    **SE ENCUENTRA FUERA DE FUNCIONAMIENTO.**
+
+    La Estación Permanente Gálvez funcionó desde el viernes 18 de noviembre de 2011 y estuvo disponible, de manera experimental, hasta el 26 de junio de 2012.
+
+    Coordenadas geodésicas
+    ----------------------
+
+    Marco de Referencia Oficial POSGAR 07 (época 2006.632, ITRF2005)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    :Latitud: 32º 01' 46.14241" S
+    :Longitud: 61º 13' 29.17011" W
+    :Altura: 84.932 m
 

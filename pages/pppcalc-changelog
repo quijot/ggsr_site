@@ -3,14 +3,33 @@
 
   <hr>
 
-Cambios en versiones
-====================
+Futuras versiones
+=================
+
+Estamos trabajando en la siguiente versión de la aplicación, en la cual incorporaremos el modelo de velocidades recientemente publicado `VEMOS2015 <http://www.sirgas.org/index.php?id=241>`_.
+
+
+Modificaciones en las versiones desarrolladas
+=============================================
+
+`versión 0.4 <../pppcalc>`_
+--------------------------------
+- Se extiende el período de validez agregando soporte para los años 2016 y 2017.
+
+
+`versión 0.3 <../pppcalc-v0.3>`_
+--------------------------------
+- Se imprime un Informe preliminar por pantalla, a mejorar en futuras versiones.
+- Se modificó la disposición de los campos de ingreso de datos del formulario de la calculadora.
+- Se mejora el control numérico de datos ingresados y se agrega una leyenda guía para el formato de los datos a ingresar en el formulario.
+- Luego de haber efectuado el proceso de corrección, el punto relevado con coordenadas corregidas, se localiza en el mapa a través del cursor gráfico.
+- Al presionar *Restablecer*, también el cursor gráfico del mapa y el Informe generado se suprimen.
+
 
 `versión 0.2 <../pppcalc-v0.2>`_
 --------------------------------
-- Se agregó un campo *ID sitio* para asignar un identificador al punto cuyas coordenadas se corrigen. (Sólo para agregar en el informe. No afecta corrección.)
-- Se agregó un campo *Sesión (hs)* para asignar su duración en horas y minutos. (Sólo para agregar en el informe. No afecta corrección.)
-- Se agregó un botón *Restablecer* para limpiar todos los campos de la calculadora.
+- Se agregaron los campos *ID Sitio* y *Sesión [hs]* para asignar un identificador al punto cuyas coordenadas se corrigen, y detallar la duración de la sesión en horas y fracción de horas respectivamente. Ambos campos *no afectan a la corrección* y se imprimirán en un futuro Informe a desarrollar en futuras versiones.
+- Se agrega un botón *Restablecer* para limpiar todos los campos del formulario de la calculadora.
 - En *Para qué sirve* y *Correcciones* se afinó la terminología.
 - En *Zona de validez* se corrigió provincia de Santa Fe, que es abarcada por completo y se detallaron los paralelos y meridianos límites.
 

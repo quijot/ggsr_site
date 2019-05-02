@@ -3,15 +3,152 @@
 .. date: 24/05/14 13:48:55 UTC-03:00
 .. tags: 
 .. link: 
-.. description: 
+.. description: Cursos de capacitación dictados por el GGSR
 .. type: text
+.. template: notitle.tmpl
+
+.. contents:: Listado de Cursos
+   :depth: 1
+
+Año 2019: Curso de postgrado Georreferenciación
+===============================================
+
+Objetivos del curso
+-------------------
+
+- Conocer el marco teórico de la georreferenciación y su aporte en diversas ramas del conocimiento vinculadas al territorio.
+- Informar sobre la tecnología llamada GPS y GNSS.
+- Reconocer el valor de la información territorial georreferenciada.
+- Transferir conocimientos sobre tecnología satelital de posicionamiento, sus fundamentos y sus diversas aplicaciones.
+- Conocer sus precisiones y también limitaciones.
+- Realizar prácticas de obtención de coordenadas (mediante receptores satelitales), y empleo de las mismas (distancias, orientación, rutas, etc.).
+- Informar sobre programas de uso público útiles para la georreferenciación y algún entrenamiento para su aplicación.
+- Destacar el uso de cartografía para el conocimiento y manejo del territorio.
+
+Contenido sintético
+-------------------
+
+1. **Georreferenciación**
+
+- Significado
+- Aplicaciones
+- Prácticas con navegador
+
+2. **Coordenadas**
+
+- Sistemas de coordenadas
+- Historia
+- Sistemas de referencia
+- Superficies de referencia
+- Marcos de referencia
+
+3. **Cartografía**
+
+- Representación plana
+- Cartas, mapas y planos
+- Historia de cartografía Argentina
+- Sistema Gauss Krüger
+- Práctica sobre cartas
+
+4. **GNSS**
+
+- Historia, sistema GPS
+- Obtención de coordenadas
+- Precisión
+- Altimetría con GNSS
+- Estaciones permanentes
+- RAMSAC - SIRGAS
+- Prácticas sobre resultados de observaciones
+
+Destinatarios
+-------------
+
+- Graduados universitarios de amplia variedad de carreras con actividades vinculadas al territorio (Ingenierías, Cs. Agrarias, Medicina, Cs. Sociales, etc.).
+- Alumnos avanzados y graduados de Profesorados de Geografía y docentes de Geografía en general.
+
+A desarrollarse en
+------------------
+
+| Facultad de Ciencias Exactas, Ingeniería y Agrimensura - Universidad Nacional de Rosario
+| Avda. Pellegrini 250 – Rosario – Santa Fe.
+
+| Los días 3 y 4, 10 y 11, y 17 y 18 de Mayo de 2019.
+| Horarios:
+| Viernes de 14 a 20 horas.
+| Sábados de 9 a 13 horas.
+
+Docentes
+--------
+
+| **Claudio Brunini**, profesor en la UNLaPlata, investigador Conicet, director de AGGO.
+| **Virginia Mackern**, profesora en UNCuyo, investigadora Conicet, Vicepresidenta SIRGAS.
+| **Gustavo Noguera**, profesor en UNRosario, director del Grupo de Geodesia Satelital de Rosario (GGSR).
+| **Laura Cornaglia**, docente en UNRosario, integrante GGSR.
+| **Aldo Mangiaterra**, ex profesor UNRosario, integrante GGSR.
+
+**Disertación a cargo del Instituto Geográfico Nacional (IGN)**.
+
+| **Notas**:
+| Curso acreditable por el Ministerio de Educación de la Provincia de Santa Fe.
+| Curso acreditable para el Doctorado en Ingeniería de la FCEIA, aprobado s/ resol. 649/18
+
+| **Costo de inscripción**: $1800. Se adjudicarán becas.
+
+Consultas: **epgps** |arroba| **fceia.unr.edu.ar**
+
+.. |arroba| image:: /images/120px-At_sign.svg.png
+            :height: 15px
+            :alt: arroba
+            :align: middle
+
+
+Año 2016: Georreferenciación
+============================
+
+| Métodos.
+| Procesamiento y cálculos.
+| Combinación de mediciones satelitales y terrestres.
+| Posicionamiento puntual preciso.
+| Normas provinciales.
+
+Organizado por el `Colegio de Profesionales de la Agrimensura de la Provincia de Santa Fe Distrito Norte <http://www.copasfn.org.ar/>`_.
+
+| Dictado en el Salón de la Caja de Previsión Social de los Profesionales de la Ingeniería de la Provincia de Santa Fe 1ª Circunscripción. Ciudad de Santa Fe.
+| Fecha: Viernes 5 de Agosto de 2016.
+| Material: `Georreferenciación-StaFe-05Ago16.pdf </cursos/Georreferenciación-StaFe-05Ago16.pdf>`_
+
+
+Año 2015: Geografía y Georreferenciación
+========================================
+
+.. image:: /images/gyg/CursoGyG_2015.jpg
+   :width: 360px
+   :alt: Afiche curso 2015
+   :align: left
+   :target: /images/gyg/CursoGyG_2015.jpg
+
+Georreferenciación, Sistemas de Posicionamiento Global, Coordenadas y Marcos de referencia.
+
+Destinatarios: Docentes de nivel medio, terciario y superior.
+
+Organizado por el Grupo de Geodesia Satelital de Rosario y auspiciado por la Asociación Gremial de Docentes e Investigadores de la Universidad Nacional de Rosario (Coad).
+
+Curso de Capacitación aprobado por Resolución Nº 717/2015 Facultad de Ciencias Exactas, Ingeniería y Agrimensura - UNR
+
+| Dictado en Coad, Tucumán 2254, Rosario. Agosto - Septiembre 2015.
+| Material del curso: `CursoGyG_2015.pdf </cursos/gyg/CursoGyG_2015.pdf>`_
+
+| Navegador utilizado en las prácticas del curso: Garmin© Oregon    
+| `Manual del usuario Garmin© Oregon </cursos/gyg/oregon.pdf>`_.
+| (Para mayor información referirse al `sitio oficial de Garmin© <http://www.garmin.com>`_)
+
 
 Año 2014: Geografía y Georreferenciación
 ========================================
 
 .. image:: /images/gyg/afiche_curso_georreferenicacion13_small.jpg
    :width: 180px
-   :alt: Afiche curso
+   :alt: Afiche curso 2014
    :align: left
    :target: /images/gyg/afiche_curso_georreferenicacion13.jpg
 
@@ -23,8 +160,8 @@ Destinatarios: Profesores de escuelas Medias y Técnicas.
 Organizado por el Grupo de Geodesia Satelital Rosario y la Asociación del Magisterio de Santa Fe Delegación Rosario (Amsafe Rosario)
 (`ver más en el sitio de AMSAFE <http://www.amsaferosario.org.ar/page/noticias/id/145/title/Curso-de-Geografía-y-Georreferenciación>`_).
 
-| Dictado en AMSAFE Rosario. Mayo  Junio 2014.
-| Material del curso: `cursogyg2014.pdf </cursos/gyg/cursogyg2014.pdf>`_
+| Dictado en AMSAFE Rosario. Mayo - Junio 2014.
+|
 
 | Navegador utilizado en las prácticas del curso: Garmin© Oregon    
 | `Manual del usuario Garmin© Oregon </cursos/gyg/oregon.pdf>`_.
@@ -57,9 +194,8 @@ Destinatarios: Profesores de escuelas Medias y Técnicas.
 Organizado por el Grupo de Geodesia Satelital Rosario y la Asociación del Magisterio de Santa Fe Delegación Rosario (Amsafe Rosario).
 
 | Dictado en Amsafe Rosario. Mayo – Junio 2012.
-| Material del curso: `cursogyg2012.pdf </cursos/gyg/cursogyg2012.pdf>`_
 
-Curso aprobado por `Resolución 626/2012 </images/gyg/Resolucion_626_2012.jpg>`_ Facultad de Ciencias Exactas, Ingeniería y Agrimensura – UNR
+Curso aprobado por Resolución 626/2012 Facultad de Ciencias Exactas, Ingeniería y Agrimensura – UNR
 
 
 Año 2011: Geografía y Georreferenciación: alcances y perspectivas
@@ -89,7 +225,7 @@ Organizado por el Grupo de Geodesia Satelital Rosario, IPS e ISP Nº 16.
 
 Dictado en el IPS. Agosto – Septiembre 2011.
 
-Curso aprobado por `Resolución 1478/2011 </images/gyg/Resolucion_1478_2011.jpg>`_ Facultad de Ciencias Exactas, Ingeniería y Agrimensura – UNR
+Curso aprobado por Resolución 1478/2011 Facultad de Ciencias Exactas, Ingeniería y Agrimensura – UNR
 
 
 Año 2010: Geografía y Georreferenciación: alcances y perspectivas

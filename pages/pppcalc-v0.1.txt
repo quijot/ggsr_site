@@ -1,10 +1,11 @@
 .. title: Calculadora PPP v0.1
 .. slug: pppcalc-v0.1
-.. date: 24/05/14 13:17:51 UTC-03:00
+.. date: 09/18/14 00:01:00 UTC-03:00
 .. tags: 
 .. link: 
 .. description: Calculadora PPP
 .. type: text
+.. template: updatable.tmpl
 
 .. raw:: html
 

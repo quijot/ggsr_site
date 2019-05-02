@@ -1,0 +1,185 @@
+.. title: Publicaciones del GGSR
+.. slug: publicaciones
+.. tags: 
+.. link: 
+.. description: 
+.. type: text
+.. date: 01/18/18 20:00:00 UTC-03:00
+.. template: updatable.tmpl
+
+A continuación se listan publicaciones del Grupo, algunas de autoría exclusiva, otras de participación compartida junto a otros grupos o investigadores.
+
+h1. Institucionales
+
+- "Consideraciones del GGSR sobre la Propuesta "La Georreferenciación de parcelas rurales en la República Argentina"":opinion :=
+IGN y Georreferenciación - Opinión Final GGSR
+
+- "Artículo EP UNRO":artEPUNRO :=
+Artículo publicado en el sitio del GGSR.
+
+- "Infraestructura de estaciones terrestres para la georreferenciación en la provincia de Santa Fe mediante posicionamiento satelital":infraestructura :=
+"Informe técnico final del Proyecto FFIR/21-105":informe-final, Resolución Nº 030/09.
+Secretaría de Estado de Ciencia, Tecnología e Innovación.
+Gobierno de la provincia de Santa Fe.
+
+[opinion]/publicaciones/consideraciones-propuesta-ign.pdf
+[artEPUNRO]/publicaciones/EP_UNRO.pdf
+[infraestructura]/publicaciones/infraestructura.pdf
+[informe-final]/publicaciones/informe-final.pdf
+
+
+h1. Reuniones / Simposios / Congresos
+
+h2. 2017
+
+- "Cálculo de vectores de vinculación locales entre los puntos de referencia de las técnicas en observatorio AGGO":calc-vert :=
+"Simposio SIRGAS 2017 Sistema de Referencia Geocéntrico para las Américas":sirgas17.
+Resúmenes en CD.
+SIRGAS - Facultad de Ingeniería, Universidad Nacional de Cuyo y Universidad Juan Agustín Maza.
+27 al 30 de noviembre de 2017 - Mendoza, Argentina.
+
+[calc-vect]/publicaciones/Mateo,M.L.-CálculoVectores.pdf
+
+- "Estado de avance de la Colocalización en AGGO - Planimetría":coloc-pl :=
+"Simposio SIRGAS 2017 Sistema de Referencia Geocéntrico para las Américas":sirgas17.
+Resúmenes en CD.
+SIRGAS - Facultad de Ingeniería, Universidad Nacional de Cuyo y Universidad Juan Agustín Maza.
+27 al 30 de noviembre de 2017 - Mendoza, Argentina.
+
+[coloc-pl]/publicaciones/Mangiaterra,A.-EstadoColocalizaciónAGGO.pdf
+
+- "Aplicación web para Georreferenciación utilizando servicios de posicionamiento en línea y su aplicación en la Agrimensura, avances en las estrategias de cálculo":calc2017 :=
+"Simposio SIRGAS 2017 Sistema de Referencia Geocéntrico para las Américas":sirgas17.
+Resúmenes en CD.
+SIRGAS - Facultad de Ingeniería, Universidad Nacional de Cuyo y Universidad Juan Agustín Maza.
+27 al 30 de noviembre de 2017 - Mendoza, Argentina.
+
+[calc2017]/publicaciones/Noguera,G.-AplicaciónWeb.pdf
+[sirgas17]/publicaciones/Programa-SimposioSirgas2017.pdf
+
+- "Resultados preliminares de la Colocalización en AGGO":coloc-aggo :=
+Libro de Resúmenes XXVIII Reunión Científica de la Asociación Argentina de Geofísicos y Geodestas (AAGG2017) y Tercer Simposio sobre Inversión y Procesamiento de señales en Exploración Sísmica (IPSES’17)
+17-21 de Abril de 2017 – Facultad de Ciencias Astronómicas y Geofísicas (Universidad Nacional de La Plata) La Plata, Buenos Aires, Argentina.
+
+- "Aplicación web para Georreferenciación utilizando servicios de posicionamiento en línea y su aplicación en la Agrimensura":itrf-p07 :=
+Libro de Resúmenes XXVIII Reunión Científica de la Asociación Argentina de Geofísicos y Geodestas (AAGG2017) y Tercer Simposio sobre Inversión y Procesamiento de señales en Exploración Sísmica (IPSES’17)
+17-21 de Abril de 2017 – Facultad de Ciencias Astronómicas y Geofísicas (Universidad Nacional de La Plata) La Plata, Buenos Aires, Argentina.
+
+h2. 2016
+
+- "Modelo y calculadora "en línea" para la corrección por velocidades en la georreferenciación con PPP en Agrimensura":enia2016 :=
+Resúmenes en CD 2º Encuentro Nacional de Investigadores de Agrimensura - ENIA2016
+Universidad Nacional del Litoral (UNL) Facultad de Ingeniería y Ciencias Hídricas - Universidad Juan Agustín Maza (UMAZA) Facultad de Ingeniería.
+2 y 3 de Junio de 2016 - Santa Fe, Argentina.
+
+h2. 2015
+
+- "Misceláneas en microgeodesia":jgc2 :=
+Ponencia en Jornadas de Geociencias para la Ingeniería. 
+Facultad de Ingeniería - Universidad de Buenos Aires.
+2 y 3 de Septiembre de 2015 - Buenos Aires, Argentina.
+
+- "La estructura fantasma de la Obra":jgc1 :=
+Ponencia en Jornadas de Geociencias para la Ingeniería. 
+Facultad de Ingeniería - Universidad de Buenos Aires.
+2 y 3 de Septiembre de 2015 - Buenos Aires, Argentina.
+
+h2. 2014
+
+- "Posicionamiento puntual preciso y su aplicación en Agrimensura":ppp :=
+Actas XXVII Reunión Científica de la Asociación Argentina de Geofísicos y Geodestas (AAGG2014).
+10-14 de Noviembre de 2014 - San Juan, Argentina.
+
+- "Height Reference for Parcels and Land Objects for the 3D Cadastres Structuring":hr_paper :=
+["Presentación":hr_pres] "4th International FIG 3D Cadastre Workshop":hr.
+9-11 November 2014 - Dubai, United Arab Emirates.
+
+- "Actividades del proyecto SIRGAS en TIEMPO REAL (SIRGAS-RT)":sirgas_rt :=
+Primer Encuentro de Investigadores de Agrimensura [`Resoluciones":resol ]=.
+Universidad Juan Agustín Maza (UMAZA) - Universidad Nacional del Litoral (UNL).
+13 y 14 de Junio de 2014 - Mendoza, Argentina.
+
+- "Proyecto de Investigación GEORREFERENCIACIÓN 2018":proy_georref :=
+Primer Encuentro de Investigadores de Agrimensura ["Resoluciones":resol].
+Universidad Juan Agustín Maza (UMAZA) - Universidad Nacional del Litoral (UNL).
+13 y 14 de Junio de 2014 - Mendoza, Argentina.
+
+h2. 2013
+
+- "Mejoras en el posicionamiento en tiempo real, aplicaciones del Caster SIRGAS Experimental en la región central de Argentina":mejoras :=
+Reunión SIRGAS 2013. Instituto Geográfico Nacional Tommy Guardia.
+24-26 Octubre 2013. Ciudad de Panamá, Panamá.
+
+h2. 2012
+
+- "PPP‐RTK Una alternativa de Posicionamiento Preciso en Tiempo Real en regiones de Estaciones Permanentes poco densas":ppprtk :=
+Reunión SIRGAS 2012. Instituto Geográfico Nacional Tommy Guardia.
+29-31 de Octubre de 2012. Universidad de Concepción, Concepción, Chile.
+
+- "Estaciones Permanentes, Posicionamiento en Tiempo Real y PPP":eptrppp :=
+XI Congreso Nacional y VIII Latinoamericano de Agrimensura.
+Villa Carlos Paz, Córdoba, Argentina. 2-5 Mayo 2012
+
+- "Mensura y georreferenciación":myg :=
+XI Congreso Nacional y VIII Latinoamericano de Agrimensura.
+Villa Carlos Paz, Córdoba, Argentina. 2-5 Mayo 2012
+
+[itrf-p07]/publicaciones/itrf-p07_aagg2017.pdf
+[coloc-aggo]/publicaciones/coloc-aggo_aagg2017.pdf
+[enia2016]/publicaciones/ENIA2016_ResumenPublicado.pdf
+[jgc2]/publicaciones/JornadasGeociencias2015_02.pdf
+[jgc1]/publicaciones/JornadasGeociencias2015_01.pdf
+[ppp]/publicaciones/PPP_Agrim_AAGG2014.pdf
+[hr]http://www.gdmc.nl/3DCadastres/workshop2014/programme/
+[hr_paper]http://www.gdmc.nl/3DCadastres/workshop2014/programme/Workshop2014_12.pdf
+[hr_pres]http://www.gdmc.nl/3DCadastres/workshop2014/programme/Pres2014_p12.pdf
+[sirgas_rt]/publicaciones/SIRGAS-RT.pdf
+[proy_georref]/publicaciones/ProyectoGeorreferenciacion2018.pdf
+[resol]/publicaciones/Resoluciones.pdf
+[mejoras]http://www.sirgas.org/fileadmin/docs/Boletines/Bol18/35e_Noguera_Mangiaterra_2013_Mejoras_tiempo_real_caster_SIRGAS_experimental.pdf
+[ppprtk]http://www.sirgas.org/fileadmin/docs/Boletines/Bol17/Noguera_Mangiaterra_PPP-RTK.pdf
+[eptrppp]/publicaciones/EP_posicTRyPPP.pdf
+[myg]/publicaciones/ponencia_MyG.pdf
+
+h1. Libros y Revistas
+
+h2. 2007
+
+- "El GPS y la teoría de la relatividad":GPSyREL :=
+"Topografía y cartografía":Revista, _Revista del Ilustre Colegio Oficial de Ingenieros Técnicos en Topografía de España_, año 2007, Vol. XXIV, Nº 140 Mayo-Junio 2007: 22-31.
+_Revista de enseñanza de la física_, año 2008, Vol. 21, Nº. 1.
+
+h2. 2005
+
+- "GPS Posicionamiento Satelital":librogps :=
+  Versión digital del libro, que fue publicado en julio de 2005 por la Editorial de la UNR.
+
+h2. 2001
+
+- "Criterios para la Georreferenciación en la Provincia de Santa Fe":criterios_georref :=
+En 'Temas de Geociencia 7. Georreferenciación'.
+UNR Editora ISSN Nº 1514-4149 Junio 2001 pp: 28-31
+
+- "Sistemas de alturas":alturas :=
+En 'Temas de Geociencia 7. Georreferenciación'. 
+UNR Editora ISSN Nº 1514-4149 Junio 2001 pp: 51-65
+
+- "Evaluación de las precisiones en el Posicionamiento GPS":precisiones :=
+En 'Temas de Geociencia 7. Georreferenciación'. 
+UNR Editora ISSN Nº 1514-4149 Junio 2001 pp: 66-78
+
+h2. 1999
+
+- "Nivelación por doble alineación":niv_doble :=
+En 'Contribuciones a la Geodesia en la Argentina de fines del Siglo XX. Homenaje a Oscar Parachú'. 
+UNR Editora ISBN Nº 950-673-201-9 Noviembre 1999 pp: 287-293
+
+[GPSyREL]/publicaciones/GPSyREL240407.pdf
+[Indice]/publicaciones/TyC_indice.pdf
+[Revista]http://www.coit-topografia.es/uploads/RevistaTOPCART/140%20-%20Vol.%20XXIV%20-%20May-Jun%202007.pdf
+[librogps]/librogps
+[criterios_georref]/publicaciones/Criterios_Georreferenciacion.pdf
+[alturas]/publicaciones/Alturas.pdf
+[precisiones]/publicaciones/Precisiones_GPS.pdf
+[niv_doble]/publicaciones/Nivelacion_por_doble_alineacion_1999.pdf
+

@@ -1,0 +1,340 @@
+.. title: Calculadora ITRF → POSGAR
+.. slug: calc
+.. tags: 
+.. link: 
+.. description: Calculadora ITRF → POSGAR
+.. type: text
+.. date: 04/04/17 16:30:00 UTC-03:00
+.. template: updatable.tmpl
+
+.. raw:: html
+
+  <div class="alert alert-dismissible alert-info">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>IMPORTANTE:</strong>
+    Esta aplicación es compatible con los servicios de post-proceso online cuyos resultados se expresan en el marco
+    <a href="http://itrf.ensg.ign.fr/ITRF_solutions/" class="alert-link">ITRF</a>.
+    Por ejemplo: servicios de <em>posicionamiento diferencial</em>
+    (<a href="http://www.ngs.noaa.gov/OPUS/" class="alert-link">OPUS</a>,
+    <a href="http://www.ga.gov.au/cgi-perl/auspos/gps.pl" class="alert-link">AUSPOS</a>,
+    <a href="http://sopac.ucsd.edu/scout.shtml" class="alert-link">SCOUT</a>,
+    <a href="http://www.trimblertx.com/UploadForm.aspx" class="alert-link">CenterPoint TRX</a>)
+    o servicios de <em>posicionamiento puntual preciso</em>
+    (<a href="https://webapp.geod.nrcan.gc.ca/geod/tools-outils/ppp.php?locale=en" class="alert-link">CSRS-PPP</a>,
+    <a href="http://apps.gdgps.net/apps_file_upload.php" class="alert-link">APPS</a>,
+    <a href="http://gaps.gge.unb.ca/submitbasic.php" class="alert-link">GAPS</a>,
+    <a href="http://www.ppp.ibge.gov.br/ppp.htm" class="alert-link">IBGE-PPP</a>,
+    <a href="http://magicgnss.gmv.com/ppp/" class="alert-link">magicGNSS</a>).
+  </div>
+
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h5 class="panel-title">Calculadora ITRF → POSGAR -- versión 1.1</h5>
+    </div>
+    <div class="panel-body">
+      <form id="pppcalc-form" class="form-horizontal col-lg-8" onsubmit="correct();" action="javascript:void(0);">
+        <fieldset>
+          <legend>Ingrese las coordenadas ITRF y la época de medición</legend>
+          <div class="form-group">
+            <!-- Coordenadas ITRF -->
+            <label for="latlon" class="col-lg-2 control-label">Latitud,Longitud</label>
+            <div class="col-lg-10">
+              <input type="text" class="form-control" id="latlon" placeholder="-32.95935194,-60.62842564">
+            </div>
+          </div>
+          <div class="form-group">
+            <!-- Fecha de medición -->
+            <label for="cdate" class="col-lg-2 control-label">Fecha de medición</label>
+            <div class="col-lg-10">
+              <input type="date" class="form-control" id="cdate" placeholder="2016-08-09" min="2011-04-27" max="2019-12-31">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-lg-12">
+              <div class="btn-group pull-right">
+                <button class="btn btn-default" type="reset">Restablecer</button>
+                <button class="btn btn-primary" type="submit">Corregir</button>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+      <link rel="stylesheet" href="https://openlayers.org/en/v3.18.2/css/ol.css" type="text/css">
+      <div id="map" class="map col-lg-4" style="height: 220px"></div>
+    </div>
+  </div>
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title" id="detalle-de-procesamiento">Detalle de procesamiento</h3>
+    </div>
+    <div class="panel-body">
+      <pre id="report"></pre>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://openlayers.org/en/v3.18.2/build/ol.js"></script>
+  <script>
+  var map = new ol.Map({
+    target: 'map',
+    controls: ol.control.defaults().extend([
+      new ol.control.ScaleLine()
+    ]),
+    layers: [
+      new ol.layer.Tile({
+        source: new ol.source.OSM()
+      }),
+      new ol.layer.Vector()
+    ],
+    view: new ol.View({
+      center: ol.proj.fromLonLat([-60.628, -32.959]),
+      zoom: 4
+    })
+  });
+
+  function mark(lat, lon) {
+    var pointFeature = new ol.Feature({ });
+    var pointGeom = new ol.geom.Point(ol.proj.fromLonLat([lon, lat]));
+    pointFeature.setGeometry(pointGeom);
+    var vectorSource = new ol.source.Vector({
+      features: [pointFeature]
+    });
+    vectorLayer = map.getLayers().getArray()[1];
+    vectorLayer.setSource(vectorSource);
+    map.getView().setCenter(ol.proj.fromLonLat([lon, lat]));
+  }
+  </script>
+  <script type="text/javascript" src="src/js/geographiclib.js"></script>
+  <script type="text/javascript" src="src/js/vms2015.js"></script>
+  <script type="text/javascript" src="src/js/sumBL.js"></script>
+  <script type="text/javascript" src="src/js/sismo2015.js"></script>
+  <script type="text/javascript" src="src/js/toPOSGAR07.js"></script>
+  <script>
+    /* Prepare parameters to call toPOSGAR07 corrections functions */
+    function correct() {
+      var latlon = document.getElementById('latlon').value.trim();
+      var cdate = document.getElementById('cdate').value.trim();
+      var coord = latlon.split(',');
+      var lat = coord[0].trim(), lon = coord[1].trim();
+      if((lat.search(" ") || lon.search(" ")) >= 0) {
+        // in case of using GAPS, latitud maybe "-31 7 17.8041"
+        // eliminates duplicated spaces in the middle
+        while(lat.search("  ") >= 0)
+          lat = lat.replace("  ", " ");
+        while(lon.search("  ") >= 0)
+          lon = lon.replace("  ", " ");
+        // dd mm ss.sss -> dd.ddd
+        var latDMS = lat.split(" "), lonDMS = lon.split(" ");
+        lat = parseFloat(latDMS[0])-parseFloat(latDMS[1])/
+          60-parseFloat(latDMS[2])/3600;
+        lon = parseFloat(lonDMS[0])-parseFloat(lonDMS[1])/
+          60-parseFloat(lonDMS[2])/3600;
+        // number to string
+        lat = lat.toFixed(20);
+        lon = lon.toFixed(20);
+      }
+      // set report container
+      repCont = document.getElementById('report');
+      // call toPOSGAR07 function (ITRF to POSGAR07)
+      [latC, lonC] = toPOSGAR07(lat, lon, cdate, repCont);
+      // show coordinates in the map
+      mark(latC, lonC);
+    }
+  </script>
+
+
+.. class:: well well-sm pull-right
+
+.. contents:: Índice de contenido
+
+
+Finalidad
+=========
+
+La finalidad de la *calculadora* es "corregir" las coordenadas obtenidas luego del procesamiento con alguno de los servicios online [#]_. Por "corregir" se debe entender *referirlas al marco POSGAR 2007 (época 2006.632)*.
+
+.. [#] Servicios de *posicionamiento diferencial* (`OPUS <http://www.ngs.noaa.gov/OPUS/>`_, `AUSPOS <http://www.ga.gov.au/cgi-perl/auspos/gps.pl>`_, `SCOUT <http://sopac.ucsd.edu/scout.shtml>`_ , `CenterPoint TRX <http://www.trimblertx.com/UploadForm.aspx>`_) o servicios de *posicionamiento puntual preciso* (`CSRS-PPP <nrcan_>`_ , `APPS <http://apps.gdgps.net/apps_file_upload.php>`_ , `GAPS <http://gaps.gge.unb.ca/submitbasic.php>`_, `IBGE-PPP <http://www.ppp.ibge.gov.br/ppp.htm>`_, `magicGNSS <http://magicgnss.gmv.com/ppp/>`_).
+
+.. _nrcan: https://webapp.geod.nrcan.gc.ca/geod/tools-outils/ppp.php?locale=en
+
+Funcionamiento
+==============
+
+El usuario sólo debe ingresar las coordenadas obtenidas en el procesamiento y la fecha de medición, luego, presionando **Corregir**, obtendrá de la calculadora las coordenadas expresadas en el marco POSGAR 2007 (época 2006.632).
+
+Si el usuario desea verificar las coordenadas ingresadas como así también el resultado obtenido, puede analizar el `reporte <#detalle-de-procesamiento>`_ que se imprime por pantalla. También, en el `mapa <#map>`_, podrá visualizar el cursor gráfico que se localizará en el punto cuyas coordenadas fueron corregidas.
+
+.. admonition:: Marco de referencia y época de las coordenadas
+
+  Luego del procesamiento con alguno de los servicios nombrados, las coordenadas vienen expresadas en general en ITRF y para la fecha de medición, aunque según el servicio aplicado, pueden estar referidas al marco oficial del país que proporciona el mismo.
+
+  Por ejemplo, el servicio `CSRS PPP <nrcan_>`_, ofrece el marco norteamericano NAD83 o el Internacional ITRF. En este caso, hay que tener el cuidado de seleccionar las coordenadas expresadas en el ITRF para la fecha de medición como coordenadas a ingresar en la calculadora.
+
+Zona de validez
+===============
+
+La aplicación no restringe geográficamente su uso, es decir, se pueden ingresar cualquier par de coordenadas y se obtendrá algún resultado. **La validez de ese resultado queda bajo la responsabilidad del usuario**.
+
+Debido a esto ofrecemos, como una guía para el uso *responsable* de la calculadora, la descripción de los fronteras dentro de las cuales podemos afirmar con cierta seguridad que las correcciones que la misma aplica tienen validez.
+
+- Latitudes entre 28º S y 41º S
+- Longitudes entre 59º 15' O y 61º 30' O
+
+Es decir, abarca los territorios de:
+
+- Provincia de Buenos Aires
+- Provincia de Entre Ríos
+- Provincia de Santa Fe
+- Este de la Provincia de Córdoba
+
+Esto no excluye que en otros sectores del territorio de nuestro país, la calculadora *funcione bien*. Dependerá de qué calidad de resultados se busque. Para profundizar acerca de este tema, se ofrecen gráficas generadas a partir de `pruebas automatizadas de exactitud <#pruebas-de-exactitud-de-la-calculadora>`_.
+
+¿Por qué no son válidos para todo el país/continente los resultados?
+--------------------------------------------------------------------
+
+Simplemente porque para distintas zonas geográficas, ocurren distinos eventos (sobre todo eventos sísmicos) que los invalidan y para los cuales no existe aún (o simplemente no estamos contemplando) un modelo de comportamiento que indique cómo contrarrestar su influencia.
+
+Correcciones
+============
+
+Modelos de velocidades
+----------------------
+
+Para cuantificar la *deriva continental* se desarrollaron modelos de velocidades en base al cálculo periódico de las coordenadas de distintos puntos del territorio. Los modelos que se utilizan en para esta aplicación son los desarrollados por SIRGAS: **VEMOS2009** [#]_ (izquierda) y **VEMOS2015** [#]_ (derecha).
+
+.. image:: http://www.sirgas.org/fileadmin/_processed_/csm_vms2009und2015_265ceb38cf.png
+   :alt: VEMOS2009 y VEMOS2015
+   :align: center
+   :target: http://www.sirgas.org/fileadmin/_processed_/csm_vms2009und2015_265ceb38cf.png
+
+.. [#] Drewes H., Heidbach O. (2012). **The 2009 Horizontal Velocity Field for South America and the Caribbean**. In: Kenyon S., M.C. Pacino, U. Marti (Eds.), "Geodesy for Planet Earth", IAG Symposia, 136: 657-664.
+
+.. [#] Sánchez L., Drewes H. (2016): **VEMOS2015: Velocity and deformation model for Latin America and the Caribbean**, doi: `10.1594/PANGAEA.863131 <https://doi.pangaea.de/10.1594/PANGAEA.863131>`_, supplement to: Sánchez L. Drewes H. (2016): **Crustal deformation and surface kinematics after the 2010 earthquakes in Latin America**. Journal of Geodynamics, doi: `10.1016/j.jog.2016.06.005 <http://www.sciencedirect.com/science/article/pii/S0264370715300569>`_.
+
+Desplazamientos sísmicos
+------------------------
+
+En la presente versión de la *Calculadora* sólo se contempla el sismo del 27 de febrero de 2010 de magnitud de 8.8 con epicentro en la región de Maule (República de Chile). En futuras versiones se contemplarán otros desplazamientos.
+
+Los valores de este desplazamiento deben tenerse en cuenta para los propósitos de este trabajo, que es la corrección de coordenadas desde épocas actuales hasta la época 2006.632 de definición de POSGAR07. Pero como el terremoto afectó no solo instantáneamente, sino durante varios meses, desestabilizando las velocidades y ocasionando un cambio en su comportamiento lineal, el mejor criterio es el de calcular el salto en las series de tiempo entre dos épocas de *velocidades estabilizadas*. En este trabajo se toman las semanas 1567 y 1633. Esta última correspondiente a la época 2011.322, es decir, 27 de abril de 2011 al mediodía, fecha elegida con doble intención: asegurar una estabilidad en la evolución de las velocidades y ser posterior al cambio de marco de referencia global, que se verá a continuación.
+
+Cambios de marco de referencia
+------------------------------
+
+Las coordenadas semanales de las estaciones SIRGAS-CON, base de los modelos de velocidades y fuente de información sobre el comportamiento del constante desplazamiento del continente, son obtenidas de la combinación de las soluciones individuales proporcionadas por los Centros de Procesamiento SIRGAS.
+  
+Las coordenadas para las semanas previas al 16 de abril de 2011 (semana GPS 1631) se refieren al marco **IGS05**, alineado a ITRF05. Desde 17 de abril de 2011 (semana GPS 1632) hasta el 6 de octubre de 2012 (semana GPS 1708) están dadas en el marco de referencia **IGS08**, alineado a ITRF08. A partir del 7 de octubre de 2012 (semana GPS 1709), las coordenadas semanales de las estaciones SIRGAS-CON están dadas en el **IGb08**, cual es una actualización del anterior, IGS08.
+  
+El cambio de abril de 2011 (semana GPS 1632), de IGS05 a IGS08, generó un pequeño salto casi imperceptible en las series de tiempo de las EP, que puede ser cuantificado. Este valor debe ser aplicado como corrección, dado que la intención de la aplicación es transformar coordenadas de épocas actuales a una época anterior a este cambio de marco.
+
+Por último, a partir del 29 de enero de 2017 (semana GPS 1934), las coordenadas semanales del marco de referencia SIRGAS están dadas en el marco de referencia **IGS14** (alineado al ITRF14). **Este último cambio aún no se refleja aún en los resultados de la calculadora**, aunque estamos trabajando para que la siguiente versión los incluya.
+
+Pruebas de exactitud de la calculadora
+======================================
+
+La siguiente es una lista de Estaciones Permanentes distribuidas en el territorio nacional para las cuales se analizaron las diferencia entre sus coordenadas POSGAR 2017 oficiales y sus coordenadas semanales ITRF calculadas por SIRGAS y **corregidas con la calculadora**.
+
+Producto de este análisis se generaron gráficas que reflejan cómo evoluciona esa diferencia y que válores de desvío estándar (σ) se obtienen a partir de ellas, para finalmente elaborar una especie de parámetro de confianza en las inmediaciones de cada EP, caracterizado por una elipse cuyos ejes toman el valor de 3σ.
+
+
+Listado de Estaciones Permanentes (EP) procesadas:
+
+======== ==== ==== ==== === ==== =============== ===============
+ EP       |exactitud|    |prec|   Gráficas
+-------- -------------- -------- -------------------------------
+ id       e    n   |m|   e   n    evolución       elipse
+======== ==== ==== ==== === ==== =============== ===============
+**ABRA** -9.3  0.4  9.3 0.4  1.9 |lc|\ ABRA\ |a| |pc|\ ABRA\ |b|
+**ALUM**  0.3 -0.5  0.6 1.2  1.2 |lc|\ ALUM\ |a| |pc|\ ALUM\ |b|
+**AUTF** -0.6  1.0  1.2 1.0  2.4 |lc|\ AUTF\ |a| |pc|\ AUTF\ |b|
+**AZUL** -0.4  0.6  0.7 1.2  0.7 |lc|\ AZUL\ |a| |pc|\ AZUL\ |b|
+**BCAR** -0.4 -0.5  0.6 0.9  1.0 |lc|\ BCAR\ |a| |pc|\ BCAR\ |b|
+**BCH1** 68.1  8.6 68.6 1.1  0.6 |lc|\ BCH1\ |a| |pc|\ BCH1\ |b|
+**CATA**  0.4 -0.9  1.0 1.3  1.6 |lc|\ CATA\ |a| |pc|\ CATA\ |b|
+**CHAC** -0.9  0.5  1.0 0.9  0.9 |lc|\ CHAC\ |a| |pc|\ CHAC\ |b|
+**CORD** -0.4 -0.7  0.8 0.7  2.4 |lc|\ CORD\ |a| |pc|\ CORD\ |b|
+**CSLO** -0.6  1.8  1.9 3.4 16.3 |lc|\ CSLO\ |a| |pc|\ CSLO\ |b|
+**EBYP** -0.3 -0.4  0.5 1.1  0.5 |lc|\ EBYP\ |a| |pc|\ EBYP\ |b|
+**ESQU** -0.6  0.3  0.7 1.7  1.7 |lc|\ ESQU\ |a| |pc|\ ESQU\ |b|
+**GUAY** -0.9  0.3  0.9 1.2  0.9 |lc|\ GUAY\ |a| |pc|\ GUAY\ |b|
+**IGM1** -0.2  0.2  0.3 0.8  0.5 |lc|\ IGM1\ |a| |pc|\ IGM1\ |b|
+**JBAL**  1.4 -0.1  1.4 1.1  1.6 |lc|\ JBAL\ |a| |pc|\ JBAL\ |b|
+**LHCL** -1.8  0.3  1.8 1.1  1.2 |lc|\ LHCL\ |a| |pc|\ LHCL\ |b|
+**LPGS** -0.1  0.6  0.6 1.1  0.6 |lc|\ LPGS\ |a| |pc|\ LPGS\ |b|
+**MA01** -1.3  0.2  1.3 1.0  1.5 |lc|\ MA01\ |a| |pc|\ MA01\ |b|
+**MECO** -0.7  0.1  0.7 1.2  0.4 |lc|\ MECO\ |a| |pc|\ MECO\ |b|
+**MGUE** -0.9 17.2 17.2 2.5  1.2 |lc|\ MGUE\ |a| |pc|\ MGUE\ |b|
+**MPL2** -0.3  0.3  0.4 1.0  1.7 |lc|\ MPL2\ |a| |pc|\ MPL2\ |b|
+**MZAC** -0.9  1.0  1.3 2.4  8.0 |lc|\ MZAC\ |a| |pc|\ MZAC\ |b|
+**MZAE** -5.9 -1.3  6.0 1.4  6.3 |lc|\ MZAE\ |a| |pc|\ MZAE\ |b|
+**MZAL** -3.5  2.2  4.1 1.8  5.9 |lc|\ MZAL\ |a| |pc|\ MZAL\ |b|
+**MZAU**  6.1 -2.5  6.6 1.7  2.6 |lc|\ MZAU\ |a| |pc|\ MZAU\ |b|
+**MZGA** 13.8 -5.9 15.0 2.6  1.8 |lc|\ MZGA\ |a| |pc|\ MZGA\ |b|
+**MZRF** -6.0 -7.6  9.7 0.5  0.6 |lc|\ MZRF\ |a| |pc|\ MZRF\ |b|
+**NESA** -3.5 -0.4  3.5 1.0  0.7 |lc|\ NESA\ |a| |pc|\ NESA\ |b|
+**PEJO**  0.9 -0.5  1.0 0.7  0.6 |lc|\ PEJO\ |a| |pc|\ PEJO\ |b|
+**PRCV**  0.1 -0.0  0.1 1.2  0.5 |lc|\ PRCV\ |a| |pc|\ PRCV\ |b|
+**PRNA** -0.5  1.7  1.8 1.9  1.3 |lc|\ PRNA\ |a| |pc|\ PRNA\ |b|
+**RECO** -1.0  0.7  1.2 0.5  0.8 |lc|\ RECO\ |a| |pc|\ RECO\ |b|
+**RIO2** -1.1  0.7  1.3 1.1  0.5 |lc|\ RIO2\ |a| |pc|\ RIO2\ |b|
+**RSAL** -0.2  0.1  0.2 0.7  0.9 |lc|\ RSAL\ |a| |pc|\ RSAL\ |b|
+**RSCL** -0.0 -0.7  0.7 0.5  0.5 |lc|\ RSCL\ |a| |pc|\ RSCL\ |b|
+**RWSN**  3.8  0.5  3.8 2.9  8.8 |lc|\ RWSN\ |a| |pc|\ RWSN\ |b|
+**SANT** 12.5  2.0 12.7 2.1  3.3 |lc|\ SANT\ |a| |pc|\ SANT\ |b|
+**SL01** -4.1 -8.0  9.0 1.0  2.9 |lc|\ SL01\ |a| |pc|\ SL01\ |b|
+**SRLP** -1.9  0.2  1.9 1.3  1.4 |lc|\ SRLP\ |a| |pc|\ SRLP\ |b|
+**SVIC** -0.5 -0.9  1.0 1.0  0.6 |lc|\ SVIC\ |a| |pc|\ SVIC\ |b|
+**TERO** -0.2  0.1  0.2 1.2  1.8 |lc|\ TERO\ |a| |pc|\ TERO\ |b|
+**TUCU**  0.6 -0.5  0.8 0.9  1.2 |lc|\ TUCU\ |a| |pc|\ TUCU\ |b|
+**UCOR** -1.2 -0.1  1.2 0.7  1.6 |lc|\ UCOR\ |a| |pc|\ UCOR\ |b|
+**UNPA**  2.6  4.4  5.1 1.2  1.0 |lc|\ UNPA\ |a| |pc|\ UNPA\ |b|
+**UNRO**  0.1 -0.3  0.3 0.7  0.7 |lc|\ UNRO\ |a| |pc|\ UNRO\ |b|
+**UNSA** -1.8  0.0  1.8 0.9  1.3 |lc|\ UNSA\ |a| |pc|\ UNSA\ |b|
+**UNSJ** -2.2 -0.0  2.2 0.9 12.4 |lc|\ UNSJ\ |a| |pc|\ UNSJ\ |b|
+**UYCO** -0.8  0.4  0.9 0.5  0.4 |lc|\ UYCO\ |a| |pc|\ UYCO\ |b|
+**UYPA** -0.6  0.6  0.8 1.0  0.8 |lc|\ UYPA\ |a| |pc|\ UYPA\ |b|
+**UYSA** -1.5  0.3  1.5 0.5  0.4 |lc|\ UYSA\ |a| |pc|\ UYSA\ |b|
+**UYSO**  0.4  0.3  0.5 1.0  0.6 |lc|\ UYSO\ |a| |pc|\ UYSO\ |b|
+**UYTD** -1.0  0.5  1.1 0.6  0.4 |lc|\ UYTD\ |a| |pc|\ UYTD\ |b|
+**VBCA** -1.7  0.8  1.9 0.9  0.5 |lc|\ VBCA\ |a| |pc|\ VBCA\ |b|
+**YCBA** -4.1 -0.0  4.1 1.2  1.3 |lc|\ YCBA\ |a| |pc|\ YCBA\ |b|
+**YEMA** -3.2  0.0  3.2 0.6  1.2 |lc|\ YEMA\ |a| |pc|\ YEMA\ |b|
+======== ==== ==== ==== === ==== =============== ===============
+
+.. |exactitud| raw:: html
+
+   Exactitud media [cm]
+
+.. |prec| raw:: html
+
+   Precisión 3σ [cm]
+
+.. |m| raw:: html
+
+   módulo
+
+.. |lc| raw:: html
+
+   <a href="/calc/test/evolution/
+
+.. |a| raw:: html
+
+   /"><i class="fa fa-line-chart" aria-hidden="true"></i></a>
+
+.. |pc| raw:: html
+
+   <a href="/calc/test/ellipses/
+
+.. |b| raw:: html
+
+   /"><i class="fa fa-pie-chart" aria-hidden="true"></i></a>
+
+.. image:: /calc/test/evolution/unro.png
+  :target: /calc/test/evolution/unro.png
+  :width: 60%
+
+.. image:: /calc/test/ellipses/unro.png
+  :target: /calc/test/ellipses/unro.png
+  :width: 60%
+
+.. admonition:: Sobre la aplicación
+
+  Para mayor información sobre el desarrollo de la aplicación, consulte el trabajo `Georreferenciación utilizando servicios de posicionamiento en línea <https://goo.gl/3EYVCG>`_.

@@ -1,0 +1,203 @@
+.. title: Historia del GGSR
+.. slug: historia
+.. date: 09/01/17 12:00:00 UTC-03:00
+.. tags:
+.. link:
+.. description:
+.. type: text
+.. template: updatable.tmpl
+
+.. admonition:: Descargar el documento en formato PDF
+
+  Este documento también se puede descargar en formato PDF a través de este enlace: `versión PDF de la "Historia del GGSR" </historia/HistoriaGGSR.pdf>`_.
+
+.. class:: well well-sm pull-right col-lg-6
+
+.. contents:: Índice de contenido
+
+.. sectnum::
+
+Génesis
+-------
+
+En 1988 Oscar Parachú y Aldo Mangiaterra concurrieron al Seminario sobre GPS, organizado en la Facultad de Ciencias Astronómicas y Geofísicas de la Universidad Nacional de La Plata (UNLP).
+
+Por entonces Parachú y Mangiaterra eran docentes del Departamento de Geotopocartografía, Escuela de Agrimensura, Facultad de Ciencias Exactas, Ingeniería y Agrimensura (FCEIA) de la Universidad Nacional de Rosario (UNR).
+
+Parachú era profesor de la materia Geodesia desde muchos años atrás y había estudiado el tema geodesia satelital desde 1968, año en que había realizado un curso en Francia. Ese seminario de 1988 fue el primer contacto con el tema GPS.
+
+En 1993 se comenzó a dictar en Rosario el curso de posgrado sobre GPS, bajo la dirección de Parachú y basándose en el aporte de docentes e instrumental del grupo de la UNLP y del Dpto. de Geotopocartografía. Dicho curso se fue dictando durante varios años, en Rosario y en otras universidades, modificando parcialmente su contenido de acuerdo a los avances registrados en el tema, quedando a cargo del GGSR.
+
+El contenido del curso se plasmó en el libro "GPS Posicionamiento Satelital", editado en el año 2005 por la Editorial de la UNR (UNR Editora) con la autoría de Eduardo Huerta, Aldo Mangiaterra y Gustavo Noguera.
+
+En 1994 el Departamento de Geotopocartografía pudo acceder a la compra de un equipo de dos receptores denominados Magellan, de nivel intermedio entre los navegadores comunes y los receptores geodésicos.
+
+Un dato llamativo es que la carencia de fondos para la investigación determinó que esa compra se hiciera con fondos propios, provenientes de servicios prestados a terceros, y la compra fuera "compartida" entre los grupos de la Universidad de La Plata y Rosario. La primera experiencia de envergadura realizada con GPS fue en 1994 en la Provincia de Chubut, y consistió en el relevamiento de la transecta entre Comodoro Rivadavia (sobre la costa Atlántica) y Alto Río Senguer (sobre la
+cordillera de Los Andes), alrededor de 400 km con coordenadas cada 5 km, cuyo fin era georrereferenciar puntos de un perfil gravimétrico.
+
+Un dato llamativo es que el procesamiento se hizo con la primera y única PC que a la sazón poseía el Departamento de Geotopocartografía; se tardaba dos horas en el cálculo de un vector que correspondía a 20 minutos de observación.
+
+En 1993 se presentó en el Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET) un proyecto de investigación denominado “Estudio Geodésico en una
+Falla de Llanura (latitud 32º 40' S y longitud 61º 55' W)”, ubicación en la Cañada San Antonio, en el límite entre las provincias de Santa Fe y Córdoba, con la dirección del Ing. Antonio Introcaso, y aunque no logró la financiación se llevó a cabo lo mismo.
+
+El principal objetivo era lograr la financiación del Conicet para acceder a la compra de instrumental, sin el cual era muy difícil avanzar en la investigación y, sobre todo, volcar los nuevos conocimientos, tanto en la formación de estudiantes de la carrera de Agrimensura, a la cual pertenecíamos los docentes involucrados, como también en la actualización de profesionales mediante cursos de posgrado.
+
+A partir de ese proyecto se conformó, también en 1993, lo que posteriormente adoptaría el nombre de Grupo de Geodesia Satelital de Rosario (GGSR) y su primer director fue Oscar Parachú, quien falleció en 1995, y fue reemplazado por Aldo Mangiaterra hasta el año 2012, ocupando luego la dirección Gustavo Noguera desde ese año en adelante, la cual ejerce a la fecha.
+
+El grupo estuvo orientado a investigar geodesia satelital, con énfasis en sus aplicaciones. Gran parte de su aporte estuvo destinado a la docencia en la carrera de Agrimensura.
+
+Siempre fue muy intensa la labor de extensión consistente en los cursos para graduados y en otras formas, con el fin de poner los conocimientos y sus aplicaciones, de manera abierta y pública, a disposición de todos los interesados.
+
+En 1998 se instaló una Estación Permanente Experimental en FCEIA, y en el año 2003 pasó a ser efectivamente permanente.
+
+Entre quienes integraron o integran el grupo, ya sea como investigadores, colaboradores o participantes, debemos mencionar a Oscar Parachú, Eduardo Huerta, Aldo Mangiaterra, Gustavo Noguera, Beatriz Jiménez, Pascual Calvo, Laura Cornaglia, Santiago Pestarini, Gustavo Pagani, Gustavo Acosta.
+
+GPS
+---
+
+GPS fue el primer Sistema de Posicionamiento Global (entiéndase mundial) satelital. Entró en vigencia oficialmente en 1994, constituyendo parte de un gran salto tecnológico, posteriormente devenido en cambio cultural.
+
+El grupo que constituyó el GGSR fue de los primeros en el país en vincularse al tema (1988) y el único en nuestra región durante bastante tiempo.
+
+En realidad GPS fue el tema alrededor del cual, de una u otra manera, giró y gira la actividad del grupo, aunque, desde hace algunos años lo que se abarca es el campo de la georreferenciación.
+
+Desde un principio la labor del grupo estuvo orientada principalmente a dos objetivos:
+
+- Investigar, desarrollar y asesorar sobre las aplicaciones del posicionamiento satelital.
+- Difundir la tecnología y ponerla al alcance de los profesionales de las más variadas especialidades.
+
+Quizás los hechos más destacables sean la puesta en funcionamiento de la Estación Permanente GNSS de Rosario (UNRO), la publicación del libro "GPS Posicionamiento Satelital" y los cursos que llegaron a alrededor de 400 profesionales.
+
+Estación Permanente GNSS (UNRO)
+-------------------------------
+
+Primero como estación experimental (1998) y luego como efectivamente permanente (2003), la instalación estuvo guiada desde un principio por el criterio de brindar un servicio público y gratuito. Fue la primera en funcionar de ese modo en el país.
+
+También fue la primera en brindar en forma pública el acceso a los archivos en "tiempo casi real" (actualizados a cada hora). Luego en el año 2011 se implementó la transmisión en "tiempo real" mediante protocolo NTRIP (Networked Transport of RTCM via Internet Protocol).
+
+A partir de la experiencia adquirida, desde el grupo se organizó la instalación de una estación experimental, en el año 2009, en Venado Tuerto, Pcia. de Santa Fe, en colaboración con la Universidad Tecnológica Nacional; otra en el año 2011 en la ciudad de Paraná, Pcia. de Entre Ríos, que posteriormente pasó a ser estación permanente de la Red Argentina de Monitoreo Satelital Continuo (RAMSAC); otra en el año 2011 en la ciudad de Gálvez, Pcia. de Santa Fe; otra en la ciudad de Santa Fe
+en el año 2012, en colaboración con la Facultad de Ingeniería y Ciencias Hídricas de la Universidad Nacional del Litoral, que posteriormente pasó a ser estación permanente de la red RAMSAC, y otra en el año 2013 en la ciudad de Rufino, Pcia. de Santa Fe, que también pasó a ser estación permanente incorporada a la red RAMSAC.
+
+La Estación Permanente UNRO es parte de la red Internacional de Servicio GNSS (IGS: International GNSS Service).
+
+Cursos
+------
+
+Los cursos desarrollados han sido de dos tipos:
+
+GPS
+"""
+
+- Destinados a docentes universitarios y profesionales de distintas titulaciones; comenzaron en 1993 y se extendieron hasta el año 2008.
+- Respondieron básicamente a una demanda de profesionales que en su formación no habían tenido la posibilidad de conocer el posicionamiento satelital y sus aplicaciones.
+- La modalidad y extensión de los cursos tuvieron variantes, aunque siempre ajustados al mismo objetivo.
+- En todos los casos había certificados de asistencia o aprobación con monografía sujeta a evaluación.
+- Se dictaron aproximadamente dieciséis cursos, en los que participaron cerca de 400 profesionales.
+- Ocho de ellos en Rosario, aprobados por el Consejo Directivo de la Facultad de Ciencias Exactas, Ingeniería y Agrimensura (FCEIA) como Curso de postgrado "Posicionamiento Global Satelitario GPS", años 1993 /4 /6 /7 /8 /9, 2000 y 2001.
+- Seis en las Universidades Nacionales de San Juan, Nordeste, Litoral, Formosa y San Luis, y en la Universidad privada de Morón, en cada caso solicitados y aprobados por sus respectivas autoridades.
+- Dos a pedido de la Municipalidad de Rosario y del Ministerio de Hidráulica de la Pcia. de Santa Fe.
+
+Geografía y Georreferenciación
+""""""""""""""""""""""""""""""
+
+- Destinados a docentes, principalmente de enseñanza media.
+- El objetivo es desmitificar la tecnología satelital considerando su uso popular.
+- Hasta el año 2015 se realizaron cinco ediciones, participando un total de 90 concurrentes; en todos los casos había asistencia o aprobación con monografía sujeta a evaluación.
+- Fueron organizados en conjunto con instituciones del ámbito educativo, los dos primeros con el Instituto Politécnico Superior (IPS) y el Instituto Superior del Profesorado Nº 16 (ambos de Rosario), los dos posteriores con la Asociación del Magisterio de Santa Fe, Seccional Rosario y el último con la Asociación de Docentes e Investigadores de la Universidad Nacional de Rosario, COAD.
+
+Convenios, asistencia a terceros y trabajos en colaboración
+-----------------------------------------------------------
+
+Se llevaron a cabo numerosos convenios de asistencia a terceros y de colaboración con otros grupos científicos; en casi todos participaron estudiantes de la carrera de Agrimensura.
+
+Los más significativos:
+
+- Puerto de Rosario, georreferenciación de estación permanente para navegación fluvial.
+- Conexión física Rosario Victoria, 1998. Durante la mayor crecida del siglo del río Paraná se determinaron las coordenadas de ambas cabeceras de la obra vinculadas al sistema de referencia nacional, lo que permitió el replanteo de la obra mediante tecnología satelital, innovación absoluta en ese momento. Además se elaboró un perfil geoidal a lo largo de la traza de la obra permitiendo obtener cotas sobre el nivel del mar sin necesidad de nivelación geométrica, la que hubiera demandado un costo y un tiempo extraordinario a causa de la inundación.
+- Cañada de Gómez, relevamiento con tecnología satelital, solicitada por el Ministerio de Hidráulica de la provincia de Santa Fe, para efectuar expropiaciones en la zona de la obra de contención de aguas pluviales.
+- Aguas Provinciales, georreferenciación de puntos para fotogrametría.
+- Municipalidad de Rosario, red geodésica abarcando el éjido municipal.
+- Servicio de Catastro e Información Territorial (SCIT) de la Provincia de Santa Fe: Entre otros, trabajo "Cálculo de parámetros de transformación para la red geodésica de la Provincia de Santa Fe, área Gran Rosario", año 2004. Propuesta de normas para la georreferenciación en las mensuras.
+- Colaboración con Facultad de Ciencias Astronómicas y Geofísicas de la Universidad Nacional de La Plata para la medición de la red geodésica de la Pcia. de Buenos Aires.
+- Colaboración con el Grupo de Geofísica de la Universidad Nacional de Rosario y con la Universidad Nacional de San Juan para la georreferenciación de transectas en la Pcia. de Córdoba.
+- Relevamiento de 1700 Has, en zona de islas de del Río Paraná, para confeccionar la que fuera la primer mensura con medición satelital registrada en el catastro de la Pcia. de Santa Fe.
+
+Investigación
+-------------
+
+- "Estudio Geodésico en una Falla de Llanura (latitud 32º 40' S y longitud 61º 55' W)", Cañada San Antonio, en el límite entre las provincias de Santa Fe y Córdoba, año 1993 a 1996.
+
+Proyectos acreditados por la UNR:
+
+- "Estación Permanente GPS", años 1997 a 2002.
+- "Optimización de la aplicación de GPS con frecuencia L1 y código C/A", años 2003 a 2005.
+- "Georreferenciación", años 2006 a 2009.
+- "Del Sistema de Posicionamiento Global GPS al Sistema Global de Navegación Satelital GNSS. Investigación sobre su desarrollo y prospectiva", años 2010 a 2013.
+- "Georreferenciación 2018", años 2014 a 2018.
+
+Proyectos acreditados por la Provincia de Santa Fe:
+
+- "Infraestructura de Estaciones Terrestres para la Georreferenciación en la provincia de Santa Fe mediante Posicionamiento Satelital", años 2009 a 2010.
+- "Significación de la Georreferenciación en la enseñanza de la Geografía", Secretaría de Estado de Ciencia, Tecnología e Innovación de la Provincia de Santa Fe, años 2011 a 2012.
+
+Publicaciones
+-------------
+
+Están reseñadas en la sección `Publicaciones </publicaciones/>`_ en la página web del GGSR.
+
+Relación con Instituciones
+--------------------------
+
+La relación con instituciones académicas y con organismos gubernamentales ha sido permanente. A continuación mencionaremos las que consideramos más importantes.
+
+Instituto Geográfico Nacional (IGN)
+"""""""""""""""""""""""""""""""""""
+
+La vinculación y colaboración es previa a la creación del grupo, con lo que entonces era el Instituto Geográfico Militar (IGM). En 2003 el IGM cede a la FCEIA un receptor geodésico GPS para que el grupo instale la Estación Permanente (EP) UNRO como parte de la red RAMSAC y en 2013 el IGN lo reemplaza por un receptor GNSS que actualmente integra la EP. Ha sido incesante el intercambio de información y experiencia y la coordinación para la acción práctica, en particular para la ampliación de la red RAMSAC.
+
+Facultad de Ciencias Astronómicas y Geofísicas (FCAG) – Universidad Nacional de La Plata
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+La vinculación se remonta al año 1988. En los inicios del grupo la FCAG actuó brindando
+conocimientos, información, facilitando instrumental, asesorando; en definitiva jugó un papel fundamental en la formación y desarrollo del GGSR hasta lograr éste un desarrollo independiente, pero siempre en colaboración e intercambio mutuos. . Merece particular mención la asistencia brindada por Raúl Perdomo y Claudio Brunini.
+
+Colegio de Profesionales de la Agrimensura de la Provincia de Santa Fe
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+Desde un primer momento dicho Colegio facilitó la realización de los cursos para graduados y en forma permanente requirió el asesoramiento del grupo para diversos temas, pero particularmente para la georreferenciación en las mensuras y para las normas respectivas que se elaboraron conjuntamente con el Servicio de Catastro e Información Territorial de la provincia.
+
+SIRGAS
+""""""
+
+La vinculación con Sirgas se ha desarrollado desde el inicio del grupo. Se han presentado trabajos en las reuniones de Sirgas. Gustavo Noguera, actual director del GGSR integra desde el año 2010 el grupo `Sirgas-RT <http://www.sirgas.org/index.php?id=232>`_ a cargo del tema Tiempo Real.
+
+En el año 2012 se puso en funcionamiento el Caster SIRGAS Experimental, alojado en el Laboratorio del GGSR.
+
+Congresos
+---------
+
+La participación en congresos, seminarios, jornadas y conferencias ha sido permanente, tanto dentro del país como en el exterior. En el exterior se ha concurrido a eventos en Uruguay, Chile, Perú, Cuba y República Dominicana.
+
+Software
+--------
+
+GEOCOO
+""""""
+
+:Autor: Eduardo Huerta
+:Enlace: `geocoo </software/geocoo.zip>`_
+
+Programa que resuelve problemas fundamentales del cálculo de coordenadas y constituye un aporte de gran importancia.
+
+CALCULADORA ITRF-POSGAR
+"""""""""""""""""""""""
+
+:Autores: Santiago Pestarini – Gustavo Noguera
+:Enlace: `Calculadora ITRF-POSGAR </calc/>`_
+
+Aplicación web para transformar coordenadas ITRF (de cualquier época) al Marco de Referencia oficial de nuestro país, POSGAR07 (época 2006.632). Esta aplicación es la sucesora de la *PPPCalc*, e incluye una mejora sustancial en el cálculo, dado que incorpora correcciones según modelos de velocidades VEMOS 2009 y 2015, y para eventos como el sismo de febrero de 2010 en Chile, que afectó gran parte de nuestro país, y otro, de menor influencia, como el cambio de Marco de Referencia adoptado por SIRGAS. Para mayor información sobre su desarrollo, consulte el trabajo "Georreferenciación utilizando servicios de posicionamiento en línea" disponible en la página web del GGSR.
+
+Desarrollo de conocimientos
+---------------------------
+
+Integrantes del grupo, en su calidad de docentes, actuaron y actúan en la dirección de Trabajos Finales de alumnos de la carrera de Agrimensura de la Universidad Nacional de Rosario y, además, Eduardo Huerta ha dirigido el trabajo final de alumnas de la carrera de Ingeniero Técnico Topográfico de la Universidad Politécnica de Madrid, España.

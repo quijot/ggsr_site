@@ -21,7 +21,7 @@ BLOG_AUTHOR = "GGSR"  # (translatable)
 BLOG_TITLE = "GGSR"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://www.fceia.unr.edu.ar/gps/"
+SITE_URL = "https://www.fceia.unr.edu.ar/gps/"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://www.fceia.unr.edu.ar/ggsr"
@@ -126,11 +126,13 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("/proyectos/", "Proyectos"),
+        ("/investigacion/", "Investigación"),
         ("/cursos/", "Cursos"),
         ("/extension/", "Extensión"),
         ("/publicaciones/", "Publicaciones"),
-        ("/software/", "Software"),
+        ((('/calc', 'Calculadora ITRF → POSGAR'),
+          ('/software', 'Otros')), 'Software'),
+        ("/historia/", "Historia"),
         ("/contacto/", "Contacto"),
 #        ("/archive.html", "Archivo"),
 #        ("/categories/index.html", "Tags"),
@@ -186,6 +188,10 @@ DATE_FANCINESS = 2
 # LOCALE_DEFAULT = locale to use for languages not mentioned in LOCALES; if
 # not set the default Nikola mapping is used.
 
+LOCALES = {'es':'es_AR.utf8'}
+LOCALE_FALLBACK = 'es_AR.utf8'
+# LOCALE_DEFAULT = None
+
 # POSTS and PAGES contains (wildcard, destination, template) tuples.
 #
 # The wildcard is used to generate a list of reSt source files
@@ -215,12 +221,16 @@ POSTS = (
     ("posts/*.rst", "blog", "post.tmpl"),
     ("posts/*.txt", "blog", "post.tmpl"),
     ("posts/*.md",  "blog", "post.tmpl"),
+    ("posts/*.textile", "blog", "post.tmpl"),
+    ("posts/*.odt", "blog", "post.tmpl"),
 )
 PAGES = (
     ("pages/*.rst", "", "story.tmpl"),
     ("pages/*.txt", "", "story.tmpl"),
     ("pages/*.md",  "", "story.tmpl"),
     ("pages/*.php", "", "story.tmpl"),
+    ("pages/*.textile", "", "story.tmpl"),
+    ("pages/*.odt", "", "story.tmpl"),
 )
 
 # One or more folders containing files to be copied as-is into the output.
@@ -243,6 +253,7 @@ PAGES = (
 # 'markdown' is MarkDown
 # 'html' assumes the file is HTML and just copies it
 COMPILERS = {
+    "odt": ('.odt'),
     "rest": ('.rst', '.txt'),
     "markdown": ('.md', '.mdown', '.markdown'),
     "textile": ('.textile',),
@@ -397,11 +408,12 @@ INDEX_PATH = "blog"
 #
 # If you don't need any of these, just set to []
 REDIRECTIONS = [
+	("librogps.html", "librogps/"),
 	# compatible con la publicacion "librito celeste"
 	#("epsf", "ep/home.php?EP=EPSF"),
 	#("epvt", "ep/home.php?EP=EPVT"),
-	("epsf/index.html", "../ep/epsf"),
-	("epvt/index.html", "../ep/epvt"),
+	("epsf/index.html", "../ep/epsf/"),
+	("epvt/index.html", "../ep/epvt/"),
 	# compatible con la publicacion "PPP y su aplicación en Agrimensura"
 	("pppcalc.html", "pppcalc/"),
 	# ggsr -> gps
@@ -644,7 +656,7 @@ FAVICONS = {
 # 'Read more...' for the index page, if INDEX_TEASERS is True (translatable)
 INDEX_READ_MORE_LINK = '<p class="more"><a href="{link}">{read_more}…</a></p>'
 # 'Read more...' for the RSS_FEED, if RSS_TEASERS is True (translatable)
-RSS_READ_MORE_LINK = '<p><a href="{link}">{read_more}…</a> ({min_remaining_read})</p>'
+FEED_READ_MORE_LINK = '<p><a href="{link}">{read_more}…</a> ({min_remaining_read})</p>'
 
 # Append a URL query to the RSS_READ_MORE_LINK in Atom and RSS feeds. Advanced
 # option used for traffic source tracking.
@@ -654,7 +666,7 @@ RSS_READ_MORE_LINK = '<p><a href="{link}">{read_more}…</a> ({min_remaining_rea
 # {feedFormat}                  The name of the syndication format.
 # Example using replacement for use with Google Analytics:
 # "utm_source={feedRelUri}&utm_medium=nikola_feed&utm_campaign={feedFormat}_feed"
-RSS_LINKS_APPEND_QUERY = False
+FEED_LINKS_APPEND_QUERY = False
 
 # A HTML fragment describing the license, for the sidebar.
 # (translatable)
@@ -666,12 +678,12 @@ RSS_LINKS_APPEND_QUERY = False
 # style="border-width:0; margin-bottom:12px;"
 # src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>"""
 LICENSE = """
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.es_AR"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.es_AR"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
 """
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
-CONTENT_FOOTER = '<hr>Universidad Nacional de Rosario || Facultad de Ciencias Exactas, Ingenier&iacute;a y Agrimensura || Escuela de Agrimensura || Departamento de Geotopocartografía<br>Contenidos &copy; {date} <a href="mailto:{email}">{author}</a> - Empoderado por <a href="http://getnikola.com" rel="nofollow">Nikola</a> {license}'
+CONTENT_FOOTER = 'Universidad Nacional de Rosario || Facultad de Ciencias Exactas, Ingenier&iacute;a y Agrimensura<br>Contenidos &copy; {date} <a href="mailto:{email}">{author}</a> - Empoderado por <a href="http://getnikola.com" rel="nofollow">Nikola</a> {license}'
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will
@@ -924,6 +936,24 @@ SOCIAL_BUTTONS_CODE = ""
 # in the default template (base.tmpl).
 # (translatable)
 # BODY_END = ""
+BODY_END = """
+  <!-- Google Analytics -->
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-22884999-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+"""
 
 # The possibility to extract metadata from the filename by using a
 # regular expression.
@@ -975,7 +1005,7 @@ UNSLUGIFY_TITLES = True
 # USE_BUNDLES = True
 
 # Plugins you don't want to use. Be careful :-)
-# DISABLED_PLUGINS = ["render_galleries"]
+DISABLED_PLUGINS = ["robots"]
 
 # Add the absolute paths to directories containing plugins to use them.
 # For example, the `plugins` directory of your clone of the Nikola plugins

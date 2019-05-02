@@ -18,7 +18,7 @@
 .. class:: jumbotron col-md-4
 
 | Escríbanos a
-| **noguera** |arroba| **fceia.unr.edu.ar**
+| **ggsr** |arroba| **fceia.unr.edu.ar**
 
 .. |arroba| image:: /images/120px-At_sign.svg.png
             :height: 15px

@@ -4,9 +4,39 @@
 .. link: 
 .. description: Actividades de extensión
 .. type: text
-.. date: 05/24/14 13:48:55 UTC-03:00
+.. date: 03/08/18 16:00:00 UTC-03:00
 .. template: updatable.tmpl
 
+Taller en Posicionamiento GNSS en Tiempo Real [#]_
+--------------------------------------------------
+
+Sistema de Referencia Geocéntrico para las Américas SIRGAS 2017
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+En el marco del Simposio SIRGAS 2017, el Grupo de Trabajo 2 de SIRGAS: 'SIRGAS en el ámbito nacional', organizó el **Taller en Posicionamiento GNSS en Tiempo Real**, que se desarrolló desde el 22 al 24 de Noviembre de 2017, en la ciudad de Mendoza, Argentina.
+
+Cincuenta (50) fueron los asistentes al Taller, procedentes de distintos países: Argentina, Brasil, Chile, Colombia, Costa Rica, República Dominicana, Ecuador, Guatemala, Panamá, España, Uruguay y Venezuela.
+
+El Taller fue dictado por **Roberto Pérez-Rodino** (Universidad de la República, Montevideo, Uruguay), Director del Grupo de Trabajo 2 de SIRGAS, **María Fernanda Camisay** (Universidad Juan Agustín Maza, Mendoza, Argentina), **Gustavo Noguera** (Universidad Nacional de Rosario, Argentina), y **Manuel Hernández-Pajares** (Universidad Politécnica de Cataluña, Barcelona, España).
+
+Los principales temas del Taller fueron:
+
+- Técnicas y Sistemas de Posicionamiento en Tiempo Real (RTK, NetRTK, PPP).
+- Infraestructura nacional de posicionamiento en Tiempo Real.
+- Cáster y manejo de transmisión en Tiempo Real.
+- Software NTRIP y otros asociados (BNC, RTKLib, etc.)
+- Fundamentos teóricos del Proyecto Europeo AUDITOR (Mejora en el Sistema de Aumentación GNSS basado en tierra para Servicios de Agricultura de Precisión), enfatizando en la generación de productos ionosféricos confiables para el cálculo de correcciones en Tiempo Real.
+
+Prácticas realizadas:
+
+- Medidas de campo en Tiempo Real.
+- Configuración y conectividad en Tiempo Real.
+- Cálculos en gabinete.
+
+
+.. [#] Extraído y traducido a partir de la publicación `SIRGAS2017_Report.pdf </extension/SIRGAS2017_Report.pdf>`_ sita en http://www.sirgas.org/es/sirgas-symposia/.
+
+------
 
 Webinario 3: Posicionamiento GNSS en tiempo real y PPP [#]_
 -----------------------------------------------------------
@@ -24,6 +54,8 @@ Serie de seminarios web realizados por la FADA_ con el apoyo del `Instituto Linc
 
 .. _FADA: http://www.agrimensores.org.ar/
 .. _lincoln: http://www.lincolninst.edu/aboutlincoln/america-latina-y-el-caribe/
+
+------
 
 Charla: GPS en Tiempo Real utilizando Internet
 ----------------------------------------------

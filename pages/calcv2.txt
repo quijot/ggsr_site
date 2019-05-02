@@ -1,0 +1,88 @@
+.. title: Calculadora ITRF → POSGAR, pruebas de la versión 2
+.. slug: calcv2
+.. tags: 
+.. link: 
+.. description: Calculadora ITRF → POSGAR versión 2
+.. type: text
+.. date: 04/04/17 16:30:00 UTC-03:00
+
+- `Listado de desvíos </calcv2/desvios/>`_ entre coordenadas *corregidas* y coordenadas POSGAR07 oficial **por EP** y **por semana GPS**
+
+- `Grillas de interpolación de 1ºx1º en formato KML </calcv2/grillas/grillas.zip>`_ calculadas para cada semana GPS
+
+- `Mapas </calcv2/mapas/>`_ que ilustran algunos resultados y procesamientos
+
+Listado de Estaciones Permanentes (EP) procesadas y gráficas de la *evolución* de la diferencia entre coordenadas ITRF de SIRGAS y *corregidas* por nuestro algoritmo **vs** coordenadas POSGAR07 oficiales y de la *elipse de confianza*, cuyos ejes toman el valor de 3σ:
+
+======== =============== ===============
+ EP       Gráficas
+-------- -------------------------------
+ id       evolución       elipse
+======== =============== ===============
+**AGGO** |lc|\ AGGO\ |a| |pc|\ AGGO\ |b|
+**ALUM** |lc|\ ALUM\ |a| |pc|\ ALUM\ |b|
+**AZUL** |lc|\ AZUL\ |a| |pc|\ AZUL\ |b|
+**BCAR** |lc|\ BCAR\ |a| |pc|\ BCAR\ |b|
+**BCH1** |lc|\ BCH1\ |a| |pc|\ BCH1\ |b|
+**CATA** |lc|\ CATA\ |a| |pc|\ CATA\ |b|
+**CHAC** |lc|\ CHAC\ |a| |pc|\ CHAC\ |b|
+**CORD** |lc|\ CORD\ |a| |pc|\ CORD\ |b|
+**CSLO** |lc|\ CSLO\ |a| |pc|\ CSLO\ |b|
+**EBYP** |lc|\ EBYP\ |a| |pc|\ EBYP\ |b|
+**ESQU** |lc|\ ESQU\ |a| |pc|\ ESQU\ |b|
+**GUAY** |lc|\ GUAY\ |a| |pc|\ GUAY\ |b|
+**IGM1** |lc|\ IGM1\ |a| |pc|\ IGM1\ |b|
+**JBAL** |lc|\ JBAL\ |a| |pc|\ JBAL\ |b|
+**LHCL** |lc|\ LHCL\ |a| |pc|\ LHCL\ |b|
+**LPGS** |lc|\ LPGS\ |a| |pc|\ LPGS\ |b|
+**MA01** |lc|\ MA01\ |a| |pc|\ MA01\ |b|
+**MECO** |lc|\ MECO\ |a| |pc|\ MECO\ |b|
+**MGUE** |lc|\ MGUE\ |a| |pc|\ MGUE\ |b|
+**MPL2** |lc|\ MPL2\ |a| |pc|\ MPL2\ |b|
+**MZAC** |lc|\ MZAC\ |a| |pc|\ MZAC\ |b|
+**MZAE** |lc|\ MZAE\ |a| |pc|\ MZAE\ |b|
+**MZAL** |lc|\ MZAL\ |a| |pc|\ MZAL\ |b|
+**MZAU** |lc|\ MZAU\ |a| |pc|\ MZAU\ |b|
+**MZGA** |lc|\ MZGA\ |a| |pc|\ MZGA\ |b|
+**MZRF** |lc|\ MZRF\ |a| |pc|\ MZRF\ |b|
+**NESA** |lc|\ NESA\ |a| |pc|\ NESA\ |b|
+**PEJO** |lc|\ PEJO\ |a| |pc|\ PEJO\ |b|
+**PRNA** |lc|\ PRNA\ |a| |pc|\ PRNA\ |b|
+**RECO** |lc|\ RECO\ |a| |pc|\ RECO\ |b|
+**RIO2** |lc|\ RIO2\ |a| |pc|\ RIO2\ |b|
+**RSAL** |lc|\ RSAL\ |a| |pc|\ RSAL\ |b|
+**RSCL** |lc|\ RSCL\ |a| |pc|\ RSCL\ |b|
+**RWSN** |lc|\ RWSN\ |a| |pc|\ RWSN\ |b|
+**SL01** |lc|\ SL01\ |a| |pc|\ SL01\ |b|
+**SRLP** |lc|\ SRLP\ |a| |pc|\ SRLP\ |b|
+**TERO** |lc|\ TERO\ |a| |pc|\ TERO\ |b|
+**TUCU** |lc|\ TUCU\ |a| |pc|\ TUCU\ |b|
+**UCOR** |lc|\ UCOR\ |a| |pc|\ UCOR\ |b|
+**UNPA** |lc|\ UNPA\ |a| |pc|\ UNPA\ |b|
+**UNRO** |lc|\ UNRO\ |a| |pc|\ UNRO\ |b|
+**UNSA** |lc|\ UNSA\ |a| |pc|\ UNSA\ |b|
+**UNSJ** |lc|\ UNSJ\ |a| |pc|\ UNSJ\ |b|
+**UYCO** |lc|\ UYCO\ |a| |pc|\ UYCO\ |b|
+**UYPA** |lc|\ UYPA\ |a| |pc|\ UYPA\ |b|
+**UYSA** |lc|\ UYSA\ |a| |pc|\ UYSA\ |b|
+**UYSO** |lc|\ UYSO\ |a| |pc|\ UYSO\ |b|
+**UYTD** |lc|\ UYTD\ |a| |pc|\ UYTD\ |b|
+**VBCA** |lc|\ VBCA\ |a| |pc|\ VBCA\ |b|
+**YEMA** |lc|\ YEMA\ |a| |pc|\ YEMA\ |b|
+======== =============== ===============
+
+.. |lc| raw:: html
+
+   <a href="/calcv2/evolucion/
+
+.. |a| raw:: html
+
+   /"><i class="fa fa-line-chart" aria-hidden="true"></i></a>
+
+.. |pc| raw:: html
+
+   <a href="/calcv2/elipses/
+
+.. |b| raw:: html
+
+   /"><i class="fa fa-pie-chart" aria-hidden="true"></i></a>
