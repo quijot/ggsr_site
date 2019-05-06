@@ -94,12 +94,18 @@ Docentes
 
 | **Costo de inscripción**: $1800. Se adjudicarán becas.
 
-Consultas: **epgps** |arroba| **fceia.unr.edu.ar**
+Consultas: **ggsr** |arroba| **fceia.unr.edu.ar**
 
 .. |arroba| image:: /images/120px-At_sign.svg.png
             :height: 15px
             :alt: arroba
             :align: middle
+
+Material del curso
+------------------
+
+- `Afiche </cursos/Disertaciones-Georreferenciacion.png>`_
+- `Georreferenciación </cursos/Georreferenciacion_2019.pdf>`_
 
 
 Año 2016: Georreferenciación

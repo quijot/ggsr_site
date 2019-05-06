@@ -34,6 +34,8 @@
   La georreferenciación se ha convertido en la base tecnológica de un cambio cultural.
 
   El empleo de coordenadas, referidas a un único sistema mundial, permite identificar puntos del espacio, sean éstos aéreos, marítimos, fluviales, o terrestres, naturales o culturales, con los más diversos fines. `Seguir leyendo... </cursos/#ano-2019-curso-de-postgrado-georreferenciacion>`__
+  
+  `Disertaciones abiertas a todo público (11 y 17 de mayo) </cursos/Disertaciones-Georreferenciacion.png>`_
 
 .. admonition:: `Historia del GGSR </historia/>`_
 
