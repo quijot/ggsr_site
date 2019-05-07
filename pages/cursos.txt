@@ -104,7 +104,6 @@ Consultas: **ggsr** |arroba| **fceia.unr.edu.ar**
 Material del curso
 ------------------
 
-- `Afiche </cursos/Disertaciones-Georreferenciacion.png>`_
 - `Georreferenciación </cursos/Georreferenciacion_2019.pdf>`_
 
 
