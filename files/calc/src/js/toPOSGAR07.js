@@ -85,7 +85,7 @@ function toPOSGAR07(lat, lon, obsDate, repCont) {
   lonC = lonC + cLon / ap / 3600;
   report("Corrección de Latitud y Longitud según\nVEMOS2009, sismo 27feb2010, cambio MR de IGS05 a IGS08:", repCont);
   report("\t".concat(cLat).concat(" m").concat("\t").concat((cLat/am).toFixed(5)).concat("\""), repCont);
-  report("\t".concat(cLon).concat(" m").concat("\t").concat((cLon/am).toFixed(5)).concat("\""), repCont);
+  report("\t".concat(cLon).concat(" m").concat("\t").concat((cLon/ap).toFixed(5)).concat("\""), repCont);
   // cLat y cLon sismo2015 desplazamiento FIJO -----------------------------
   // cLat y cLon sismo2015 desplazamiento FIJO -----------------------------
   // cLat y cLon sismo2015 desplazamiento FIJO -----------------------------
