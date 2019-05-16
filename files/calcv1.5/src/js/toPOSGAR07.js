@@ -70,8 +70,8 @@ function toPOSGAR07(lat, lon, obsDate, repCont) {
   var latC = DMS.Decode(lat).val;
   var lonC = DMS.Decode(lon).val;
   report("Corrección de Latitud y Longitud según VEMOS2017:", repCont)
-  report("\t".concat(-nc*years).concat(" m").concat("\t").concat((-cLat).toFixed(5)).concat("\""), repCont);
-  report("\t".concat(-ec*years).concat(" m").concat("\t").concat((-cLon).toFixed(5)).concat("\""), repCont);
+  report("\t".concat((-nc*years).toFixed(4)).concat(" m").concat("\t").concat((-cLat).toFixed(5)).concat("\""), repCont);
+  report("\t".concat((-ec*years).toFixed(4)).concat(" m").concat("\t").concat((-cLon).toFixed(5)).concat("\""), repCont);
   // Coordenadas corregidas a "reference date"
   latC = latC - cLat / 3600;
   lonC = lonC - cLon / 3600;
