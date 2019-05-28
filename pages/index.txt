@@ -29,14 +29,6 @@
   <div class="col-lg-12">
 
 
-.. admonition:: `Curso de postgrado Georreferenciación </cursos/#ano-2019-curso-de-postgrado-georreferenciacion>`_ (Mayo de 2019)
-
-  La georreferenciación se ha convertido en la base tecnológica de un cambio cultural.
-
-  El empleo de coordenadas, referidas a un único sistema mundial, permite identificar puntos del espacio, sean éstos aéreos, marítimos, fluviales, o terrestres, naturales o culturales, con los más diversos fines. `Seguir leyendo... </cursos/#ano-2019-curso-de-postgrado-georreferenciacion>`__
-  
-  `Disertaciones abiertas a todo público (11 y 17 de mayo) </cursos/Disertaciones-Georreferenciacion.png>`_
-
 .. admonition:: `Historia del GGSR </historia/>`_
 
   En 1988 Oscar Parachú y Aldo Mangiaterra concurrieron al Seminario sobre GPS, organizado en la Facultad de Ciencias Astronómicas y Geofísicas de la Universidad Nacional de La Plata (UNLP). `Seguir leyendo... </historia/>`__

@@ -13,6 +13,10 @@
 Año 2019: Curso de postgrado Georreferenciación
 ===============================================
 
+    La georreferenciación se ha convertido en la base tecnológica de un cambio cultural.
+
+    El empleo de coordenadas, referidas a un único sistema mundial, permite identificar puntos del espacio, sean éstos aéreos, marítimos, fluviales, o terrestres, naturales o culturales, con los más diversos fines.
+
 Objetivos del curso
 -------------------
 
@@ -86,11 +90,12 @@ Docentes
 | **Laura Cornaglia**, docente en UNRosario, integrante GGSR.
 | **Aldo Mangiaterra**, ex profesor UNRosario, integrante GGSR.
 
-**Disertación a cargo del Instituto Geográfico Nacional (IGN)**.
+**Disertaciones**.
+Abiertas a todo público (11 y 17 de mayo).
 
 | **Notas**:
 | Curso acreditable por el Ministerio de Educación de la Provincia de Santa Fe.
-| Curso acreditable para el Doctorado en Ingeniería de la FCEIA, aprobado s/ resol. 649/18
+| Curso acreditable para el Doctorado en Ingeniería de la FCEIA, aprobado según Resolución Nº 649/18.
 
 | **Costo de inscripción**: $1800. Se adjudicarán becas.
 
