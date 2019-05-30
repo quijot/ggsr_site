@@ -13,9 +13,9 @@
 Año 2019: Curso de postgrado Georreferenciación
 ===============================================
 
-    La georreferenciación se ha convertido en la base tecnológica de un cambio cultural.
+La georreferenciación se ha convertido en la base tecnológica de un cambio cultural.
 
-    El empleo de coordenadas, referidas a un único sistema mundial, permite identificar puntos del espacio, sean éstos aéreos, marítimos, fluviales, o terrestres, naturales o culturales, con los más diversos fines.
+El empleo de coordenadas, referidas a un único sistema mundial, permite identificar puntos del espacio, sean éstos aéreos, marítimos, fluviales, o terrestres, naturales o culturales, con los más diversos fines.
 
 Objetivos del curso
 -------------------
@@ -70,8 +70,8 @@ Destinatarios
 - Graduados universitarios de amplia variedad de carreras con actividades vinculadas al territorio (Ingenierías, Cs. Agrarias, Medicina, Cs. Sociales, etc.).
 - Alumnos avanzados y graduados de Profesorados de Geografía y docentes de Geografía en general.
 
-A desarrollarse en
-------------------
+Desarrollado en
+---------------
 
 | Facultad de Ciencias Exactas, Ingeniería y Agrimensura - Universidad Nacional de Rosario
 | Avda. Pellegrini 250 – Rosario – Santa Fe.
@@ -90,21 +90,23 @@ Docentes
 | **Laura Cornaglia**, docente en UNRosario, integrante GGSR.
 | **Aldo Mangiaterra**, ex profesor UNRosario, integrante GGSR.
 
-**Disertaciones**.
-Abiertas a todo público (11 y 17 de mayo).
+Disertaciones
+-------------
+
+`Abiertas a todo público (11 y 17 de mayo) </cursos/Disertaciones-Georreferenciacion.png>`_
 
 | **Notas**:
 | Curso acreditable por el Ministerio de Educación de la Provincia de Santa Fe.
 | Curso acreditable para el Doctorado en Ingeniería de la FCEIA, aprobado según Resolución Nº 649/18.
 
-| **Costo de inscripción**: $1800. Se adjudicarán becas.
+..	| **Costo de inscripción**: $1800. Se adjudicarán becas.
 
-Consultas: **ggsr** |arroba| **fceia.unr.edu.ar**
+	Consultas: **ggsr** |arroba| **fceia.unr.edu.ar**
 
-.. |arroba| image:: /images/120px-At_sign.svg.png
-            :height: 15px
-            :alt: arroba
-            :align: middle
+	.. |arroba| image:: /images/120px-At_sign.svg.png
+	            :height: 15px
+	            :alt: arroba
+	            :align: middle
 
 Material del curso
 ------------------
