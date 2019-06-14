@@ -93,7 +93,7 @@ Docentes
 Disertaciones
 -------------
 
-- *Un caso práctico de la aplicación del concepto de georreferenciación*, a cargo del Ing. Agrim. S. Pestarini (10 de mayo).
+- 'Un caso práctico de la aplicación del concepto de georreferenciación', a cargo del Ing. Agrim. S. Pestarini (10 de mayo).
 - `Abiertas a todo público (11 y 17 de mayo) </cursos/Disertaciones-Georreferenciacion.png>`_
 
 | **Notas**:
