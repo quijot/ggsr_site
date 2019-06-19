@@ -6,7 +6,7 @@
 .. type: text
 .. date: 04/04/17 16:30:00 UTC-03:00
 
-- `Listado de desvíos </calc-idw/desvios/>`_ entre coordenadas *corregidas* y coordenadas POSGAR07 oficial **por EP** y ** por semana GPS**
+- `Listado de desvíos </calc-idw/desvios/>`_ entre coordenadas *corregidas* y coordenadas POSGAR07 oficial **por EP** y **por semana GPS**
 
 Ecuaciones utilizadas para interpolar mediante el método de la Distancia Inversa Ponderada (IDW):
 
@@ -16,7 +16,7 @@ Ecuaciones utilizadas para interpolar mediante el método de la Distancia Invers
 
 .. math::
 
-    \Delta lat = \cfrac {\sum_{i=1}^n \cfrac{\Delta lat_i}{d_i^p}}{\sum_{i=1}^n \cfrac{1}{d_i^p}}
+    \Delta lat = \cfrac {\sum_{i=1}^n \cfrac{\Delta lat_i}{d_EP_i^p}}{\sum_{i=1}^n \cfrac{1}{d_EP_i^p}}
 
 .. raw:: html
 
@@ -25,7 +25,7 @@ Ecuaciones utilizadas para interpolar mediante el método de la Distancia Invers
 
 .. math::
 
-    \Delta lon = \cfrac{\sum_{i=1}^n \cfrac{\Delta lon_i}{d_i^p}}{\sum_{i=1}^n \cfrac{1}{d_i^p}}
+    \Delta lon = \cfrac{\sum_{i=1}^n \cfrac{\Delta lon_i}{d_EP_i^p}}{\sum_{i=1}^n \cfrac{1}{d_EP_i^p}}
 
 .. raw:: html
 
