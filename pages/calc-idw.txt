@@ -1,6 +1,6 @@
 .. title: Calculadora ITRF → POSGAR, pruebas con el método IDW
 .. slug: calc-idw
-.. tags: has_math
+.. tags: mathjax
 .. link: 
 .. description: Calculadora ITRF → POSGAR por interpolación IDW
 .. type: text
@@ -16,7 +16,7 @@ Ecuaciones utilizadas para interpolar mediante el método de la Distancia Invers
 
 .. math::
 
-    \Delta lat = \cfrac {\sum_{i=1}^n \cfrac{\Delta lat_i}{d_EP_i^p}}{\sum_{i=1}^n \cfrac{1}{d_EP_i^p}}
+    \Delta lat = \cfrac {\sum_{i=1}^n \cfrac{\Delta lat_i}{d_{EP_i}^p}}{\sum_{i=1}^n \cfrac{1}{d_{EP_i}^p}}
 
 .. raw:: html
 
@@ -25,7 +25,7 @@ Ecuaciones utilizadas para interpolar mediante el método de la Distancia Invers
 
 .. math::
 
-    \Delta lon = \cfrac{\sum_{i=1}^n \cfrac{\Delta lon_i}{d_EP_i^p}}{\sum_{i=1}^n \cfrac{1}{d_EP_i^p}}
+    \Delta lon = \cfrac{\sum_{i=1}^n \cfrac{\Delta lon_i}{d_{EP_i}^p}}{\sum_{i=1}^n \cfrac{1}{d_{EP_i}^p}}
 
 .. raw:: html
 
