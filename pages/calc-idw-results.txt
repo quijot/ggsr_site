@@ -1,5 +1,5 @@
 .. title: Calculadora ITRF → POSGAR, pruebas con el método IDW
-.. slug: calc-idw
+.. slug: calc-idw/results
 .. tags: mathjax
 .. link: 
 .. description: Calculadora ITRF → POSGAR por interpolación IDW
