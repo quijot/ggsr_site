@@ -10,6 +10,7 @@
 .. contents:: Listado de Cursos
    :depth: 1
 
+
 Año 2019: Curso de postgrado Georreferenciación
 ===============================================
 
@@ -93,8 +94,27 @@ Docentes
 Disertaciones
 -------------
 
-- 'Un caso práctico de la aplicación del concepto de georreferenciación', a cargo del Ing. Agrim. S. Pestarini (10 de mayo).
-- `Abiertas a todo público (11 y 17 de mayo) </cursos/Disertaciones-Georreferenciacion.png>`_
+| Ing. Agrim. Santiago Pestarini
+| *'Un caso práctico de la aplicación del concepto de georreferenciación'*
+| (Viernes 10 de mayo)
+
+**Abiertas a todo público**
+
+| Lic. Pablo Horacio Zambrana - Instituto Geográfico Nacional (IGN)
+| *«El IGN y la Georreferenciación»*
+| (Sábado 11 de Mayo)
+
+| Dra. María Virginia Mackern
+| Vice-Presidenta de SIRGAS (Sistema de Referencia Geocéntrico para las Américas)
+| *«SIRGAS y la Georreferenciación en Argentina y en América Latina»*
+| (Viernes 17 de Mayo)
+
+| Dr. Claudio Brunini
+| Director Científico del Observatorio Argentino-Alemán de Geodesia (AGGO)
+| *«La Georreferenciación en el marco de la UN-GGIM (Gestión Global de Información Geoespacial para las Américas, Naciones Unidas)»*
+| (Viernes 17 de Mayo)
+
+`Material de difusión </cursos/Disertaciones-Georreferenciacion.png>`_
 
 | **Notas**:
 | Curso acreditable por el Ministerio de Educación de la Provincia de Santa Fe.
@@ -113,6 +133,29 @@ Material del curso
 ------------------
 
 - `Georreferenciación </cursos/Georreferenciacion_2019.pdf>`_
+
+Trabajos Finales de aplicación de la Georreferenciación
+-------------------------------------------------------
+
+Presentación de monografías y exposición oral (llevada a cabo el día Viernes 9 de Agosto de 2019)
+
+
+.. raw:: html
+
+    <ul>
+        <li>
+            "La georreferenciación aplicada en la arqueología del área del Río Salado del Norte (Departamento Las Colonias, Provincia de Santa Fe)"
+            <br>Autores: Balducci, F., Iannelli, L., Postma, J.
+        </li>
+        <li>
+            "La Georreferenciación aplicada a la Ingeniería Sanitaria"
+            <br>Autor: Gagliano, G.
+        </li>
+        <li>
+            "La Georreferenciación aplicada a los Inventarios Viales convencionales"
+            <br>Autores: Fortuñy A., Isern, S., Luque, A.
+        </li>
+    </ul>
 
 
 Año 2016: Georreferenciación
