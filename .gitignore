@@ -1,7 +1,9 @@
 *.py[co]
 *.db
+.venv
 cache/
 _otros/
 output/
 __pycache__/
+nikola-requirements.txt
 
