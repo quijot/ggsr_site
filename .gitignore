@@ -6,4 +6,7 @@ _otros/
 output/
 __pycache__/
 nikola-requirements.txt
-
+files/ppp/results_ppp/
+!files/ppp/results_ppp/.gitkeep
+files/ppp/uploads/
+!files/ppp/uploads/.gitkeep
