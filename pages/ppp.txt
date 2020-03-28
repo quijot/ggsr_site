@@ -83,13 +83,11 @@
       // your page initialization code here
       // the DOM will be available here
       var form = document.querySelector('#ppp-form');
-      form._submit = form.submit; // saved reference
-      form.submit = function () {
+      form.onsubmit = function () {
         document.querySelector("#submit-btn").disabled = true;
         document.querySelector("#submit-btn").innerText = 'Procesando...';
         document.querySelector("#captcha").style.display = "none";
         document.querySelector("#wait-msg").style.display = "block";
-        this._submit();
       }
     })();
   </script>
