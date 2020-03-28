@@ -1,6 +1,6 @@
 *.py[co]
 *.db
-.venv
+.venv/
 cache/
 _otros/
 output/
