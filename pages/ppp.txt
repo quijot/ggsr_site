@@ -44,7 +44,7 @@
           </div>
           <!-- SUBMIT -->
           <div class="col-lg-2 pull-right">
-            <button type="submit" class="btn btn-primary pull-right" id="submit-btn" onclick="send()">Enviar</button>
+            <button type="submit" class="btn btn-primary pull-right" id="submit-btn">Enviar</button>
           </div>
         </div>
         <legend>Opcionales</legend>
@@ -76,14 +76,23 @@
   <link rel="stylesheet" href="css/map.css" type="text/css">
   <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/build/ol.js"></script>
 
-  <script>
-    function send() {
-      document.querySelector("#submit-btn").disabled= true;
-      document.querySelector("#submit-btn").innerText= 'Procesando...';
-      document.querySelector("#captcha").style.display="none";
-      document.querySelector("#wait-msg").style.display="block";
-      document.querySelector('#ppp-form').submit();
-    }
-  </script>
-
 .. include:: pages/ppp-info.txt
+
+.. raw:: html
+
+  <script>
+    // self executing function here
+    (function () {
+      // your page initialization code here
+      // the DOM will be available here
+      var form = document.querySelector('#ppp-form');
+      form._submit = form.submit; // saved reference
+      form.submit = function () {
+        document.querySelector("#submit-btn").disabled = true;
+        document.querySelector("#submit-btn").innerText = 'Procesando...';
+        document.querySelector("#captcha").style.display = "none";
+        document.querySelector("#wait-msg").style.display = "block";
+        this._submit();
+      }
+    })();
+  </script>
