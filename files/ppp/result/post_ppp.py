@@ -164,5 +164,5 @@ for ep in nearest:
 
 fc = FeatureCollection(nearest_geojson)
 
-with open("js/ramsac.geojson", "w") as f:
+with open("idw.geojson", "w") as f:
     geojson_dump(fc, f, sort_keys=True)

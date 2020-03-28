@@ -264,10 +264,10 @@ if (!empty($_POST) && $captchaOk) {
   };
 
   // vectorPoints ---------------------------------------------------------------
-  var vectorPointsRAMSAC = new ol.layer.Vector({
-    title: 'RAMSAC',
+  var vectorPointsIDW = new ol.layer.Vector({
+    title: 'IDW',
     source: new ol.source.Vector({
-      url: 'js/ramsac.geojson',
+      url: 'idw.geojson',
       format: new ol.format.GeoJSON()
     }),
     style: styleFunction
@@ -283,7 +283,7 @@ if (!empty($_POST) && $captchaOk) {
       new ol.layer.Tile({
         source: new ol.source.OSM()
       }),
-      vectorPointsRAMSAC,
+      vectorPointsIDW,
       new ol.layer.Vector()
     ],
     view: new ol.View({
@@ -294,7 +294,7 @@ if (!empty($_POST) && $captchaOk) {
 
   function resetMap() {
     vectorLayer = map.getLayers().getArray()[1];
-    vectorLayer = vectorPointsRAMSAC;
+    vectorLayer = vectorPointsIDW;
     map.getView().setCenter(ol.proj.fromLonLat([-60.628, -32.959]));
     map.getView().setZoom(4);
   }
@@ -342,7 +342,7 @@ if (!empty($_POST) && $captchaOk) {
   };
 
   // Fit Map to VectorSource
-  var vectorSource = vectorPointsRAMSAC.getSource();
+  var vectorSource = vectorPointsIDW.getSource();
   vectorSource.once('change', function(evt) {
     if (vectorSource.getState() === 'ready') {
       // now the source is fully loaded
