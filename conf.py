@@ -130,18 +130,24 @@ NAVIGATION_LINKS = {
         ("/cursos/", "Cursos"),
         ("/extension/", "Extensión"),
         ("/publicaciones/", "Publicaciones"),
-        ((('/calc', 'Calculadora ITRF → POSGAR'),
-          ('/software', 'Otros')), 'Software'),
+        (
+            (
+                ("/ppp/", "Servicio PPP"),
+                ("/calc/", "Calculadora ITRF → POSGAR"),
+                ("/software/", "Otros"),
+            ),
+            "Software",
+        ),
         ("/historia/", "Historia"),
         ("/contacto/", "Contacto"),
-#        ("/archive.html", "Archivo"),
-#        ("/categories/index.html", "Tags"),
-#        ("/rss.xml", "feed RSS"),
+        # ("/archive.html", "Archivo"),
+        # ("/categories/index.html", "Tags"),
+        # ("/rss.xml", "feed RSS"),
     ),
 }
 
 # Name of the theme to use.
-#THEME = "bootstrap3"
+# THEME = "bootstrap3"
 THEME = "cosmo"
 
 # Below this point, everything is optional
@@ -188,8 +194,8 @@ DATE_FANCINESS = 2
 # LOCALE_DEFAULT = locale to use for languages not mentioned in LOCALES; if
 # not set the default Nikola mapping is used.
 
-LOCALES = {'es':'es_AR.utf8'}
-LOCALE_FALLBACK = 'es_AR.utf8'
+LOCALES = {"es": "es_AR.utf8"}
+LOCALE_FALLBACK = "es_AR.utf8"
 # LOCALE_DEFAULT = None
 
 # POSTS and PAGES contains (wildcard, destination, template) tuples.
@@ -220,14 +226,14 @@ LOCALE_FALLBACK = 'es_AR.utf8'
 POSTS = (
     ("posts/*.rst", "blog", "post.tmpl"),
     ("posts/*.txt", "blog", "post.tmpl"),
-    ("posts/*.md",  "blog", "post.tmpl"),
+    ("posts/*.md", "blog", "post.tmpl"),
     ("posts/*.textile", "blog", "post.tmpl"),
     ("posts/*.odt", "blog", "post.tmpl"),
 )
 PAGES = (
     ("pages/*.rst", "", "story.tmpl"),
     ("pages/*.txt", "", "story.tmpl"),
-    ("pages/*.md",  "", "story.tmpl"),
+    ("pages/*.md", "", "story.tmpl"),
     ("pages/*.php", "", "story.tmpl"),
     ("pages/*.textile", "", "story.tmpl"),
     ("pages/*.odt", "", "story.tmpl"),
@@ -253,19 +259,19 @@ PAGES = (
 # 'markdown' is MarkDown
 # 'html' assumes the file is HTML and just copies it
 COMPILERS = {
-    "odt": ('.odt'),
-    "rest": ('.rst', '.txt'),
-    "markdown": ('.md', '.mdown', '.markdown'),
-    "textile": ('.textile',),
-    "txt2tags": ('.t2t',),
-    "bbcode": ('.bb',),
-    "wiki": ('.wiki',),
-    "ipynb": ('.ipynb',),
-    "html": ('.html', '.htm'),
+    "odt": (".odt"),
+    "rest": (".rst", ".txt"),
+    "markdown": (".md", ".mdown", ".markdown"),
+    "textile": (".textile",),
+    "txt2tags": (".t2t",),
+    "bbcode": (".bb",),
+    "wiki": (".wiki",),
+    "ipynb": (".ipynb",),
+    "html": (".html", ".htm"),
     # PHP files are rendered the usual way (i.e. with the full templates).
     # The resulting files have .php extensions, making it possible to run
     # them without reconfiguring your server to recognize them.
-    "php": ('.php',),
+    "php": (".php",),
     # Pandoc detects the input from the source filename
     # but is disabled by default as it would conflict
     # with many of the others.
@@ -315,15 +321,16 @@ WRITE_TAG_CLOUD = True
 # TAG_PAGES_DESCRIPTIONS = {
 #    DEFAULT_LANG: {
 #        "blogging": "Meta-blog posts about blogging about blogging.",
-#        "open source": "My contributions to my many, varied, ever-changing, and eternal libre software projects."
+#        "open source": "My contributions to my many, varied, ever-changing,\
+#                        and eternal libre software projects."
 #    },
-#}
+# }
 
 
 # If you do not want to display a tag publicly, you can mark it as hidden.
 # The tag will not be displayed on the tag list page, the tag cloud and posts.
 # Tag pages will still be generated.
-HIDDEN_TAGS = ['mathjax']
+HIDDEN_TAGS = ["mathjax"]
 
 # Only include tags on the tag list/overview page if there are at least
 # TAGLIST_MINIMUM_POSTS number of posts or more with every tag. Every tag
@@ -350,7 +357,7 @@ HIDDEN_TAGS = ['mathjax']
 #        "blogging": "Meta-blog posts about blogging about blogging.",
 #        "open source": "My contributions to my many, varied, ever-changing, and eternal libre software projects."
 #    },
-#}
+# }
 
 # If you do not want to display a category publicly, you can mark it as hidden.
 # The category will not be displayed on the category list page.
@@ -408,16 +415,16 @@ INDEX_PATH = "blog"
 #
 # If you don't need any of these, just set to []
 REDIRECTIONS = [
-	("librogps.html", "librogps/"),
-	# compatible con la publicacion "librito celeste"
-	#("epsf", "ep/home.php?EP=EPSF"),
-	#("epvt", "ep/home.php?EP=EPVT"),
-	("epsf/index.html", "../ep/epsf/"),
-	("epvt/index.html", "../ep/epvt/"),
-	# compatible con la publicacion "PPP y su aplicación en Agrimensura"
-	("pppcalc.html", "pppcalc/"),
-	# ggsr -> gps
-	("ggsr/index.html", "/"),
+    ("librogps.html", "librogps/"),
+    # compatible con la publicacion "librito celeste"
+    # ("epsf", "ep/home.php?EP=EPSF"),
+    # ("epvt", "ep/home.php?EP=EPVT"),
+    ("epsf/index.html", "../ep/epsf/"),
+    ("epvt/index.html", "../ep/epvt/"),
+    # compatible con la publicacion "PPP y su aplicación en Agrimensura"
+    ("pppcalc.html", "pppcalc/"),
+    # ggsr -> gps
+    ("ggsr/index.html", "/"),
 ]
 
 # Presets of commands to execute to deploy. Can be anything, for
@@ -535,7 +542,7 @@ REDIRECTIONS = [
 # (the thumbnail has ``.thumbnail`` added before the file extension).
 # The format is a dictionary of {source: relative destination}.
 
-IMAGE_FOLDERS = {'images': 'images'}
+IMAGE_FOLDERS = {"images": "images"}
 # IMAGE_THUMBNAIL_SIZE = 400
 
 # #############################################################################
@@ -703,8 +710,8 @@ CONTENT_FOOTER_FORMATS = {
             "email": BLOG_EMAIL,
             "author": BLOG_AUTHOR,
             "date": time.gmtime().tm_year,
-            "license": LICENSE
-        }
+            "license": LICENSE,
+        },
     )
 }
 
@@ -912,7 +919,7 @@ SOCIAL_BUTTONS_CODE = ""
 # <input type="text" name="q" maxlength="255" results="0" placeholder="Search"/>
 # </form>
 # <!-- End of custom search -->
-#""" % SITE_URL
+# """ % SITE_URL
 
 # Use content distribution networks for jQuery, twitter-bootstrap css and js,
 # and html5shiv (for older versions of Internet Explorer)
@@ -1041,7 +1048,7 @@ DISABLED_PLUGINS = ["robots"]
 #          experience!
 
 LOGGING_HANDLERS = {
-    'stderr': {'loglevel': 'INFO', 'bubble': True},
+    "stderr": {"loglevel": "INFO", "bubble": True},
     # 'smtp': {
     #     'from_addr': 'test-errors@example.com',
     #     'recipients': ('test@example.com'),
