@@ -104,7 +104,7 @@ print(
     """
 <strong>POSGAR07 coordinates</strong> (ITRF05 2006.632):\t\t\
 <strong>{lat_comp_dms}  {lon_comp_dms}</strong>\n\
-<strong>calc-idw</strong> (nearest_week_found={wk}, n={n}, p={p})\n\
+<strong>calc-idw</strong> (weeks_found={wk}&plusmn;3, n={n}, p={p})\n\
     {nearest_report}\n\
     {lat_idw:.15f}, {lat_idw:.15f}\
     <strong>{lat_idw_dms}, {lon_idw_dms}</strong>\
