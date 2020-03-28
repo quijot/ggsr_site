@@ -1,0 +1,89 @@
+.. title: Servicio PPP del GGSR
+.. slug: ppp
+.. date: 24/03/2020 18:00:00 UTC-03:00
+.. tags: mathjax, ppp
+.. link:
+.. description: PPP
+.. type: text
+
+.. raw:: html
+
+  <!-- reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+  <div class="well col-lg-12">
+    <form class="form-horizontal" id="ppp-form" method="post" action="result/" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Servicio NRCan <strong>CSRS-PPP</strong> + Transfrmación GGSR <strong>ITRF→POSGAR</strong></legend>
+        <div class="form-group">
+          <!-- RINEX -->
+          <label for="rinex" class="col-lg-2 control-label">Archivo RINEX</label>
+          <div class="col-lg-10">
+            <input type="file" class="form-control" id="rinex" name="rinex" accept=".gz,.zip,.Z">
+            <span class="help-block">
+              Comprimido (<code>gz</code>, <code>zip</code>, <code>Z</code>). Tamaño máximo <code>5 MB</code>.
+              Para comprimir: <a href="https://terras.gsi.go.jp/ja/crx2rnx.html">Hatanaka</a>,
+              <a href="https://www.7-zip.org/">7zip</a>.
+            </span>
+          </div>
+        </div>
+        <div class="form-group">
+          <!-- CAPTCHA & MESSAGE -->
+          <div class="col-lg-8 col-lg-offset-2">
+            <div id="captcha" class="g-recaptcha" data-sitekey="6LfTL_sSAAAAAPCPWjJpHou92vL88FS6DLjB9uJA"></div>
+            <div id="wait-msg" style="display: none">
+              <p>Enviando el archivo RINEX al servicio CSRS-PPP de la
+                <strong>N</strong>atural <strong>R</strong>esources
+                <strong>Can</strong>ada.</p>
+              <p>El proceso puede demorar
+                varios minutos. Para poder ver los resultados,
+                <strong class="text-warning">por favor no cierre el
+                  navegador</strong>.
+              </p>
+            </div>
+          </div>
+          <!-- SUBMIT -->
+          <div class="col-lg-2 pull-right">
+            <button type="submit" class="btn btn-primary pull-right" id="submit-btn" onclick="send()">Enviar</button>
+          </div>
+        </div>
+        <legend>Opcionales</legend>
+        <div class="form-group">
+          <!-- Coordinates (optional) -->
+          <label for="coordinates" class="col-lg-2 control-label">Conocidas</label>
+          <div class="col-lg-4">
+            <input type="text" class="form-control" id="coordinates" name="coordinates"
+              placeholder="-31 14 51.30585, -61 28 16.28025">
+            <span class="help-block">Coordenadas POSGAR07 para comparar</span>
+          </div>
+          <!-- IDW parameters (default n=3, p=1) -->
+          <label for="idw_n" class="col-lg-1 control-label">IDW (n)</label>
+          <div class="col-lg-2">
+            <input type="number" class="form-control" id="idw_n" name="idw_n" placeholder="3" min=1 max=100>
+            <span class="help-block">[<code>1-100</code>] (Default: <code>3</code>) Cantidad de EP para
+              interpolar</span>
+          </div>
+          <label for="idw_p" class="col-lg-1 control-label">IDW (p)</label>
+          <div class="col-lg-2">
+            <input type="number" class="form-control" id="idw_p" name="idw_p" placeholder="1" min=1 max=20>
+            <span class="help-block">[<code>1-20</code>] (Default: <code>1</code>) Ponderación de la distancia</span>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/css/ol.css">
+  <link rel="stylesheet" href="css/map.css" type="text/css">
+  <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/build/ol.js"></script>
+
+  <script>
+    function send() {
+      document.querySelector("#submit-btn").disabled= true;
+      document.querySelector("#submit-btn").innerText= 'Procesando...';
+      document.querySelector("#captcha").style.display="none";
+      document.querySelector("#wait-msg").style.display="block";
+      document.querySelector('#ppp-form').submit();
+    }
+  </script>
+
+.. include:: pages/ppp-info.txt

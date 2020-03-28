@@ -1,0 +1,120 @@
+HDR GRP CANADIAN GEODETIC SURVEY, SURVEYOR GENERAL BRANCH, NATURAL RESOURCES CANADA
+HDR ADR GOVERNMENT OF CANADA, 588 BOOTH STREET ROOM 334, OTTAWA ONTARIO K1A 0Y7
+HDR TEL 343-292-6617
+HDR EMA nrcan.geodeticinformation-informationgeodesique.rncan@canada.ca
+VER 2.31.0 (2019-11-04)
+NOW 2020-03-12 18:45:34.00
+RNX epsf0720.19o
+MKR EPSF
+MOD STATIC
+BEG 2019-03-13 00:00:00.00
+END 2019-03-13 23:59:30.00
+INT 30.00
+EPO 2880 2880 2880
+EXE 14 sec
+OBS G C1C C2W L1W L2W
+PAR TYPE         SYS SIG SAT INIT      NOISE
+PAR POS_X                    1.000e+10 0.000e+00
+PAR POS_Y                    1.000e+10 0.000e+00
+PAR POS_Z                    1.000e+10 0.000e+00
+PAR TZD                      5.000e-02 5.000e-05
+PAR TZD_GRAD_N               3.000e-03 1.667e-06
+PAR TZD_GRAD_E               3.000e-03 1.667e-06
+PAR RX_CLK       G           1.000e+10 1.000e+10
+PAR AMB          G   L1W ALL 1.000e+10 0.000e+00
+PAR AMB          G   L2W ALL 1.000e+10 0.000e+00
+PAR RX_USD       G   C1C     1.000e+10 1.000e+10
+PAR RX_USD       G   C2W     1.000e+10 1.000e+10
+PAR STEC         G       ALL 1.000e+10 1.000e-01
+SP3 igs20443.sp3
+SP3 igs20444.sp3
+CLK igs20443.clk
+CLK igs20444.clk
+ERP igs20447.erp
+ATX igs14_2091_nrcan.atx
+VMF [ah|aw|zh|zw]19072.h00
+VMF [ah|aw|zh|zw]19072.h06
+VMF [ah|aw|zh|zw]19072.h12
+VMF [ah|aw|zh|zw]19072.h18
+VMF [ah|aw|zh|zw]19073.h00
+ELV 7.5
+TZD VMF1
+REC TRIMBLE 5700
+ANT TRM57970.00     NONE
+ARP    0.000    0.000    0.000
+PCO G01   0.001 -0.001  0.063
+PCO G02   0.000  0.002  0.057
+PCO R01   0.001 -0.001  0.063
+PCO R02   0.000  0.002  0.057
+OTL   .00423 .00146 .00124 .00044 .00346 .00346 .00116 .00085 .00008 .00002 .00002
+OTL   .00203 .00061 .00044 .00020 .00107 .00080 .00036 .00017 .00007 .00002 .00001
+OTL   .00087 .00027 .00018 .00005 .00126 .00119 .00043 .00026 .00011 .00005 .00004
+OTL     67.8   63.8   76.9   63.0 -125.9 -135.6 -125.6 -143.6  -25.0 -108.6 -163.3
+OTL     56.0   90.6   46.8   79.7   32.4  -31.2   27.7  -66.3  109.5  137.7   31.3
+OTL    -24.9   31.3  -37.0   19.8  104.1   72.8  102.2   56.6  178.5  174.7  178.6
+OTL COMPUTED BY M.S. BOS AND H.-G. SCHERNECK, OSO CHALMERS
+IAR 0.00%
+AVF 1.000
+APR RINEX
+ELL GRS80
+POS CRD  SYST        EPOCH          A_PRIORI         ESTIMATED       DIFF SIGMA(95%) CORRELATIONS
+POS   X IGS14 19:072:43185      2662177.3725      2662177.3613    -0.0112     0.0072  1.0000
+POS   Y IGS14 19:072:43185     -4738544.5532     -4738544.6372    -0.0840     0.0088 -0.3534  1.0000
+POS   Z IGS14 19:072:43185     -3326539.1211     -3326538.9934     0.1277     0.0057 -0.5177  0.8063  1.0000
+POS LAT IGS14 19:072:43185   -31 38 23.75017   -31 38 23.74549     0.1442     0.0028  1.0000
+POS LON IGS14 19:072:43185   -60 40 19.71568   -60 40 19.71761    -0.0509     0.0062  0.0805  1.0000
+POS HGT IGS14 19:072:43185           62.8225           62.8131    -0.0093     0.0108  0.1947 -0.0064  1.0000
+PRJ TYPE ZONE    EASTING     NORTHING SCALE_POINT SCALE_COMBINED HEMISPHERE
+PRJ  UTM   20 720760.911  6497120.955    1.000201       1.000191          S
+OHT     SYST    MODEL             HEIGHT
+OHT CGVD2013 CGG2013a OUTSIDE_GRID_LIMIT
+GHT OUTSIDE_GRID_LIMIT
+OFF -37.5874 0.2342 ns
+DRI -36.9552 ns/day
+RES G C1C 0.397  
+RES G C2W 0.433  
+RES G L1W 0.003  
+RES G L2W 0.002  
+RES ELV        G_C1C   G_C2W   G_L1W   G_L2W 
+RES ELV  5.0   0.640   0.638   0.005   0.003 
+RES ELV 15.0   0.530   0.606   0.005   0.003 
+RES ELV 25.0   0.412   0.458   0.003   0.002 
+RES ELV 35.0   0.347   0.371   0.002   0.001 
+RES ELV 45.0   0.307   0.320   0.002   0.001 
+RES ELV 55.0   0.260   0.270   0.001   0.001 
+RES ELV 65.0   0.234   0.249   0.001   0.001 
+RES ELV 75.0   0.240   0.242   0.001   0.001 
+RES ELV 85.0   0.237   0.215   0.001   0.001 
+FLG PRN    EPO    TRK    CLK    EPH    ELV    YAW    DCB    SLP    MIS    RES
+FLG G01    747      0      0      0     27      0      0      1      0      0
+FLG G02    950      0      0      0     68      0      0      2      0      0
+FLG G03    906      0      0      0     27      0      0      1      0      0
+FLG G05    991      0      0      0     68      0      0      2      0      0
+FLG G06    990      3      0      0     50      0      0      4      0      0
+FLG G07    815      0      0      0     32      0      0      1      0      0
+FLG G08    854      0      0      0     82      0      0      2      0      0
+FLG G09    923      1      0      0     27      0      0      1      0      0
+FLG G10    758      0      0      0     31      0      0      1      0      0
+FLG G11    725      1      0      0     28      0      0      1      0      0
+FLG G12    916      0      0      0     28      0      0      1      0      0
+FLG G13    737      0      0      0     29      0      0      1      0      0
+FLG G14    841      6      0      0     79      0      0      2      0      0
+FLG G15    926      0      0      0     77      0      0      2      0      0
+FLG G16    951      0      0      0     45      0      0      2      0      0
+FLG G17    922      1      0      0     64      0      0      3      0      0
+FLG G18    820      0      0      0     19      0      0      1      0      0
+FLG G19    853      4      0      0     78      0      0      4      0      0
+FLG G20    735      5      0      0     25      0      0      1      0      0
+FLG G21    837      0      0      0     31      0      0      1      0      0
+FLG G22    901      0      0      0     27      0      0      1      0      0
+FLG G23    892      0      0      0     30      0      0      1      0      0
+FLG G24    769      1      0      0     29      0      0      1      0      0
+FLG G25    851      0      0      0     27      0      0      1      0      0
+FLG G26    893      2      0      0     72      0      0      4      0      0
+FLG G27    717      0      0      0     27      0      0      1      0      0
+FLG G28    711      1      0      0     27      0      0      1      0      0
+FLG G29    907      0      0      0     27      0      0      1      0      0
+FLG G30    893      0      0      0     29      0      0      1      0      0
+FLG G31    989      0      0      0     50      0      0      2      0      0
+FLG G32    892      0      0      0     75      0      0      2      0      0
+FLG GXX  26612     25      0      0   1335      0      0     50      0      0

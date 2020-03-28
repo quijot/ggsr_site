@@ -1,0 +1,112 @@
+.. class:: well well-sm pull-right
+
+.. contents:: Índice de contenido
+   :depth: 3
+
+
+Servicio de PPP del GGSR
+========================
+
+¿En qué consiste?
+-----------------
+
+Dado un archivo de observaciones RINEX de un sitio estático *BASE*, se obtienen las coordenadas en el Marco de Referencia oficial de la Argentina, **POSGAR07**.
+
+¿Cómo funciona?
+---------------
+
+Mediante un convenio con la Natural Resources Canada (**NRCan**), el archivo RINEX se envía al servicio **CSRS-PPP** que lo procesa y devuelve un resultado: las coordenadas de *BASE* expresadas en un Marco de Referencia (IGS/ITRF 08 o 14 según la época) y para la época de las observaciones del RINEX. Por último, a dichas coordenadas, se las transforma a POSGAR07.
+
+¿Cómo es la transformación ITRF→POSGAR?
+---------------------------------------
+
+No es una simple transformación entre Marcos de Referencia. Hay que intentar *reconstruir el camino* que hizo la *BASE*, el punto de interés, desde la época de definición de POSGAR07 hasta el momento de medición, o sea, de creación del archivo RINEX, para *recorrerlo* hacia atrás en el tiempo.
+
+¿Cómo hacer? ¿Qué tener en cuenta?
+----------------------------------
+
+Hay modelos de velocidades como VEMOS [#]_ de SIRGAS [#]_ o VelAR [#]_ de IGN [#]_. Además se pueden calcular desplazamientos bruscos o *saltos* (por cambios de MR o sismos) basados en las soluciones semanales de SIRGAS, para las zonas de cercanía de la *BASE* y luego aplicar todo para *recorrer el camino* hasta la época de POSGAR07. Por ejemplo:
+
+Dado,
+
+.. math::
+
+    P_{IGS14} = (latP_{IGS14},lonP_{IGS14})~~~\text{epoch}~~eP_{IGS14}
+
+aplicar lo siguiente
+
+.. math::
+
+    vms2017(P_{IGS14}) = P_{VMS2017}
+
+    vms2015(P_{VMS2017}) = P_{VMS2015}
+
+    sismo2010(P_{VMS2015}) = P_{sismo2010}
+
+    vms2009(P_{sismo2010}) = P_{VMS2009} = P_{POSGAR07}
+
+Este procedimiento es cada vez menos viable porque es muy difícil calcular los modelos a aplicar, sobre todo en zonas muy sísmicas o con baja densidad de Estaciones Permanentes.
+
+Pero hay otra opción: se puede estimar el *desplazamiento total* del punto. Es decir, en lugar de reconstruir su recorrido, simplemente pensarlo como un solo desplazamiento brusco o *salto* en las coordenadas. ¿Cómo? Gracias a la red SIRGAS-CON que brinda información de muchas Estaciones Permanentes con la publicación de soluciones semanales.
+
+Teniendo la información de cuánto difieren las coordenadas IGS14 de las :math:`n` Estaciones Permanentes más cercanas respecto de sus coordenadas oficiales POSGAR07 para el mismo rango temporal, :math:`\Delta P^{EP_i} = P^{EP_i}_{IGS14} - P^{EP_i}_{POSGAR07}` , se puede interpolar por algún método (por ejemplo, **IDW** o distancia inversa ponderada) y así obtener el camino en línea recta del punto de interés, para luego lograr
+
+.. math::
+
+    P_{POSGAR07} = P_{IGS14} - \Delta P_{IDW}
+
+.. [#] cita VEMOS
+.. [#] cita SIRGAS
+.. [#] cita VelAR
+.. [#] cita IGN
+
+
+El método IDW
+=============
+
+Ecuaciones utilizadas para interpolar mediante el método de la Distancia Inversa Ponderada (IDW):
+
+.. raw:: html
+
+    <div class="col-lg-3">
+
+.. math::
+
+    \Delta lat = \cfrac {\sum_{i=1}^n \cfrac{\Delta lat_i}{d_{EP_i}^p}}{\sum_{i=1}^n \cfrac{1}{d_{EP_i}^p}}
+
+.. raw:: html
+
+    </div>
+    <div class="col-lg-3">
+
+.. math::
+
+    \Delta lon = \cfrac{\sum_{i=1}^n \cfrac{\Delta lon_i}{d_{EP_i}^p}}{\sum_{i=1}^n \cfrac{1}{d_{EP_i}^p}}
+
+.. raw:: html
+
+    </div>
+    <div class="col-lg-6">
+
+| Donde:
+| :math:`\Delta lat_i = lat_{EP_i}^{SIRGAS_w}-lat_{EP_i}^{POSGAR07}`;
+| :math:`\Delta lon_i = lon_{EP_i}^{SIRGAS_w}-lon_{EP_i}^{POSGAR07}`;
+| son las diferencias entre las coordenadas calculadas por la solución semanal de SIRGAS para la :math:`EP_i` (semana :math:`w`) y las coordenadas *oficiales* POSGAR07 de la :math:`EP_i`, es decir, cómo y cuánto se desplazaron las coordenadas desde la época 2006.632 de definición de POSGAR07 hasta la semana :math:`w`;
+| :math:`d_{EP_i}` es la distancia (geodésica) entre la posición de la :math:`EP_i` y el punto para el que se quiere interpolar, y
+| el exponente :math:`p` es una forma de ponderación sobre la distancia :math:`d_{EP_i}`.
+
+.. raw:: html
+
+    </div>
+
+Cada variación de componente se interpola entre los valores de las :math:`n` EP más cercanas, típicamente :math:`n=3` y :math:`p=1`.
+
+Todo lo que tiene que funcionar para que funcione IDW
+-----------------------------------------------------
+
+Explicar todo el trasfondo.
+
+El método *grillas*
+===================
+
+Explicar cómo se aplican las grillas.

@@ -1,17 +1,17 @@
 from sys import argv
 
+from geojson import Feature, FeatureCollection, LineString, Point
+from geojson import dump as geojson_dump
 from gnsstime import gnsstime as gt
-
 from itrf2posgar import (
     am1seg,
     ap1seg,
-    geodetic_distance,
-    idw_method,
-    dd2dms,
     calcv10,
     calcv15,
+    dd2dms,
+    geodetic_distance,
+    idw_method,
 )
-
 
 try:
     ppp_sum_file = argv[1]
@@ -121,3 +121,48 @@ print(
         **locals()
     )
 )
+
+point_description = "<b>Coordenadas POSGAR07</b><br><b>lat:</b> {}</b><br><b>lon:</b> {}<br><b>alt:</b> {:.3f}"
+line_description = "<b>distancia</b>: {:.2f} km"
+nearest_geojson = [
+    Feature(
+        geometry=Point([lon_idw, lat_idw]),
+        properties={
+            "name": "BASE",
+            "description": point_description.format(lat_idw_dms, lon_idw_dms, 0.0),
+            "color": "rgba(255, 0, 0, 0.7)",
+        },
+    )
+]
+for ep in nearest:
+    point = Point([nearest[ep].lon, nearest[ep].lat])
+    line = LineString([(lon_idw, lat_idw), (nearest[ep].lon, nearest[ep].lat)])
+    point_desc = point_description.format(
+        dd2dms(nearest[ep].lat), dd2dms(nearest[ep].lon), nearest[ep].alt
+    )
+    line_desc = line_description.format(nearest[ep].distance / 1000)
+    nearest_geojson.append(
+        Feature(
+            geometry=point,
+            properties={
+                "name": ep,
+                "description": point_desc,
+                "color": "rgba(0, 0, 255, 0.7)",
+            },
+        )
+    )
+    nearest_geojson.append(
+        Feature(
+            geometry=line,
+            properties={
+                "name": "BASE-" + ep,
+                "description": line_desc,
+                "color": "green",
+            },
+        )
+    )
+
+fc = FeatureCollection(nearest_geojson)
+
+with open("js/ramsac.geojson", "w") as f:
+    geojson_dump(fc, f, sort_keys=True)

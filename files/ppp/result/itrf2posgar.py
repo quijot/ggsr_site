@@ -183,15 +183,21 @@ def idw_method(lat, lon, wk, n=3, p=1):
         for ep in ramsac
         if ep in sws
     }
-    Nearest = namedtuple("Nearest", "distance delta_lat delta_lon")
+    Nearest = namedtuple("Nearest", "distance delta_lat delta_lon name lat lon alt")
     nearest = {
         ep: Nearest(
-            d, sws[ep]["lat"] - ramsac[ep]["lat"], sws[ep]["lon"] - ramsac[ep]["lon"]
+            d,
+            sws[ep]["lat"] - ramsac[ep]["lat"],
+            sws[ep]["lon"] - ramsac[ep]["lon"],
+            ep,
+            ramsac[ep]["lat"],
+            ramsac[ep]["lon"],
+            0.0 if "alt" not in ramsac[ep] else ramsac[ep]["alt"],
         )
         for ep, d in sorted(distance_to.items(), key=lambda i: i[1])[:n]
     }
 
-    distances, delta_lat, delta_lon = zip(*nearest.values())
+    distances, delta_lat, delta_lon, *rest = zip(*nearest.values())
 
     lat_interpolated = lat - idw(delta_lat, distances, p)
     lon_interpolated = lon - idw(delta_lon, distances, p)
