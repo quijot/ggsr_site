@@ -72,9 +72,6 @@
       </fieldset>
     </form>
   </div>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/css/ol.css">
-  <link rel="stylesheet" href="css/map.css" type="text/css">
-  <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/build/ol.js"></script>
 
 .. include:: pages/ppp-info.txt
 
