@@ -1,0 +1,18 @@
+{
+    "editor.fontFamily": "'M+ 1mn'",
+    "editor.fontSize": 16,
+    "python.pythonPath": ".venv/bin/python",
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        //"--max-line-length=88",
+        "--ignore=E501",
+    ],
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [
+        "tests",
+    ],
+    "restructuredtext.confPath": "",
+}
