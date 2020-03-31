@@ -177,10 +177,11 @@ def idw_method(lat, lon, wk, n=3, p=1):
         wk -= 1
     # add some more weeks to the solution set
     # if weeks near wk are in sws add it to sws[wk], preferring sws[wk]
-    weeks = [-3, -2, -1, 1, 2, 3]
+    # nearest weeks have preference wk+-1, wk+-2, etc, in that order
+    weeks = [wk + 1, wk - 1, wk + 2, wk - 2, wk + 3, wk - 3]
     for w in weeks:
-        if wk + w in sws:
-            sws[wk] = dict(sws[wk + w], **sws[wk])
+        if w in sws:
+            sws[wk] = dict(sws[w], **sws[wk])
     sws = sws[wk]
 
     # find N nearest EP in ramsac and sirgas
