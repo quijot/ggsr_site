@@ -1,4 +1,4 @@
-.. title: Servicio PPP del GGSR
+.. title: Servicio PPP
 .. slug: result
 .. date: 24/03/2020 18:00:00 UTC-03:00
 .. tags: mathjax, ppp
@@ -9,6 +9,8 @@
 <h2>Resultados del procesamiento</h2>
 
 <?php
+require 'env.php';
+
 function printer($array)
 { // print array wihout key
   foreach ($array as $key => $value) {
@@ -45,10 +47,23 @@ function executePostPPP($command)
   return $retval;
 };
 // verify CAPTCHA, ignore if localhost
-if (strpos(htmlentities($_SERVER['HTTP_HOST']), "localhost") !== false)
-  $captchaOk = true;
-else
-  $captchaOk = $_POST['g-recaptcha-response'];
+if (isset($_POST['recaptcha_response'])) {
+
+  // Build POST request:
+  $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+  $recaptcha_response = $_POST['recaptcha_response'];
+
+  // Make and decode POST request:
+  $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response);
+  $recaptcha = json_decode($recaptcha);
+
+  // Take action based on the score returned:
+  if ($recaptcha->success == true && $recaptcha->score >= 0.5) {
+    $captchaOk = true;
+  } else {
+    echo '<h2 class="text-danger">CAPTCHA no superado... ¿es usted un robot?</h2>';
+  }
+}
 // Validation and process
 // Enter if exists _POST and CAPTCHA is ok
 if (!empty($_POST) && $captchaOk) {
