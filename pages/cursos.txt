@@ -7,6 +7,8 @@
 .. type: text
 .. template: notitle.tmpl
 
+.. class:: well pull-right col-lg-6
+
 .. contents:: Listado de Cursos
    :depth: 1
 
