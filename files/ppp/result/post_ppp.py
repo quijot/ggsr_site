@@ -9,7 +9,8 @@ from itrf2posgar import (
     calcv10,
     calcv15,
     dd2dms,
-    geodetic_distance,
+    get_best_configuration,
+    get_deltas,
     idw_method,
 )
 
@@ -28,13 +29,6 @@ try:
     lon_comp_dms = argv[5]
 except IndexError:
     lat_comp_dms = lon_comp_dms = ""
-
-
-def compare_results(lat, lon, lat_comp, lon_comp):
-    vector = geodetic_distance(lat, lon, lat_comp, lon_comp)
-    lat_diff = geodetic_distance(lat, lon, lat_comp, lon)
-    lon_diff = geodetic_distance(lat, lon, lat, lon_comp)
-    return vector * 100, lat_diff * 100, lon_diff * 100
 
 
 with open(ppp_sum_file, "r") as fd:
@@ -75,6 +69,7 @@ print(
     )
 )
 
+n, p, delta, dist = get_best_configuration(lat, lon, wk)
 lat_idw, lon_idw, nearest, wk = idw_method(lat, lon, wk, n, p)
 nearest_report = "Nearest Stations:"
 for ep in nearest:
@@ -96,9 +91,9 @@ if lat_comp_dms and lon_comp_dms:
     dd, mm, ss = lon_comp_dms.split()
     lon_comp = int(dd) - int(mm) / 60 - float(ss) / 3600
     rep = "dist={:.1f}, &Delta;lat={:.1f}, &Delta;lon={:.1f} [cm]"
-    idw_comp = rep.format(*compare_results(lat_idw, lon_idw, lat_comp, lon_comp))
-    v10_comp = rep.format(*compare_results(lat_v10, lon_v10, lat_comp, lon_comp))
-    v15_comp = rep.format(*compare_results(lat_v15, lon_v15, lat_comp, lon_comp))
+    idw_comp = rep.format(*get_deltas(lat_idw, lon_idw, lat_comp, lon_comp))
+    v10_comp = rep.format(*get_deltas(lat_v10, lon_v10, lat_comp, lon_comp))
+    v15_comp = rep.format(*get_deltas(lat_v15, lon_v15, lat_comp, lon_comp))
 
 print(
     """

@@ -1,12 +1,12 @@
 .. title: Calculadora ITRF → POSGAR, pruebas con el método IDW
-.. slug: calc-idw/resultados
+.. slug: itrf2posgar/resultados
 .. tags: mathjax
 .. link: 
 .. description: Calculadora ITRF → POSGAR por interpolación IDW
 .. type: text
 .. date: 04/04/17 16:30:00 UTC-03:00
 
-- `Listado de desvíos </calc-idw/resultados/desvios/>`_ entre coordenadas *corregidas* y coordenadas POSGAR07 oficial **por EP** y **por semana GPS**
+- `Listado de desvíos </itrf2posgar/resultados/desvios/>`_ entre coordenadas *corregidas* y coordenadas POSGAR07 oficial **por EP** y **por semana GPS**
 
 Ecuaciones utilizadas para interpolar mediante el método de la Distancia Inversa Ponderada (IDW):
 
@@ -45,7 +45,7 @@ Ecuaciones utilizadas para interpolar mediante el método de la Distancia Invers
 
 Cada variación de componente se interpola entre los valores de las :math:`n` EP más cercanas, típicamente :math:`n=3` y :math:`p=1`.
 
-- `Listado de EP </calc-idw/resultados/triangulos.txt>`_ tenidas en cuenta en cada cálculo de correcciones para una EP dada, entre las semanas gps 1640 y 1969
+- `Listado de EP </itrf2posgar/resultados/triangulos.txt>`_ tenidas en cuenta en cada cálculo de correcciones para una EP dada, entre las semanas gps 1640 y 1969
 
 Listado de Estaciones Permanentes (EP) procesadas y gráficas de la *evolución* de la diferencia entre coordenadas ITRF de SIRGAS y *corregidas* por nuestro algoritmo **vs** coordenadas POSGAR07 oficiales y de la *elipse de confianza*, cuyos ejes toman el valor de :math:`3 \sigma`, calculadas entre las semanas GPS 1640 y 1969, es decir, entre 15/06/2011 y 04/10/2017:
 
@@ -127,7 +127,7 @@ Listado de Estaciones Permanentes (EP) procesadas y gráficas de la *evolución*
 
 .. |lc| raw:: html
 
-   <a href="/calc-idw/resultados/evolucion/
+   <a href="/itrf2posgar/resultados/evolucion/
 
 .. |a| raw:: html
 
@@ -135,7 +135,7 @@ Listado de Estaciones Permanentes (EP) procesadas y gráficas de la *evolución*
 
 .. |pc| raw:: html
 
-   <a href="/calc-idw/resultados/elipses/
+   <a href="/itrf2posgar/resultados/elipses/
 
 .. |b| raw:: html
 

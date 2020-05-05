@@ -224,16 +224,17 @@ LOCALE_FALLBACK = "es_AR.utf8"
 #
 
 POSTS = (
-    ("posts/*.rst", "blog", "post.tmpl"),
-    ("posts/*.txt", "blog", "post.tmpl"),
-    ("posts/*.md", "blog", "post.tmpl"),
-    ("posts/*.textile", "blog", "post.tmpl"),
-    ("posts/*.odt", "blog", "post.tmpl"),
+    # ("posts/*.rst", "blog", "post.tmpl"),
+    # ("posts/*.txt", "blog", "post.tmpl"),
+    # ("posts/*.md", "blog", "post.tmpl"),
+    # ("posts/*.textile", "blog", "post.tmpl"),
+    # ("posts/*.odt", "blog", "post.tmpl"),
 )
 PAGES = (
     ("pages/*.rst", "", "story.tmpl"),
     ("pages/*.txt", "", "story.tmpl"),
     ("pages/*.md", "", "story.tmpl"),
+    ("pages/*.html", "", "story.tmpl"),
     ("pages/*.php", "", "story.tmpl"),
     ("pages/*.textile", "", "story.tmpl"),
     ("pages/*.odt", "", "story.tmpl"),
@@ -425,6 +426,7 @@ REDIRECTIONS = [
     ("pppcalc.html", "pppcalc/"),
     # ggsr -> gps
     ("ggsr/index.html", "/"),
+    ("calc-idw/index.html", "/itrf2posgar/"),
 ]
 
 # Presets of commands to execute to deploy. Can be anything, for
