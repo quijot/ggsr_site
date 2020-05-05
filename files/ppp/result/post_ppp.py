@@ -71,6 +71,9 @@ print(
 
 wk, n, p, delta, dist = get_best_configuration(lat, lon, wk)
 lat_idw, lon_idw, nearest, wk = idw_method(lat, lon, wk, n, p)
+nearest = {
+    ep: nearest[ep] for ep, data in sorted(nearest.items(), key=lambda x: x[1].distance)
+}
 nearest_report = "Nearest Stations:"
 for ep in nearest:
     nearest_report = "{}\n\t{}: {:.2f} km".format(
