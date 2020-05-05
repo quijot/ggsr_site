@@ -69,7 +69,7 @@ print(
     )
 )
 
-n, p, delta, dist = get_best_configuration(lat, lon, wk)
+wk, n, p, delta, dist = get_best_configuration(lat, lon, wk)
 lat_idw, lon_idw, nearest, wk = idw_method(lat, lon, wk, n, p)
 nearest_report = "Nearest Stations:"
 for ep in nearest:
