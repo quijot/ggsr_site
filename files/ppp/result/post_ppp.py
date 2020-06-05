@@ -104,7 +104,7 @@ print(
 <strong>{lat_comp_dms}  {lon_comp_dms}</strong>\n\
 <strong>calc-idw</strong> (weeks_found={wk}&plusmn;3, n={n}, p={p})\n\
     {nearest_report}\n\
-    {lat_idw:.15f}, {lat_idw:.15f}\
+    {lat_idw:.15f}, {lon_idw:.15f}\
     <strong>{lat_idw_dms}, {lon_idw_dms}</strong>\
     {idw_comp}\n\
 <strong>calc-v1.0</strong> (vms2015+vms2009+sismo2010+cambio_mr)\n\
