@@ -104,7 +104,7 @@ def get_around_values(grid, lat, lon, alt=None):
     lat1, lon1 = lat0 + copysign(1, lat), lon0 + copysign(1, lon)
     points = [(lat0, lon0), (lat0, lon1), (lat1, lon0), (lat1, lon1)]
 
-    Around = namedtuple("Around", "around values_n values_e values_h distances")
+    Around = namedtuple("Around", "points values_n values_e values_h distances")
     # only if each point (b, l) exists in grid
     Around.points = [(b, l) for (b, l) in points if l in grid and b in grid[l]]
     Around.values_n = [grid[l][b]["n"] for (b, l) in Around.points]
