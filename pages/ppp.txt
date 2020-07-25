@@ -24,7 +24,7 @@
   <div class="well col-lg-12">
     <form class="form-horizontal" id="ppp-form" method="post" action="result/" enctype="multipart/form-data">
       <fieldset id="ppp-form-fieldset">
-        <legend>NRCan <strong>CSRS-PPP</strong> + Transfrmación <strong>ITRF→POSGAR</strong></legend>
+        <legend>NRCan <strong>CSRS-PPP</strong> + Transformación <strong>ITRF→POSGAR</strong></legend>
         <div class="form-group">
           <!-- RINEX -->
           <input type="hidden" name="MAX_FILE_SIZE" value="5242880"><!-- 5MB -->
