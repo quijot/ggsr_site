@@ -1,4 +1,4 @@
-.. class:: well well-sm pull-right
+.. class:: well pull-right
 
 .. contents:: Índice de contenido
    :depth: 3
@@ -10,103 +10,135 @@ Servicio de PPP del GGSR
 ¿En qué consiste?
 -----------------
 
-Dado un archivo de observaciones RINEX de un sitio estático *BASE*, se obtienen las coordenadas en el Marco de Referencia oficial de la Argentina, **POSGAR07**.
+Dado un archivo de observaciones RINEX de un sitio estático *BASE*, se obtienen las coordenadas en el Marco de Referencia oficial de la Argentina, `POSGAR07 <https://www.ign.gob.ar/NuestrasActividades/Geodesia/Posgar07>`_, basado en IGS05 y definido para la época 2006.632.
 
 ¿Cómo funciona?
 ---------------
 
-Mediante un convenio con la Natural Resources Canada (**NRCan**), el archivo RINEX se envía al servicio **CSRS-PPP** que lo procesa y devuelve un resultado: las coordenadas de *BASE* expresadas en un Marco de Referencia (IGS/ITRF 08 o 14 según la época) y para la época de las observaciones del RINEX. Por último, a dichas coordenadas, se las transforma a POSGAR07.
+El archivo RINEX se envía al servicio `CSRS-PPP <https://webapp.geod.nrcan.gc.ca/geod/tools-outils/ppp.php>`_ de la Natural Resources Canada (**NRCan**) que lo procesa y devuelve un resultado: las coordenadas de *BASE* expresadas en el Marco de Referencia **IGS14, época de medición**, es decir, época de las observaciones del RINEX.
 
-¿Cómo es la transformación ITRF→POSGAR?
----------------------------------------
+Por último, a dichas coordenadas, se las transforma a **POSGAR07**, mediante una interpolación `IDW <https://en.wikipedia.org/wiki/Inverse_distance_weighting>`_ con datos de las Estaciones Permanentes `RAMSAC <https://www.ign.gob.ar/NuestrasActividades/Geodesia/Ramsac>`_ más cercanas que provee **IGNAr**.
 
-No es una simple transformación entre Marcos de Referencia. Hay que intentar *reconstruir el camino* que hizo la *BASE*, el punto de interés, desde la época de definición de POSGAR07 hasta el momento de medición, o sea, de creación del archivo RINEX, para *recorrerlo* hacia atrás en el tiempo.
-
-¿Cómo hacer? ¿Qué tener en cuenta?
-----------------------------------
-
-Hay modelos de velocidades como VEMOS [#]_ de SIRGAS [#]_ o VelAR [#]_ de IGN [#]_. Además se pueden calcular desplazamientos bruscos o *saltos* (por cambios de MR o sismos) basados en las soluciones semanales de SIRGAS, para las zonas de cercanía de la *BASE* y luego aplicar todo para *recorrer el camino* hasta la época de POSGAR07. Por ejemplo:
-
-Dado,
-
-.. math::
-
-    P_{IGS14} = (latP_{IGS14},lonP_{IGS14})~~~\text{epoch}~~eP_{IGS14}
-
-aplicar lo siguiente
-
-.. math::
-
-    vms2017(P_{IGS14}) = P_{VMS2017}
-
-    vms2015(P_{VMS2017}) = P_{VMS2015}
-
-    sismo2010(P_{VMS2015}) = P_{sismo2010}
-
-    vms2009(P_{sismo2010}) = P_{VMS2009} = P_{POSGAR07}
-
-Este procedimiento es cada vez menos viable porque es muy difícil calcular los modelos a aplicar, sobre todo en zonas muy sísmicas o con baja densidad de Estaciones Permanentes.
-
-Pero hay otra opción: se puede estimar el *desplazamiento total* del punto. Es decir, en lugar de reconstruir su recorrido, simplemente pensarlo como un solo desplazamiento brusco o *salto* en las coordenadas. ¿Cómo? Gracias a la red SIRGAS-CON que brinda información de muchas Estaciones Permanentes con la publicación de soluciones semanales.
-
-Teniendo la información de cuánto difieren las coordenadas IGS14 de las :math:`n` Estaciones Permanentes más cercanas respecto de sus coordenadas oficiales POSGAR07 para el mismo rango temporal, :math:`\Delta P^{EP_i} = P^{EP_i}_{IGS14} - P^{EP_i}_{POSGAR07}` , se puede interpolar por algún método (por ejemplo, **IDW** o distancia inversa ponderada) y así obtener el camino en línea recta del punto de interés, para luego lograr
-
-.. math::
-
-    P_{POSGAR07} = P_{IGS14} - \Delta P_{IDW}
-
-.. [#] cita VEMOS
-.. [#] cita SIRGAS
-.. [#] cita VelAR
-.. [#] cita IGN
-
-
-El método IDW
-=============
-
-Ecuaciones utilizadas para interpolar mediante el método de la Distancia Inversa Ponderada (IDW):
+Validez de la transformación ITRF→POSGAR
+----------------------------------------
 
 .. raw:: html
 
-    <div class="col-lg-3">
+    <p class="text-warning lead"><strong>Los cálculos realizados son meramente experimentales y no tienen ninguna <em>validez oficial</em>.</strong></p>
 
-.. math::
+Están basados en las `sugerencias <http://geonotas.blogspot.com/2018/03/marcos-de-referencia-frecuentes.html>`_ de Hermann Drewes y son realizados con fines experimentales.
 
-    \Delta lat = \cfrac {\sum_{i=1}^n \cfrac{\Delta lat_i}{d_{EP_i}^p}}{\sum_{i=1}^n \cfrac{1}{d_{EP_i}^p}}
+Calidad de los resultados
+-------------------------
 
-.. raw:: html
+Las calidad de los resultados finales se apoya a su vez en la calidad de los resultados del servicio CSRS-PPP (sesiones más largas, mejores precisiones) y par ala transformación ITRF→POSGAR dependen tanto de la fecha como de la ubicación del punto relevado, dado que influirán en el cálculo la cantidad de EP RAMSAC cercanas y cuánto se ha *movido* cada una entre la época 2006.632 de definición de POSGAR07 y la época de medición del RINEX.
 
-    </div>
-    <div class="col-lg-3">
+En distintas partes del país se han reportado diferencias milimétricas con soluciones de posproceso relativo ofrecidas por software comercial especializado.
 
-.. math::
+Reconocimientos y agradecimientos
+---------------------------------
 
-    \Delta lon = \cfrac{\sum_{i=1}^n \cfrac{\Delta lon_i}{d_{EP_i}^p}}{\sum_{i=1}^n \cfrac{1}{d_{EP_i}^p}}
+- Instituto Geográfico Nacional (**IGNAr**): `<https://www.ign.gob.ar/>`_
+- Natural Resources Canada (**NRCan**): `<https://www.nrcan.gc.ca/>`_
+- Sistema de Referencia Geocéntrico para las Américas (**SIRGAS**): `<http://www.sirgas.org/>`_
 
-.. raw:: html
+¡Envíenos sus resultados!
+-------------------------
 
-    </div>
-    <div class="col-lg-6">
+**Por favor, envíenos sus resultados, comentarios y sugerencias a** `ggsr@fceia.unr.edu.ar <mailto:ggsr@fceia.unr.edu.ar?subject=Servicio%20PPP&body=Mi%20experiencia%20con%20el%20Servicio%20PPP%20del%20GGS...>`_.
 
-| Donde:
-| :math:`\Delta lat_i = lat_{EP_i}^{SIRGAS_w}-lat_{EP_i}^{POSGAR07}`;
-| :math:`\Delta lon_i = lon_{EP_i}^{SIRGAS_w}-lon_{EP_i}^{POSGAR07}`;
-| son las diferencias entre las coordenadas calculadas por la solución semanal de SIRGAS para la :math:`EP_i` (semana :math:`w`) y las coordenadas *oficiales* POSGAR07 de la :math:`EP_i`, es decir, cómo y cuánto se desplazaron las coordenadas desde la época 2006.632 de definición de POSGAR07 hasta la semana :math:`w`;
-| :math:`d_{EP_i}` es la distancia (geodésica) entre la posición de la :math:`EP_i` y el punto para el que se quiere interpolar, y
-| el exponente :math:`p` es una forma de ponderación sobre la distancia :math:`d_{EP_i}`.
 
-.. raw:: html
+..
+        ¿Cómo es la transformación ITRF→POSGAR?
+        ---------------------------------------
 
-    </div>
+        No es una simple transformación entre Marcos de Referencia. Hay que intentar *reconstruir el camino* que hizo la *BASE*, el punto de interés, desde la época de definición de POSGAR07 hasta el momento de medición, o sea, de creación del archivo RINEX, para *recorrerlo* hacia atrás en el tiempo.
 
-Cada variación de componente se interpola entre los valores de las :math:`n` EP más cercanas, típicamente :math:`n=3` y :math:`p=1`.
+        ¿Cómo hacer? ¿Qué tener en cuenta?
+        ----------------------------------
 
-Todo lo que tiene que funcionar para que funcione IDW
------------------------------------------------------
+        Hay modelos de velocidades como VEMOS [#]_ de SIRGAS [#]_ o VelAR [#]_ de IGN [#]_. Además se pueden calcular desplazamientos bruscos o *saltos* (por cambios de MR o sismos) basados en las soluciones semanales de SIRGAS, para las zonas de cercanía de la *BASE* y luego aplicar todo para *recorrer el camino* hasta la época de POSGAR07. Por ejemplo:
 
-Explicar todo el trasfondo.
+        Dado,
 
-El método *grillas*
-===================
+        .. math::
 
-Explicar cómo se aplican las grillas.
+            P_{IGS14} = (latP_{IGS14},lonP_{IGS14})~~~\text{epoch}~~eP_{IGS14}
+
+        aplicar lo siguiente
+
+        .. math::
+
+            vms2017(P_{IGS14}) = P_{VMS2017}
+
+            vms2015(P_{VMS2017}) = P_{VMS2015}
+
+            sismo2010(P_{VMS2015}) = P_{sismo2010}
+
+            vms2009(P_{sismo2010}) = P_{VMS2009} = P_{POSGAR07}
+
+        Este procedimiento es cada vez menos viable porque es muy difícil calcular los modelos a aplicar, sobre todo en zonas muy sísmicas o con baja densidad de Estaciones Permanentes.
+
+        Pero hay otra opción: se puede estimar el *desplazamiento total* del punto. Es decir, en lugar de reconstruir su recorrido, simplemente pensarlo como un solo desplazamiento brusco o *salto* en las coordenadas. ¿Cómo? Gracias a la red SIRGAS-CON que brinda información de muchas Estaciones Permanentes con la publicación de soluciones semanales.
+
+        Teniendo la información de cuánto difieren las coordenadas IGS14 de las :math:`n` Estaciones Permanentes más cercanas respecto de sus coordenadas oficiales POSGAR07 para el mismo rango temporal, :math:`\Delta P^{EP_i} = P^{EP_i}_{IGS14} - P^{EP_i}_{POSGAR07}` , se puede interpolar por algún método (por ejemplo, **IDW** o distancia inversa ponderada) y así obtener el camino en línea recta del punto de interés, para luego lograr
+
+        .. math::
+
+            P_{POSGAR07} = P_{IGS14} - \Delta P_{IDW}
+
+        .. [#] cita VEMOS
+        .. [#] cita SIRGAS
+        .. [#] cita VelAR
+        .. [#] cita IGN
+
+
+        El método IDW
+        =============
+
+        Ecuaciones utilizadas para interpolar mediante el método de la Distancia Inversa Ponderada (IDW):
+
+        .. raw:: html
+
+            <div class="col-lg-3">
+
+        .. math::
+
+            \Delta lat = \cfrac {\sum_{i=1}^n \cfrac{\Delta lat_i}{d_{EP_i}^p}}{\sum_{i=1}^n \cfrac{1}{d_{EP_i}^p}}
+
+        .. raw:: html
+
+            </div>
+            <div class="col-lg-3">
+
+        .. math::
+
+            \Delta lon = \cfrac{\sum_{i=1}^n \cfrac{\Delta lon_i}{d_{EP_i}^p}}{\sum_{i=1}^n \cfrac{1}{d_{EP_i}^p}}
+
+        .. raw:: html
+
+            </div>
+            <div class="col-lg-6">
+
+        | Donde:
+        | :math:`\Delta lat_i = lat_{EP_i}^{SIRGAS_w}-lat_{EP_i}^{POSGAR07}`;
+        | :math:`\Delta lon_i = lon_{EP_i}^{SIRGAS_w}-lon_{EP_i}^{POSGAR07}`;
+        | son las diferencias entre las coordenadas calculadas por la solución semanal de SIRGAS para la :math:`EP_i` (semana :math:`w`) y las coordenadas *oficiales* POSGAR07 de la :math:`EP_i`, es decir, cómo y cuánto se desplazaron las coordenadas desde la época 2006.632 de definición de POSGAR07 hasta la semana :math:`w`;
+        | :math:`d_{EP_i}` es la distancia (geodésica) entre la posición de la :math:`EP_i` y el punto para el que se quiere interpolar, y
+        | el exponente :math:`p` es una forma de ponderación sobre la distancia :math:`d_{EP_i}`.
+
+        .. raw:: html
+
+            </div>
+
+        Cada variación de componente se interpola entre los valores de las :math:`n` EP más cercanas, típicamente :math:`n=3` y :math:`p=1`.
+
+        Todo lo que tiene que funcionar para que funcione IDW
+        -----------------------------------------------------
+
+        Explicar todo el trasfondo.
+
+        El método *grillas*
+        ===================
+
+        Explicar cómo se aplican las grillas.
