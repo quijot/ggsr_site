@@ -10,7 +10,7 @@
 <div class="well col-lg-12">
   <form class="form-horizontal" id="form" method="get" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>">
     <fieldset id="form-fieldset">
-      <legend>Transfrmación <strong>ITRF→POSGAR</strong></legend>
+      <legend>Transformación <strong>ITRF→POSGAR</strong></legend>
       <div class="form-group">
         <!-- Coordenadas ITRF -->
         <label for="itrf_coordinates" class="col-lg-2 control-label">Coordenadas ITRF</label>
