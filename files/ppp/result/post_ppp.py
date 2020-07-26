@@ -59,15 +59,6 @@ ppp_pdf_file = ppp_sum_file.replace(".sum", ".pdf")
 url_pdf = url.format(ppp_pdf_file, "report")
 ppp_full_output = ppp_sum_file.replace(".sum", ".{}d_full_output.zip".format(yy))
 url_full = url.format(ppp_full_output, "full output")
-print(
-    '<strong>PPP results</strong> ({syst} - GPS week {wk} / year 20{yy}, day {doy}):\n\
-    {lat} &plusmn; {lat_prec:.4f}m, {lon} &plusmn; {lon_prec:.4f}m\n\
-    {lat_dms} &plusmn; {lat_prec_s:.6f}", {lon_dms} &plusmn; {lon_prec_s:.6f}"\n\
-    {url_sum}, {url_pdf}, {url_full} (available for the next 12hs)\
-    '.format(
-        **locals()
-    )
-)
 
 wk, n, p, delta, dist = get_best_configuration(lat, lon, wk)
 lat_idw, lon_idw, nearest, wk = idw_method(lat, lon, wk, n, p)
@@ -98,24 +89,38 @@ if lat_comp_dms and lon_comp_dms:
     v10_comp = rep.format(*get_deltas(lat_v10, lon_v10, lat_comp, lon_comp))
     v15_comp = rep.format(*get_deltas(lat_v15, lon_v15, lat_comp, lon_comp))
 
+differences = (
+    "\nDiferencia con coordenadas conocidas:\n%s" % idw_comp if idw_comp else ""
+)
+
 print(
     """
-<strong>POSGAR07 coordinates</strong> (ITRF05 2006.632):\t\t\
+<h4>Resultado</h4>
+<span class='lead'><strong>{lat_idw_dms}, {lon_idw_dms}</strong></span>{differences}""".format(
+        **locals()
+    )
+)
+
+print("<hr><h4>Reporte</strong></h4>")
+
+print(
+    '<strong>CSRS-PPP results</strong> ({syst} - GPS week {wk} / year 20{yy}, day {doy}):\n\
+    {lat} &plusmn; {lat_prec:.4f}m, {lon} &plusmn; {lon_prec:.4f}m\n\
+    {lat_dms} &plusmn; {lat_prec_s:.6f}", {lon_dms} &plusmn; {lon_prec_s:.6f}"\n\
+    {url_sum}, {url_pdf}, {url_full} (available for the next 12hs)\
+    '.format(
+        **locals()
+    )
+)
+
+print(
+    """
+<strong>POSGAR07 coordinates</strong> (IGS05 2006.632):\t\t\
 <strong>{lat_comp_dms}  {lon_comp_dms}</strong>\n\
-<strong>calc-idw</strong> (weeks_found={wk}&plusmn;3, n={n}, p={p})\n\
+<strong>calc-idw</strong> (weeks_found={wk}, n={n}, p={p})\n\
     {nearest_report}\n\
-    {lat_idw:.15f}, {lat_idw:.15f}\
-    <strong>{lat_idw_dms}, {lon_idw_dms}</strong>\
-    {idw_comp}\n\
-<strong>calc-v1.0</strong> (vms2015+vms2009+sismo2010+cambio_mr)\n\
-    {lat_v10:.15f}, {lon_v10:.15f}\
-    <strong>{lat_v10_dms}, {lon_v10_dms}</strong>\
-    {v10_comp}\n\
-<strong>calc-v1.5</strong> (vms2017+velar2015a2007)\n\
-    {lat_v15:.15f}, {lon_v15:.15f}\
-    <strong>{lat_v15_dms}, {lon_v15_dms}</strong>\
-    {v15_comp}\n\
-    """.format(
+    {lat_idw:.15f}, {lat_idw:.15f}\t<strong>{lat_idw_dms}, {lon_idw_dms}</strong>\
+    {idw_comp}""".format(
         **locals()
     )
 )
