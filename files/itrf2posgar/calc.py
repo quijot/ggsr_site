@@ -91,7 +91,7 @@ print(
 <strong>{lat_comp_dms}  {lon_comp_dms}</strong>\n\
 <strong>calc-idw</strong> (weeks_found={wk}, n={n}, p={p})\n\
     {nearest_report}\n\
-    {lat_idw:.15f}, {lat_idw:.15f}\t<strong>{lat_idw_dms}, {lon_idw_dms}</strong>\
+    {lat_idw:.15f}, {lon_idw:.15f}\t<strong>{lat_idw_dms}, {lon_idw_dms}</strong>\
     {idw_comp}""".format(
         **locals()
     )
