@@ -79,7 +79,7 @@ print(
 print("<hr><h4>Reporte</strong></h4>")
 
 print(
-    "<strong>PPP results</strong> (GPS week {wk} / year {yy}, day {doy}):\n\
+    "<strong>PPP results</strong> (GPS week {obs_date.gpsw} / year {yy}, day {doy}):\n\
     {lat}, {lon}\t{lat_dms}, {lon_dms}".format(
         **locals()
     )
