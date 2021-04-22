@@ -37,7 +37,7 @@ function execute($command, $output_id = '', $show = true)
 function csrs_ppp($user, $rinex_path, $result_dir = '')
 {
   $result_dir_param = ' --results_dir ../' . $result_dir;
-  $cmd = 'python3 csrs_ppp_auto.py --user_name ' . $user . ' --ref ITRF --rnx --output_pdf lite ' . $rinex_path . $result_dir_param;
+  $cmd = 'python3 csrs_ppp_auto.py --user_name ' . $user . ' --ref ITRF --output_pdf lite --rnx ' . $rinex_path . $result_dir_param;
   return execute($cmd, '', false);
 }
 
