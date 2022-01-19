@@ -17,7 +17,7 @@
 #       Requests Toolbelt library, v0.8.0 or higher (https://toolbelt.readthedocs.io/en/latest/)
 #
 # 1) On the command line:
-#   => csrs_ppp_auto.py --user_name first.last@email.com --lang en --mode Static --ref ITRF --epoch CURR --vdatum CGVD2013 --rnx rnxfile --results_dir dest_dir --email first.last@email.com --get_max 30
+#   => csrs_ppp_auto.py --user_name first.last@email.com --lang en --mode Static --ref ITRF --epoch CURR --vdatum CGVD2013 --rnx rnxfile --results_dir dest_dir --email first.last@email.com --output_pdf full --get_max 30
 #   where:
 #       rnxfile is the full path of RINEX file, and looks like
 #           C:/Users/{username}/ABCD/ALGO2390.15o
@@ -31,28 +31,41 @@
 #       dest_dir is the absolute path of the directory in which you want the results saved
 #
 #   The following arguments have defaults:
-#       --lang      (default="en")
-#       --mode      (default="Static")
-#       --ref       (default="NAD83")
-#       --epoch     (default="CURR")
-#       --vdatum    (default="CGVD2013")
-#       --email     (default="dummy_email"; results not received via email)
-#       --get_max   (default=30)
+#       --lang          (default="en")
+#       --mode          (default="Static")
+#       --ref           (default="NAD83")
+#       --epoch         (default="CURR")
+#       --vdatum        (default="CGVD2013")
+#       --email         (default="dummy_email"; results not received via email)
+#       --output_pdf    (default="full")
+#       --get_max       (default=30)
 #
 #   Minimalist command:
 #   => csrs_ppp_auto.py --user_name first.last@email.com --rnx rnxfile --results_dir dest_dir
 #
-# 2) If you find that the script keeps timing out, try increasing the value of --get_max.
+# 2) To receive only textual information about the RINEX file(s) (i.e. not receiving any plots), use --output_pdf lite
 #
-# 3) Use --web command line flag to visit CSRS-PPP website (provided a web browser is installed).
+# 3) To also download a zip file containing residuals, add --res command line flag.
+#
+# 4) If you find that the script keeps timing out, try increasing the value of --get_max.
+#
+# 5) Use --web command line flag to visit CSRS-PPP website (provided a web browser is installed).
 #
 # CHANGELOG
 # ---------
 # DATE          WHO						DESCRIPTION
-# 2018-12-07    Justin Farinaccio		1.3.3
+# 2021-04-09    Justin Farinaccio		1.5.0
 # Modified:
+#   2021-04-09 - 1.5.0 - JF
+#       Added option to generate PDF solution report with no plots
+#   2020-05-01 - 1.4.1 - JF
+#       Provide message to user if they have been blocked from using CSRS-PPP
+#   2019-05-30 - 1.4.0 - JF
+#       Added res as an optional command line flag to download residuals zip file
+#       Gave get_max an upper limit to wait no more than 30 minutes for results
+#       Fixed bug where a new results directory not created when multiple files submitted
 #   2018-12-07 - 1.3.3 - JF
-#       Added web as an optional command line flag
+#       Added web as an optional command line flag to visit CSRS-PPP website
 #   2018-11-30 - 1.3.2 - JF
 #       Made get_max an optional command line argument
 #   2018-07-16 - 1.3.1 - JF
@@ -83,16 +96,6 @@
 
 """To replace the use of a browser and desktop application for submission of RINEX files to CSRS-PPP"""
 
-# Script info
-# -----------
-__author__ = "Justin Farinaccio"
-__copyright__ = (
-    "Copyright (c) 2017-2018, Justin Farinaccio,"
-    "\n\tCanadian Geodetic Survey, Surveyor General Branch,"
-    "\n\tNatural Resources Canada"
-    "\nAll Rights Reserved."
-)
-
 # Imports
 # -------
 import os
@@ -104,6 +107,16 @@ import shutil
 import zipfile
 import errno
 import webbrowser
+
+# Script info
+# -----------
+__author__ = "Justin Farinaccio"
+__copyright__ = (
+    "Copyright (c) 2017-2021, Justin Farinaccio,"
+    "\n\tCanadian Geodetic Survey, Surveyor General Branch,"
+    "\n\tNatural Resources Canada"
+    "\nAll Rights Reserved."
+)
 
 try:
     # assert sys.version_info >= (3, 5)
@@ -129,7 +142,7 @@ except ImportError:
 # Instantiate the parser
 parser = argparse.ArgumentParser(
     description="{0}".format(
-        "# ---------------- Using CSRS-PPP via script, version 1.3.3 ---------------- #"
+        "# ---------------- Using CSRS-PPP via script, version 1.5.0 ---------------- #"
     ),
     epilog="{0}".format(
         "# -------------- See script header for complete documentation -------------- #"
@@ -209,6 +222,21 @@ parser.add_argument(
     '(default="dummy_email" (results downloaded to directory))',
 )
 parser.add_argument(
+    "--output_pdf",
+    nargs="?",
+    const=1,
+    default="full",
+    type=str.lower,
+    choices=["full", "lite"],
+    help="PDF solution report content / contenu du rapport des r\u00e8sultats en PDF "
+    '(default="full" (entire report))',
+)
+parser.add_argument(
+    "--res",
+    action="store_true",
+    help="Download residuals (flag) / T\u00e9l\u00e9charger des r\u00e9siduelles (option)",
+)
+parser.add_argument(
     "--get_max",
     nargs="?",
     const=1,
@@ -256,7 +284,6 @@ if args.email != "dummy_email" and "@" not in args.email:
 # Verify date format
 # ------------------
 if "CURR" not in args.epoch and "COUR" not in args.epoch:
-    # min_date = datetime.datetime.strptime('1997-01-01', '%Y-%m-%d').date()
     max_date = datetime.date.today()
     try:
         input_date = datetime.datetime.strptime(args.epoch, "%Y-%m-%d").date()
@@ -288,6 +315,10 @@ if 0 <= args.get_max < 30:
         "ERROR: As get_max is the number of 10-second intervals to wait for results,"
         "\n\tplease wait at least 5 minutes to receive your results."
     )
+elif args.get_max > 180:
+    sys.exit(
+        "ERROR: Probably best not to wait more than 30 minutes for your results..."
+    )
 
 # Working directory
 # -----------------
@@ -311,9 +342,12 @@ debug = 0
 sleepsec = 10
 
 request_max = 5
-# get_max = 30
 
 keyid = None
+
+# Number of files submitted (for potential download of residuals)
+# ---------------------------------------------------------------
+num_files = 0
 
 # Specify the URL of the page to post to
 # --------------------------------------
@@ -384,6 +418,7 @@ for request_num in range(request_max):
         "nad83_epoch": nad83_epoch,
         "v_datum": vdatum,
         "rfile_upload": (rinex_file, open(rinex_file, "rb"), "text/plain"),
+        "output_pdf": args.output_pdf,
     }
     mtp_data = MultipartEncoder(fields=content)
     # Insert the browser name, if specified
@@ -395,8 +430,6 @@ for request_num in range(request_max):
 
     req = requests.post(url_to_post_to, data=mtp_data, headers=header)
     keyid = str(req.text)  # The keyid required for the job
-
-    my_req = requests.get(url_to_post_to)
 
     # Print some values for debug!
     if debug:
@@ -410,7 +443,7 @@ for request_num in range(request_max):
         # ----------------------------------
         # Re-Submit!
         if "DOCTYPE" in keyid:
-            print("=> Hash{{_content}} has a weird value! [{0:s}]".format(rinex_name))
+            print("=> Keyid has a weird value! [{0:s}]".format(rinex_name))
             if debug:
                 print("{0:s}".format(keyid))
             print("=> Re-Submit ...")
@@ -418,6 +451,10 @@ for request_num in range(request_max):
         # key OKAY!
         # ---------
         print("=> Keyid: {0:s}".format(keyid))
+        if keyid == "ERROR [002]":
+            sys.exit(
+                "*** NOTICE ***\nYou have been blocked from using CSRS-PPP. This block is temporary. Please contact CGS for further information."
+            )
         print('=> Now wait until "Status=done" ...')
 
         # All is OKAY... now wait!
@@ -520,7 +557,7 @@ for request_num in range(request_max):
                         )
                     )
 
-                    # Check zip integrity
+                    # Check full_output.zip integrity
                     try:
                         zip_ref = zipfile.ZipFile(result_name).testzip()
                     except zipfile.BadZipFile:
@@ -529,6 +566,13 @@ for request_num in range(request_max):
                     print("=> Integrity[{0:d}]: OK.".format(get_num))
                     os.rename(result_name, rinex_name + "_" + result_name)
                     result_name = rinex_name + "_" + result_name
+
+                    # Make results_dir if it does not exist
+                    try:
+                        os.makedirs(args.results_dir)
+                    except OSError as e:
+                        if e.errno != errno.EEXIST:
+                            raise
 
                     # Extract sum and PDF
                     # -------------------
@@ -539,24 +583,22 @@ for request_num in range(request_max):
                             with zipfile.ZipFile(result_name, "r") as zip_ref:
                                 zip_ref.extract(extract_name)
 
-                            # Make results_dir if it does not exist
-                            try:
-                                os.makedirs(args.results_dir)
-                            except OSError as e:
-                                if e.errno != errno.EEXIST:
-                                    raise
                             # Move outputs to desired path
                             shutil.move(
                                 extract_name,
                                 "{0}/{1}".format(args.results_dir, extract_name),
                             )
 
-                    # Move zip to desired path
+                    # Move full_output.zip to desired path
                     shutil.move(
                         result_name, "{0}/{1}".format(args.results_dir, result_name)
                     )
 
-                    sys.exit()
+                    # If no residuals requested, exit
+                    if not args.res:
+                        sys.exit()
+                    else:
+                        break
                 else:
                     print('** Error: File "$result_name" *NOT* found!')
                     print("=> Will Re-get ...")
@@ -564,26 +606,153 @@ for request_num in range(request_max):
 
             # Max get reached?
             # ----------------
-            print("=> Max number of requests [{0:d}] exceeded!".format(args.get_max))
-            print("=> RNX: {0:s} [keyid: {1:s}]".format(rinex_name, keyid))
-            print("=> NEXT file!")
-            error = 1
-            sys.exit(error)
+            if not args.res:
+                print(
+                    "=> Max number of requests [{0:d}] exceeded!".format(args.get_max)
+                )
+                print("=> RNX: {0:s} [keyid: {1:s}]".format(rinex_name, keyid))
+                print("=> NEXT file!")
+                error = 1
+                sys.exit(error)
         else:
             print("=> NO results! An error occurred while processing!!!")
             print("=> RNX: {0:s} [keyid: {1:s}]".format(rinex_name, keyid))
             error = 1
             sys.exit(error)
 
+        # ----------------------------
+        # Get residuals file 'res.zip'
+        # ----------------------------
+        if args.res:
+            print("\nResiduals requested too!")
+
+            if not error:
+                # Iterate!
+                # --------
+                for get_num in range(args.get_max):
+
+                    try:
+                        # If a zip file is submitted
+                        for extract_name in zipfile.ZipFile(rinex_file, "r").namelist():
+                            num_files += 1
+
+                            residuals_name = "{0:s}_res.zip".format(
+                                os.path.splitext(extract_name)[0]
+                            )
+                            if os.path.isfile(residuals_name):
+                                os.remove(residuals_name)
+                            print("=> Get residuals file: {0:s}".format(residuals_name))
+
+                            # get
+                            r = requests.get(
+                                "https://webapp.geod.nrcan.gc.ca/CSRS-PPP/service/results/file?id={0:s}&fid={1:02d}&type=res".format(
+                                    keyid, num_files
+                                ),
+                                timeout=5,
+                            )
+                            with open(residuals_name, "wb") as f:
+                                f.write(r.content)
+
+                            if os.path.isfile(residuals_name):
+                                print(
+                                    '=> Okay[{0:d}]: Got file "{1:s}" ...'.format(
+                                        get_num, residuals_name
+                                    )
+                                )
+
+                                # Check res.zip integrity
+                                try:
+                                    zip_ref = zipfile.ZipFile(residuals_name).testzip()
+                                except zipfile.BadZipFile:
+                                    sys.exit("ERROR: Bad ZIP file")
+
+                                print("=> Integrity[{0:d}]: OK.".format(get_num))
+
+                                # Move res.zip to desired path
+                                shutil.move(
+                                    residuals_name,
+                                    "{0}/{1}".format(args.results_dir, residuals_name),
+                                )
+
+                            else:
+                                print('** Error: File "residuals_name" *NOT* found!')
+                                print("=> Will Re-get ...")
+                                continue  # re-get!
+
+                        else:
+                            sys.exit()
+
+                    except zipfile.BadZipFile:
+                        # If a zip file is not submitted
+                        num_files = 1
+
+                        residuals_name = "{0:s}_res.zip".format(rinex_name)
+                        if os.path.isfile(residuals_name):
+                            os.remove(residuals_name)
+                        print("=> Get residuals file: {0:s}".format(residuals_name))
+
+                        # get
+                        r = requests.get(
+                            "https://webapp.geod.nrcan.gc.ca/CSRS-PPP/service/results/file?id={0:s}&fid={1:02d}&type=res".format(
+                                keyid, num_files
+                            ),
+                            timeout=5,
+                        )
+                        with open(residuals_name, "wb") as f:
+                            f.write(r.content)
+
+                        if os.path.isfile(residuals_name):
+                            print(
+                                '=> Okay[{0:d}]: Got file "{1:s}" ...'.format(
+                                    get_num, residuals_name
+                                )
+                            )
+
+                            # Check res.zip integrity
+                            try:
+                                zip_ref = zipfile.ZipFile(residuals_name).testzip()
+                            except zipfile.BadZipFile:
+                                sys.exit("ERROR: Bad ZIP file")
+
+                            print("=> Integrity[{0:d}]: OK.".format(get_num))
+
+                            # Move res.zip to desired path
+                            shutil.move(
+                                residuals_name,
+                                "{0}/{1}".format(args.results_dir, residuals_name),
+                            )
+
+                            sys.exit()
+
+                        else:
+                            print('** Error: File "residuals_name" *NOT* found!')
+                            print("=> Will Re-get ...")
+                            continue  # re-get!
+
+                # Max get reached?
+                # ----------------
+                print(
+                    "=> Max number of requests [{0:d}] exceeded!".format(args.get_max)
+                )
+                print("=> RNX: {0:s} [keyid: {1:s}]".format(rinex_name, keyid))
+                print("=> NEXT file!")
+                error = 1
+                sys.exit(error)
+            else:
+                print("=> NO residuals! An error occurred while processing!!!")
+                print("=> RNX: {0:s} [keyid: {1:s}]".format(rinex_name, keyid))
+                error = 1
+                sys.exit(error)
+
     # Problems while doing the 'request'
     # ----------------------------------
     # Re-Submit!
     else:
-        print("=> Hash{_content} does *NOT* exist!")
+        print("=> Keyid does *NOT* exist!")
         print("=> Re-Submit ...")
         continue
 
-# if it gets here => Problems ... NEXT file!
+# If it gets here => Problems ... NEXT file!
 # ------------------------------------------
 print(
     "=> Max number of requests [{0:d}] exceeded! [{1:s}]".format(
