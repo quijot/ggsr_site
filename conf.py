@@ -149,7 +149,7 @@ NAVIGATION_LINKS = {
         (
             (
                 ("/ppp/", "Servicio PPP"),
-                ("/calc/", "Calculadora ITRF → POSGAR"),
+                ("/itrf2posgar/", "Calculadora ITRF → POSGAR"),
                 ("/software/", "Otros"),
             ),
             "Software",
@@ -1407,6 +1407,7 @@ FILE_METADATA_UNSLUGIFY_TITLES = True
 
 # Plugins you don't want to use. Be careful :-)
 # DISABLED_PLUGINS = ["render_galleries"]
+DISABLED_PLUGINS = ["robots"]
 
 # Special settings to disable only parts of the indexes plugin.
 # Use with care.

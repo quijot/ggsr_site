@@ -6,8 +6,6 @@
 .. description: 
 .. type: text
 
-.. class:: col-md-5
-
 | **Grupo de Geodesia Satelital de Rosario**
 | Av. Pellegrini 250 (3º piso)
 | (S2000BTP) Rosario
@@ -15,7 +13,7 @@
 | Facultad de Ciencias Exactas, Ingeniería y Agrimensura
 | Universidad Nacional de Rosario
 
-.. class:: jumbotron col-md-4
+.. class:: jumbotron
 
 | Escríbanos a
 | **ggsr** |arroba| **fceia.unr.edu.ar**

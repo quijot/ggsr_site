@@ -7,11 +7,12 @@
 .. type: text
 .. template: updatable.tmpl
 
-.. admonition:: Descargar el documento en formato PDF
+.. class:: alert alert-secondary
 
-  Este documento también se puede descargar en formato PDF a través de este enlace: `versión PDF de la "Historia del GGSR" </historia/HistoriaGGSR.pdf>`_.
+  | **Descargar el documento en formato PDF**
+  | Este documento también se puede descargar en formato PDF a través de este enlace: `versión PDF de la "Historia del GGSR" </historia/HistoriaGGSR.pdf>`_.
 
-.. class:: well well-sm pull-right col-lg-6
+.. class:: alert alert-primary float-right col-lg-6 topic
 
 .. contents:: Índice de contenido
 

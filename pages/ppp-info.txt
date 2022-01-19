@@ -1,4 +1,4 @@
-.. class:: well pull-right
+.. class:: alert alert-primary float-right
 
 .. contents:: Índice de contenido
    :depth: 3

@@ -7,61 +7,37 @@
 .. description: itrf2posgar calculations
 .. type: text
 
-<div class="well col-lg-12">
-  <form class="form-horizontal" id="form" method="get" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>">
+<div class="alert alert-secondary col-lg-12">
+  <form id="form" method="get" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>">
     <fieldset id="form-fieldset">
       <legend>Transformación <strong>ITRF→POSGAR</strong></legend>
       <div class="form-group">
         <!-- Coordenadas ITRF -->
-        <label for="itrf_coordinates" class="col-lg-2 control-label">Coordenadas ITRF</label>
-        <div class="col-lg-10">
-          <input type="text" class="form-control" id="itrf_coordinates" name="itrf_coordinates" placeholder="-32.95935194,-60.62842564" value="<?php echo htmlentities($_GET["itrf_coordinates"]); ?>">
-        </div>
+        <label for="itrf_coordinates">Coordenadas ITRF</label>
+        <input type="text" class="form-control" id="itrf_coordinates" name="itrf_coordinates" placeholder="-32.95935194,-60.62842564" value="<?php echo htmlentities($_GET["itrf_coordinates"]); ?>">
       </div>
       <div class="form-group">
         <!-- Fecha de medición -->
-        <label for="obs_date" class="col-lg-2 control-label">Fecha de medición</label>
-        <div class="col-lg-4">
-          <input type="date" class="form-control" id="obs_date" name="obs_date" placeholder="2016-08-09" value="<?php echo htmlentities($_GET["obs_date"]); ?>">
-        </div>
+        <label for="obs_date">Fecha de medición</label>
+        <input type="date" class="form-control" id="obs_date" name="obs_date" placeholder="2016-08-09" value="<?php echo htmlentities($_GET["obs_date"]); ?>">
       </div>
       <div class="form-group">
-        <!-- MESSAGE -->
-        <div class="col-lg-7 col-lg-offset-2">
-          <div id="wait-msg" style="display: none">
-            <p>
-              <strong class="text-warning">por favor no cierre el navegador</strong>.
-            </p>
-          </div>
-        </div>
         <!-- SUBMIT -->
-        <div class="col-lg-1">
-          <div id="sending" style="display:none; text-align:center"><img src="loading.svg"></div>
-        </div>
-        <div class="col-lg-2">
-          <button type="submit" class="btn btn-primary pull-right" id="submit" name="submit">Enviar</button>
-        </div>
+        <button type="submit" class="btn btn-primary pull-right" id="submit" name="submit">Enviar</button>
       </div>
       <legend>Opcionales</legend>
       <div class="form-group">
         <!-- Coordinates (optional) -->
-        <label for="posgar_coordinates" class="col-lg-2 control-label">Conocidas</label>
-        <div class="col-lg-4">
-          <input type="text" class="form-control" id="posgar_coordinates" name="posgar_coordinates" placeholder="-31 14 51.30585, -61 28 16.28025" value="<?php echo htmlentities($_GET["posgar_coordinates"]); ?>">
-          <span class="help-block">Coordenadas POSGAR07 para comparar</span>
-        </div>
+        <label for="coordinates">Coordenadas POSGAR07 conocidas</label>
+        <input type="text" class="form-control" id="posgar_coordinates" name="posgar_coordinates" placeholder="-31 14 51.30585, -61 28 16.28025" value="<?php echo htmlentities($_GET["posgar_coordinates"]); ?>">
+        <small class="form-text text-muted">Si Ud. ya conoce las coordenadas POSGAR07, podrá comparar los resultados</small>
         <!-- IDW parameters (default n=3, p=1) -->
-        <label for="idw_n" class="col-lg-1 control-label">IDW (n)</label>
-        <div class="col-lg-2">
-          <input type="number" class="form-control" id="idw_n" name="idw_n" placeholder="3" min=1 max=100 disabled>
-          <span class="help-block">[<code>1-100</code>] (Default: <code>3</code>) Cantidad de EP para
-            interpolar</span>
-        </div>
-        <label for="idw_p" class="col-lg-1 control-label">IDW (p)</label>
-        <div class="col-lg-2">
-          <input type="number" class="form-control" id="idw_p" name="idw_p" placeholder="1" min=1 max=20 disabled>
-          <span class="help-block">[<code>1-20</code>] (Default: <code>1</code>) Ponderación de la distancia</span>
-        </div>
+        <label for="idw_n">IDW (n)</label>
+        <input type="number" class="form-control" id="idw_n" name="idw_n" placeholder="3" min=1 max=100 disabled>
+        <small class="form-text text-muted">[<code>1-100</code>] (Default: <code>3</code>) Cantidad de EP para interpolar</small>
+        <label for="idw_p">IDW (p)</label>
+        <input type="number" class="form-control" id="idw_p" name="idw_p" placeholder="1" min=1 max=20 disabled>
+        <small class="form-text text-muted">[<code>1-20</code>] (Default: <code>1</code>) Ponderación de la distancia</small>
       </div>
     </fieldset>
   </form>

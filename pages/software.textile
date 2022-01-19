@@ -1,0 +1,52 @@
+.. title: Software recomendado
+.. slug: software
+.. date: 24/05/14 13:54:23 UTC-03:00
+.. tags:
+.. link:
+.. description:
+.. type: text
+
+h1. Software producido por el GGSR
+
+- "Servicio PPP":/ppp :=
+  Dado un archivo de observaciones RINEX de un sitio estático, se obtienen las coordenadas en el Marco de Referencia oficial de la Argentina, POSGAR07. Utiliza el Servicio de NRCan "CSRS-PPP":https://webapp.geod.nrcan.gc.ca/geod/tools-outils/ppp.php + la "Transformación ITRF→POSGAR":/itrf2posgar desarrollada por GGSR (explicada en el punto siguiente).
+
+- "Calculadora ITRF→POSGAR":/itrf2posgar :=
+  Es una aplicación web para transformar coordenadas ITRF (de *cualquier* época) al Marco de Referencia oficial de nuestro país, POSGAR07 (época 2006.632). Esta aplicación es la sucesora de la "PPPCalc":/pppcalc/ y "Calc":/calc/ e incluye mejoras sustanciales en el cálculo, dado que calcula una interpolación IDW con datos de las Estaciones Permanentes RAMSAC más cercanas al punto de interés.
+  Para mayor información sobre su desarrollo, consulte el trabajo "Georreferenciación utilizando servicios de posicionamiento en línea":/publicaciones/calc-web.pdf o envíenos un "correo electrónico":/contacto.
+
+- Geocoo 1.0.1 :=
+  Es un programa que ayuda a resolver problemas de cálculo que en la actualidad son habitualmente requeridos por diversas aplicaciones propias de la topografía y la geodesia.
+  Está diseñado para que su uso sea muy sencillo permitiendo generar salidas que a su vez puedan ser leídas por otros programas.
+  El programa básicamente realiza **conversiones entre distintos tipos de coordenadas** de uso habitual y **transformaciones entre distintos marcos de referencia**.
+  Una característica destacable es que el programa tiene un alto grado de parametrización lo que permite que el usuario pueda adaptar los cálculos a las características del problema a resolver.
+  "Descargar Geocoo":geocoo. Compatible con Windows XP Home, Windows XP Professional y con Windows Vista.
+
+h1. Recomendado por el GGSR
+
+Software y documentación que el GGSR utiliza y/o recomienda.
+
+- "teqc":teqc :=
+  Una simple pero poderosa utilidad para resolver problemas de pre-procesamiento con GPS, GLONASS, Galileo y SBAS.
+  "The Toolkit for GPS/GLONASS/Galileo/SBAS Data":toolkit
+
+- "RNXCMP":RNXCMP :=
+  Yuki Hatanaka creó estos programas que permiten (des)comprimir un archivo de observaciones RINEX en otro más pequeño en formato ASCII.
+  "Data - Hatanaka Format Information":hatanaka
+  "Formato RINEX en Wikipedia.org":rinex
+
+- "GNSS Format Descriptions":gFD :=
+  Explicación de los formatos estándar. Por ejemplo: "Observation RINEX 2.11 Format":formatos.
+
+- "GPS Web Calendar":gpscal :=
+  Fechas específicas para la comunidad GPS.
+
+[geocoo]/software/geocoo.zip
+[teqc]https://www.unavco.org/software/data-processing/teqc/teqc.html#executables
+[toolkit]http://www.unavco.org/software/data-processing/teqc/teqc.html
+[RNXCMP]http://terras.gsi.go.jp/ja/crx2rnx.html
+[hatanaka]http://www.unavco.org/software/data-processing/preprocessing/preprocessing.html#hatanaka
+[rinex]https://es.wikipedia.org/wiki/Rinex
+[gFD]http://www.gage.es/gFD
+[formatos]http://www.gage.es/sites/default/files/gLAB/HTML/Observation_Rinex_v2.11.html
+[gpscal]http://navigationservices.agi.com/GNSSWeb/

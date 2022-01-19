@@ -21,67 +21,49 @@
     });
   </script>
 
-  <div class="well col-lg-12">
-    <form class="form-horizontal" id="ppp-form" method="post" action="result/" enctype="multipart/form-data">
+  <div class="alert alert-secondary col-lg-12">
+    <form id="ppp-form" method="post" action="result/" enctype="multipart/form-data">
       <fieldset id="ppp-form-fieldset">
         <legend>NRCan <strong>CSRS-PPP</strong> + Transformación <strong>ITRF→POSGAR</strong></legend>
         <div class="form-group">
           <!-- RINEX -->
           <input type="hidden" name="MAX_FILE_SIZE" value="5242880"><!-- 5MB -->
-          <label for="rinex" class="col-lg-2 control-label">Archivo RINEX</label>
-          <div class="col-lg-10">
-            <input type="file" class="form-control" id="rinex" name="file"
-              accept="application/gzip, application/x-compress, application/zip">
-            <span class="help-block">
-              Comprimido (<code>gz</code>, <code>zip</code>, <code>Z</code>). Tamaño máximo <code>5 MB</code>.
-              Para comprimir: <a href="https://terras.gsi.go.jp/ja/crx2rnx.html">Hatanaka</a>,
-              <a href="https://www.7-zip.org/">7zip</a>.
-            </span>
-          </div>
+          <label for="rinex">Archivo RINEX</label>
+          <input type="file" class="form-control-file" id="rinex" name="file"
+            accept="application/gzip, application/x-compress, application/zip">
+          <small class="form-text text-muted">
+            Comprimido (<code>gz</code>, <code>zip</code>, <code>Z</code>). Tamaño máximo <code>5 MB</code>.
+            Para comprimir: <a href="https://terras.gsi.go.jp/ja/crx2rnx.html">Hatanaka</a>,
+            <a href="https://www.7-zip.org/">7zip</a>.
+          </small>
         </div>
         <div class="form-group">
           <!-- MESSAGE -->
-          <div class="col-lg-7 col-lg-offset-2">
-            <div id="wait-msg" style="display: none">
-              <p>Enviando el archivo RINEX al servicio CSRS-PPP de la
-                <strong>N</strong>atural <strong>R</strong>esources
-                <strong>Can</strong>ada.</p>
-              <p>El proceso puede demorar
-                varios minutos. Para poder ver los resultados,
-                <strong class="text-warning">por favor no cierre el
-                  navegador</strong>.
-              </p>
-            </div>
+          <div id="wait-msg" style="display: none">
+            <p>Enviando el archivo RINEX al servicio CSRS-PPP de la
+              <strong>N</strong>atural <strong>R</strong>esources <strong>Can</strong>ada.<br>
+              El proceso puede demorar varios minutos. Para poder ver los resultados,
+              <strong class="text-warning">por favor no cierre el navegador</strong>.
+            </p>
           </div>
           <!-- SUBMIT -->
-          <div class="col-lg-1">
-            <div id="sending" style="display:none; text-align:center"><img src="sending.svg"></div>
-          </div>
-          <div class="col-lg-2">
-            <button type="submit" class="btn btn-primary pull-right" id="submit-btn">Enviar</button>
-          </div>
+          <div id="sending" style="display:none"><img src="sending.svg"></div>
+          <button type="submit" class="btn btn-primary" id="submit-btn">Enviar</button>
         </div>
         <legend>Opcionales</legend>
         <div class="form-group">
           <!-- Coordinates (optional) -->
-          <label for="coordinates" class="col-lg-2 control-label">Conocidas</label>
-          <div class="col-lg-4">
-            <input type="text" class="form-control" id="coordinates" name="coordinates"
-              placeholder="-31 14 51.30585, -61 28 16.28025">
-            <span class="help-block">Coordenadas POSGAR07 para comparar</span>
-          </div>
+          <label for="coordinates">Coordenadas POSGAR07 conocidas</label>
+          <input type="text" class="form-control" id="coordinates" name="coordinates"
+            placeholder="-31 14 51.30585, -61 28 16.28025">
+          <small class="form-text text-muted">Si Ud. ya conoce las coordenadas POSGAR07, podrá comparar los resultados</small>
           <!-- IDW parameters (default n=3, p=1) -->
-          <label for="idw_n" class="col-lg-1 control-label">IDW (n)</label>
-          <div class="col-lg-2">
-            <input type="number" class="form-control" id="idw_n" name="idw_n" placeholder="3" min=1 max=100 disabled>
-            <span class="help-block">[<code>1-100</code>] (Default: <code>3</code>) Cantidad de EP para
-              interpolar</span>
-          </div>
-          <label for="idw_p" class="col-lg-1 control-label">IDW (p)</label>
-          <div class="col-lg-2">
-            <input type="number" class="form-control" id="idw_p" name="idw_p" placeholder="1" min=1 max=20 disabled>
-            <span class="help-block">[<code>1-20</code>] (Default: <code>1</code>) Ponderación de la distancia</span>
-          </div>
+          <label for="idw_n">IDW (n)</label>
+          <input type="number" class="form-control" id="idw_n" name="idw_n" placeholder="3" min=1 max=100 disabled>
+          <small class="form-text text-muted">[<code>1-100</code>] (Default: <code>3</code>) Cantidad de EP para interpolar</small>
+          <label for="idw_p">IDW (p)</label>
+          <input type="number" class="form-control" id="idw_p" name="idw_p" placeholder="1" min=1 max=20 disabled>
+          <small class="form-text text-muted">[<code>1-20</code>] (Default: <code>1</code>) Ponderación de la distancia</small>
         </div>
       </fieldset>
       <input type="hidden" name="recaptcha_response" id="recaptcha_response">

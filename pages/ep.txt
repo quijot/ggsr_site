@@ -11,17 +11,14 @@
 
     <script type="text/javascript">
       function hideAll() {
-        var x = document.getElementsByClassName('section');
-          for (var i = 0; i < x.length; i++) {
-            x[i].style.display = 'none';
-          }
+        for (let el of document.querySelectorAll('section')) el.style.display = 'none';
       }
       window.onload = hideAll;
 
       function showEP(ep) {
         hideAll();
         document.getElementById(ep).style.display = 'block';
-        x = document.getElementById(ep).getElementsByClassName('section')
+        x = document.getElementById(ep).getElementsByTagName('section')
         for (var i = 0; i < x.length; i++) {
           x[i].style.display = 'block';
         }
@@ -34,17 +31,14 @@
       <button class="btn btn-primary" onclick="showEP('epsf');">EPSF</button>
       <button class="btn btn-primary" onclick="showEP('prna');">PRNA</button>
       <button class="btn btn-primary" onclick="showEP('rufi');">RUFI</button>
-      <div class="btn-group">
-        <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-          Experimentales <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu">
-          <li onclick="showEP('unr2');"><a>UNR2</a></li>
-          <li onclick="showEP('epvt');"><a>EPVT</a></li>
-         </ul>
+      <button id="exprimentales" type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Experimentales </button>
+      <div class="dropdown-menu" aria-labelledby="experimentales">
+        <a class="dropdown-item" onclick="showEP('unr2');">UNR2</a>
+        <a class="dropdown-item" onclick="showEP('epvt');">EPVT</a>
       </div>
     </div>
-
+    <br>
+    <br>
 
 .. include:: pages/ep/unro.txt
 
