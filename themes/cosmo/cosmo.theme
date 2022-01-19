@@ -1,0 +1,15 @@
+[Theme]
+engine = mako
+parent = bootstrap3
+author = The Nikola Contributors
+author_url = https://getnikola.com/
+based_on = Bootstrap 3 <https://getbootstrap.com/>
+license = MIT
+tags = bootstrap
+
+[Family]
+family = bootstrap3
+
+[Nikola]
+bootswatch = True
+
