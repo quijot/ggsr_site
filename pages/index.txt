@@ -54,11 +54,11 @@
   | **Cronograma de encuentros presenciales**: 03 y 04, 10 y 11, 24 y 25 de Junio.
   | **Encuentros virtuales**: Tres (3) de dos (2) hs. cada uno en fechas y horarios a coordinar.
   | **Lugar**: COAD - Calle Tucumán 2254 - Rosario - Santa Fe.
-  | **Objetivos y Contenido sintético**: Véase `Georreferenciación 2019 </cursos/#ano-2019-curso-de-postgrado-georreferenciacion>`_.
   | **Nota**: Acreditable por el Ministerio de Educación de la Provincia de Santa Fe.
   | **Inscripciones**: `http://www.coad.org.ar/cursos <http://www.coad.org.ar/cursos>`_
   | **Consultas**: `ggsr @ fceia.unr.edu.ar <ggsr@fceia.unr.edu.ar>`_
   | **Más información** `aquí </cursos/Georreferenciacion_2022.pdf>`_.
+  | **MATERIAL DEL CURSO PARA DESCARGAR** ⟶ `Georreferenciación 2022 </cursos/Material_Georreferenciacion_2022.pdf>`_ 
 
 .. topic:: `Historia del GGSR </historia/>`_
 
