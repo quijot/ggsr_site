@@ -13,152 +13,151 @@
    :depth: 1
 
 
-..
-   Año 2019: Curso de postgrado Georreferenciación
-   ===============================================
+Año 2019: Curso de postgrado Georreferenciación
+===============================================
 
-   La georreferenciación se ha convertido en la base tecnológica de un cambio cultural.
+La georreferenciación se ha convertido en la base tecnológica de un cambio cultural.
 
-   El empleo de coordenadas, referidas a un único sistema mundial, permite identificar puntos del espacio, sean éstos aéreos, marítimos, fluviales, o terrestres, naturales o culturales, con los más diversos fines.
+El empleo de coordenadas, referidas a un único sistema mundial, permite identificar puntos del espacio, sean éstos aéreos, marítimos, fluviales, o terrestres, naturales o culturales, con los más diversos fines.
 
-   Objetivos del curso
-   -------------------
+Objetivos del curso
+-------------------
 
-   - Conocer el marco teórico de la georreferenciación y su aporte en diversas ramas del conocimiento vinculadas al territorio.
-   - Informar sobre la tecnología llamada GPS y GNSS.
-   - Reconocer el valor de la información territorial georreferenciada.
-   - Transferir conocimientos sobre tecnología satelital de posicionamiento, sus fundamentos y sus diversas aplicaciones.
-   - Conocer sus precisiones y también limitaciones.
-   - Realizar prácticas de obtención de coordenadas (mediante receptores satelitales), y empleo de las mismas (distancias, orientación, rutas, etc.).
-   - Informar sobre programas de uso público útiles para la georreferenciación y algún entrenamiento para su aplicación.
-   - Destacar el uso de cartografía para el conocimiento y manejo del territorio.
+- Conocer el marco teórico de la georreferenciación y su aporte en diversas ramas del conocimiento vinculadas al territorio.
+- Informar sobre la tecnología llamada GPS y GNSS.
+- Reconocer el valor de la información territorial georreferenciada.
+- Transferir conocimientos sobre tecnología satelital de posicionamiento, sus fundamentos y sus diversas aplicaciones.
+- Conocer sus precisiones y también limitaciones.
+- Realizar prácticas de obtención de coordenadas (mediante receptores satelitales), y empleo de las mismas (distancias, orientación, rutas, etc.).
+- Informar sobre programas de uso público útiles para la georreferenciación y algún entrenamiento para su aplicación.
+- Destacar el uso de cartografía para el conocimiento y manejo del territorio.
 
-   Contenido sintético
-   -------------------
+Contenido sintético
+-------------------
 
-   1. **Georreferenciación**
+1. **Georreferenciación**
 
-   - Significado
-   - Aplicaciones
-   - Prácticas con navegador
+- Significado
+- Aplicaciones
+- Prácticas con navegador
 
-   2. **Coordenadas**
+2. **Coordenadas**
 
-   - Sistemas de coordenadas
-   - Historia
-   - Sistemas de referencia
-   - Superficies de referencia
-   - Marcos de referencia
+- Sistemas de coordenadas
+- Historia
+- Sistemas de referencia
+- Superficies de referencia
+- Marcos de referencia
 
-   3. **Cartografía**
+3. **Cartografía**
 
-   - Representación plana
-   - Cartas, mapas y planos
-   - Historia de cartografía Argentina
-   - Sistema Gauss Krüger
-   - Práctica sobre cartas
+- Representación plana
+- Cartas, mapas y planos
+- Historia de cartografía Argentina
+- Sistema Gauss Krüger
+- Práctica sobre cartas
 
-   4. **GNSS**
+4. **GNSS**
 
-   - Historia, sistema GPS
-   - Obtención de coordenadas
-   - Precisión
-   - Altimetría con GNSS
-   - Estaciones permanentes
-   - RAMSAC - SIRGAS
-   - Prácticas sobre resultados de observaciones
+- Historia, sistema GPS
+- Obtención de coordenadas
+- Precisión
+- Altimetría con GNSS
+- Estaciones permanentes
+- RAMSAC - SIRGAS
+- Prácticas sobre resultados de observaciones
 
-   Destinatarios
-   -------------
+Destinatarios
+-------------
 
-   - Graduados universitarios de amplia variedad de carreras con actividades vinculadas al territorio (Ingenierías, Cs. Agrarias, Medicina, Cs. Sociales, etc.).
-   - Alumnos avanzados y graduados de Profesorados de Geografía y docentes de Geografía en general.
+- Graduados universitarios de amplia variedad de carreras con actividades vinculadas al territorio (Ingenierías, Cs. Agrarias, Medicina, Cs. Sociales, etc.).
+- Alumnos avanzados y graduados de Profesorados de Geografía y docentes de Geografía en general.
 
-   Desarrollado en
-   ---------------
+Desarrollado en
+---------------
 
-   | Facultad de Ciencias Exactas, Ingeniería y Agrimensura - Universidad Nacional de Rosario
-   | Avda. Pellegrini 250 – Rosario – Santa Fe.
+| Facultad de Ciencias Exactas, Ingeniería y Agrimensura - Universidad Nacional de Rosario
+| Avda. Pellegrini 250 – Rosario – Santa Fe.
 
-   | Los días 3 y 4, 10 y 11, y 17 y 18 de Mayo de 2019.
-   | Horarios:
-   | Viernes de 14 a 20 horas.
-   | Sábados de 9 a 13 horas.
+| Los días 3 y 4, 10 y 11, y 17 y 18 de Mayo de 2019.
+| Horarios:
+| Viernes de 14 a 20 horas.
+| Sábados de 9 a 13 horas.
 
-   Docentes
-   --------
+Docentes
+--------
 
-   | **Claudio Brunini**, profesor en la UNLaPlata, investigador Conicet, director de AGGO.
-   | **Virginia Mackern**, profesora en UNCuyo, investigadora Conicet, Vicepresidenta SIRGAS.
-   | **Gustavo Noguera**, profesor en UNRosario, director del Grupo de Geodesia Satelital de Rosario (GGSR).
-   | **Laura Cornaglia**, docente en UNRosario, integrante GGSR.
-   | **Aldo Mangiaterra**, ex profesor UNRosario, integrante GGSR.
+| **Claudio Brunini**, profesor en la UNLaPlata, investigador Conicet, director de AGGO.
+| **Virginia Mackern**, profesora en UNCuyo, investigadora Conicet, Vicepresidenta SIRGAS.
+| **Gustavo Noguera**, profesor en UNRosario, director del Grupo de Geodesia Satelital de Rosario (GGSR).
+| **Laura Cornaglia**, docente en UNRosario, integrante GGSR.
+| **Aldo Mangiaterra**, ex profesor UNRosario, integrante GGSR.
 
-   Disertaciones
-   -------------
+Disertaciones
+-------------
 
-   | Ing. Agrim. Santiago Pestarini
-   | *'Un caso práctico de la aplicación del concepto de georreferenciación'*
-   | (Viernes 10 de mayo)
+| Ing. Agrim. Santiago Pestarini
+| *'Un caso práctico de la aplicación del concepto de georreferenciación'*
+| (Viernes 10 de mayo)
 
-   **Abiertas a todo público**
+**Abiertas a todo público**
 
-   | Lic. Pablo Horacio Zambrana - Instituto Geográfico Nacional (IGN)
-   | *«El IGN y la Georreferenciación»*
-   | (Sábado 11 de Mayo)
+| Lic. Pablo Horacio Zambrana - Instituto Geográfico Nacional (IGN)
+| *«El IGN y la Georreferenciación»*
+| (Sábado 11 de Mayo)
 
-   | Dra. María Virginia Mackern
-   | Vice-Presidenta de SIRGAS (Sistema de Referencia Geocéntrico para las Américas)
-   | *«SIRGAS y la Georreferenciación en Argentina y en América Latina»*
-   | (Viernes 17 de Mayo)
+| Dra. María Virginia Mackern
+| Vice-Presidenta de SIRGAS (Sistema de Referencia Geocéntrico para las Américas)
+| *«SIRGAS y la Georreferenciación en Argentina y en América Latina»*
+| (Viernes 17 de Mayo)
 
-   | Dr. Claudio Brunini
-   | Director Científico del Observatorio Argentino-Alemán de Geodesia (AGGO)
-   | *«La Georreferenciación en el marco de la UN-GGIM (Gestión Global de Información Geoespacial para las Américas, Naciones Unidas)»*
-   | (Viernes 17 de Mayo)
+| Dr. Claudio Brunini
+| Director Científico del Observatorio Argentino-Alemán de Geodesia (AGGO)
+| *«La Georreferenciación en el marco de la UN-GGIM (Gestión Global de Información Geoespacial para las Américas, Naciones Unidas)»*
+| (Viernes 17 de Mayo)
 
-   `Material de difusión </cursos/Disertaciones-Georreferenciacion.png>`_
+`Material de difusión </cursos/Disertaciones-Georreferenciacion.png>`_
 
-   | **Notas**:
-   | Curso acreditable por el Ministerio de Educación de la Provincia de Santa Fe.
-   | Curso acreditable para el Doctorado en Ingeniería de la FCEIA, aprobado según Resolución Nº 649/18.
+| **Notas**:
+| Curso acreditable por el Ministerio de Educación de la Provincia de Santa Fe.
+| Curso acreditable para el Doctorado en Ingeniería de la FCEIA, aprobado según Resolución Nº 649/18.
 
-   ..	| **Costo de inscripción**: $1800. Se adjudicarán becas.
+..	| **Costo de inscripción**: $1800. Se adjudicarán becas.
 
-      Consultas: **ggsr** |arroba| **fceia.unr.edu.ar**
+   Consultas: **ggsr** |arroba| **fceia.unr.edu.ar**
 
-      .. |arroba| image:: /images/120px-At_sign.svg.png
-                  :height: 15px
-                  :alt: arroba
-                  :align: middle
+   .. |arroba| image:: /images/120px-At_sign.svg.png
+               :height: 15px
+               :alt: arroba
+               :align: middle
 
-   Material del curso
-   ------------------
+Material del curso
+------------------
 
-   - `Georreferenciación </cursos/Georreferenciacion_2019.pdf>`_
+- `Georreferenciación </cursos/Georreferenciacion_2019.pdf>`_
 
-   Trabajos Finales de aplicación de la Georreferenciación
-   -------------------------------------------------------
+Trabajos Finales de aplicación de la Georreferenciación
+-------------------------------------------------------
 
-   Presentación de monografías y exposición oral (llevada a cabo el día Viernes 9 de Agosto de 2019)
+Presentación de monografías y exposición oral (llevada a cabo el día Viernes 9 de Agosto de 2019)
 
 
-   .. raw:: html
+.. raw:: html
 
-      <ul>
-         <li>
-               "La georreferenciación aplicada en la arqueología del área del Río Salado del Norte (Departamento Las Colonias, Provincia de Santa Fe)"
-               <br>Autores: Balducci, F., Iannelli, L., Postma, J.
-         </li>
-         <li>
-               "La Georreferenciación aplicada a la Ingeniería Sanitaria"
-               <br>Autor: Gagliano, G.
-         </li>
-         <li>
-               "La Georreferenciación aplicada a los Inventarios Viales convencionales"
-               <br>Autores: Fortuñy A., Isern, S., Luque, A.
-         </li>
-      </ul>
+   <ul>
+      <li>
+            "La georreferenciación aplicada en la arqueología del área del Río Salado del Norte (Departamento Las Colonias, Provincia de Santa Fe)"
+            <br>Autores: Balducci, F., Iannelli, L., Postma, J.
+      </li>
+      <li>
+            "La Georreferenciación aplicada a la Ingeniería Sanitaria"
+            <br>Autor: Gagliano, G.
+      </li>
+      <li>
+            "La Georreferenciación aplicada a los Inventarios Viales convencionales"
+            <br>Autores: Fortuñy A., Isern, S., Luque, A.
+      </li>
+   </ul>
 
 
 Año 2016: Georreferenciación
