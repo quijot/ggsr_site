@@ -4,7 +4,7 @@
 .. link: 
 .. description: 
 .. type: text
-.. date: 01/18/18 20:00:00 UTC-03:00
+.. date: 06/25/22 15:30:00 UTC-03:00
 .. template: updatable.tmpl
 
 A continuación se listan publicaciones del Grupo, algunas de autoría exclusiva, otras de participación compartida junto a otros grupos o investigadores.
@@ -29,6 +29,36 @@ Gobierno de la provincia de Santa Fe.
 
 
 h1. Reuniones / Simposios / Congresos
+
+h2. 2019
+
+- "Colocalización en AGGO":https://www.sirgas.org/en/sirgas-symposia/rio_2019/ :=
+Simposio SIRGAS 2019.
+6 al 14 de noviembre de 2019. Río de Janeiro, Brasil.
+Disponible en "https://www.sirgas.org/en/sirgas-symposia/rio_2019/":https://www.sirgas.org/en/sirgas-symposia/rio_2019/
+
+- "La medida en la Agrimensura, controversias y opiniones":http://congreso.agrimensuramza.com/ :=
+XII Congreso Nacional de Agrimensura.
+8 al 10 de octubre de 2019. Mendoza, Argentina.
+Disponible en "http://congreso.agrimensuramza.com/":http://congreso.agrimensuramza.com/
+
+- "Microgeodesia en el Observatorio Geodésico Argentino Alemán":http://congreso.agrimensuramza.com/ :=
+XII Congreso Nacional de Agrimensura.
+8 al 10 de octubre 2019. Mendoza, Argentina.
+Disponible en "http://congreso.agrimensuramza.com/":http://congreso.agrimensuramza.com/
+
+- "Coordenadas del punto AGGO y vectores de vinculación entre los puntos de referencia de las técnicas":http://congreso.agrimensuramza.com/ :=
+XII Congreso Nacional de Agrimensura.
+8 al 10 de octubre de 2019. Mendoza, Argentina.
+Disponible en "http://congreso.agrimensuramza.com/":http://congreso.agrimensuramza.com/
+
+h2. 2018
+
+- "Entre los millones de años luz y las décimas de milímetros":http://www.jornadasgeociencias.com.ar/trabajos/trabajos_jornadas_2018.pdf :=
+Terceras Jornadas de Geociencias para la Ingeniería.
+Libro de resúmenes.
+2 y 3 de Octubre de 2018. Facultad de Ingeniería, UBA. Buenos Aires, Argentina.
+Disponible en "http://www.jornadasgeociencias.com.ar/trabajos/trabajos_jornadas_2018.pdf":http://www.jornadasgeociencias.com.ar/trabajos/trabajos_jornadas_2018.pdf (pág. 26)
 
 h2. 2017
 

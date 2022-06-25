@@ -4,7 +4,7 @@
 .. link: 
 .. description: 
 .. type: text
-.. date: 03/24/22 15:00:00 UTC-03:00
+.. date: 06/25/22 15:00:00 UTC-03:00
 .. template: updatable.tmpl
 
 h1. Actividades en desarrollo
@@ -21,15 +21,17 @@ h1. Proyectos de investigación finalizados
 
 h2. 2018 a 2019
 
-- Georreferenciación 2018 - Parte 2 :=
+- "Georreferenciación 2018 - Parte 2":/investigacion/Georreferenciacion2018-Parte2.pdf :=
 Código: 1ING627 - Acreditado por la Universidad Nacional de Rosario (UNR), R.C.S. Nº 1050/2018.
 Grupo de Trabajo: Brunini, C. - Calvo, J.M. - Calvo, P. - Cornaglia, L. - Mangiaterra, A. (Co-Director) - Noguera, G. (Director) - Pestarini, S. - Rodriguez, R.
+"Informe final":/investigacion/ING627_InformeFinal.pdf
 
 h2. 2014 a 2018
 
 - "Georreferenciación 2018":/investigacion/ING455.pdf :=
-Código: 1ING455 - Acreditado por la Universidad Nacional de Rosario (UNR), Resolución Consejo Superior (R.C.S.) Nº 886/2014.
+Código: 1ING455 - Acreditado por la Universidad Nacional de Rosario (UNR), R.C.S. Nº 886/2014.
 Grupo de Trabajo: Acosta, G. Brunini, C. - Calvo, P. - Cornaglia, L. - Mangiaterra, A. (Co-Director) - Noguera, G. (Director) - Pagani, G. - Pestarini, S. - Rodriguez, R.
+"Informe final":/investigacion/ING455_InformeFinal.pdf
 
 
 h2. 2011 a 2012
