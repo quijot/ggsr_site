@@ -37,7 +37,7 @@ jsonschema==4.6.0
 jupyter-client==7.3.4
 jupyter-core==4.10.0
 jupyterlab-pygments==0.2.2
-lxml==4.9.0
+lxml==4.9.1
 Mako==1.2.0
 Markdown==3.3.7
 MarkupSafe==2.1.1
