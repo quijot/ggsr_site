@@ -4,7 +4,7 @@
 .. link: 
 .. description: 
 .. type: text
-.. date: 06/25/22 15:00:00 UTC-03:00
+.. date: 07/30/22 12:00:00 UTC-03:00
 .. template: updatable.tmpl
 
 h1. Actividades en desarrollo
@@ -13,6 +13,8 @@ h1. Actividades en desarrollo
 Proyecto de investigación presentado ante la Secretaría de Ciencia y Tecnología de la Universidad Nacional de Rosario.
 Acreditado por la Universidad Nacional de Rosario (UNR), R.C.S. Nº 125/2021.
 Duración: Cuatrienal (Años 2020 a 2023)
+"Presentación Proyecto":/investigacion/2020-2023_PresentacionProyecto.pdf
+"Plan de Trabajo":/investigacion/2020-2023_PlanDeTrabajo.pdf
 
 - "Colocalización - AGGO":/investigacion/Colocalizacion-AGGO.pdf :=
 Informe preliminar de las tareas de medición y cálculo efectuados por el GGSR, sobre la red planimétrica diseñada para la determinación de la posición relativa (colocalización) entre los instrumentos de medición del Observatorio Geodésico Argentino-Alemán.
