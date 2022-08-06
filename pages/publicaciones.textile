@@ -4,28 +4,38 @@
 .. link: 
 .. description: 
 .. type: text
-.. date: 06/25/22 15:30:00 UTC-03:00
+.. date: 08/06/22 19:55:00 UTC-03:00
 .. template: updatable.tmpl
 
 A continuación se listan publicaciones del Grupo, algunas de autoría exclusiva, otras de participación compartida junto a otros grupos o investigadores.
 
 h1. Institucionales
 
+h2. 2022
+
+"*Georreferenciación*":Georreferenciacion2022
+
+h2. 2015
+
 - "Consideraciones del GGSR sobre la Propuesta "La Georreferenciación de parcelas rurales en la República Argentina"":opinion :=
 IGN y Georreferenciación - Opinión Final GGSR
 
-- "Artículo EP UNRO":artEPUNRO :=
-Artículo publicado en el sitio del GGSR.
+h2. 2012
 
 - "Infraestructura de estaciones terrestres para la georreferenciación en la provincia de Santa Fe mediante posicionamiento satelital":infraestructura :=
 "Informe técnico final del Proyecto FFIR/21-105":informe-final, Resolución Nº 030/09.
 Secretaría de Estado de Ciencia, Tecnología e Innovación.
 Gobierno de la provincia de Santa Fe.
 
+h2. 2011
+
+"*Estación Permanente GPS en la Facultad de Ciencias Exactas, Ingeniería y Agrimensura - Universidad Nacional de Rosario*":artEPUNRO
+
+[Georreferenciacion2022]/publicaciones/Georreferenciacion2022.pdf
 [opinion]/publicaciones/consideraciones-propuesta-ign.pdf
-[artEPUNRO]/publicaciones/EP_UNRO.pdf
 [infraestructura]/publicaciones/infraestructura.pdf
 [informe-final]/publicaciones/informe-final.pdf
+[artEPUNRO]/publicaciones/EP_UNRO.pdf
 
 
 h1. Reuniones / Simposios / Congresos
@@ -142,7 +152,7 @@ Reunión SIRGAS 2013. Instituto Geográfico Nacional Tommy Guardia.
 
 h2. 2012
 
-- "PPP‐RTK Una alternativa de Posicionamiento Preciso en Tiempo Real en regiones de Estaciones Permanentes poco densas":ppprtk :=
+- "PPP-RTK Una alternativa de Posicionamiento Preciso en Tiempo Real en regiones de Estaciones Permanentes poco densas":ppprtk :=
 Reunión SIRGAS 2012. Instituto Geográfico Nacional Tommy Guardia.
 29-31 de Octubre de 2012. Universidad de Concepción, Concepción, Chile.
 
