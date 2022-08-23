@@ -47,7 +47,7 @@ mistune==2.0.4
 multidict==6.0.2
 natsort==8.1.0
 nbclient==0.6.4
-nbconvert==6.5.0
+nbconvert==6.5.1
 nbformat==5.4.0
 nest-asyncio==1.5.5
 Nikola==8.2.2
