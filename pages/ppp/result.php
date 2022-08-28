@@ -23,7 +23,7 @@ function execute($command, $output_id = '', $show = true)
   if ($show) {
     if ($retval)
       echo 'exec:<pre>' . $command . "</pre>";
-    echo '<pre id="' . $output_id . '">';
+    echo '<pre id="' . $output_id . '" class="mx-auto">';
     printer($output);
     if ($retval)
       echo '<span class="text-danger">Error durante el procesamiento.</span>';
@@ -49,13 +49,14 @@ function itrf2posgar($sum_file, $n, $p, $lat = null, $lon = null)
   $cmd .= (!$n or ($n < 0 or $n > 100)) ? ' 3' : ' ' . $n;
   $cmd .= (!$p or ($p < 1 or $p > 20)) ? ' 1' : ' ' . $p;
   $cmd .= (isset($lat) and isset($lon)) ? ' "' . $lat . '" "' . $lon . '"' : '';
-  echo '<div id="output" class="col-lg-8">';
+  echo '<div id="output" class="col">';
   $retval = execute($cmd, 'result');
   echo '</div>';
-  echo '<div id="map" class=" map col-lg-4" style="height: 362px"></div>
+  echo '<div id="map" class="map col mb-4" style="height: 362px"></div>
         <div id="popup" class="ol-popup">
           <a href="#" id="popup-closer" class="ol-popup-closer"></a>
           <div id="popup-content"></div>
+        </div>
         </div>';
   return $retval;
 };
@@ -146,7 +147,7 @@ try {
     $output = 'Archivo cargado con éxito: ';
   else
     throw new RuntimeException('Fallo en la copia del archivo.');
-  echo '<div class="col-lg-12"><p>' . $output . $file_name . '.</p></div>';
+  echo '<div class="col"><p>' . $output . $file_name . '.</p></div>';
 
   // Continue with process
 
@@ -160,7 +161,7 @@ try {
       throw new RuntimeException('Fallo en el envío/procesamiento del servicio CSRS-PPP.');
     }
   } else
-    echo '<div class="col-lg-12">
+    echo '<div class="col">
             <div class="alert alert-dismissible alert-info">
               <button type="button" class="close" data-dismiss="alert">&times;</button>
               <strong>¡Atención!</strong> Este archivo fue procesado recientemente
@@ -189,13 +190,15 @@ try {
 }
 ?>
 
-<ul class="pager col-lg-12">
-  <li class="previous"><a href="../">&larr; Volver</a></li>
-</ul>
+<div class="col">
+  <ul class="pager">
+    <li class="previous"><a href="../">&larr; Volver</a></li>
+  </ul>
+</div>
 
 <!-- Map by OpenLayers -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/css/ol.css">
-<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/build/ol.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.15.1/css/ol.css">
+<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.15.1/build/ol.js"></script>
 <!--
   <link rel="stylesheet" href="css/map.css" type="text/css">
   <script type="text/javascript" src="js/map.js"></script>
