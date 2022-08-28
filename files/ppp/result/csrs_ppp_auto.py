@@ -54,8 +54,16 @@
 # CHANGELOG
 # ---------
 # DATE          WHO						DESCRIPTION
-# 2021-04-09    Justin Farinaccio		1.5.0
+# 2022-04-12    Justin Farinaccio		1.6.0
 # Modified:
+#   2022-04-12 - 1.6.0 - JF
+#       Changed URL from webapp.geod.nrcan.gc.ca to webapp.csrs.nrcan.gc.ca or
+#           webapp.csrs-scrs.nrcan-rncan.gc.ca, depending on today's date
+#       Fixed bug where a results file is downloaded when a user chooses to receive only emailed results and
+#           does not provide a results_dir
+#       Added notification when email is sent
+#       Updated copyright
+#       Added metadata for script
 #   2021-04-09 - 1.5.0 - JF
 #       Added option to generate PDF solution report with no plots
 #   2020-05-01 - 1.4.1 - JF
@@ -96,31 +104,34 @@
 
 """To replace the use of a browser and desktop application for submission of RINEX files to CSRS-PPP"""
 
-# Imports
-# -------
-import os
-import sys
-import time
-import argparse
-import datetime
-import shutil
-import zipfile
-import errno
-import webbrowser
-
 # Script info
 # -----------
 __author__ = "Justin Farinaccio"
 __copyright__ = (
-    "Copyright (c) 2017-2021, Justin Farinaccio,"
-    "\n\tCanadian Geodetic Survey, Surveyor General Branch,"
-    "\n\tNatural Resources Canada"
-    "\nAll Rights Reserved."
+    "© Her Majesty the Queen in Right of Canada, as represented by the Minister of Natural Resources,"
+    " 2017-2022"
 )
+__credits__ = "Justin Farinaccio"
+__email__ = "geodeticinformation-informationgeodesique@nrcan-rncan.gc.ca"
+__license__ = "Open Government Licence - Canada"
+__maintainer__ = "Justin Farinaccio"
+__status__ = "Production"
+__version__ = "1.6.0"
+
+# Imports
+# -------
+import argparse
+import datetime
+import errno
+import os
+import shutil
+import sys
+import time
+import webbrowser
+import zipfile
 
 try:
-    # assert sys.version_info >= (3, 5)
-    assert sys.version_info >= (3, 4)
+    assert sys.version_info >= (3, 5)
 except AssertionError:
     sys.exit("ERROR: Must use Python 3.5.x or higher\n\t(see https://www.python.org/)")
 try:
@@ -142,7 +153,7 @@ except ImportError:
 # Instantiate the parser
 parser = argparse.ArgumentParser(
     description="{0}".format(
-        "# ---------------- Using CSRS-PPP via script, version 1.5.0 ---------------- #"
+        "# ---------------- Using CSRS-PPP via script, version 1.6.0 ---------------- #"
     ),
     epilog="{0}".format(
         "# -------------- See script header for complete documentation -------------- #"
@@ -253,6 +264,11 @@ parser.add_argument(
 # Parse arguments
 args = parser.parse_args()
 
+# Use different Canadian Geodetic Survey domain on April 20, 2022
+domain = "https://webapp.csrs-scrs.nrcan-rncan.gc.ca"
+if datetime.datetime.now() < datetime.datetime(2022, 4, 20):
+    domain = "https://webapp.csrs.nrcan.gc.ca"
+
 # Launch CSRS-PPP web page
 # ------------------------
 if args.web:
@@ -263,9 +279,7 @@ if args.web:
             print("Chargement du site Web SCRS-PPP...")
         time.sleep(3)
         webbrowser.open(
-            "https://webapp.geod.nrcan.gc.ca/geod/tools-outils/ppp.php?locale={0}".format(
-                args.lang
-            ),
+            "{0:s}/geod/tools-outils/ppp.php?locale={1:s}".format(domain, args.lang),
             new=2,
             autoraise=True,
         )
@@ -293,7 +307,7 @@ if "CURR" not in args.epoch and "COUR" not in args.epoch:
                     args.epoch
                 )
             )
-    except ValueError:
+    except ValueError as e:
         sys.exit(
             "ERROR: Invalid epoch: {0:s}\n\tFormat must be: YYYY-MM-DD".format(
                 args.epoch
@@ -351,7 +365,7 @@ num_files = 0
 
 # Specify the URL of the page to post to
 # --------------------------------------
-url_to_post_to = "https://webapp.geod.nrcan.gc.ca/CSRS-PPP/service/submit"
+url_to_post_to = "{0:s}/CSRS-PPP/service/submit".format(domain)
 browser_name = "CSRS-PPP access via Python Browser Emulator"
 
 # Define PPP access mode
@@ -482,9 +496,7 @@ for request_num in range(request_max):
 
             # get 'Status.txt'
             r = requests.get(
-                'https://webapp.geod.nrcan.gc.ca/CSRS-PPP/service/results/status?id={0:s}"'.format(
-                    keyid
-                ),
+                '{0:s}/CSRS-PPP/service/results/status?id={1:s}"'.format(domain, keyid),
                 timeout=5,
             )
             with open("Status.txt", "wb") as f:
@@ -532,6 +544,11 @@ for request_num in range(request_max):
         # Get result file 'full_output.zip'
         # ---------------------------------
         if not error:
+            # If only email and no results_dir requested, exit
+            if args.email and not args.results_dir:
+                print("=> Email with results sent to {0:s}".format(args.email))
+                sys.exit()
+
             result_name = "full_output.zip"
             if os.path.isfile(result_name):
                 os.remove(result_name)
@@ -542,11 +559,12 @@ for request_num in range(request_max):
             for get_num in range(args.get_max):
                 # get
                 r = requests.get(
-                    "https://webapp.geod.nrcan.gc.ca/CSRS-PPP/service/results/file?id={0:s}".format(
-                        keyid
+                    "{0:s}/CSRS-PPP/service/results/file?id={1:s}".format(
+                        domain, keyid
                     ),
                     timeout=5,
                 )
+
                 with open(result_name, "wb") as f:
                     f.write(r.content)
 
@@ -560,7 +578,7 @@ for request_num in range(request_max):
                     # Check full_output.zip integrity
                     try:
                         zip_ref = zipfile.ZipFile(result_name).testzip()
-                    except zipfile.BadZipFile:
+                    except zipfile.BadZipFile as e:
                         sys.exit("ERROR: Bad ZIP file")
 
                     print("=> Integrity[{0:d}]: OK.".format(get_num))
@@ -593,6 +611,9 @@ for request_num in range(request_max):
                     shutil.move(
                         result_name, "{0}/{1}".format(args.results_dir, result_name)
                     )
+
+                    if args.email != "dummy_email":
+                        print("=> Email with results sent to {0:s}".format(args.email))
 
                     # If no residuals requested, exit
                     if not args.res:
@@ -645,8 +666,8 @@ for request_num in range(request_max):
 
                             # get
                             r = requests.get(
-                                "https://webapp.geod.nrcan.gc.ca/CSRS-PPP/service/results/file?id={0:s}&fid={1:02d}&type=res".format(
-                                    keyid, num_files
+                                "{0:s}/CSRS-PPP/service/results/file?id={1:s}&fid={2:02d}&type=res".format(
+                                    domain, keyid, num_files
                                 ),
                                 timeout=5,
                             )
@@ -663,7 +684,7 @@ for request_num in range(request_max):
                                 # Check res.zip integrity
                                 try:
                                     zip_ref = zipfile.ZipFile(residuals_name).testzip()
-                                except zipfile.BadZipFile:
+                                except zipfile.BadZipFile as e:
                                     sys.exit("ERROR: Bad ZIP file")
 
                                 print("=> Integrity[{0:d}]: OK.".format(get_num))
@@ -693,8 +714,8 @@ for request_num in range(request_max):
 
                         # get
                         r = requests.get(
-                            "https://webapp.geod.nrcan.gc.ca/CSRS-PPP/service/results/file?id={0:s}&fid={1:02d}&type=res".format(
-                                keyid, num_files
+                            "{0:s}/CSRS-PPP/service/results/file?id={1:s}&fid={2:02d}&type=res".format(
+                                domain, keyid, num_files
                             ),
                             timeout=5,
                         )
@@ -711,7 +732,7 @@ for request_num in range(request_max):
                             # Check res.zip integrity
                             try:
                                 zip_ref = zipfile.ZipFile(residuals_name).testzip()
-                            except zipfile.BadZipFile:
+                            except zipfile.BadZipFile as e:
                                 sys.exit("ERROR: Bad ZIP file")
 
                             print("=> Integrity[{0:d}]: OK.".format(get_num))
