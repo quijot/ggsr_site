@@ -89,7 +89,7 @@ function verify_captcha()
 
 // Validation and process
 
-$MAX_SIZE = 5 * 1024 * 1024; // 5 MB
+$MAX_SIZE = 20 * 1024 * 1024; // 20 MB
 $VALID_TYPES = array(
   'application/gzip',
   'application/x-gzip',
