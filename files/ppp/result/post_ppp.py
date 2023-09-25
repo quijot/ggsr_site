@@ -34,18 +34,18 @@ except IndexError:
 with open(ppp_sum_file, "r") as fd:
     summary = fd.readlines()
 
-for l in summary:
-    if l.startswith("POS LAT"):
-        syst = l.split()[2]
-        yy, doy, etc = l.split()[3].split(":")
+for line in summary:
+    if line.startswith("POS LAT"):
+        syst = line.split()[2]
+        yy, doy, etc = line.split()[3].split(":")
         d = gt.from_doy(int(yy), int(doy))
         wk = d.gpsw
-        latd, latm, lats, lat_diff, lat_sigma = l.split()[7:12]
+        latd, latm, lats, lat_diff, lat_sigma = line.split()[7:12]
         lat_dms = "{} {} {}".format(latd, latm, lats)
         lat = int(latd) - int(latm) / 60 - float(lats) / 3600
         lat_prec = float(lat_sigma)
-    elif l.startswith("POS LON"):
-        lond, lonm, lons, lon_diff, lon_sigma = l.split()[7:12]
+    elif line.startswith("POS LON"):
+        lond, lonm, lons, lon_diff, lon_sigma = line.split()[7:12]
         lon_dms = "{} {} {}".format(lond, lonm, lons)
         lon = int(lond) - int(lonm) / 60 - float(lons) / 3600
         lon_prec = float(lon_sigma)
