@@ -15,3 +15,4 @@ files/ppp/result/secret.php
 files/itrf2posgar/geographiclib-*.tar.gz
 files/itrf2posgar/geojson-*.tar.gz
 files/itrf2posgar/gnsstime-*.tar.gz
+files/ppp/result/csrs_ppp_auto_*.*
