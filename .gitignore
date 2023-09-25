@@ -12,3 +12,6 @@ files/ppp/uploads/
 !files/ppp/uploads/.gitkeep
 files/ppp/result/secret.php
 *.pickle
+files/itrf2posgar/geographiclib-*.tar.gz
+files/itrf2posgar/geojson-*.tar.gz
+files/itrf2posgar/gnsstime-*.tar.gz
