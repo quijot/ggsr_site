@@ -324,7 +324,7 @@ def get_best_configuration(lat, lon, wk):
     # find nearest week in ws
     while wk not in iws:
         wk -= 1
-    # find nearest EP in ramsac and sirgas
+    # find nearest EP in ramsac
     distance_to = [
         (geodetic_distance(lat, lon, coord["lat"], coord["lon"]), ep)
         for ep, coord in ramsac.items()
