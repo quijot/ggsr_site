@@ -44,7 +44,7 @@ function load_files_to_select($select_id, $dir, $filter, $selected_file = "", $s
   echo '</select>';
 }
 
-$MAX_SIZE = 5 * 1024 * 1024;
+$MAX_SIZE = 20 * 1024 * 1024;
 $VALID_TYPES = array('application/gzip', 'application/x-compress', 'application/zip');
 $_ERRORS = array(UPLOAD_ERR_INI_SIZE, UPLOAD_ERR_FORM_SIZE, UPLOAD_ERR_NO_FILE);
 
