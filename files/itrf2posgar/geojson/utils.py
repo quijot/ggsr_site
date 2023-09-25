@@ -11,17 +11,17 @@ def coords(obj):
     :rtype: generator
     """
     # Handle recursive case first
-    if 'features' in obj:
+    if 'features' in obj:  # FeatureCollection
         for f in obj['features']:
-            # For Python 2 compatibility
-            # See https://www.reddit.com/r/learnpython/comments/4rc15s/yield_from_and_python_27/ # noqa: E501
-            for c in coords(f):
-                yield c
+            yield from coords(f)
+    elif 'geometry' in obj:  # Feature
+        yield from coords(obj['geometry'])
+    elif 'geometries' in obj:  # GeometryCollection
+        for g in obj['geometries']:
+            yield from coords(g)
     else:
         if isinstance(obj, (tuple, list)):
             coordinates = obj
-        elif 'geometry' in obj:
-            coordinates = obj['geometry']['coordinates']
         else:
             coordinates = obj.get('coordinates', obj)
         for e in coordinates:
@@ -197,7 +197,11 @@ def generate_random(featureType, numberVertices=3,
             r_i = clip(random.gauss(aveRadius, spikeyness), 0, 2 * aveRadius)
             x = ctrX + r_i * math.cos(angle)
             y = ctrY + r_i * math.sin(angle)
-            points.append((int(x), int(y)))
+            x = (x + 180.0) * (abs(lonMin-lonMax) / 360.0) + lonMin
+            y = (y + 90.0) * (abs(latMin-latMax) / 180.0) + latMin
+            x = clip(x, lonMin, lonMax)
+            y = clip(y, latMin, latMax)
+            points.append((x, y))
             angle = angle + angleSteps[i]
 
         firstVal = points[0]

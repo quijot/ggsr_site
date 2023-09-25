@@ -1,14 +1,10 @@
-import sys
 from decimal import Decimal
+from numbers import Number, Real
 
 from geojson.base import GeoJSON
 
 
-if sys.version_info[0] == 3:
-    # Python 3.x has no long type
-    _JSON_compliant_types = (float, int, Decimal)
-else:
-    _JSON_compliant_types = (float, int, Decimal, long)  # noqa
+DEFAULT_PRECISION = 6
 
 
 class Geometry(GeoJSON):
@@ -16,7 +12,7 @@ class Geometry(GeoJSON):
     Represents an abstract base class for a WGS84 geometry.
     """
 
-    def __init__(self, coordinates=None, validate=False, precision=6, **extra):
+    def __init__(self, coordinates=None, validate=False, precision=None, **extra):
         """
         Initialises a Geometry object.
 
@@ -27,14 +23,16 @@ class Geometry(GeoJSON):
         :param precision: Number of decimal places for lat/lon coords.
         :type precision: integer
         """
-        super(Geometry, self).__init__(**extra)
+        super().__init__(**extra)
+        if precision is None:
+            precision = DEFAULT_PRECISION
         self["coordinates"] = self.clean_coordinates(
             coordinates or [], precision)
 
         if validate:
             errors = self.errors()
             if errors:
-                raise ValueError('{}: {}'.format(errors, coordinates))
+                raise ValueError(f'{errors}: {coordinates}')
 
     @classmethod
     def clean_coordinates(cls, coords, precision):
@@ -49,7 +47,7 @@ class Geometry(GeoJSON):
                 new_coords.append(cls.clean_coordinates(coord, precision))
             elif isinstance(coord, Geometry):
                 new_coords.append(coord['coordinates'])
-            elif isinstance(coord, _JSON_compliant_types):
+            elif isinstance(coord, (Real, Decimal)):
                 new_coords.append(round(coord, precision))
             else:
                 raise ValueError("%r is not a JSON compliant number" % coord)
@@ -62,7 +60,7 @@ class GeometryCollection(GeoJSON):
     """
 
     def __init__(self, geometries=None, **extra):
-        super(GeometryCollection, self).__init__(**extra)
+        super().__init__(**extra)
         self["geometries"] = geometries or []
 
     def errors(self):
@@ -83,6 +81,9 @@ def check_point(coord):
         return 'each position must be a list'
     if len(coord) not in (2, 3):
         return 'a position must have exactly 2 or 3 values'
+    for number in coord:
+        if not isinstance(number, Number):
+            return 'a position cannot have inner positions'
 
 
 class Point(Geometry):
@@ -143,7 +144,7 @@ class MultiPolygon(Geometry):
         return self.check_list_errors(check_polygon, self['coordinates'])
 
 
-class Default(object):
+class Default:
     """
     GeoJSON default object.
     """
