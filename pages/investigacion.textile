@@ -4,22 +4,26 @@
 .. link: 
 .. description: 
 .. type: text
-.. date: 07/30/22 12:00:00 UTC-03:00
+.. date: 04/16/24 19:00:00 UTC-03:00
 .. template: updatable.tmpl
 
-h1. Actividades en desarrollo
+h1. Solicitud de Acreditación ante la Secretaría de Ciencia y Tecnología, Universidad Nacional de Rosario.
 
-- Georreferenciación: Fundamentos, técnicas, aplicaciones y enseñanza y difusión de conocimientos necesarios para su correcta utilización :=
-Proyecto de investigación presentado ante la Secretaría de Ciencia y Tecnología de la Universidad Nacional de Rosario.
-Acreditado por la Universidad Nacional de Rosario (UNR), R.C.S. Nº 125/2021.
-Duración: Cuatrienal (Años 2020 a 2023)
-"Presentación Proyecto":/investigacion/2020-2023_PresentacionProyecto.pdf
-"Plan de Trabajo":/investigacion/2020-2023_PlanDeTrabajo.pdf
+- La Georreferenciación como herramienta social. El celular como el instrumento más difundido. :=
+Duración: Cuatrienal (Años 2024 a 2027)
+"Presentación Proyecto":/investigacion/01-80020230200122UR-PresentacionProyecto.pdf
+"Plan de Trabajo":/investigacion/02-80020230200122UR-Plandetrabajo-ACRE-2024.pdf
 
 - "Colocalización - AGGO":/investigacion/Colocalizacion-AGGO.pdf :=
 Informe preliminar de las tareas de medición y cálculo efectuados por el GGSR, sobre la red planimétrica diseñada para la determinación de la posición relativa (colocalización) entre los instrumentos de medición del Observatorio Geodésico Argentino-Alemán.
 
 h1. Proyectos de investigación finalizados
+
+h2. 2020 a 2023
+
+- "Georreferenciación: Fundamentos, técnicas, aplicaciones y enseñanza y difusión de conocimientos necesarios para su correcta utilización.":/investigacion/2020-2023_PresentacionProyecto.pdf :=
+Código: 80020190300168UR - Acreditado por la Universidad Nacional de Rosario (UNR), R.C.S. Nº 125/2021.
+Grupo de Trabajo: Brunini, C. - Calvo, P. - Cornaglia, L. (Co-Directora) - Mangiaterra, A. - Noguera, G. (Director) - Pestarini, S. - Rodriguez, R.
 
 h2. 2018 a 2019
 
@@ -34,6 +38,9 @@ h2. 2014 a 2018
 Código: 1ING455 - Acreditado por la Universidad Nacional de Rosario (UNR), R.C.S. Nº 886/2014.
 Grupo de Trabajo: Acosta, G. Brunini, C. - Calvo, P. - Cornaglia, L. - Mangiaterra, A. (Co-Director) - Noguera, G. (Director) - Pagani, G. - Pestarini, S. - Rodriguez, R.
 "Informe final":/investigacion/ING455_InformeFinal.pdf
+
+- Determinación Cota Estación Permanente UNRO :=
+"Informe final":/investigacion/GGSR_CotaEPUNRO.pdf
 
 
 h2. 2011 a 2012

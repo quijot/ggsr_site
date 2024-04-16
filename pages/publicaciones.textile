@@ -4,12 +4,12 @@
 .. link: 
 .. description: 
 .. type: text
-.. date: 08/06/22 19:55:00 UTC-03:00
+.. date: 04/16/24 19:00:00 UTC-03:00
 .. template: updatable.tmpl
 
 A continuación se listan publicaciones del Grupo, algunas de autoría exclusiva, otras de participación compartida junto a otros grupos o investigadores.
 
-h1. Institucionales
+h1. 
 
 h2. 2022
 
