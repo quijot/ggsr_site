@@ -82,7 +82,7 @@ ruamel.yaml.clib==0.2.6
 Send2Trash==1.8.0
 six==1.16.0
 smartypants==2.0.1
-soupsieve==2.3.2.post1
+soupsieve==2.9
 stack-data==0.3.0
 terminado==0.15.0
 textile==4.0.2
